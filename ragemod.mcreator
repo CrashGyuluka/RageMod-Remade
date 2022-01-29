@@ -1,0 +1,144 @@
+{
+  "mod_elements": [
+    {
+      "name": "Rageium",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RagemodTab",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragemod_tab",
+      "path": "~/other"
+    },
+    {
+      "name": "RageiumAlloy",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_alloy",
+      "path": "~/rageium things"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.ragemod.rageium_alloy": "Rageium Alloy",
+      "item.ragemod.rageium": "Rageium",
+      "itemGroup.tabragemod_tab": "RageMod"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "rageium things",
+        "children": [
+          {
+            "name": "craft",
+            "children": []
+          },
+          {
+            "name": "procedures",
+            "children": []
+          },
+          {
+            "name": "loottable",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "toxic things",
+        "children": []
+      },
+      {
+        "name": "particles",
+        "children": []
+      },
+      {
+        "name": "enchantments",
+        "children": []
+      },
+      {
+        "name": "structures",
+        "children": []
+      },
+      {
+        "name": "commands",
+        "children": []
+      },
+      {
+        "name": "biomes",
+        "children": []
+      },
+      {
+        "name": "advancements",
+        "children": []
+      },
+      {
+        "name": "tags",
+        "children": []
+      },
+      {
+        "name": "loottables",
+        "children": []
+      },
+      {
+        "name": "ores",
+        "children": []
+      },
+      {
+        "name": "wood",
+        "children": []
+      },
+      {
+        "name": "alien dimension",
+        "children": []
+      },
+      {
+        "name": "mobs",
+        "children": []
+      },
+      {
+        "name": "nature",
+        "children": []
+      },
+      {
+        "name": "cave biomes",
+        "children": []
+      },
+      {
+        "name": "other",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ragemod",
+    "modName": "ragemod",
+    "version": "1.0.0",
+    "author": "CrashGyuluka, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "modElementsPackage": "net.mcreator.ragemod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100353117
+}
