@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Tosser Enchantment",
+    "type": "ARMOR_CHEST",
+    "rarity": "VERY_RARE",
+    "minLevel": 1,
+    "maxLevel": 4,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:RageiumArmor.legs"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

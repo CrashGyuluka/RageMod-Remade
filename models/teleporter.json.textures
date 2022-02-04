@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "gold": "portalside",
+        "obsidian": "obsidian",
+        "portal": "portaltop"
+      },
+      "name": "default"
+    }
+  }
+}

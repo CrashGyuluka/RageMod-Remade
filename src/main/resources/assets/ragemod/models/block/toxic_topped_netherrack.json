@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ragemod:blocks/nether",
+    "up": "ragemod:blocks/toxic_top",
+    "north": "ragemod:blocks/toxic_nether",
+    "east": "ragemod:blocks/toxic_nether",
+    "south": "ragemod:blocks/toxic_nether",
+    "west": "ragemod:blocks/toxic_nether",
+    "particle": "ragemod:blocks/nether"
+  }
+}

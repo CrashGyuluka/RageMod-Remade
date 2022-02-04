@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "ragemod:rageium_ore"
+    },
+    "3": {
+      "item": "ragemod:rageium_ore"
+    },
+    "4": {
+      "item": "ragemod:toxic_crystal"
+    },
+    "5": {
+      "item": "ragemod:rageium_ore"
+    },
+    "7": {
+      "item": "ragemod:rageium_ore"
+    }
+  },
+  "result": {
+    "item": "ragemod:toxic_topped_rageium_ore",
+    "count": 3
+  }
+}

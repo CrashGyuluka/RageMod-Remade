@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:basalt"
+    },
+    "3": {
+      "item": "minecraft:basalt"
+    },
+    "4": {
+      "item": "ragemod:toxic_crystal"
+    },
+    "5": {
+      "item": "minecraft:basalt"
+    },
+    "7": {
+      "item": "minecraft:basalt"
+    }
+  },
+  "result": {
+    "item": "ragemod:toxic_topped_basalt",
+    "count": 3
+  }
+}

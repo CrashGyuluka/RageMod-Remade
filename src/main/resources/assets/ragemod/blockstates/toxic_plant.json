@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "ragemod:block/toxic_plant"
+    },
+    "half=lower": {
+      "model": "ragemod:block/toxic_plant_bottom"
+    }
+  }
+}

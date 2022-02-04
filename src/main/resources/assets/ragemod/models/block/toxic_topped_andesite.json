@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ragemod:blocks/andesite",
+    "up": "ragemod:blocks/toxic_top",
+    "north": "ragemod:blocks/toxic_andez",
+    "east": "ragemod:blocks/toxic_andez",
+    "south": "ragemod:blocks/toxic_andez",
+    "west": "ragemod:blocks/toxic_andez",
+    "particle": "ragemod:blocks/andesite"
+  }
+}

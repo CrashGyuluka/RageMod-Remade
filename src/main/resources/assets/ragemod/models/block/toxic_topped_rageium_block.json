@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ragemod:blocks/rageiumblock",
+    "up": "ragemod:blocks/toxic_top",
+    "north": "ragemod:blocks/toxicrageiumblock",
+    "east": "ragemod:blocks/toxicrageiumblock",
+    "south": "ragemod:blocks/toxicrageiumblock",
+    "west": "ragemod:blocks/toxicrageiumblock",
+    "particle": "ragemod:blocks/rageiumblock"
+  }
+}

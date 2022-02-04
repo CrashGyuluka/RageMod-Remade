@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ragemod:blocks/dirt",
+    "up": "ragemod:blocks/toxic_top",
+    "north": "ragemod:blocks/toxicdirt",
+    "east": "ragemod:blocks/toxicdirt",
+    "south": "ragemod:blocks/toxicdirt",
+    "west": "ragemod:blocks/toxicdirt",
+    "particle": "ragemod:blocks/dirt"
+  }
+}

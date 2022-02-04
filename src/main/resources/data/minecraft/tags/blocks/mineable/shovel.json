@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ragemod:toxic_topped_dirt",
+    "ragemod:toxic_topped_gravel",
+    "ragemod:toxic_topped_sand",
+    "ragemod:toxic_topped_red_sand"
+  ]
+}

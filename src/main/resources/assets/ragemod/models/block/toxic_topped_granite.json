@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ragemod:blocks/granite",
+    "up": "ragemod:blocks/toxic_top",
+    "north": "ragemod:blocks/toxic_gran",
+    "east": "ragemod:blocks/toxic_gran",
+    "south": "ragemod:blocks/toxic_gran",
+    "west": "ragemod:blocks/toxic_gran",
+    "particle": "ragemod:blocks/granite"
+  }
+}

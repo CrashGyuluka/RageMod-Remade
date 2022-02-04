@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "CUSTOM:ToxicCrystal"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ToxicToppedAndesite"
+    },
+    "name": "toxic_topped_andesite_craft",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "toxic_sword",
+    "customModelName": "Normal",
+    "name": "Toxic Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:RagemodTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 1.3,
+    "enchantability": 13,
+    "damageVsEntity": 6.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:RawToxicCrystal"
+      },
+      {
+        "value": "CUSTOM:ToxicCrystal"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "ToxicSwordLivingEntityIsHitWithTool"
+    }
+  }
+}

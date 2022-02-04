@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "ragemod:blocks/rageiumbricks_animated",
+    "top": "ragemod:blocks/rageiumbricks_animated",
+    "side": "ragemod:blocks/rageiumbricks_animated"
+  }
+}

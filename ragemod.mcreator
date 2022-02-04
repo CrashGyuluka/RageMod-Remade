@@ -26,15 +26,1774 @@
       "locked_code": false,
       "registry_name": "rageium_alloy",
       "path": "~/rageium things"
+    },
+    {
+      "name": "RageParticle",
+      "type": "particle",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rage_particle",
+      "path": "~/particles"
+    },
+    {
+      "name": "RageiumOre",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_ore",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumBlock",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_block",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumAlloyBlock",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_alloy_block",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumArmor",
+      "type": "armor",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumBricks",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_bricks",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumBrickStairs",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_brick_stairs",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumBrickSlab",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_brick_slab",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumBrickWall",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_brick_wall",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumBrickPressurePlate",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_brick_pressure_plate",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumBrickButton",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_brick_button",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumBow",
+      "type": "rangeditem",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_bow",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RageiumArrow",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_arrow",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RagePotion",
+      "type": "food",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rage_potion",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "BoomStoneBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_stone_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/rageium things/procedures"
+    },
+    {
+      "name": "BoomStone",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_stone",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "RagePotionFoodEaten",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rage_potion_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/rageium things/procedures"
+    },
+    {
+      "name": "SendTeleporterFeedback",
+      "type": "gamerule",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sendTeleporterFeedback",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/other"
+    },
+    {
+      "name": "TeleporterOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleporter_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/rageium things/procedures"
+    },
+    {
+      "name": "Teleporter",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleporter",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "log_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "FenceBlocks",
+      "type": "tag",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fence_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "WoodenFenceBlocks",
+      "type": "tag",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_fence_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "WallBlocks",
+      "type": "tag",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wall_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "SmallFlowerBlocks",
+      "type": "tag",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_flower_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "BeaconBaseBlockBlocks",
+      "type": "tag",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_base_block_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "LeaveBlocks",
+      "type": "tag",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "ClimbableBlocks",
+      "type": "tag",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "climbable_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "DragonImmuneBlocks",
+      "type": "tag",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_immune_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "WitherImmuneBlocks",
+      "type": "tag",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wither_immune_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "ArrowItems",
+      "type": "tag",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_items",
+      "path": "~/tags"
+    },
+    {
+      "name": "PlankItems",
+      "type": "tag",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plank_items",
+      "path": "~/tags"
+    },
+    {
+      "name": "FlowerItems",
+      "type": "tag",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flower_items",
+      "path": "~/tags"
+    },
+    {
+      "name": "SmallFlowerItems",
+      "type": "tag",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_flower_items",
+      "path": "~/tags"
+    },
+    {
+      "name": "ArrowEntities",
+      "type": "tag",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_entities",
+      "path": "~/tags"
+    },
+    {
+      "name": "Rageiumoreloottable",
+      "type": "loottable",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageiumoreloottable",
+      "path": "~/rageium things/loottable"
+    },
+    {
+      "name": "RageiumOreSmelt",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_ore_smelt",
+      "path": "~/rageium things/craft"
+    },
+    {
+      "name": "RageiumOreBlast",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_ore_blast",
+      "path": "~/rageium things/craft"
+    },
+    {
+      "name": "RageiumBlockCraft",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_block_craft",
+      "path": "~/rageium things/craft"
+    },
+    {
+      "name": "RageiumBlockBackcraft",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_block_backcraft",
+      "path": "~/rageium things/craft"
+    },
+    {
+      "name": "RageiumAlloyBlockCraft",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_alloy_block_craft",
+      "path": "~/rageium things/craft"
+    },
+    {
+      "name": "RageiumAlloyBlockBackcraft",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rageium_alloy_block_backcraft",
+      "path": "~/rageium things/craft"
+    },
+    {
+      "name": "RawToxicCrystal",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_toxic_crystal",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicCrystal",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_crystal",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "RawToxicCrystalBlock",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_toxic_crystal_block",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicParticle",
+      "type": "particle",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_particle",
+      "path": "~/particles"
+    },
+    {
+      "name": "ToxicCrystalBlock",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_crystal_block",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicCrystalOre",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_crystal_ore",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicPlant",
+      "type": "plant",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_plant",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicWaste",
+      "type": "biome",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_waste",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToolBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_tool_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/toxic things/procedures"
+    },
+    {
+      "name": "ToxicAxe",
+      "type": "tool",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_axe",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/toxic things/procedures"
+    },
+    {
+      "name": "ToxicSword",
+      "type": "tool",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_sword",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicPickaxe",
+      "type": "tool",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_pickaxe",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicShovel",
+      "type": "tool",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_shovel",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicHoe",
+      "type": "tool",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_hoe",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicArmor",
+      "type": "armor",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedStoneEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_stone_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/toxic things/procedures"
+    },
+    {
+      "name": "ToxicToppedStone",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_stone",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedNetherrack",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_netherrack",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedEndstone",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_endstone",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedDirt",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_dirt",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedOakLog",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_oak_log",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedOakPlanks",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_oak_planks",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedAndesite",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_andesite",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedDiorite",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_diorite",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedGranite",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_granite",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedBoneBlock",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_bone_block",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedBricks",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_bricks",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedStoneBricks",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_stone_bricks",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedAncientDebris",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_ancient_debris",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedBasalt",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_basalt",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedCobblestone",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_cobblestone",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedGravel",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_gravel",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedBlackstone",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_blackstone",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedSand",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_sand",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedRedSand",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_red_sand",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedObsidian",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_obsidian",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedRageiumOre",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_rageium_ore",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedRageiumBlock",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_rageium_block",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedRageiumAlloyBlock",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_rageium_alloy_block",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedRageiumBlocks",
+      "type": "tag",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_rageium_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "ToxicDetonatorRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_detonator_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/toxic things/procedures"
+    },
+    {
+      "name": "ToxicDetonator",
+      "type": "item",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_detonator",
+      "path": "~/toxic things"
+    },
+    {
+      "name": "ToxicToppedStoneCraft",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_stone_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedNetherrackCraft",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_netherrack_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedEndstoneCraft",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_endstone_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedDirtCraft",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_dirt_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedOakLogCraft",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_oak_log_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedOakPlanksCraft",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_oak_planks_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedAndesiteCraft",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_andesite_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedDioriteCraft",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_diorite_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedGraniteCraft",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_granite_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedBoneBlockCraft",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_bone_block_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedBricksCraft",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_bricks_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedStoneBricksCraft",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_stone_bricks_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedAncientDebrisCraft",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_ancient_debris_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedBasaltCraft",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_basalt_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedCobblestoneCraft",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_cobblestone_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedGravelCraft",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_gravel_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedBlackstoneCraft",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_blackstone_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedSandCraft",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_sand_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedRedSandCraft",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_red_sand_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedObsidianCraft",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_obsidian_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedRageiumOreCraft",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_rageium_ore_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedRageiumBlockCraft",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_rageium_block_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicToppedRageiumAlloyBlockCraft",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_rageium_alloy_block_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "ToxicDetonatorCraft",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_detonator_craft",
+      "path": "~/toxic things/craft"
+    },
+    {
+      "name": "RageFlower",
+      "type": "plant",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rage_flower",
+      "path": "~/nature"
+    },
+    {
+      "name": "TosserEnchantment",
+      "type": "enchantment",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tosser_enchantment",
+      "path": "~/enchantments"
+    },
+    {
+      "name": "LifeStealer",
+      "type": "enchantment",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_stealer",
+      "path": "~/enchantments"
+    },
+    {
+      "name": "Collider",
+      "type": "enchantment",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "collider",
+      "path": "~/enchantments"
+    },
+    {
+      "name": "BlockLock",
+      "type": "enchantment",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_lock",
+      "path": "~/enchantments"
+    },
+    {
+      "name": "TosserEnchantProc",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tosser_enchant_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enchantments/procedures"
+    },
+    {
+      "name": "LifeStealerEnchantProc",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_stealer_enchant_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/enchantments/procedures"
+    },
+    {
+      "name": "ColliderEnchProc",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "collider_ench_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/enchantments/procedures"
+    },
+    {
+      "name": "AllMobsRt",
+      "type": "tag",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_mobs_rt",
+      "path": "~/tags"
+    },
+    {
+      "name": "BlocklockEnchProc1",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocklock_ench_proc_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/enchantments/procedures"
+    },
+    {
+      "name": "BlocklockEnchProc2",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocklock_ench_proc_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/enchantments/procedures"
+    },
+    {
+      "name": "FireRelic",
+      "type": "item",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_relic",
+      "path": "~/collectibles"
+    },
+    {
+      "name": "WaterRelic",
+      "type": "item",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_relic",
+      "path": "~/collectibles"
+    },
+    {
+      "name": "EarthRelic",
+      "type": "item",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_relic",
+      "path": "~/collectibles"
+    },
+    {
+      "name": "AirRelic",
+      "type": "item",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_relic",
+      "path": "~/collectibles"
+    },
+    {
+      "name": "DayCommand",
+      "type": "command",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_command",
+      "path": "~/commands"
+    },
+    {
+      "name": "DayCommandCommandExecuted",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_command_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/commands/procedure"
+    },
+    {
+      "name": "MidnightCommandCommandExecuted",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "midnight_command_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/commands/procedure"
+    },
+    {
+      "name": "MidnightCommand",
+      "type": "command",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "midnight_command",
+      "path": "~/commands"
+    },
+    {
+      "name": "StoprainCommandExecuted",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stoprain_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/commands/procedure"
+    },
+    {
+      "name": "Stoprain",
+      "type": "command",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stoprain",
+      "path": "~/commands"
+    },
+    {
+      "name": "RainCommandCommandExecuted",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_command_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/commands/procedure"
+    },
+    {
+      "name": "RainCommand",
+      "type": "command",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_command",
+      "path": "~/commands"
+    },
+    {
+      "name": "DragonPainting",
+      "type": "painting",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_painting",
+      "path": "~/other"
+    },
+    {
+      "name": "FloorBlock",
+      "type": "block",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floor_block",
+      "path": "~/other"
+    },
+    {
+      "name": "Amazonite",
+      "type": "item",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amazonite",
+      "path": "~/ores"
+    },
+    {
+      "name": "Apophyllite",
+      "type": "item",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apophyllite",
+      "path": "~/ores"
+    },
+    {
+      "name": "Azurite",
+      "type": "item",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azurite",
+      "path": "~/ores"
+    },
+    {
+      "name": "Bizmuth",
+      "type": "item",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bismuth",
+      "path": "~/ores"
+    },
+    {
+      "name": "Achat",
+      "type": "item",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "achat",
+      "path": "~/ores"
+    },
+    {
+      "name": "Adularia",
+      "type": "item",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adularia",
+      "path": "~/ores"
+    },
+    {
+      "name": "Actinolite",
+      "type": "item",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "actinolite",
+      "path": "~/ores"
+    },
+    {
+      "name": "Anapait",
+      "type": "item",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anapait",
+      "path": "~/ores"
+    },
+    {
+      "name": "Cerussite",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cerussite",
+      "path": "~/ores"
+    },
+    {
+      "name": "Opal",
+      "type": "item",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opal",
+      "path": "~/ores"
+    },
+    {
+      "name": "ActinoliteOre",
+      "type": "block",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "actinolite_ore",
+      "path": "~/ores"
+    },
+    {
+      "name": "AchatOre",
+      "type": "block",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "achat_ore",
+      "path": "~/ores"
+    },
+    {
+      "name": "AzuriteOre",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azurite_ore",
+      "path": "~/ores"
+    },
+    {
+      "name": "AmazoniteOre",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amazonite_ore",
+      "path": "~/ores"
+    },
+    {
+      "name": "CerussiteOre",
+      "type": "block",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cerussite_ore",
+      "path": "~/ores"
+    },
+    {
+      "name": "BismuthOre",
+      "type": "block",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bismuth_ore",
+      "path": "~/ores"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "BlockLockVar",
+      "type": "blockstate",
+      "scope": "player_lifetime",
+      "value": "Blocks.AIR.defaultBlockState()"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.ragemod.toxic_topped_stone_bricks": "Toxic Topped Stone Bricks",
+      "item.ragemod.achat": "Achat",
+      "block.ragemod.toxic_topped_obsidian": "Toxic Topped Obsidian",
+      "block.ragemod.toxic_topped_oak_planks": "Toxic Topped Planks",
+      "block.ragemod.toxic_topped_oak_log": "Toxic Topped Log",
+      "itemGroup.tabragemod_tab": "RageMod",
+      "block.ragemod.rageium_brick_slab": "Rageium Brick Slab",
+      "item.ragemod.bismuth": "Bizmuth",
+      "block.ragemod.toxic_topped_blackstone": "Toxic Topped Blackstone",
+      "block.ragemod.toxic_topped_bricks": "Toxic Topped Bricks",
+      "item.ragemod.toxic_armor_helmet": "Toxic Helmet",
+      "block.ragemod.rageium_brick_stairs": "Rageium Brick Stairs",
+      "block.ragemod.toxic_crystal_block": "Toxic Crystal Block",
+      "item.ragemod.actinolite": "Actinolite",
+      "block.ragemod.rage_flower": "Rage Flower",
+      "block.ragemod.toxic_topped_bone_block": "Toxic Topped Bone Block",
+      "block.ragemod.toxic_plant": "Toxic Plant",
+      "block.ragemod.floor_block": "Floor Block",
+      "enchantment.ragemod.block_lock": "Block Lock",
+      "item.ragemod.azurite": "Azurite",
+      "block.ragemod.rageium_block": "Rageium Block",
       "item.ragemod.rageium_alloy": "Rageium Alloy",
       "item.ragemod.rageium": "Rageium",
-      "itemGroup.tabragemod_tab": "RageMod"
+      "item.ragemod.toxic_sword": "Toxic Sword",
+      "block.ragemod.rageium_bricks": "Rageium Bricks",
+      "item.ragemod.rage_potion": "Rage Potion",
+      "item.ragemod.toxic_hoe": "Toxic Hoe",
+      "block.ragemod.toxic_topped_andesite": "Toxic Topped Andesite",
+      "item.ragemod.toxic_armor_leggings": "Toxic Leggings",
+      "item.ragemod.opal": "Opal",
+      "item.ragemod.rageium_bow": "Rageium Bow",
+      "block.ragemod.rageium_brick_pressure_plate": "Rageium Brick Pressure Plate",
+      "block.ragemod.toxic_topped_endstone": "Toxic Topped Endstone",
+      "block.ragemod.rageium_alloy_block": "Rageium Alloy Block",
+      "gamerule.sendTeleporterFeedback": "SendTeleporterFeedback",
+      "item.ragemod.air_relic": "Air Relic",
+      "item.ragemod.amazonite": "Amazonite",
+      "block.ragemod.toxic_topped_ancient_debris": "Toxic Topped Ancient Debris",
+      "block.ragemod.toxic_topped_gravel": "Toxic Topped Gravel",
+      "block.ragemod.cerussite_ore": "Cerussite Ore",
+      "block.ragemod.rageium_brick_button": "Rageium Brick Button",
+      "block.ragemod.toxic_topped_basalt": "Toxic Topped Basalt",
+      "item.ragemod.toxic_shovel": "Toxic Shovel",
+      "block.ragemod.azurite_ore": "Azurite Ore",
+      "block.ragemod.toxic_topped_rageium_block": "Toxic Topped Rageium Block",
+      "item.ragemod.rageium_armor_chestplate": "Rageium Body",
+      "block.ragemod.achat_ore": "Achat Ore",
+      "block.ragemod.raw_toxic_crystal_block": "Raw Toxic Crystal Block",
+      "block.ragemod.toxic_topped_rageium_alloy_block": "Toxic Topped Rageium Alloy Block",
+      "block.ragemod.amazonite_ore": "Amazonite Ore",
+      "item.ragemod.toxic_pickaxe": "Toxic Pickaxe",
+      "block.ragemod.toxic_topped_cobblestone": "Toxic Topped Cobblestone",
+      "block.ragemod.toxic_topped_rageium_ore": "Toxic Topped Rageium Ore",
+      "block.ragemod.teleporter": "Teleporter",
+      "item.ragemod.apophyllite": "Apophyllite",
+      "item.ragemod.cerussite": "Cerussite",
+      "block.ragemod.rageium_ore": "Rageium Ore",
+      "enchantment.ragemod.life_stealer": "Life Stealer",
+      "item.ragemod.toxic_crystal": "Toxic Crystal",
+      "block.ragemod.boom_stone": "Boom Stone",
+      "item.ragemod.toxic_detonator": "Toxic Detonator",
+      "block.ragemod.toxic_topped_granite": "Toxic Topped Granite",
+      "item.ragemod.anapait": "Anapait",
+      "block.ragemod.toxic_topped_red_sand": "Toxic Topped Red Sand",
+      "item.ragemod.rageium_armor_helmet": "Rageium Helmet",
+      "block.ragemod.toxic_topped_netherrack": "Toxic Topped Netherrack",
+      "block.ragemod.toxic_topped_stone": "Toxic Topped Stone",
+      "enchantment.ragemod.collider": "Collider",
+      "block.ragemod.bismuth_ore": "Bismuth Ore",
+      "block.ragemod.toxic_crystal_ore": "Toxic Crystal Ore",
+      "item.ragemod.toxic_armor_boots": "Toxic Boots",
+      "item.ragemod.toxic_armor_chestplate": "Toxic Body",
+      "item.ragemod.rageium_arrow": "Rageium Arrow",
+      "biome.ragemod.toxic_waste": "Toxic Waste",
+      "block.ragemod.actinolite_ore": "Actinolite Ore",
+      "item.ragemod.earth_relic": "Earth Relic",
+      "item.ragemod.rageium_armor_leggings": "Rageium Leggings",
+      "item.ragemod.water_relic": "Water Relic",
+      "item.ragemod.adularia": "Adularia",
+      "item.ragemod.raw_toxic_crystal": "Raw Toxic Crystal",
+      "enchantment.ragemod.tosser_enchantment": "Tosser Enchantment",
+      "block.ragemod.toxic_topped_dirt": "Toxic Topped Dirt",
+      "gamerule.sendTeleporterFeedback.description": "Teleporter blocks will send you feedback about the actions you made",
+      "block.ragemod.toxic_topped_diorite": "Toxic Topped Diorite",
+      "item.ragemod.rageium_armor_boots": "Rageium Boots",
+      "item.ragemod.toxic_axe": "Toxic Axe",
+      "block.ragemod.rageium_brick_wall": "Rageium Brick Wall",
+      "block.ragemod.toxic_topped_sand": "Toxic Topped Sand",
+      "item.ragemod.fire_relic": "Fire Relic"
     }
   },
   "foldersRoot": {
@@ -59,7 +1818,16 @@
       },
       {
         "name": "toxic things",
-        "children": []
+        "children": [
+          {
+            "name": "craft",
+            "children": []
+          },
+          {
+            "name": "procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "particles",
@@ -67,7 +1835,12 @@
       },
       {
         "name": "enchantments",
-        "children": []
+        "children": [
+          {
+            "name": "procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "structures",
@@ -75,7 +1848,12 @@
       },
       {
         "name": "commands",
-        "children": []
+        "children": [
+          {
+            "name": "procedure",
+            "children": []
+          }
+        ]
       },
       {
         "name": "biomes",
@@ -102,7 +1880,7 @@
         "children": []
       },
       {
-        "name": "alien dimension",
+        "name": "dimension",
         "children": []
       },
       {
@@ -120,12 +1898,16 @@
       {
         "name": "other",
         "children": []
+      },
+      {
+        "name": "collectibles",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "ragemod",
-    "modName": "ragemod",
+    "modName": "RageMod",
     "version": "1.0.0",
     "author": "CrashGyuluka, MCreator",
     "websiteURL": "https://mcreator.net",
@@ -137,6 +1919,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.ragemod",
     "lockBaseModFiles": false
   },
