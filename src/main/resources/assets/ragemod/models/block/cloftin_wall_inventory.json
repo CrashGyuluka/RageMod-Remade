@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "ragemod:blocks/cloftin",
+    "particle": "ragemod:blocks/cloftin"
+  }
+}

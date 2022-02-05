@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[37,)"
-license="Academic Free License v3.0"
+license="All Rights Reserved"
 
 [[mods]]
 modId="ragemod"
@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="RageMod"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="CrashGyuluka, MCreator"
+authors="CrashGyuluka, Lyof"
 
 [[dependencies.ragemod]]
     modId="minecraft"

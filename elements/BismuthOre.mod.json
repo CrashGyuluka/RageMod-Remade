@@ -17,7 +17,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -132,7 +132,7 @@
     ],
     "frequencyPerChunks": 8,
     "frequencyOnChunk": 3,
-    "minGenerateHeight": 50,
+    "minGenerateHeight": 0,
     "maxGenerateHeight": 128
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "ragemod:blocks/cloftin",
+    "top": "ragemod:blocks/cloftin",
+    "side": "ragemod:blocks/cloftin"
+  }
+}

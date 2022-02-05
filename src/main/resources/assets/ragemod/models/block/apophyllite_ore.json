@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ragemod:blocks/apofillit_ore_newest",
+    "particle": "ragemod:blocks/apofillit_ore_newest"
+  }
+}

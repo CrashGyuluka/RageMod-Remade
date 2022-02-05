@@ -27,7 +27,7 @@ public class BismuthOreFeature extends OreFeature {
 	public static final BismuthOreFeature FEATURE = (BismuthOreFeature) new BismuthOreFeature().setRegistryName("ragemod:bismuth_ore");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
 			.configured(new OreConfiguration(BismuthOreFeatureRuleTest.INSTANCE, RagemodModBlocks.BISMUTH_ORE.defaultBlockState(), 3))
-			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(50), VerticalAnchor.absolute(128)))).squared().count(8);
+			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(0), VerticalAnchor.absolute(128)))).squared().count(8);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 
 	public BismuthOreFeature() {

@@ -131,6 +131,22 @@ public class RagemodModItems {
 	public static final Item AMAZONITE_ORE = register(RagemodModBlocks.AMAZONITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item CERUSSITE_ORE = register(RagemodModBlocks.CERUSSITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item BISMUTH_ORE = register(RagemodModBlocks.BISMUTH_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item APOPHYLLITE_ORE = register(RagemodModBlocks.APOPHYLLITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item OPAL_ORE = register(RagemodModBlocks.OPAL_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item ANAPAIT_ORE = register(RagemodModBlocks.ANAPAIT_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item ADULARIA_ORE = register(RagemodModBlocks.ADULARIA_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item CLOFTIN = register(RagemodModBlocks.CLOFTIN, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item MOSSY_CLOFTIN = register(RagemodModBlocks.MOSSY_CLOFTIN, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item CLOFTIN_STAIRS = register(RagemodModBlocks.CLOFTIN_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item CLOFTIN_SLAB = register(RagemodModBlocks.CLOFTIN_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item CLOFTIN_WALL = register(RagemodModBlocks.CLOFTIN_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item CLOFTIN_PRESSURE_PLATE = register(RagemodModBlocks.CLOFTIN_PRESSURE_PLATE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item MOSSY_CLOFTIN_STAIRS = register(RagemodModBlocks.MOSSY_CLOFTIN_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item MOSSY_CLOFTIN_SLAB = register(RagemodModBlocks.MOSSY_CLOFTIN_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item MOSSY_CLOFTIN_WALL = register(RagemodModBlocks.MOSSY_CLOFTIN_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item MOSSY_CLOFTIN_PRESSURE_PLATE = register(RagemodModBlocks.MOSSY_CLOFTIN_PRESSURE_PLATE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item SMOOTH_CLOFTIN = register(RagemodModBlocks.SMOOTH_CLOFTIN, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item CLOFTIN_BRICKS = register(RagemodModBlocks.CLOFTIN_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

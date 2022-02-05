@@ -43,11 +43,17 @@ import net.mcreator.ragemod.world.features.ores.ToxicToppedAndesiteFeature;
 import net.mcreator.ragemod.world.features.ores.ToxicToppedAncientDebrisFeature;
 import net.mcreator.ragemod.world.features.ores.ToxicCrystalOreFeature;
 import net.mcreator.ragemod.world.features.ores.RageiumOreFeature;
+import net.mcreator.ragemod.world.features.ores.OpalOreFeature;
+import net.mcreator.ragemod.world.features.ores.MossyCloftinFeature;
+import net.mcreator.ragemod.world.features.ores.CloftinFeature;
 import net.mcreator.ragemod.world.features.ores.CerussiteOreFeature;
 import net.mcreator.ragemod.world.features.ores.BoomStoneFeature;
 import net.mcreator.ragemod.world.features.ores.BismuthOreFeature;
 import net.mcreator.ragemod.world.features.ores.AzuriteOreFeature;
+import net.mcreator.ragemod.world.features.ores.ApophylliteOreFeature;
+import net.mcreator.ragemod.world.features.ores.AnapaitOreFeature;
 import net.mcreator.ragemod.world.features.ores.AmazoniteOreFeature;
+import net.mcreator.ragemod.world.features.ores.AdulariaOreFeature;
 import net.mcreator.ragemod.world.features.ores.ActinoliteOreFeature;
 import net.mcreator.ragemod.world.features.ores.AchatOreFeature;
 
@@ -127,6 +133,18 @@ public class RagemodModFeatures {
 				CerussiteOreFeature.GENERATE_BIOMES, CerussiteOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(BismuthOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BismuthOreFeature.GENERATE_BIOMES,
 				BismuthOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(ApophylliteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				ApophylliteOreFeature.GENERATE_BIOMES, ApophylliteOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(OpalOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, OpalOreFeature.GENERATE_BIOMES,
+				OpalOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(AnapaitOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AnapaitOreFeature.GENERATE_BIOMES,
+				AnapaitOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(AdulariaOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				AdulariaOreFeature.GENERATE_BIOMES, AdulariaOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(CloftinFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CloftinFeature.GENERATE_BIOMES,
+				CloftinFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(MossyCloftinFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				MossyCloftinFeature.GENERATE_BIOMES, MossyCloftinFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

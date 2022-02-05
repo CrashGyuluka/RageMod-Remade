@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "ragemod:blocks/mossycloftin",
+    "particle": "ragemod:blocks/mossycloftin"
+  }
+}

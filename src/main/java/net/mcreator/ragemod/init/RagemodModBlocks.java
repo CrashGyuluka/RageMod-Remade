@@ -39,6 +39,7 @@ import net.mcreator.ragemod.block.ToxicPlantBlock;
 import net.mcreator.ragemod.block.ToxicCrystalOreBlock;
 import net.mcreator.ragemod.block.ToxicCrystalBlockBlock;
 import net.mcreator.ragemod.block.TeleporterBlock;
+import net.mcreator.ragemod.block.SmoothCloftinBlock;
 import net.mcreator.ragemod.block.RawToxicCrystalBlockBlock;
 import net.mcreator.ragemod.block.RageiumOreBlock;
 import net.mcreator.ragemod.block.RageiumBricksBlock;
@@ -50,12 +51,27 @@ import net.mcreator.ragemod.block.RageiumBrickButtonBlock;
 import net.mcreator.ragemod.block.RageiumBlockBlock;
 import net.mcreator.ragemod.block.RageiumAlloyBlockBlock;
 import net.mcreator.ragemod.block.RageFlowerBlock;
+import net.mcreator.ragemod.block.OpalOreBlock;
+import net.mcreator.ragemod.block.MossyCloftinWallBlock;
+import net.mcreator.ragemod.block.MossyCloftinStairsBlock;
+import net.mcreator.ragemod.block.MossyCloftinSlabBlock;
+import net.mcreator.ragemod.block.MossyCloftinPressurePlateBlock;
+import net.mcreator.ragemod.block.MossyCloftinBlock;
 import net.mcreator.ragemod.block.FloorBlockBlock;
+import net.mcreator.ragemod.block.CloftinWallBlock;
+import net.mcreator.ragemod.block.CloftinStairsBlock;
+import net.mcreator.ragemod.block.CloftinSlabBlock;
+import net.mcreator.ragemod.block.CloftinPressurePlateBlock;
+import net.mcreator.ragemod.block.CloftinBricksBlock;
+import net.mcreator.ragemod.block.CloftinBlock;
 import net.mcreator.ragemod.block.CerussiteOreBlock;
 import net.mcreator.ragemod.block.BoomStoneBlock;
 import net.mcreator.ragemod.block.BismuthOreBlock;
 import net.mcreator.ragemod.block.AzuriteOreBlock;
+import net.mcreator.ragemod.block.ApophylliteOreBlock;
+import net.mcreator.ragemod.block.AnapaitOreBlock;
 import net.mcreator.ragemod.block.AmazoniteOreBlock;
+import net.mcreator.ragemod.block.AdulariaOreBlock;
 import net.mcreator.ragemod.block.ActinoliteOreBlock;
 import net.mcreator.ragemod.block.AchatOreBlock;
 
@@ -111,6 +127,22 @@ public class RagemodModBlocks {
 	public static final Block AMAZONITE_ORE = register(new AmazoniteOreBlock());
 	public static final Block CERUSSITE_ORE = register(new CerussiteOreBlock());
 	public static final Block BISMUTH_ORE = register(new BismuthOreBlock());
+	public static final Block APOPHYLLITE_ORE = register(new ApophylliteOreBlock());
+	public static final Block OPAL_ORE = register(new OpalOreBlock());
+	public static final Block ANAPAIT_ORE = register(new AnapaitOreBlock());
+	public static final Block ADULARIA_ORE = register(new AdulariaOreBlock());
+	public static final Block CLOFTIN = register(new CloftinBlock());
+	public static final Block MOSSY_CLOFTIN = register(new MossyCloftinBlock());
+	public static final Block CLOFTIN_STAIRS = register(new CloftinStairsBlock());
+	public static final Block CLOFTIN_SLAB = register(new CloftinSlabBlock());
+	public static final Block CLOFTIN_WALL = register(new CloftinWallBlock());
+	public static final Block CLOFTIN_PRESSURE_PLATE = register(new CloftinPressurePlateBlock());
+	public static final Block MOSSY_CLOFTIN_STAIRS = register(new MossyCloftinStairsBlock());
+	public static final Block MOSSY_CLOFTIN_SLAB = register(new MossyCloftinSlabBlock());
+	public static final Block MOSSY_CLOFTIN_WALL = register(new MossyCloftinWallBlock());
+	public static final Block MOSSY_CLOFTIN_PRESSURE_PLATE = register(new MossyCloftinPressurePlateBlock());
+	public static final Block SMOOTH_CLOFTIN = register(new SmoothCloftinBlock());
+	public static final Block CLOFTIN_BRICKS = register(new CloftinBricksBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -134,12 +166,14 @@ public class RagemodModBlocks {
 			TeleporterBlock.registerRenderLayer();
 			ToxicPlantBlock.registerRenderLayer();
 			RageFlowerBlock.registerRenderLayer();
-			ActinoliteOreBlock.registerRenderLayer();
-			AchatOreBlock.registerRenderLayer();
-			AzuriteOreBlock.registerRenderLayer();
-			AmazoniteOreBlock.registerRenderLayer();
-			CerussiteOreBlock.registerRenderLayer();
-			BismuthOreBlock.registerRenderLayer();
+			CloftinStairsBlock.registerRenderLayer();
+			CloftinSlabBlock.registerRenderLayer();
+			CloftinWallBlock.registerRenderLayer();
+			CloftinPressurePlateBlock.registerRenderLayer();
+			MossyCloftinStairsBlock.registerRenderLayer();
+			MossyCloftinSlabBlock.registerRenderLayer();
+			MossyCloftinWallBlock.registerRenderLayer();
+			MossyCloftinPressurePlateBlock.registerRenderLayer();
 		}
 	}
 }

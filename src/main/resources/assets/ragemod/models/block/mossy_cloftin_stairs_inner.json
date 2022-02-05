@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "ragemod:blocks/mossycloftin",
+    "top": "ragemod:blocks/mossycloftin",
+    "side": "ragemod:blocks/mossycloftin"
+  }
+}
