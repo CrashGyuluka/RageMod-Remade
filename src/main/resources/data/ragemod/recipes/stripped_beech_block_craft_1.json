@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "ragemod:stripped_beech_log"
+    },
+    "1": {
+      "item": "ragemod:stripped_beech_log"
+    },
+    "2": {
+      "item": "ragemod:stripped_beech_log"
+    },
+    "3": {
+      "item": "ragemod:stripped_beech_log"
+    }
+  },
+  "result": {
+    "item": "ragemod:stipped_beech_log",
+    "count": 3
+  }
+}

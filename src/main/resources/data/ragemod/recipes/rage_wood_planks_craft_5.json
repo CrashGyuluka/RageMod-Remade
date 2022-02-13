@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:stripped_rage_wood_block"
+    }
+  ],
+  "result": {
+    "item": "ragemod:rage_wood_planks",
+    "count": 4
+  }
+}

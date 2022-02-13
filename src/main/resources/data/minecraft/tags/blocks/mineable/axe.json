@@ -2,6 +2,26 @@
   "replace": false,
   "values": [
     "ragemod:toxic_topped_oak_log",
-    "ragemod:toxic_topped_oak_planks"
+    "ragemod:toxic_topped_oak_planks",
+    "ragemod:beech_log",
+    "ragemod:beech_block",
+    "ragemod:beech_planks",
+    "ragemod:beech_stairs",
+    "ragemod:beech_slab",
+    "ragemod:beech_fence",
+    "ragemod:beech_fence_gate",
+    "ragemod:stripped_beech_log",
+    "ragemod:stipped_beech_log",
+    "ragemod:rage_wood_log",
+    "ragemod:rage_wood_block",
+    "ragemod:rage_wood_planks",
+    "ragemod:stripped_rage_wood_log",
+    "ragemod:better_stripped_rage_wood_log",
+    "ragemod:stripped_rage_wood_block",
+    "ragemod:better_stripped_rage_wood_block",
+    "ragemod:rage_wood_stairs",
+    "ragemod:rage_wood_slab",
+    "ragemod:rage_wood_fence",
+    "ragemod:rage_wood_fence_gate"
   ]
 }

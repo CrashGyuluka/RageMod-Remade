@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:toxic_plant"
+    }
+  ],
+  "result": {
+    "item": "ragemod:toxic_crystal",
+    "count": 2
+  }
+}

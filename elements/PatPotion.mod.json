@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "pat_bottle",
+    "customModelName": "Normal",
+    "name": "PAT Potion",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:RagemodTab"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 30,
+    "resultItem": {
+      "value": "Items.GLASS_BOTTLE"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "PatPotionFoodEaten"
+    }
+  }
+}

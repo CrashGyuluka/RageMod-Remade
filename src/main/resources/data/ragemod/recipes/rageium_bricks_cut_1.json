@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ragemod:rageium_bricks"
+  },
+  "result": "ragemod:rageium_brick_stairs"
+}

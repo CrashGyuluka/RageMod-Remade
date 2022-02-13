@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ragemod:rageium_bricks"
+    },
+    "3": {
+      "item": "ragemod:rageium_bricks"
+    },
+    "4": {
+      "item": "ragemod:rageium_bricks"
+    },
+    "6": {
+      "item": "ragemod:rageium_bricks"
+    },
+    "7": {
+      "item": "ragemod:rageium_bricks"
+    },
+    "8": {
+      "item": "ragemod:rageium_bricks"
+    }
+  },
+  "result": {
+    "item": "ragemod:rageium_brick_stairs",
+    "count": 6
+  }
+}

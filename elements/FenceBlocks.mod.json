@@ -4,7 +4,11 @@
   "definition": {
     "type": "Blocks",
     "items": [],
-    "blocks": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:RageWoodFence"
+      }
+    ],
     "functions": [],
     "entities": [],
     "name": "fences",

@@ -51,7 +51,7 @@ public class ToxicSwordItem extends SwordItem {
 		double z = entity.getZ();
 		Level world = entity.level;
 
-		ToxicSwordLivingEntityIsHitWithToolProcedure.execute(world, x, y, z);
+		ToxicSwordLivingEntityIsHitWithToolProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 }

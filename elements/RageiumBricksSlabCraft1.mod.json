@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RageiumBricks"
+      },
+      {
+        "value": "CUSTOM:RageiumBricks"
+      },
+      {
+        "value": "CUSTOM:RageiumBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RageiumBrickSlab"
+    },
+    "name": "rageium_bricks_slab_craft_1",
+    "namespace": "mod"
+  }
+}

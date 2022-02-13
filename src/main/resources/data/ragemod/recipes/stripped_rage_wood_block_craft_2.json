@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "ragemod:stripped_rage_wood_log"
+    },
+    "1": {
+      "item": "ragemod:stripped_rage_wood_log"
+    },
+    "2": {
+      "item": "ragemod:stripped_rage_wood_log"
+    },
+    "3": {
+      "item": "ragemod:stripped_rage_wood_log"
+    }
+  },
+  "result": {
+    "item": "ragemod:stripped_rage_wood_block",
+    "count": 3
+  }
+}

@@ -12,4 +12,6 @@ import net.minecraft.world.level.GameRules;
 public class RagemodModGameRules {
 	public static final GameRules.Key<GameRules.BooleanValue> SENDTELEPORTERFEEDBACK = GameRules.register("sendTeleporterFeedback",
 			GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
+	public static final GameRules.Key<GameRules.BooleanValue> TOXICGIVESBADEFFECTS = GameRules.register("toxicGivesBadEffects",
+			GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 }

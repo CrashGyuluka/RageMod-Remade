@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "ragemod:blocks/ragewoodplanks",
+    "particle": "ragemod:blocks/ragewoodplanks"
+  }
+}

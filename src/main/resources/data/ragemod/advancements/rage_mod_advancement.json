@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "ragemod:textures/rageiumbricks1.png",
+    "icon": {
+      "item": "ragemod:advancement_one_icon"
+    },
+    "title": {
+      "translate": "advancements.rage_mod_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.rage_mod_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rage_mod_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

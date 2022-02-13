@@ -44,9 +44,10 @@ import net.mcreator.ragemod.world.features.ores.ToxicToppedAncientDebrisFeature;
 import net.mcreator.ragemod.world.features.ores.ToxicCrystalOreFeature;
 import net.mcreator.ragemod.world.features.ores.RageiumOreFeature;
 import net.mcreator.ragemod.world.features.ores.OpalOreFeature;
-import net.mcreator.ragemod.world.features.ores.MossyCloftinFeature;
-import net.mcreator.ragemod.world.features.ores.CloftinFeature;
+import net.mcreator.ragemod.world.features.ores.MossyCaltenFeature;
+import net.mcreator.ragemod.world.features.ores.FultFeature;
 import net.mcreator.ragemod.world.features.ores.CerussiteOreFeature;
+import net.mcreator.ragemod.world.features.ores.CaltenFeature;
 import net.mcreator.ragemod.world.features.ores.BoomStoneFeature;
 import net.mcreator.ragemod.world.features.ores.BismuthOreFeature;
 import net.mcreator.ragemod.world.features.ores.AzuriteOreFeature;
@@ -141,10 +142,12 @@ public class RagemodModFeatures {
 				AnapaitOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(AdulariaOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
 				AdulariaOreFeature.GENERATE_BIOMES, AdulariaOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(CloftinFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CloftinFeature.GENERATE_BIOMES,
-				CloftinFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(MossyCloftinFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				MossyCloftinFeature.GENERATE_BIOMES, MossyCloftinFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(FultFeature.FEATURE,
+				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, FultFeature.GENERATE_BIOMES, FultFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(CaltenFeature.FEATURE,
+				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CaltenFeature.GENERATE_BIOMES, CaltenFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(MossyCaltenFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				MossyCaltenFeature.GENERATE_BIOMES, MossyCaltenFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

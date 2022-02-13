@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "ragemod:calten"
+  },
+  "result": "ragemod:calten_slab"
+}

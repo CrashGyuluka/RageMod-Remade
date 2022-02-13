@@ -7,6 +7,18 @@
     "blocks": [
       {
         "value": "CUSTOM:RageiumBrickWall"
+      },
+      {
+        "value": "CUSTOM:CaltenWall"
+      },
+      {
+        "value": "CUSTOM:MossyCaltenWall"
+      },
+      {
+        "value": "CUSTOM:SmoothCaltenWall"
+      },
+      {
+        "value": "CUSTOM:CaltenBricksWall"
       }
     ],
     "functions": [],

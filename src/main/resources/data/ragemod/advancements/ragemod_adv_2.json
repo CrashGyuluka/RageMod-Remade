@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "ragemod:rageium"
+    },
+    "title": {
+      "translate": "advancements.ragemod_adv_2.title"
+    },
+    "description": {
+      "translate": "advancements.ragemod_adv_2.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ragemod_adv_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ragemod:rageium"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "ragemod:rageium_ore_smelt",
+      "ragemod:rageium_ore_blast",
+      "ragemod:rageium_block_craft",
+      "ragemod:rageium_block_backcraft"
+    ]
+  },
+  "parent": "ragemod:rage_mod_advancement"
+}

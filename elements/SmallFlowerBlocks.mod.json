@@ -4,7 +4,11 @@
   "definition": {
     "type": "Blocks",
     "items": [],
-    "blocks": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:RageFlower"
+      }
+    ],
     "functions": [],
     "entities": [],
     "name": "small_flowers",

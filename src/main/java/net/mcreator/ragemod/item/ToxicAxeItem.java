@@ -52,7 +52,7 @@ public class ToxicAxeItem extends AxeItem {
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		ToxicToolBlockDestroyedWithToolProcedure.execute(world, x, y, z);
+		ToxicToolBlockDestroyedWithToolProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 }

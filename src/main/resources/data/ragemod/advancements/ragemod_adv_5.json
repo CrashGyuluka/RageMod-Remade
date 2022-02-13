@@ -1,0 +1,65 @@
+{
+  "display": {
+    "icon": {
+      "item": "ragemod:toxic_crystal"
+    },
+    "title": {
+      "translate": "advancements.ragemod_adv_5.title"
+    },
+    "description": {
+      "translate": "advancements.ragemod_adv_5.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ragemod_adv_5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ragemod:toxic_crystal"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "ragemod:toxic_topped_stone_craft",
+      "ragemod:toxic_topped_netherrack_craft",
+      "ragemod:toxic_topped_endstone_craft",
+      "ragemod:toxic_topped_dirt_craft",
+      "ragemod:toxic_topped_oak_log_craft",
+      "ragemod:toxic_topped_oak_planks_craft",
+      "ragemod:toxic_topped_andesite_craft",
+      "ragemod:toxic_topped_diorite_craft",
+      "ragemod:toxic_topped_granite_craft",
+      "ragemod:toxic_topped_bone_block_craft",
+      "ragemod:toxic_topped_bricks_craft",
+      "ragemod:toxic_topped_stone_bricks_craft",
+      "ragemod:toxic_topped_ancient_debris_craft",
+      "ragemod:toxic_topped_basalt_craft",
+      "ragemod:toxic_topped_cobblestone_craft",
+      "ragemod:toxic_topped_gravel_craft",
+      "ragemod:toxic_topped_blackstone_craft",
+      "ragemod:toxic_topped_sand_craft",
+      "ragemod:toxic_topped_red_sand_craft",
+      "ragemod:toxic_topped_obsidian_craft",
+      "ragemod:toxic_topped_rageium_ore_craft",
+      "ragemod:toxic_topped_rageium_block_craft",
+      "ragemod:toxic_topped_rageium_alloy_block_craft",
+      "ragemod:toxic_detonator_craft"
+    ]
+  },
+  "parent": "ragemod:ragemod_adv_4"
+}

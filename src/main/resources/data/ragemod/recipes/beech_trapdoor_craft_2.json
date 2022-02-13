@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "ragemod:beech_planks"
+    },
+    "1": {
+      "item": "ragemod:beech_planks"
+    },
+    "2": {
+      "item": "ragemod:beech_planks"
+    },
+    "3": {
+      "item": "ragemod:beech_planks"
+    },
+    "4": {
+      "item": "ragemod:beech_planks"
+    },
+    "5": {
+      "item": "ragemod:beech_planks"
+    }
+  },
+  "result": {
+    "item": "ragemod:beech_trapdoor",
+    "count": 2
+  }
+}

@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ragemod:blocks/toxiccrystalblock",
-    "particle": "ragemod:blocks/toxiccrystalblock"
+    "all": "ragemod:blocks/toxicblock1",
+    "particle": "ragemod:blocks/toxicblock1"
   }
 }
