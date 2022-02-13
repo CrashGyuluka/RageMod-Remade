@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "konyv1",
+    "texture": "advbook",
     "customModelName": "Normal",
     "name": "Advancement One Icon",
     "rarity": "EPIC",

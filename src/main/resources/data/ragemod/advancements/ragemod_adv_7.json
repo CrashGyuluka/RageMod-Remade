@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "ragemod:fult_ingot"
+    },
+    "title": {
+      "translate": "advancements.ragemod_adv_7.title"
+    },
+    "description": {
+      "translate": "advancements.ragemod_adv_7.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ragemod_adv_7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ragemod:fult_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 3,
+    "recipes": [
+      "ragemod:fult_bars_craft",
+      "ragemod:fult_bars_craft_2",
+      "ragemod:fult_trapdoor_craft_1",
+      "ragemod:fult_ingot_smelt",
+      "ragemod:fult_ingot_blast"
+    ]
+  },
+  "parent": "ragemod:ragemod_adv_6"
+}

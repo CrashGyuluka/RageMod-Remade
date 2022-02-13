@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "1": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "2": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "3": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "5": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "6": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "8": {
+      "item": "ragemod:rageium_alloy"
+    }
+  },
+  "result": {
+    "item": "ragemod:rageium_armor_chestplate",
+    "count": 1
+  }
+}

@@ -27,7 +27,7 @@ public class BoomStoneFeature extends OreFeature {
 	public static final BoomStoneFeature FEATURE = (BoomStoneFeature) new BoomStoneFeature().setRegistryName("ragemod:boom_stone");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
 			.configured(new OreConfiguration(BoomStoneFeatureRuleTest.INSTANCE, RagemodModBlocks.BOOM_STONE.defaultBlockState(), 2))
-			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)))).squared().count(2);
+			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(0), VerticalAnchor.absolute(200)))).squared().count(4);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 
 	public BoomStoneFeature() {
@@ -54,6 +54,8 @@ public class BoomStoneFeature extends OreFeature {
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
 			if (blockAt.getBlock() == Blocks.COBBLESTONE)
+				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.ANDESITE)
 				blockCriteria = true;
 			return blockCriteria;
 		}

@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "pat_bottle",
+    "texture": "patbottle",
     "customModelName": "Normal",
     "name": "PAT Potion",
     "rarity": "COMMON",

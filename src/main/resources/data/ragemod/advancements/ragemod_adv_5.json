@@ -58,7 +58,22 @@
       "ragemod:toxic_topped_rageium_ore_craft",
       "ragemod:toxic_topped_rageium_block_craft",
       "ragemod:toxic_topped_rageium_alloy_block_craft",
-      "ragemod:toxic_detonator_craft"
+      "ragemod:pat_potion_craft",
+      "ragemod:toxic_sword_craft_1",
+      "ragemod:toxic_sword_craft_2",
+      "ragemod:toxic_sword_craft_3",
+      "ragemod:toxic_sword_pickaxe_1",
+      "ragemod:toxic_sword_axe_1",
+      "ragemod:toxic_sword_axe_2",
+      "ragemod:toxic_sword_axe_3",
+      "ragemod:toxic_sword_axe_4",
+      "ragemod:toxic_sword_shovel_1",
+      "ragemod:toxic_sword_shovel_2",
+      "ragemod:toxic_sword_shovel_3",
+      "ragemod:toxic_sword_hoe_1",
+      "ragemod:toxic_sword_hoe_2",
+      "ragemod:toxic_sword_hoe_3",
+      "ragemod:toxic_sword_hoe_4"
     ]
   },
   "parent": "ragemod:ragemod_adv_4"

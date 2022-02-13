@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "ragemod:pat_potion"
+    },
+    "title": {
+      "translate": "advancements.ragemod_adv_10.title"
+    },
+    "description": {
+      "translate": "advancements.ragemod_adv_10.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ragemod_adv_10": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ragemod:rage_potion"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 4,
+    "recipes": [
+      "ragemod:pat_potion_craft"
+    ]
+  },
+  "parent": "ragemod:ragemod_adv_3"
+}

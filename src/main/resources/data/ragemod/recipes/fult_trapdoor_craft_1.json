@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:fult_ingot"
+    },
+    {
+      "item": "ragemod:fult_ingot"
+    },
+    {
+      "item": "ragemod:fult_ingot"
+    },
+    {
+      "item": "ragemod:fult_ingot"
+    }
+  ],
+  "result": {
+    "item": "ragemod:fult_trapdoor",
+    "count": 1
+  }
+}

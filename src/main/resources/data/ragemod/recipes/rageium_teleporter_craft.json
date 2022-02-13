@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:ender_eye"
+    },
+    "3": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "4": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "5": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "6": {
+      "item": "minecraft:obsidian"
+    },
+    "7": {
+      "item": "minecraft:obsidian"
+    },
+    "8": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "ragemod:teleporter",
+    "count": 1
+  }
+}

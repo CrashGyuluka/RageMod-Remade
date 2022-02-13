@@ -19,7 +19,6 @@ import net.mcreator.ragemod.item.ToxicSwordItem;
 import net.mcreator.ragemod.item.ToxicShovelItem;
 import net.mcreator.ragemod.item.ToxicPickaxeItem;
 import net.mcreator.ragemod.item.ToxicHoeItem;
-import net.mcreator.ragemod.item.ToxicDetonatorItem;
 import net.mcreator.ragemod.item.ToxicCrystalItem;
 import net.mcreator.ragemod.item.ToxicAxeItem;
 import net.mcreator.ragemod.item.ToxicArmorItem;
@@ -113,7 +112,6 @@ public class RagemodModItems {
 	public static final Item TOXIC_TOPPED_RAGEIUM_BLOCK = register(RagemodModBlocks.TOXIC_TOPPED_RAGEIUM_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item TOXIC_TOPPED_RAGEIUM_ALLOY_BLOCK = register(RagemodModBlocks.TOXIC_TOPPED_RAGEIUM_ALLOY_BLOCK,
 			RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_DETONATOR = register(new ToxicDetonatorItem());
 	public static final Item RAGE_FLOWER = register(RagemodModBlocks.RAGE_FLOWER, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item FIRE_RELIC = register(new FireRelicItem());
 	public static final Item WATER_RELIC = register(new WaterRelicItem());

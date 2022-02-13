@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "3 5",
+    "67 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "1": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "3": {
+      "item": "minecraft:string"
+    },
+    "5": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "6": {
+      "item": "minecraft:string"
+    },
+    "7": {
+      "item": "ragemod:rageium_alloy"
+    }
+  },
+  "result": {
+    "item": "ragemod:rageium_bow",
+    "count": 1
+  }
+}
