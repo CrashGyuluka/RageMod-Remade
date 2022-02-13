@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "ragepotion_animated",
+    "texture": "rageiumpotion_animated",
     "customModelName": "Normal",
     "name": "Rage Potion",
     "rarity": "COMMON",

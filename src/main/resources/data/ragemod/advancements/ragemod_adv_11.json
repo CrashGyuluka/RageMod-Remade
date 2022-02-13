@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "ragemod:rageium_bow"
+    },
+    "title": {
+      "translate": "advancements.ragemod_adv_11.title"
+    },
+    "description": {
+      "translate": "advancements.ragemod_adv_11.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ragemod_adv_11": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": [
+            "ragemod:rageium_bow"
+          ],
+          "durability": {
+            "min": 6968,
+            "max": 6968
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "ragemod:ragemod_adv_3"
+}

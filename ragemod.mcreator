@@ -3733,6 +3733,15 @@
       "locked_code": false,
       "registry_name": "ragemod_adv_10",
       "path": "~/advancements"
+    },
+    {
+      "name": "RagemodAdv11",
+      "type": "achievement",
+      "sortid": 383,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragemod_adv_11",
+      "path": "~/rageium things"
     }
   ],
   "variable_elements": [
@@ -3785,6 +3794,7 @@
       "block.ragemod.toxic_topped_ancient_debris": "Toxic Topped Ancient Debris",
       "item.ragemod.rage_mite_spawn_egg": "RageMite Spawn Egg",
       "block.ragemod.cerussite_ore": "Cerussite Ore",
+      "advancements.ragemod_adv_11.title": "Damaged Property",
       "item.ragemod.fult_ingot": "Fult Ingot",
       "block.ragemod.rageium_brick_button": "Rageium Brick Button",
       "block.ragemod.toxic_topped_basalt": "Toxic Topped Basalt",
@@ -3820,6 +3830,7 @@
       "item.ragemod.earth_relic": "Earth Relic",
       "block.ragemod.opal_ore": "Opal Ore",
       "item.ragemod.adularia": "Adularia",
+      "advancements.ragemod_adv_11.descr": "Use your Rageium Bow until it has only 1 durability left",
       "block.ragemod.calten_slab": "Calten Slab",
       "item.ragemod.raw_toxic_crystal": "Raw Toxic Crystal",
       "enchantment.ragemod.tosser_enchantment": "Tosser Enchantment",
