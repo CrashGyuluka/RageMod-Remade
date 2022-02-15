@@ -5,7 +5,7 @@
     "achievementName": "Dopping?",
     "achievementDescription": "Consume a Rage Potion",
     "achievementIcon": {
-      "value": "CUSTOM:PatPotion"
+      "value": "CUSTOM:RagePotion"
     },
     "background": "Default",
     "disableDisplay": false,

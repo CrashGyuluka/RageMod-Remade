@@ -23,8 +23,8 @@
             "ragemod:rageium_bow"
           ],
           "durability": {
-            "min": 6968,
-            "max": 6968
+            "min": 1,
+            "max": 2
           }
         }
       }

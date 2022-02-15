@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "ragemod:pat_potion"
+      "item": "ragemod:rage_potion"
     },
     "title": {
       "translate": "advancements.ragemod_adv_10.title"

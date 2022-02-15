@@ -3741,7 +3741,67 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_11",
-      "path": "~/rageium things"
+      "path": "~/advancements"
+    },
+    {
+      "name": "RagemodAdv12",
+      "type": "achievement",
+      "sortid": 384,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragemod_adv_12",
+      "path": "~/advancements"
+    },
+    {
+      "name": "RagemodAdv13",
+      "type": "achievement",
+      "sortid": 385,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragemod_adv_13",
+      "path": "~/advancements"
+    },
+    {
+      "name": "ToxicToppedBlocks",
+      "type": "tag",
+      "sortid": 386,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_topped_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "RagemodAdv13Proc",
+      "type": "procedure",
+      "sortid": 387,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragemod_adv_13_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/advancements/proc"
     }
   ],
   "variable_elements": [
@@ -3750,6 +3810,144 @@
       "type": "blockstate",
       "scope": "player_lifetime",
       "value": "Blocks.AIR.defaultBlockState()"
+    },
+    {
+      "name": "TTBCounter1",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter3",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter4",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter5",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter6",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter7",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter8",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter9",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter10",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter11",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter12",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter13",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter14",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter15",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter16",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter17",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter18",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter19",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter20",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter21",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter22",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TTBCounter23",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -3809,6 +4007,7 @@
       "block.ragemod.beech_trapdoor": "Beech Trapdoor",
       "block.ragemod.better_stripped_rage_wood_log": "Better Stripped RageWood Log",
       "gamerule.toxicGivesBadEffects": "ToxicGivesBadEffects",
+      "advancements.ragemod_adv_12.descr": "Place down a Floor Block",
       "item.ragemod.toxic_crystal": "Toxic Crystal",
       "block.ragemod.boom_stone": "Boom Stone",
       "advancements.rage_mod_advancement.title": "RageMod",
@@ -3845,6 +4044,7 @@
       "block.ragemod.toxic_topped_stone_bricks": "Toxic Topped Stone Bricks",
       "block.ragemod.calten": "Calten",
       "block.ragemod.rage_wood_block": "RageWood Block",
+      "advancements.ragemod_adv_13.descr": "Place down all of the Toxic Topped blocks",
       "advancements.ragemod_adv_9.descr": "Consume a Protection Against Toxic Potion",
       "block.ragemod.calten_wall": "Calten Wall",
       "block.ragemod.toxic_topped_obsidian": "Toxic Topped Obsidian",
@@ -3863,6 +4063,7 @@
       "block.ragemod.calten_bricks": "Calten Bricks",
       "block.ragemod.toxic_crystal_block": "Toxic Crystal Block",
       "advancements.ragemod_adv_2.title": "Don\u0027t Rage!",
+      "advancements.ragemod_adv_12.title": "Bob The Builder",
       "item.ragemod.actinolite": "Actinolite",
       "item.ragemod.azurite": "Azurite",
       "block.ragemod.rageium_block": "Rageium Block",
@@ -3923,6 +4124,7 @@
       "advancements.ragemod_adv_6.descr": "Mine a Fult block and collect it\u0027s drop",
       "gamerule.sendTeleporterFeedback.description": "Teleporter blocks will send you feedback about the actions you made",
       "block.ragemod.beech_sapling": "Beech Sapling",
+      "advancements.ragemod_adv_13.title": "All together, in one place.",
       "block.ragemod.toxic_topped_diorite": "Toxic Topped Diorite",
       "item.ragemod.rageium_armor_boots": "Rageium Boots",
       "item.ragemod.toxic_axe": "Toxic Axe",
