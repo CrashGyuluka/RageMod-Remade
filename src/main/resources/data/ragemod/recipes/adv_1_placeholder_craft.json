@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ragemod:rageium"
+    },
+    "1": {
+      "item": "ragemod:toxic_crystal"
+    },
+    "2": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "3": {
+      "item": "ragemod:raw_toxic_crystal"
+    },
+    "4": {
+      "item": "minecraft:written_book"
+    },
+    "5": {
+      "item": "ragemod:raw_toxic_crystal"
+    },
+    "6": {
+      "item": "ragemod:rageium_alloy"
+    },
+    "7": {
+      "item": "ragemod:toxic_crystal"
+    },
+    "8": {
+      "item": "ragemod:rageium"
+    }
+  },
+  "result": {
+    "item": "ragemod:advancement_one_icon",
+    "count": 1
+  }
+}

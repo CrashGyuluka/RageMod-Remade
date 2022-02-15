@@ -3802,6 +3802,75 @@
         ]
       },
       "path": "~/advancements/proc"
+    },
+    {
+      "name": "AdvBookEasterEgg",
+      "type": "gui",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_book_easter_egg",
+      "path": "~/advancements"
+    },
+    {
+      "name": "AdvBookEaProc",
+      "type": "procedure",
+      "sortid": 389,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_book_ea_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/advancements/proc"
+    },
+    {
+      "name": "AdvancementEasterEggIcon",
+      "type": "item",
+      "sortid": 390,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancement_easter_egg_icon",
+      "path": "~/advancements"
+    },
+    {
+      "name": "RagemodAdv14",
+      "type": "achievement",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragemod_adv_14",
+      "path": "~/advancements"
+    },
+    {
+      "name": "Adv1PlaceholderCraft",
+      "type": "recipe",
+      "sortid": 391,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_1_placeholder_craft",
+      "path": "~/advancements/craft"
     }
   ],
   "variable_elements": [
@@ -4096,6 +4165,7 @@
       "item.ragemod.toxic_pickaxe": "Toxic Pickaxe",
       "block.ragemod.toxic_topped_cobblestone": "Toxic Topped Cobblestone",
       "block.ragemod.toxic_topped_rageium_ore": "Toxic Topped Rageium Ore",
+      "advancements.ragemod_adv_14.title": "All of the questionmarks...",
       "block.ragemod.teleporter": "Teleporter",
       "item.ragemod.apophyllite": "Apophyllite",
       "item.ragemod.cerussite": "Cerussite",
@@ -4109,12 +4179,14 @@
       "block.ragemod.smooth_calten_stairs": "Smooth Calten Stairs",
       "block.ragemod.toxic_topped_granite": "Toxic Topped Granite",
       "entity.ragemod.atom_rager": "AtomRageR",
+      "item.ragemod.advancement_easter_egg_icon": "Advancement Easter Egg Icon",
       "block.ragemod.toxic_topped_red_sand": "Toxic Topped Red Sand",
       "item.ragemod.rageium_armor_helmet": "Rageium Helmet",
       "item.ragemod.atom_rager_spawn_egg": "AtomRageR Spawn Egg",
       "block.ragemod.toxic_topped_stone": "Toxic Topped Stone",
       "block.ragemod.bismuth_ore": "Bismuth Ore",
       "item.ragemod.rageium_arrow": "Rageium Arrow",
+      "advancements.ragemod_adv_14.descr": "Click the button on the first advancement\u0027s icon placeholder item\u0027s GUI",
       "advancements.ragemod_adv_4.title": "The Toxic Times",
       "block.ragemod.actinolite_ore": "Actinolite Ore",
       "block.ragemod.rage_wood_door": "RageWood Door",
@@ -4199,6 +4271,10 @@
         "children": [
           {
             "name": "proc",
+            "children": []
+          },
+          {
+            "name": "craft",
             "children": []
           }
         ]

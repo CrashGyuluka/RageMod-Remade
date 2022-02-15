@@ -1,0 +1,75 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 290,
+    "height": 168,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "WHA'?",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "WHA'?",
+          "x": 197,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "**** Gift = intant death :D",
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "name": "**** Gift = intant death :D",
+          "x": 207,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "The owning of this item is ILLEGAL",
+          "color": {
+            "value": -13434727,
+            "falpha": 0.0
+          },
+          "name": "The owning of this item is ILLEGAL",
+          "x": 121,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "By clicking this bu'on you will recieve a gift :D",
+          "onClick": {
+            "name": "AdvBookEaProc"
+          },
+          "width": 280,
+          "height": 20,
+          "name": "By clicking this bu'on you will recieve a gift :D",
+          "x": 73,
+          "y": 97
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

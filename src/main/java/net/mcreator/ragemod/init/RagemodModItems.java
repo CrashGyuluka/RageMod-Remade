@@ -43,6 +43,7 @@ import net.mcreator.ragemod.item.AnapaitItem;
 import net.mcreator.ragemod.item.AmazoniteItem;
 import net.mcreator.ragemod.item.AirRelicItem;
 import net.mcreator.ragemod.item.AdvancementOneIconItem;
+import net.mcreator.ragemod.item.AdvancementEasterEggIconItem;
 import net.mcreator.ragemod.item.AdulariaItem;
 import net.mcreator.ragemod.item.ActinoliteItem;
 import net.mcreator.ragemod.item.AchatItem;
@@ -196,6 +197,7 @@ public class RagemodModItems {
 	public static final Item FULT_TRAPDOOR = register(RagemodModBlocks.FULT_TRAPDOOR, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item ADVANCEMENT_ONE_ICON = register(new AdvancementOneIconItem());
 	public static final Item PAT_POTION = register(new PatPotionItem());
+	public static final Item ADVANCEMENT_EASTER_EGG_ICON = register(new AdvancementEasterEggIconItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

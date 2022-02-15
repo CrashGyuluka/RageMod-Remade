@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Rageium"
+      },
+      {
+        "value": "CUSTOM:ToxicCrystal"
+      },
+      {
+        "value": "CUSTOM:RageiumAlloy"
+      },
+      {
+        "value": "CUSTOM:RawToxicCrystal"
+      },
+      {
+        "value": "Items.WRITTEN_BOOK"
+      },
+      {
+        "value": "CUSTOM:RawToxicCrystal"
+      },
+      {
+        "value": "CUSTOM:RageiumAlloy"
+      },
+      {
+        "value": "CUSTOM:ToxicCrystal"
+      },
+      {
+        "value": "CUSTOM:Rageium"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AdvancementOneIcon"
+    },
+    "name": "adv_1_placeholder_craft",
+    "namespace": "mod"
+  }
+}
