@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ragemod:blocks/strippedrobtailog_top",
+    "up": "ragemod:blocks/strippedrobtailog_top",
+    "north": "ragemod:blocks/strippedrobtailog_side",
+    "east": "ragemod:blocks/strippedrobtailog_side",
+    "south": "ragemod:blocks/strippedrobtailog_side",
+    "west": "ragemod:blocks/strippedrobtailog_side",
+    "particle": "ragemod:blocks/strippedrobtailog_top"
+  }
+}

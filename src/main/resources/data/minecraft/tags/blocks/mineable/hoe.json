@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ragemod:rage_wood_leaves"
+    "ragemod:rage_wood_leaves",
+    "ragemod:robtai_leaves"
   ]
 }

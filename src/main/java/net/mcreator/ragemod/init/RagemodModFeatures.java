@@ -74,6 +74,32 @@ public class RagemodModFeatures {
 				ToxicCrystalOreFeature.GENERATE_BIOMES, ToxicCrystalOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(ToxicPlantFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
 				ToxicPlantFeature.GENERATE_BIOMES, ToxicPlantFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(ActinoliteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				ActinoliteOreFeature.GENERATE_BIOMES, ActinoliteOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(AchatOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AchatOreFeature.GENERATE_BIOMES,
+				AchatOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(AzuriteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AzuriteOreFeature.GENERATE_BIOMES,
+				AzuriteOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(AnapaitOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AnapaitOreFeature.GENERATE_BIOMES,
+				AnapaitOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(AdulariaOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				AdulariaOreFeature.GENERATE_BIOMES, AdulariaOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(AmazoniteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				AmazoniteOreFeature.GENERATE_BIOMES, AmazoniteOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(CerussiteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				CerussiteOreFeature.GENERATE_BIOMES, CerussiteOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(BismuthOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BismuthOreFeature.GENERATE_BIOMES,
+				BismuthOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(ApophylliteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				ApophylliteOreFeature.GENERATE_BIOMES, ApophylliteOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(OpalOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, OpalOreFeature.GENERATE_BIOMES,
+				OpalOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(FultFeature.FEATURE,
+				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, FultFeature.GENERATE_BIOMES, FultFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(CaltenFeature.FEATURE,
+				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CaltenFeature.GENERATE_BIOMES, CaltenFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(MossyCaltenFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				MossyCaltenFeature.GENERATE_BIOMES, MossyCaltenFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(ToxicToppedStoneFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
 				ToxicToppedStoneFeature.GENERATE_BIOMES, ToxicToppedStoneFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(ToxicToppedNetherrackFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
@@ -122,32 +148,6 @@ public class RagemodModFeatures {
 				ToxicToppedRageiumAlloyBlockFeature.GENERATE_BIOMES, ToxicToppedRageiumAlloyBlockFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(RageFlowerFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
 				RageFlowerFeature.GENERATE_BIOMES, RageFlowerFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(ActinoliteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				ActinoliteOreFeature.GENERATE_BIOMES, ActinoliteOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(AchatOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AchatOreFeature.GENERATE_BIOMES,
-				AchatOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(AzuriteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AzuriteOreFeature.GENERATE_BIOMES,
-				AzuriteOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(AmazoniteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				AmazoniteOreFeature.GENERATE_BIOMES, AmazoniteOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(CerussiteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				CerussiteOreFeature.GENERATE_BIOMES, CerussiteOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(BismuthOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BismuthOreFeature.GENERATE_BIOMES,
-				BismuthOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(ApophylliteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				ApophylliteOreFeature.GENERATE_BIOMES, ApophylliteOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(OpalOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, OpalOreFeature.GENERATE_BIOMES,
-				OpalOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(AnapaitOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AnapaitOreFeature.GENERATE_BIOMES,
-				AnapaitOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(AdulariaOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				AdulariaOreFeature.GENERATE_BIOMES, AdulariaOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(FultFeature.FEATURE,
-				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, FultFeature.GENERATE_BIOMES, FultFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(CaltenFeature.FEATURE,
-				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CaltenFeature.GENERATE_BIOMES, CaltenFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(MossyCaltenFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				MossyCaltenFeature.GENERATE_BIOMES, MossyCaltenFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
