@@ -13,7 +13,9 @@
     "announceToChat": true,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
-    "rewardRecipes": [],
+    "rewardRecipes": [
+      "Adv1PlaceholderCraft"
+    ],
     "rewardFunction": "No function",
     "rewardXP": 20,
     "achievementType": "challenge",

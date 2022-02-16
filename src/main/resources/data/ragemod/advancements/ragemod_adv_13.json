@@ -20,7 +20,10 @@
     }
   },
   "rewards": {
-    "experience": 20
+    "experience": 20,
+    "recipes": [
+      "ragemod:adv_1_placeholder_craft"
+    ]
   },
   "parent": "ragemod:ragemod_adv_5"
 }
