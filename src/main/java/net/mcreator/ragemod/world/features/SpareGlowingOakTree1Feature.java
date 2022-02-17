@@ -46,9 +46,9 @@ public class SpareGlowingOakTree1Feature extends Feature<NoneFeatureConfiguratio
 			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("ragemod", "a_glow_oak1"));
 		if (template == null)
 			return false;
-		if ((context.random().nextInt(1000000) + 1) <= 100000) {
+		if ((context.random().nextInt(1000000) + 1) <= 50000) {
 			boolean anyPlaced = false;
-			int count = context.random().nextInt(4) + 1;
+			int count = context.random().nextInt(3) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);

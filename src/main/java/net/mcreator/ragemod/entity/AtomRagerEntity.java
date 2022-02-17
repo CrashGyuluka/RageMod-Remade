@@ -13,7 +13,6 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -38,11 +37,17 @@ import net.mcreator.ragemod.init.RagemodModParticles;
 import net.mcreator.ragemod.init.RagemodModItems;
 import net.mcreator.ragemod.init.RagemodModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class AtomRagerEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("ragemod:toxic_waste"), new ResourceLocation("beach"),
+			new ResourceLocation("desert"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.ATOM_RAGER, 8, 1, 1));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.ATOM_RAGER, 8, 1, 1));
 	}
 
 	public AtomRagerEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
@@ -67,7 +72,7 @@ public class AtomRagerEntity extends Monster {
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, AtomRagerEntity.class, false, false));
 	}
 
 	@Override

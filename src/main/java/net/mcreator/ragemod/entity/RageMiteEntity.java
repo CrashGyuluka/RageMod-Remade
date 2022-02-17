@@ -45,13 +45,18 @@ import net.mcreator.ragemod.init.RagemodModParticles;
 import net.mcreator.ragemod.init.RagemodModItems;
 import net.mcreator.ragemod.init.RagemodModEntities;
 
+import java.util.Set;
 import java.util.List;
 
 @Mod.EventBusSubscriber
 public class RageMiteEntity extends TamableAnimal {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("ragemod:toxic_waste"), new ResourceLocation("beach"),
+			new ResourceLocation("desert"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.RAGE_MITE, 12, 1, 2));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.RAGE_MITE, 12, 1, 2));
 	}
 
 	public RageMiteEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
@@ -76,7 +81,7 @@ public class RageMiteEntity extends TamableAnimal {
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers(this.getClass()));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, AtomRagerEntity.class, false, false));
 	}
 
 	@Override
