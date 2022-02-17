@@ -13,6 +13,10 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.ragemod.world.biome.ToxicWasteBiome;
+import net.mcreator.ragemod.world.biome.SpareGlowingOakForestBiome;
+import net.mcreator.ragemod.world.biome.GlowingOakForestMountainBiome;
+import net.mcreator.ragemod.world.biome.GlowingOakForestBiome;
+import net.mcreator.ragemod.world.biome.GlowingOakFieldBiome;
 import net.mcreator.ragemod.RagemodMod;
 
 import java.util.List;
@@ -22,6 +26,10 @@ import java.util.ArrayList;
 public class RagemodModBiomes {
 	private static final List<Biome> REGISTRY = new ArrayList<>();
 	public static Biome TOXIC_WASTE = register("toxic_waste", ToxicWasteBiome.createBiome());
+	public static Biome GLOWING_OAK_FOREST = register("glowing_oak_forest", GlowingOakForestBiome.createBiome());
+	public static Biome SPARE_GLOWING_OAK_FOREST = register("spare_glowing_oak_forest", SpareGlowingOakForestBiome.createBiome());
+	public static Biome GLOWING_OAK_FIELD = register("glowing_oak_field", GlowingOakFieldBiome.createBiome());
+	public static Biome GLOWING_OAK_FOREST_MOUNTAIN = register("glowing_oak_forest_mountain", GlowingOakForestMountainBiome.createBiome());
 
 	private static Biome register(String registryname, Biome biome) {
 		REGISTRY.add(biome.setRegistryName(new ResourceLocation(RagemodMod.MODID, registryname)));
@@ -37,6 +45,10 @@ public class RagemodModBiomes {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			ToxicWasteBiome.init();
+			GlowingOakForestBiome.init();
+			SpareGlowingOakForestBiome.init();
+			GlowingOakFieldBiome.init();
+			GlowingOakForestMountainBiome.init();
 		});
 	}
 }

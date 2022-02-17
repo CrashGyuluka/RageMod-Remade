@@ -1,0 +1,130 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Spare Glowing Oak Forest",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "grassColor": {
+      "value": -4491214,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -12030430,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:RageParticle"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "FOREST",
+    "parent": {
+      "value": "CUSTOM:GlowingOakForest"
+    },
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.2,
+    "heightVariation": 0.4,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 5,
+    "biomeDictionaryTypes": [
+      "FOREST",
+      "PLAINS",
+      "OVERWORLD",
+      "SPARSE"
+    ],
+    "grassPerChunk": 7,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 9,
+    "mushroomsPerChunk": 1,
+    "bigMushroomsChunk": 1,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "plains",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "STANDARD",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "TaigaRocks",
+      "PlainsTallGrass",
+      "TaigaLargeFerns",
+      "MonsterRooms",
+      "Lakes"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityAnimal"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 15,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityFox"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 3,
+        "spawnType": "creature"
+      }
+    ]
+  }
+}

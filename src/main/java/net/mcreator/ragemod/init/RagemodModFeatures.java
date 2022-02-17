@@ -57,6 +57,21 @@ import net.mcreator.ragemod.world.features.ores.AmazoniteOreFeature;
 import net.mcreator.ragemod.world.features.ores.AdulariaOreFeature;
 import net.mcreator.ragemod.world.features.ores.ActinoliteOreFeature;
 import net.mcreator.ragemod.world.features.ores.AchatOreFeature;
+import net.mcreator.ragemod.world.features.SpareGlowingOakTree5Feature;
+import net.mcreator.ragemod.world.features.SpareGlowingOakTree4Feature;
+import net.mcreator.ragemod.world.features.SpareGlowingOakTree3Feature;
+import net.mcreator.ragemod.world.features.SpareGlowingOakTree2Feature;
+import net.mcreator.ragemod.world.features.SpareGlowingOakTree1Feature;
+import net.mcreator.ragemod.world.features.GlowingOakTree5Feature;
+import net.mcreator.ragemod.world.features.GlowingOakTree4Feature;
+import net.mcreator.ragemod.world.features.GlowingOakTree3Feature;
+import net.mcreator.ragemod.world.features.GlowingOakTree2Feature;
+import net.mcreator.ragemod.world.features.GlowingOakTree1Feature;
+import net.mcreator.ragemod.world.features.GlowingOakFieldTree5Feature;
+import net.mcreator.ragemod.world.features.GlowingOakFieldTree4Feature;
+import net.mcreator.ragemod.world.features.GlowingOakFieldTree3Feature;
+import net.mcreator.ragemod.world.features.GlowingOakFieldTree2Feature;
+import net.mcreator.ragemod.world.features.GlowingOakFieldTree1Feature;
 
 import java.util.Set;
 import java.util.Map;
@@ -148,6 +163,36 @@ public class RagemodModFeatures {
 				ToxicToppedRageiumAlloyBlockFeature.GENERATE_BIOMES, ToxicToppedRageiumAlloyBlockFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(RageFlowerFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
 				RageFlowerFeature.GENERATE_BIOMES, RageFlowerFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakTree1Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakTree1Feature.GENERATE_BIOMES, GlowingOakTree1Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakTree2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakTree2Feature.GENERATE_BIOMES, GlowingOakTree2Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakTree3Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakTree3Feature.GENERATE_BIOMES, GlowingOakTree3Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakTree4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakTree4Feature.GENERATE_BIOMES, GlowingOakTree4Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakTree5Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakTree5Feature.GENERATE_BIOMES, GlowingOakTree5Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(SpareGlowingOakTree1Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				SpareGlowingOakTree1Feature.GENERATE_BIOMES, SpareGlowingOakTree1Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(SpareGlowingOakTree2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				SpareGlowingOakTree2Feature.GENERATE_BIOMES, SpareGlowingOakTree2Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(SpareGlowingOakTree3Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				SpareGlowingOakTree3Feature.GENERATE_BIOMES, SpareGlowingOakTree3Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(SpareGlowingOakTree4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				SpareGlowingOakTree4Feature.GENERATE_BIOMES, SpareGlowingOakTree4Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(SpareGlowingOakTree5Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				SpareGlowingOakTree5Feature.GENERATE_BIOMES, SpareGlowingOakTree5Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakFieldTree1Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakFieldTree1Feature.GENERATE_BIOMES, GlowingOakFieldTree1Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakFieldTree2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakFieldTree2Feature.GENERATE_BIOMES, GlowingOakFieldTree2Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakFieldTree3Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakFieldTree3Feature.GENERATE_BIOMES, GlowingOakFieldTree3Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakFieldTree4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakFieldTree4Feature.GENERATE_BIOMES, GlowingOakFieldTree4Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingOakFieldTree5Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingOakFieldTree5Feature.GENERATE_BIOMES, GlowingOakFieldTree5Feature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

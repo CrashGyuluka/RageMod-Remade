@@ -211,6 +211,10 @@ public class RagemodModItems {
 	public static final Item AIR_RELIC = register(new AirRelicItem());
 	public static final Item ADVANCEMENT_ONE_ICON = register(new AdvancementOneIconItem());
 	public static final Item ADVANCEMENT_EASTER_EGG_ICON = register(new AdvancementEasterEggIconItem());
+	public static final Item YELLOW_GLOWING_OAK_LEAVES = register(RagemodModBlocks.YELLOW_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item BROWN_GLOWING_OAK_LEAVES = register(RagemodModBlocks.BROWN_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item RED_GLOWING_OAK_LEAVES = register(RagemodModBlocks.RED_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item GREEN_GLOWING_OAK_LEAVES = register(RagemodModBlocks.GREEN_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

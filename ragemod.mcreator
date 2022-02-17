@@ -34,7 +34,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rage_particle",
-      "path": "~/particles"
+      "path": "~/rageium things"
     },
     {
       "name": "RageiumOre",
@@ -509,7 +509,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "toxic_particle",
-      "path": "~/particles"
+      "path": "~/toxic things"
     },
     {
       "name": "ToxicCrystalBlock",
@@ -3988,6 +3988,255 @@
       "locked_code": false,
       "registry_name": "robtai_leaves",
       "path": "~/wood/robtai"
+    },
+    {
+      "name": "BlueCaveParticle",
+      "type": "particle",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_cave_particle",
+      "path": "~/cave biomes/blue"
+    },
+    {
+      "name": "YellowGlowingOakLeaves",
+      "type": "block",
+      "sortid": 389,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_oak_leaves",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "BrownGlowingOakLeaves",
+      "type": "block",
+      "sortid": 390,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_glowing_oak_leaves",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "RedGlowingOakLeaves",
+      "type": "block",
+      "sortid": 391,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_glowing_oak_leaves",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "GreenGlowingOakLeaves",
+      "type": "block",
+      "sortid": 392,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_glowing_oak_leaves",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "GlowingLeavesBreakProc",
+      "type": "procedure",
+      "sortid": 393,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_leaves_break_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "GlowingOakForest",
+      "type": "biome",
+      "sortid": 394,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_forest",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "GlowingOakTree1",
+      "type": "structure",
+      "sortid": 395,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_tree_1",
+      "path": "~/wood/glowing/structure/normal"
+    },
+    {
+      "name": "GlowingOakTree2",
+      "type": "structure",
+      "sortid": 396,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_tree_2",
+      "path": "~/wood/glowing/structure/normal"
+    },
+    {
+      "name": "GlowingOakTree3",
+      "type": "structure",
+      "sortid": 397,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_tree_3",
+      "path": "~/wood/glowing/structure/normal"
+    },
+    {
+      "name": "GlowingOakTree4",
+      "type": "structure",
+      "sortid": 398,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_tree_4",
+      "path": "~/wood/glowing/structure/normal"
+    },
+    {
+      "name": "GlowingOakTree5",
+      "type": "structure",
+      "sortid": 399,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_tree_5",
+      "path": "~/wood/glowing/structure/normal"
+    },
+    {
+      "name": "SpareGlowingOakForest",
+      "type": "biome",
+      "sortid": 400,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spare_glowing_oak_forest",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "SpareGlowingOakTree1",
+      "type": "structure",
+      "sortid": 401,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spare_glowing_oak_tree_1",
+      "path": "~/wood/glowing/structure/spare"
+    },
+    {
+      "name": "SpareGlowingOakTree2",
+      "type": "structure",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spare_glowing_oak_tree_2",
+      "path": "~/wood/glowing/structure/spare"
+    },
+    {
+      "name": "SpareGlowingOakTree3",
+      "type": "structure",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spare_glowing_oak_tree_3",
+      "path": "~/wood/glowing/structure/spare"
+    },
+    {
+      "name": "SpareGlowingOakTree4",
+      "type": "structure",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spare_glowing_oak_tree_4",
+      "path": "~/wood/glowing/structure/spare"
+    },
+    {
+      "name": "SpareGlowingOakTree5",
+      "type": "structure",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spare_glowing_oak_tree_5",
+      "path": "~/wood/glowing/structure/spare"
+    },
+    {
+      "name": "GlowingOakField",
+      "type": "biome",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_field",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "GlowingOakFieldTree1",
+      "type": "structure",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_field_tree_1",
+      "path": "~/wood/glowing/structure/field"
+    },
+    {
+      "name": "GlowingOakFieldTree2",
+      "type": "structure",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_field_tree_2",
+      "path": "~/wood/glowing/structure/field"
+    },
+    {
+      "name": "GlowingOakFieldTree3",
+      "type": "structure",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_field_tree_3",
+      "path": "~/wood/glowing/structure/field"
+    },
+    {
+      "name": "GlowingOakFieldTree4",
+      "type": "structure",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_field_tree_4",
+      "path": "~/wood/glowing/structure/field"
+    },
+    {
+      "name": "GlowingOakFieldTree5",
+      "type": "structure",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_field_tree_5",
+      "path": "~/wood/glowing/structure/field"
+    },
+    {
+      "name": "GlowingOakForestMountain",
+      "type": "biome",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_forest_mountain",
+      "path": "~/wood/glowing"
     }
   ],
   "variable_elements": [
@@ -4147,6 +4396,7 @@
       "block.ragemod.toxic_topped_blackstone": "Toxic Topped Blackstone",
       "block.ragemod.robtai_block": "Robtai Block",
       "block.ragemod.smooth_calten_slab": "Smooth Calten Slab",
+      "block.ragemod.brown_glowing_oak_leaves": "Brown Glowing Oak Leaves",
       "block.ragemod.rage_flower": "Rage Flower",
       "block.ragemod.toxic_topped_bone_block": "Toxic Topped Bone Block",
       "block.ragemod.toxic_plant": "Toxic Plant",
@@ -4166,8 +4416,8 @@
       "item.ragemod.rage_mite_spawn_egg": "RageMite Spawn Egg",
       "block.ragemod.cerussite_ore": "Cerussite Ore",
       "advancements.ragemod_adv_11.title": "Damaged Property",
-      "item.ragemod.fult_ingot": "Fult Ingot",
       "block.ragemod.robtai_planks": "Robtai Planks",
+      "item.ragemod.fult_ingot": "Fult Ingot",
       "item.ragemod.toxic_shovel": "Toxic Shovel",
       "item.ragemod.rageium_armor_chestplate": "Rageium Body",
       "item.ragemod.fult_scrap": "Fult Scrap",
@@ -4207,7 +4457,10 @@
       "block.ragemod.smooth_calten_wall": "Smooth Calten Wall",
       "item.ragemod.rageium": "Rageium",
       "item.ragemod.toxic_sword": "Toxic Sword",
+      "biome.ragemod.glowing_oak_forest": "Glowing Oak Forest",
       "block.ragemod.robtai_fence_gate": "Robtai Fence Gate",
+      "biome.ragemod.spare_glowing_oak_forest": "Spare Glowing Oak Forest",
+      "biome.ragemod.glowing_oak_field": "Glowing Oak Field",
       "block.ragemod.beech_fence": "Beech Fence",
       "advancements.ragemod_adv_4.descr": "Have a Raw Toxic Crystal in your inventory",
       "block.ragemod.calten_bricks_stairs": "Calten Bricks Stairs",
@@ -4227,8 +4480,8 @@
       "block.ragemod.stripped_rage_wood_log": "Stripped RageWood Log",
       "advancements.rage_mod_advancement.descr": "Just open a world with RageMod ",
       "block.ragemod.beech_leaves": "Beech Leaves",
-      "entity.ragemod.atom_rager": "AtomRageR",
       "item.ragemod.advancement_easter_egg_icon": "Advancement Easter Egg Icon",
+      "entity.ragemod.atom_rager": "AtomRageR",
       "block.ragemod.toxic_topped_red_sand": "Toxic Topped Red Sand",
       "item.ragemod.rageium_armor_helmet": "Rageium Helmet",
       "item.ragemod.atom_rager_spawn_egg": "AtomRageR Spawn Egg",
@@ -4244,12 +4497,14 @@
       "block.ragemod.beech_sapling": "Beech Sapling",
       "item.ragemod.rageium_armor_boots": "Rageium Boots",
       "item.ragemod.toxic_axe": "Toxic Axe",
+      "block.ragemod.green_glowing_oak_leaves": "Green Glowing Oak Leaves",
       "block.ragemod.beech_block": "Beech Block",
       "block.ragemod.toxic_topped_oak_log": "Toxic Topped Log",
       "block.ragemod.rage_wood_planks": "RageWood Planks",
       "block.ragemod.adularia_ore": "Adularia Ore",
       "block.ragemod.toxic_topped_bricks": "Toxic Topped Bricks",
       "advancements.ragemod_adv_5.descr": "Have a Toxic Crystal in your inventory",
+      "block.ragemod.yellow_glowing_oak_leaves": "Yellow Glowing Oak Leaves",
       "advancements.ragemod_adv_6.title": "Fantastic Fult!",
       "block.ragemod.floor_block": "Floor Block",
       "block.ragemod.rage_wood_fence_gate": "RageWood Fence Gate",
@@ -4264,6 +4519,7 @@
       "block.ragemod.rageium_brick_button": "Rageium Brick Button",
       "block.ragemod.toxic_topped_basalt": "Toxic Topped Basalt",
       "block.ragemod.robtai_leaves": "Robtai Leaves",
+      "biome.ragemod.glowing_oak_forest_mountain": "Glowing Oak Forest Mountain",
       "block.ragemod.toxic_topped_rageium_block": "Toxic Topped Rageium Block",
       "advancements.ragemod_adv_7.title": "Scrap to Ingot",
       "block.ragemod.beech_log": "Beech Log",
@@ -4291,6 +4547,7 @@
       "block.ragemod.toxic_topped_obsidian": "Toxic Topped Obsidian",
       "advancements.ragemod_adv_5.title": "Better when cooked",
       "block.ragemod.toxic_topped_oak_planks": "Toxic Topped Planks",
+      "block.ragemod.red_glowing_oak_leaves": "Red Glowing Oak Leaves",
       "item.ragemod.toxic_armor_helmet": "Toxic Helmet",
       "block.ragemod.rage_wood_stairs": "RageWood Stairs",
       "block.ragemod.rageium_brick_stairs": "Rageium Brick Stairs",
@@ -4367,10 +4624,6 @@
         ]
       },
       {
-        "name": "particles",
-        "children": []
-      },
-      {
         "name": "enchantments",
         "children": [
           {
@@ -4411,10 +4664,6 @@
       },
       {
         "name": "tags",
-        "children": []
-      },
-      {
-        "name": "loottables",
         "children": []
       },
       {
@@ -4467,6 +4716,32 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "glowing",
+            "children": [
+              {
+                "name": "proc",
+                "children": []
+              },
+              {
+                "name": "structure",
+                "children": [
+                  {
+                    "name": "normal",
+                    "children": []
+                  },
+                  {
+                    "name": "spare",
+                    "children": []
+                  },
+                  {
+                    "name": "field",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -4511,7 +4786,24 @@
       },
       {
         "name": "cave biomes",
-        "children": []
+        "children": [
+          {
+            "name": "blue",
+            "children": []
+          },
+          {
+            "name": "red",
+            "children": []
+          },
+          {
+            "name": "yellow",
+            "children": []
+          },
+          {
+            "name": "magenta",
+            "children": []
+          }
+        ]
       },
       {
         "name": "other",

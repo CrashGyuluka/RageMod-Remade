@@ -18,6 +18,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.ragemod.client.particle.ToxicParticleParticle;
 import net.mcreator.ragemod.client.particle.RageParticleParticle;
+import net.mcreator.ragemod.client.particle.BlueCaveParticleParticle;
 
 import java.util.function.Function;
 import java.util.Map;
@@ -30,6 +31,8 @@ public class RagemodModParticles {
 			RageParticleParticle::provider);
 	public static final SimpleParticleType TOXIC_PARTICLE = register(new SimpleParticleType(false).setRegistryName("toxic_particle"),
 			ToxicParticleParticle::provider);
+	public static final SimpleParticleType BLUE_CAVE_PARTICLE = register(new SimpleParticleType(false).setRegistryName("blue_cave_particle"),
+			BlueCaveParticleParticle::provider);
 
 	private static SimpleParticleType register(ParticleType<?> particle, Function<SpriteSet, ParticleProvider<SimpleParticleType>> provider) {
 		REGISTRY.put(particle, provider);

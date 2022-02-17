@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.ragemod.block.YellowGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.ToxicToppedStoneBricksBlock;
 import net.mcreator.ragemod.block.ToxicToppedStoneBlock;
 import net.mcreator.ragemod.block.ToxicToppedSandBlock;
@@ -60,6 +61,7 @@ import net.mcreator.ragemod.block.RobtaiFenceGateBlock;
 import net.mcreator.ragemod.block.RobtaiFenceBlock;
 import net.mcreator.ragemod.block.RobtaiDoorBlock;
 import net.mcreator.ragemod.block.RobtaiBlockBlock;
+import net.mcreator.ragemod.block.RedGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.RawToxicCrystalBlockBlock;
 import net.mcreator.ragemod.block.RageiumOreBlock;
 import net.mcreator.ragemod.block.RageiumBricksBlock;
@@ -87,6 +89,7 @@ import net.mcreator.ragemod.block.MossyCaltenWallBlock;
 import net.mcreator.ragemod.block.MossyCaltenStairsBlock;
 import net.mcreator.ragemod.block.MossyCaltenSlabBlock;
 import net.mcreator.ragemod.block.MossyCaltenBlock;
+import net.mcreator.ragemod.block.GreenGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.FultTrapdoorBlock;
 import net.mcreator.ragemod.block.FultBlock;
 import net.mcreator.ragemod.block.FultBarsBlock;
@@ -100,6 +103,7 @@ import net.mcreator.ragemod.block.CaltenBricksStairsBlock;
 import net.mcreator.ragemod.block.CaltenBricksSlabBlock;
 import net.mcreator.ragemod.block.CaltenBricksBlock;
 import net.mcreator.ragemod.block.CaltenBlock;
+import net.mcreator.ragemod.block.BrownGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.BoomStoneBlock;
 import net.mcreator.ragemod.block.BismuthOreBlock;
 import net.mcreator.ragemod.block.BetterStrippedRageWoodLogBlock;
@@ -239,6 +243,10 @@ public class RagemodModBlocks {
 	public static final Block TOXIC_TOPPED_RAGEIUM_ALLOY_BLOCK = register(new ToxicToppedRageiumAlloyBlockBlock());
 	public static final Block FLOOR_BLOCK = register(new FloorBlockBlock());
 	public static final Block RAGE_FLOWER = register(new RageFlowerBlock());
+	public static final Block YELLOW_GLOWING_OAK_LEAVES = register(new YellowGlowingOakLeavesBlock());
+	public static final Block BROWN_GLOWING_OAK_LEAVES = register(new BrownGlowingOakLeavesBlock());
+	public static final Block RED_GLOWING_OAK_LEAVES = register(new RedGlowingOakLeavesBlock());
+	public static final Block GREEN_GLOWING_OAK_LEAVES = register(new GreenGlowingOakLeavesBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
