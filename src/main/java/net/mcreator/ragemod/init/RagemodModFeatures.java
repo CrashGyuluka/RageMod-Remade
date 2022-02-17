@@ -72,6 +72,18 @@ import net.mcreator.ragemod.world.features.GlowingOakFieldTree4Feature;
 import net.mcreator.ragemod.world.features.GlowingOakFieldTree3Feature;
 import net.mcreator.ragemod.world.features.GlowingOakFieldTree2Feature;
 import net.mcreator.ragemod.world.features.GlowingOakFieldTree1Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesFlower8Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesFlower7Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesFlower6Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesFlower5Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesFlower4Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesFlower3Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesFlower2Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesFlower1Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesBush4Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesBush3Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesBush2Feature;
+import net.mcreator.ragemod.world.features.GlowingBiomesBush1Feature;
 
 import java.util.Set;
 import java.util.Map;
@@ -193,6 +205,30 @@ public class RagemodModFeatures {
 				GlowingOakFieldTree4Feature.GENERATE_BIOMES, GlowingOakFieldTree4Feature.CONFIGURED_FEATURE));
 		REGISTRY.put(GlowingOakFieldTree5Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				GlowingOakFieldTree5Feature.GENERATE_BIOMES, GlowingOakFieldTree5Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesFlower1Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesFlower1Feature.GENERATE_BIOMES, GlowingBiomesFlower1Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesFlower2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesFlower2Feature.GENERATE_BIOMES, GlowingBiomesFlower2Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesFlower3Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesFlower3Feature.GENERATE_BIOMES, GlowingBiomesFlower3Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesFlower4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesFlower4Feature.GENERATE_BIOMES, GlowingBiomesFlower4Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesFlower5Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesFlower5Feature.GENERATE_BIOMES, GlowingBiomesFlower5Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesFlower6Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesFlower6Feature.GENERATE_BIOMES, GlowingBiomesFlower6Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesFlower7Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesFlower7Feature.GENERATE_BIOMES, GlowingBiomesFlower7Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesFlower8Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesFlower8Feature.GENERATE_BIOMES, GlowingBiomesFlower8Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesBush1Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesBush1Feature.GENERATE_BIOMES, GlowingBiomesBush1Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesBush2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesBush2Feature.GENERATE_BIOMES, GlowingBiomesBush2Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesBush3Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesBush3Feature.GENERATE_BIOMES, GlowingBiomesBush3Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingBiomesBush4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingBiomesBush4Feature.GENERATE_BIOMES, GlowingBiomesBush4Feature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

@@ -1,0 +1,35 @@
+{
+  "_fv": 24,
+  "_type": "structure",
+  "definition": {
+    "structure": "gof_orange_tulip",
+    "randomlyRotateStructure": false,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 300000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 6,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 1,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:GlowingOakField"
+      },
+      {
+        "value": "CUSTOM:GlowingOakForest"
+      },
+      {
+        "value": "CUSTOM:GlowingOakForestMountain"
+      },
+      {
+        "value": "CUSTOM:SpareGlowingOakForest"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

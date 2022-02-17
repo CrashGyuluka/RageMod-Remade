@@ -4237,6 +4237,225 @@
       "locked_code": false,
       "registry_name": "glowing_oak_forest_mountain",
       "path": "~/wood/glowing"
+    },
+    {
+      "name": "GlowingBiomesFlower1",
+      "type": "structure",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_flower_1",
+      "path": "~/wood/glowing/structure/foliage"
+    },
+    {
+      "name": "GlowingBiomesFlower2",
+      "type": "structure",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_flower_2",
+      "path": "~/wood/glowing/structure/foliage"
+    },
+    {
+      "name": "GlowingBiomesFlower3",
+      "type": "structure",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_flower_3",
+      "path": "~/wood/glowing/structure/foliage"
+    },
+    {
+      "name": "GlowingBiomesFlower4",
+      "type": "structure",
+      "sortid": 416,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_flower_4",
+      "path": "~/wood/glowing/structure/foliage"
+    },
+    {
+      "name": "GlowingBiomesFlower5",
+      "type": "structure",
+      "sortid": 417,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_flower_5",
+      "path": "~/wood/glowing/structure/foliage"
+    },
+    {
+      "name": "GlowingBiomesFlower6",
+      "type": "structure",
+      "sortid": 418,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_flower_6",
+      "path": "~/wood/glowing/structure/foliage"
+    },
+    {
+      "name": "GlowingBiomesFlower7",
+      "type": "structure",
+      "sortid": 419,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_flower_7",
+      "path": "~/wood/glowing/structure/foliage"
+    },
+    {
+      "name": "GlowingBiomesFlower8",
+      "type": "structure",
+      "sortid": 420,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_flower_8",
+      "path": "~/wood/glowing/structure/foliage"
+    },
+    {
+      "name": "GlowingBiomesBush1",
+      "type": "structure",
+      "sortid": 421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_bush_1",
+      "path": "~/wood/glowing/structure/bush"
+    },
+    {
+      "name": "GlowingBiomesBush2",
+      "type": "structure",
+      "sortid": 422,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_bush_2",
+      "path": "~/wood/glowing/structure/bush"
+    },
+    {
+      "name": "GlowingBiomesBush3",
+      "type": "structure",
+      "sortid": 423,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_bush_3",
+      "path": "~/wood/glowing/structure/bush"
+    },
+    {
+      "name": "GlowingBiomesBush4",
+      "type": "structure",
+      "sortid": 424,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biomes_bush_4",
+      "path": "~/wood/glowing/structure/bush"
+    },
+    {
+      "name": "YellowGlowingOakTreeSapling",
+      "type": "plant",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_oak_tree_sapling",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "BrownGlowingOakTreeSapling",
+      "type": "plant",
+      "sortid": 426,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_glowing_oak_tree_sapling",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "RedGlowingOakTreeSapling",
+      "type": "plant",
+      "sortid": 427,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_glowing_oak_tree_sapling",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "GreenGlowingOakTreeSapling",
+      "type": "plant",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_glowing_oak_tree_sapling",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "YellowGlowingOakTreeSaplingPlantRightClicked",
+      "type": "procedure",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_oak_tree_sapling_plant_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "RagemodAdv15",
+      "type": "achievement",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragemod_adv_15",
+      "path": "~/advancements"
+    },
+    {
+      "name": "GlowingBiomeAdvancement",
+      "type": "procedure",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_biome_advancement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/advancements/proc"
     }
   ],
   "variable_elements": [
@@ -4425,6 +4644,7 @@
       "block.ragemod.better_stripped_rage_wood_log": "Better Stripped RageWood Log",
       "gamerule.toxicGivesBadEffects": "ToxicGivesBadEffects",
       "item.ragemod.toxic_crystal": "Toxic Crystal",
+      "block.ragemod.brown_glowing_oak_tree_sapling": "Brown Glowing Oak Tree Sapling",
       "block.ragemod.boom_stone": "Boom Stone",
       "block.ragemod.toxic_topped_netherrack": "Toxic Topped Netherrack",
       "block.ragemod.fult_trapdoor": "Fult Trapdoor",
@@ -4478,6 +4698,7 @@
       "block.ragemod.calten_bricks_slab": "Calten Bricks Slab",
       "block.ragemod.rageium_ore": "Rageium Ore",
       "block.ragemod.stripped_rage_wood_log": "Stripped RageWood Log",
+      "advancements.ragemod_adv_15.descr": "Use Bone Meal in a Glowing Oak Biome",
       "advancements.rage_mod_advancement.descr": "Just open a world with RageMod ",
       "block.ragemod.beech_leaves": "Beech Leaves",
       "item.ragemod.advancement_easter_egg_icon": "Advancement Easter Egg Icon",
@@ -4498,12 +4719,14 @@
       "item.ragemod.rageium_armor_boots": "Rageium Boots",
       "item.ragemod.toxic_axe": "Toxic Axe",
       "block.ragemod.green_glowing_oak_leaves": "Green Glowing Oak Leaves",
+      "block.ragemod.green_glowing_oak_tree_sapling": "Green Glowing Oak Tree Sapling",
       "block.ragemod.beech_block": "Beech Block",
       "block.ragemod.toxic_topped_oak_log": "Toxic Topped Log",
       "block.ragemod.rage_wood_planks": "RageWood Planks",
       "block.ragemod.adularia_ore": "Adularia Ore",
       "block.ragemod.toxic_topped_bricks": "Toxic Topped Bricks",
       "advancements.ragemod_adv_5.descr": "Have a Toxic Crystal in your inventory",
+      "block.ragemod.yellow_glowing_oak_tree_sapling": "Yellow Glowing Oak Tree Sapling",
       "block.ragemod.yellow_glowing_oak_leaves": "Yellow Glowing Oak Leaves",
       "advancements.ragemod_adv_6.title": "Fantastic Fult!",
       "block.ragemod.floor_block": "Floor Block",
@@ -4544,6 +4767,7 @@
       "block.ragemod.rage_wood_log": "RageWood Log",
       "block.ragemod.rageium_brick_wall": "Rageium Brick Wall",
       "block.ragemod.toxic_topped_sand": "Toxic Topped Sand",
+      "block.ragemod.red_glowing_oak_tree_sapling": "Red Glowing Oak Tree Sapling",
       "block.ragemod.toxic_topped_obsidian": "Toxic Topped Obsidian",
       "advancements.ragemod_adv_5.title": "Better when cooked",
       "block.ragemod.toxic_topped_oak_planks": "Toxic Topped Planks",
@@ -4561,6 +4785,7 @@
       "block.ragemod.robtai_door": "Robtai Door",
       "item.ragemod.rageium_alloy": "Rageium Alloy",
       "block.ragemod.stripped_rage_wood_block": "Stripped RageWood Block",
+      "advancements.ragemod_adv_15.title": "The power of Bone Meal",
       "block.ragemod.rageium_bricks": "Rageium Bricks",
       "block.ragemod.mossy_calten_slab": "Mossy Calten Slab",
       "block.ragemod.calten_stairs": "Calten Stairs",
@@ -4737,6 +4962,14 @@
                   },
                   {
                     "name": "field",
+                    "children": []
+                  },
+                  {
+                    "name": "foliage",
+                    "children": []
+                  },
+                  {
+                    "name": "bush",
                     "children": []
                   }
                 ]

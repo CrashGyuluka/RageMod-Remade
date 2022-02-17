@@ -60,7 +60,7 @@ public class GlowingOakForestBiome {
 								.decorated(FeatureDecorator.COUNT_NOISE.configured(new NoiseDependantDecoratorConfiguration(-0.8D, 5, 11)))));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				register("flower", Feature.FLOWER.configured(Features.Configs.DEFAULT_FLOWER_CONFIG).decorated(Features.Decorators.ADD_32)
-						.decorated(Features.Decorators.HEIGHTMAP_SQUARE).count(12)));
+						.decorated(Features.Decorators.HEIGHTMAP_SQUARE).count(15)));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				register("brown_mushroom",
 						Feature.RANDOM_PATCH.configured((new RandomPatchConfiguration.GrassConfigurationBuilder(

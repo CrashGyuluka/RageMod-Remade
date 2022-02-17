@@ -16,7 +16,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.ragemod.init.RagemodModItems;
 import net.mcreator.ragemod.init.RagemodModBlocks;
 
 import javax.annotation.Nullable;
@@ -49,7 +48,7 @@ public class GlowingLeavesBreakProcProcedure {
 				}
 			} else if (Math.random() < 0.02) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModItems.ADVANCEMENT_EASTER_EGG_ICON));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -69,7 +68,7 @@ public class GlowingLeavesBreakProcProcedure {
 					}
 				} else if (Math.random() < 0.02) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModItems.ADVANCEMENT_EASTER_EGG_ICON));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -89,7 +88,7 @@ public class GlowingLeavesBreakProcProcedure {
 						}
 					} else if (Math.random() < 0.02) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModItems.ADVANCEMENT_EASTER_EGG_ICON));
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
@@ -110,7 +109,7 @@ public class GlowingLeavesBreakProcProcedure {
 						} else if (Math.random() < 0.02) {
 							if (world instanceof Level _level && !_level.isClientSide()) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-										new ItemStack(RagemodModItems.ADVANCEMENT_EASTER_EGG_ICON));
+										new ItemStack(RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING));
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}

@@ -215,6 +215,13 @@ public class RagemodModItems {
 	public static final Item BROWN_GLOWING_OAK_LEAVES = register(RagemodModBlocks.BROWN_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item RED_GLOWING_OAK_LEAVES = register(RagemodModBlocks.RED_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item GREEN_GLOWING_OAK_LEAVES = register(RagemodModBlocks.GREEN_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item YELLOW_GLOWING_OAK_TREE_SAPLING = register(RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING,
+			CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BROWN_GLOWING_OAK_TREE_SAPLING = register(RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING,
+			CreativeModeTab.TAB_DECORATIONS);
+	public static final Item RED_GLOWING_OAK_TREE_SAPLING = register(RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item GREEN_GLOWING_OAK_TREE_SAPLING = register(RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING,
+			CreativeModeTab.TAB_DECORATIONS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

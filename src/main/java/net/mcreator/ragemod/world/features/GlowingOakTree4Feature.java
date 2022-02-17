@@ -49,7 +49,7 @@ public class GlowingOakTree4Feature extends Feature<NoneFeatureConfiguration> {
 			return false;
 		if ((context.random().nextInt(1000000) + 1) <= 400000) {
 			boolean anyPlaced = false;
-			int count = context.random().nextInt(5) + 1;
+			int count = context.random().nextInt(5) + 3;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);

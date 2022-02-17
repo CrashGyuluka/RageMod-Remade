@@ -54,7 +54,7 @@
     ],
     "grassPerChunk": 11,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 12,
+    "flowersPerChunk": 15,
     "mushroomsPerChunk": 1,
     "bigMushroomsChunk": 1,
     "sandPatchesPerChunk": 0,
