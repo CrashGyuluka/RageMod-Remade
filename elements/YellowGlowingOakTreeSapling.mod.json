@@ -33,7 +33,7 @@
     "name": "Yellow Glowing Oak Tree Sapling",
     "specialInfo": [],
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:RagemodTab"
     },
     "hardness": 0.0,
     "resistance": 0.0,
