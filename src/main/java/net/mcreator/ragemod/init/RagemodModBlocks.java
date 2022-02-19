@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.ragemod.block.YellowGlowingVineBlock;
 import net.mcreator.ragemod.block.YellowGlowingOakTreeSaplingBlock;
 import net.mcreator.ragemod.block.YellowGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.ToxicToppedStoneBricksBlock;
@@ -62,6 +63,7 @@ import net.mcreator.ragemod.block.RobtaiFenceGateBlock;
 import net.mcreator.ragemod.block.RobtaiFenceBlock;
 import net.mcreator.ragemod.block.RobtaiDoorBlock;
 import net.mcreator.ragemod.block.RobtaiBlockBlock;
+import net.mcreator.ragemod.block.RedGlowingVineBlock;
 import net.mcreator.ragemod.block.RedGlowingOakTreeSaplingBlock;
 import net.mcreator.ragemod.block.RedGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.RawToxicCrystalBlockBlock;
@@ -91,8 +93,10 @@ import net.mcreator.ragemod.block.MossyCaltenWallBlock;
 import net.mcreator.ragemod.block.MossyCaltenStairsBlock;
 import net.mcreator.ragemod.block.MossyCaltenSlabBlock;
 import net.mcreator.ragemod.block.MossyCaltenBlock;
+import net.mcreator.ragemod.block.GreenGlowingVineBlock;
 import net.mcreator.ragemod.block.GreenGlowingOakTreeSaplingBlock;
 import net.mcreator.ragemod.block.GreenGlowingOakLeavesBlock;
+import net.mcreator.ragemod.block.GlowingVinesAirBlock;
 import net.mcreator.ragemod.block.FultTrapdoorBlock;
 import net.mcreator.ragemod.block.FultBlock;
 import net.mcreator.ragemod.block.FultBarsBlock;
@@ -106,6 +110,7 @@ import net.mcreator.ragemod.block.CaltenBricksStairsBlock;
 import net.mcreator.ragemod.block.CaltenBricksSlabBlock;
 import net.mcreator.ragemod.block.CaltenBricksBlock;
 import net.mcreator.ragemod.block.CaltenBlock;
+import net.mcreator.ragemod.block.BrownGlowingVineBlock;
 import net.mcreator.ragemod.block.BrownGlowingOakTreeSaplingBlock;
 import net.mcreator.ragemod.block.BrownGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.BoomStoneBlock;
@@ -255,6 +260,11 @@ public class RagemodModBlocks {
 	public static final Block BROWN_GLOWING_OAK_TREE_SAPLING = register(new BrownGlowingOakTreeSaplingBlock());
 	public static final Block RED_GLOWING_OAK_TREE_SAPLING = register(new RedGlowingOakTreeSaplingBlock());
 	public static final Block GREEN_GLOWING_OAK_TREE_SAPLING = register(new GreenGlowingOakTreeSaplingBlock());
+	public static final Block YELLOW_GLOWING_VINE = register(new YellowGlowingVineBlock());
+	public static final Block GLOWING_VINES_AIR = register(new GlowingVinesAirBlock());
+	public static final Block BROWN_GLOWING_VINE = register(new BrownGlowingVineBlock());
+	public static final Block RED_GLOWING_VINE = register(new RedGlowingVineBlock());
+	public static final Block GREEN_GLOWING_VINE = register(new GreenGlowingVineBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -317,6 +327,10 @@ public class RagemodModBlocks {
 			BrownGlowingOakTreeSaplingBlock.registerRenderLayer();
 			RedGlowingOakTreeSaplingBlock.registerRenderLayer();
 			GreenGlowingOakTreeSaplingBlock.registerRenderLayer();
+			YellowGlowingVineBlock.registerRenderLayer();
+			BrownGlowingVineBlock.registerRenderLayer();
+			RedGlowingVineBlock.registerRenderLayer();
+			GreenGlowingVineBlock.registerRenderLayer();
 		}
 	}
 }

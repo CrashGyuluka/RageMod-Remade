@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:YellowGlowingOakLeaves"
+      },
+      {
+        "value": "CUSTOM:BrownGlowingOakLeaves"
+      },
+      {
+        "value": "CUSTOM:RedGlowingOakLeaves"
+      },
+      {
+        "value": "CUSTOM:GreenGlowingOakLeaves"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "glowing_oak_leaves",
+    "namespace": "forge"
+  }
+}

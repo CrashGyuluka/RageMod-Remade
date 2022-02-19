@@ -7,6 +7,24 @@
     "blocks": [
       {
         "value": "CUSTOM:BeechLeaves"
+      },
+      {
+        "value": "CUSTOM:RageWoodLeaves"
+      },
+      {
+        "value": "CUSTOM:RobtaiLeaves"
+      },
+      {
+        "value": "CUSTOM:YellowGlowingOakLeaves"
+      },
+      {
+        "value": "CUSTOM:BrownGlowingOakLeaves"
+      },
+      {
+        "value": "CUSTOM:RedGlowingOakLeaves"
+      },
+      {
+        "value": "CUSTOM:GreenGlowingOakLeaves"
       }
     ],
     "functions": [],

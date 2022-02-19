@@ -7,6 +7,12 @@
     "blocks": [
       {
         "value": "CUSTOM:RageWoodFence"
+      },
+      {
+        "value": "CUSTOM:BeechFence"
+      },
+      {
+        "value": "CUSTOM:RobtaiFence"
       }
     ],
     "functions": [],

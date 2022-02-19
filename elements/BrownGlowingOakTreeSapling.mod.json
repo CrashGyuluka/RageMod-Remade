@@ -79,9 +79,21 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [],
     "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "patchSize": 64,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:GlowingOakForest"
+      },
+      {
+        "value": "CUSTOM:GlowingOakForestMountain"
+      },
+      {
+        "value": "CUSTOM:SpareGlowingOakForest"
+      }
+    ],
+    "patchSize": 5,
     "onRightClicked": {
       "name": "YellowGlowingOakTreeSaplingPlantRightClicked"
     }

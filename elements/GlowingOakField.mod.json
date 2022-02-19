@@ -35,21 +35,22 @@
       "value": "CUSTOM:RageParticle"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "FOREST",
+    "biomeCategory": "PLAINS",
     "parent": {
       "value": "CUSTOM:SpareGlowingOakForest"
     },
-    "rainingPossibility": 0.5,
+    "rainingPossibility": 0.4,
     "temperature": 0.5,
     "baseHeight": 0.0,
     "heightVariation": 0.0,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 3,
+    "biomeWeight": 2,
     "biomeDictionaryTypes": [
       "PLAINS",
       "OVERWORLD",
-      "SPARSE"
+      "SPARSE",
+      "DENSE"
     ],
     "grassPerChunk": 8,
     "seagrassPerChunk": 0,

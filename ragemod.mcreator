@@ -4456,6 +4456,228 @@
         ]
       },
       "path": "~/advancements/proc"
+    },
+    {
+      "name": "YellowGlowingVineBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_vine_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "YellowGlowingVineNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_vine_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "YellowGlowingVine",
+      "type": "block",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_vine",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "GlowingOakLeaves",
+      "type": "tag",
+      "sortid": 433,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_leaves",
+      "path": "~/tags"
+    },
+    {
+      "name": "YellowGlowingVineAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 433,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_vine_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "GlowingVinesAirBlockAdded",
+      "type": "procedure",
+      "sortid": 434,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_vines_air_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "GlowingVinesAir",
+      "type": "block",
+      "sortid": 434,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_vines_air",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "GlowingVinesAirUpdateTickProc",
+      "type": "procedure",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_vines_air_update_tick_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "BrownGlowingVine",
+      "type": "block",
+      "sortid": 436,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_glowing_vine",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "RedGlowingVine",
+      "type": "block",
+      "sortid": 437,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_glowing_vine",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "GreenGlowingVine",
+      "type": "block",
+      "sortid": 438,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_glowing_vine",
+      "path": "~/wood/glowing"
+    },
+    {
+      "name": "RagemodAirBlocks",
+      "type": "tag",
+      "sortid": 439,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragemod_air_blocks",
+      "path": "~/tags"
+    },
+    {
+      "name": "DoRagemodAirBlocksWork",
+      "type": "gamerule",
+      "sortid": 440,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doRagemodAirBlocksWork",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/other"
     }
   ],
   "variable_elements": [
@@ -4613,6 +4835,7 @@
       "itemGroup.tabragemod_tab": "RageMod",
       "item.ragemod.advancement_one_icon": "Advancement One Icon",
       "block.ragemod.toxic_topped_blackstone": "Toxic Topped Blackstone",
+      "block.ragemod.green_glowing_vine": "Green Glowing Vine",
       "block.ragemod.robtai_block": "Robtai Block",
       "block.ragemod.smooth_calten_slab": "Smooth Calten Slab",
       "block.ragemod.brown_glowing_oak_leaves": "Brown Glowing Oak Leaves",
@@ -4629,6 +4852,7 @@
       "advancements.ragemod_adv_3.title": "Made to be stronger",
       "item.ragemod.toxic_armor_leggings": "Toxic Leggings",
       "item.ragemod.opal": "Opal",
+      "block.ragemod.glowing_vines_air": "Glowing Vines Air",
       "item.ragemod.rageium_bow": "Rageium Bow",
       "block.ragemod.rageium_brick_pressure_plate": "Rageium Brick Pressure Plate",
       "block.ragemod.toxic_topped_ancient_debris": "Toxic Topped Ancient Debris",
@@ -4675,6 +4899,7 @@
       "item.ragemod.azurite": "Azurite",
       "block.ragemod.rageium_block": "Rageium Block",
       "block.ragemod.smooth_calten_wall": "Smooth Calten Wall",
+      "block.ragemod.brown_glowing_vine": "Brown Glowing Vine",
       "item.ragemod.rageium": "Rageium",
       "item.ragemod.toxic_sword": "Toxic Sword",
       "biome.ragemod.glowing_oak_forest": "Glowing Oak Forest",
@@ -4687,11 +4912,13 @@
       "block.ragemod.toxic_topped_endstone": "Toxic Topped Endstone",
       "item.ragemod.amazonite": "Amazonite",
       "gamerule.toxicGivesBadEffects.description": "Toxic Blocks will give you bad effects if this is true(default)",
+      "block.ragemod.red_glowing_vine": "Red Glowing Vine",
       "block.ragemod.azurite_ore": "Azurite Ore",
       "block.ragemod.achat_ore": "Achat Ore",
       "advancements.ragemod_adv_7.descr": "Smelt a Fult Scrap and collect the result",
       "block.ragemod.toxic_topped_rageium_alloy_block": "Toxic Topped Rageium Alloy Block",
       "entity.ragemod.rage_mite": "RageMite",
+      "gamerule.doRagemodAirBlocksWork": "DoRageModAirBlockWork? (DEV)",
       "item.ragemod.toxic_pickaxe": "Toxic Pickaxe",
       "item.ragemod.apophyllite": "Apophyllite",
       "item.ragemod.cerussite": "Cerussite",
@@ -4703,6 +4930,7 @@
       "block.ragemod.beech_leaves": "Beech Leaves",
       "item.ragemod.advancement_easter_egg_icon": "Advancement Easter Egg Icon",
       "entity.ragemod.atom_rager": "AtomRageR",
+      "block.ragemod.yellow_glowing_vine": "Yellow Glowing Vine",
       "block.ragemod.toxic_topped_red_sand": "Toxic Topped Red Sand",
       "item.ragemod.rageium_armor_helmet": "Rageium Helmet",
       "item.ragemod.atom_rager_spawn_egg": "AtomRageR Spawn Egg",
@@ -4733,6 +4961,7 @@
       "block.ragemod.rage_wood_fence_gate": "RageWood Fence Gate",
       "block.ragemod.fult": "Fult",
       "block.ragemod.beech_slab": "Beech Slab",
+      "gamerule.doRagemodAirBlocksWork.description": "Only for developers!",
       "item.ragemod.rage_potion": "Rage Potion",
       "block.ragemod.robtai_log": "Robtai Log",
       "block.ragemod.mossy_calten_wall": "Mossy Calten Wall",

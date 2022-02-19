@@ -16,8 +16,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
+import net.mcreator.ragemod.world.features.plants.YellowGlowingOakTreeSaplingFeature;
 import net.mcreator.ragemod.world.features.plants.ToxicPlantFeature;
+import net.mcreator.ragemod.world.features.plants.RedGlowingOakTreeSaplingFeature;
 import net.mcreator.ragemod.world.features.plants.RageFlowerFeature;
+import net.mcreator.ragemod.world.features.plants.GreenGlowingOakTreeSaplingFeature;
+import net.mcreator.ragemod.world.features.plants.BrownGlowingOakTreeSaplingFeature;
 import net.mcreator.ragemod.world.features.ores.ToxicToppedStoneFeature;
 import net.mcreator.ragemod.world.features.ores.ToxicToppedStoneBricksFeature;
 import net.mcreator.ragemod.world.features.ores.ToxicToppedSandFeature;
@@ -229,6 +233,14 @@ public class RagemodModFeatures {
 				GlowingBiomesBush3Feature.GENERATE_BIOMES, GlowingBiomesBush3Feature.CONFIGURED_FEATURE));
 		REGISTRY.put(GlowingBiomesBush4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				GlowingBiomesBush4Feature.GENERATE_BIOMES, GlowingBiomesBush4Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(YellowGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				YellowGlowingOakTreeSaplingFeature.GENERATE_BIOMES, YellowGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(BrownGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				BrownGlowingOakTreeSaplingFeature.GENERATE_BIOMES, BrownGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(RedGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				RedGlowingOakTreeSaplingFeature.GENERATE_BIOMES, RedGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(GreenGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				GreenGlowingOakTreeSaplingFeature.GENERATE_BIOMES, GreenGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

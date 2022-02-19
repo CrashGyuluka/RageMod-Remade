@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class BrownGlowingOakLeavesBlock extends LeavesBlock {
 	public BrownGlowingOakLeavesBlock() {
-		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.25f, 2f).lightLevel(s -> 5)
+		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.25f, 2f).lightLevel(s -> 8)
 				.requiresCorrectToolForDrops().noOcclusion());
 		setRegistryName("brown_glowing_oak_leaves");
 	}

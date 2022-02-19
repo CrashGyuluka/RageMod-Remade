@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ragemod:brown_glowing_oak_leaves",
+    "ragemod:yellow_glowing_oak_leaves",
+    "ragemod:red_glowing_oak_leaves",
+    "ragemod:green_glowing_oak_leaves"
+  ]
+}
