@@ -4846,6 +4846,44 @@
       "locked_code": false,
       "registry_name": "green_glowing_oak_leaves_craft",
       "path": "~/wood/glowing/craft"
+    },
+    {
+      "name": "GlowingVineAirStrOnStructureInstanceGenerated",
+      "type": "procedure",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_vine_air_str_on_structure_instance_generated",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "GlowingVineAirStr",
+      "type": "structure",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_vine_air_str",
+      "path": "~/wood/glowing/structure"
     }
   ],
   "variable_elements": [

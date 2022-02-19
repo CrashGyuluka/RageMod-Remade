@@ -66,6 +66,7 @@ import net.mcreator.ragemod.world.features.SpareGlowingOakTree4Feature;
 import net.mcreator.ragemod.world.features.SpareGlowingOakTree3Feature;
 import net.mcreator.ragemod.world.features.SpareGlowingOakTree2Feature;
 import net.mcreator.ragemod.world.features.SpareGlowingOakTree1Feature;
+import net.mcreator.ragemod.world.features.GlowingVineAirStrFeature;
 import net.mcreator.ragemod.world.features.GlowingOakTree5Feature;
 import net.mcreator.ragemod.world.features.GlowingOakTree4Feature;
 import net.mcreator.ragemod.world.features.GlowingOakTree3Feature;
@@ -241,6 +242,8 @@ public class RagemodModFeatures {
 				RedGlowingOakTreeSaplingFeature.GENERATE_BIOMES, RedGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(GreenGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
 				GreenGlowingOakTreeSaplingFeature.GENERATE_BIOMES, GreenGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(GlowingVineAirStrFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				GlowingVineAirStrFeature.GENERATE_BIOMES, GlowingVineAirStrFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent
