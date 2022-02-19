@@ -1,25 +1,24 @@
 
 package net.mcreator.ragemod.block;
 
-import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
-import java.util.Collections;
+import net.mcreator.ragemod.procedures.RedGlowingOakLeavesBlockDestroyedByPlayerProcedure;
 
 public class RedGlowingOakLeavesBlock extends LeavesBlock {
 	public RedGlowingOakLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.25f, 2f).lightLevel(s -> 9)
-				.requiresCorrectToolForDrops().noOcclusion());
+				.requiresCorrectToolForDrops().noOcclusion().noDrops());
 		setRegistryName("red_glowing_oak_leaves");
 	}
 
@@ -36,10 +35,9 @@ public class RedGlowingOakLeavesBlock extends LeavesBlock {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+	public boolean removedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		RedGlowingOakLeavesBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		return retval;
 	}
 }

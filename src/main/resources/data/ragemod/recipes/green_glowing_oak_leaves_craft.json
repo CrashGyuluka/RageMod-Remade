@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:green_glowing_vine"
+    },
+    {
+      "item": "ragemod:green_glowing_vine"
+    },
+    {
+      "item": "ragemod:green_glowing_vine"
+    },
+    {
+      "item": "ragemod:green_glowing_vine"
+    }
+  ],
+  "result": {
+    "item": "ragemod:green_glowing_oak_leaves",
+    "count": 1
+  }
+}

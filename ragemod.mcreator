@@ -4678,6 +4678,174 @@
         "type": "logic"
       },
       "path": "~/other"
+    },
+    {
+      "name": "YellowGlowingOakLeavesBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 441,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_oak_leaves_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "BrownGlowingOakLeavesBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_glowing_oak_leaves_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "RedGlowingOakLeavesBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_glowing_oak_leaves_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "GreenGlowingOakLeavesBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_glowing_oak_leaves_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wood/glowing/proc"
+    },
+    {
+      "name": "YellowGlowingOakLeavesCraft",
+      "type": "recipe",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glowing_oak_leaves_craft",
+      "path": "~/wood/glowing/craft"
+    },
+    {
+      "name": "BrownGlowingOakLeavesCraft",
+      "type": "recipe",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_glowing_oak_leaves_craft",
+      "path": "~/wood/glowing/craft"
+    },
+    {
+      "name": "RedGlowingOakLeavesCraft",
+      "type": "recipe",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_glowing_oak_leaves_craft",
+      "path": "~/wood/glowing/craft"
+    },
+    {
+      "name": "GreenGlowingOakLeavesCraft",
+      "type": "recipe",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_glowing_oak_leaves_craft",
+      "path": "~/wood/glowing/craft"
     }
   ],
   "variable_elements": [
@@ -5202,6 +5370,10 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "craft",
+                "children": []
               }
             ]
           }
