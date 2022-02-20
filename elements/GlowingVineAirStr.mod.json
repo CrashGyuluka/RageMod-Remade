@@ -5,7 +5,7 @@
     "structure": "glowing_oak_vines_air_str",
     "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 200000,
+    "spawnProbability": 150000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

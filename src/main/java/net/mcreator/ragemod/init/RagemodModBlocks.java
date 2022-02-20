@@ -41,7 +41,6 @@ import net.mcreator.ragemod.block.ToxicToppedAncientDebrisBlock;
 import net.mcreator.ragemod.block.ToxicPlantBlock;
 import net.mcreator.ragemod.block.ToxicCrystalOreBlock;
 import net.mcreator.ragemod.block.ToxicCrystalBlockBlock;
-import net.mcreator.ragemod.block.TeleporterBlock;
 import net.mcreator.ragemod.block.StrippedRobtaiLogBlock;
 import net.mcreator.ragemod.block.StrippedRobtaiBlockBlock;
 import net.mcreator.ragemod.block.StrippedRageWoodLogBlock;
@@ -152,7 +151,6 @@ public class RagemodModBlocks {
 	public static final Block RAGEIUM_BRICK_PRESSURE_PLATE = register(new RageiumBrickPressurePlateBlock());
 	public static final Block RAGEIUM_BRICK_BUTTON = register(new RageiumBrickButtonBlock());
 	public static final Block BOOM_STONE = register(new BoomStoneBlock());
-	public static final Block TELEPORTER = register(new TeleporterBlock());
 	public static final Block TOXIC_CRYSTAL_ORE = register(new ToxicCrystalOreBlock());
 	public static final Block RAW_TOXIC_CRYSTAL_BLOCK = register(new RawToxicCrystalBlockBlock());
 	public static final Block TOXIC_CRYSTAL_BLOCK = register(new ToxicCrystalBlockBlock());
@@ -285,7 +283,6 @@ public class RagemodModBlocks {
 			RageiumBrickWallBlock.registerRenderLayer();
 			RageiumBrickPressurePlateBlock.registerRenderLayer();
 			RageiumBrickButtonBlock.registerRenderLayer();
-			TeleporterBlock.registerRenderLayer();
 			ToxicPlantBlock.registerRenderLayer();
 			FultBarsBlock.registerRenderLayer();
 			FultTrapdoorBlock.registerRenderLayer();

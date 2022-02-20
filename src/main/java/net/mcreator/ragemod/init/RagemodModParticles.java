@@ -16,8 +16,12 @@ import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.ragemod.client.particle.YellowGlowingTreeParticleParticle;
 import net.mcreator.ragemod.client.particle.ToxicParticleParticle;
+import net.mcreator.ragemod.client.particle.RedGlowingTreeParticleParticle;
 import net.mcreator.ragemod.client.particle.RageParticleParticle;
+import net.mcreator.ragemod.client.particle.GreenGlowingTreeParticleParticle;
+import net.mcreator.ragemod.client.particle.BrownGlowingTreeParticleParticle;
 import net.mcreator.ragemod.client.particle.BlueCaveParticleParticle;
 
 import java.util.function.Function;
@@ -33,6 +37,14 @@ public class RagemodModParticles {
 			ToxicParticleParticle::provider);
 	public static final SimpleParticleType BLUE_CAVE_PARTICLE = register(new SimpleParticleType(false).setRegistryName("blue_cave_particle"),
 			BlueCaveParticleParticle::provider);
+	public static final SimpleParticleType YELLOW_GLOWING_TREE_PARTICLE = register(
+			new SimpleParticleType(false).setRegistryName("yellow_glowing_tree_particle"), YellowGlowingTreeParticleParticle::provider);
+	public static final SimpleParticleType BROWN_GLOWING_TREE_PARTICLE = register(
+			new SimpleParticleType(false).setRegistryName("brown_glowing_tree_particle"), BrownGlowingTreeParticleParticle::provider);
+	public static final SimpleParticleType RED_GLOWING_TREE_PARTICLE = register(
+			new SimpleParticleType(false).setRegistryName("red_glowing_tree_particle"), RedGlowingTreeParticleParticle::provider);
+	public static final SimpleParticleType GREEN_GLOWING_TREE_PARTICLE = register(
+			new SimpleParticleType(false).setRegistryName("green_glowing_tree_particle"), GreenGlowingTreeParticleParticle::provider);
 
 	private static SimpleParticleType register(ParticleType<?> particle, Function<SpriteSet, ParticleProvider<SimpleParticleType>> provider) {
 		REGISTRY.put(particle, provider);

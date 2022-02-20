@@ -15,6 +15,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ragemod.item.WaterRelicItem;
+import net.mcreator.ragemod.item.ToxicToppedBlocksItemItem;
 import net.mcreator.ragemod.item.ToxicSwordItem;
 import net.mcreator.ragemod.item.ToxicShovelItem;
 import net.mcreator.ragemod.item.ToxicPickaxeItem;
@@ -74,7 +75,6 @@ public class RagemodModItems {
 	public static final Item RAGE_POTION = register(new RagePotionItem());
 	public static final Item PAT_POTION = register(new PatPotionItem());
 	public static final Item BOOM_STONE = register(RagemodModBlocks.BOOM_STONE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TELEPORTER = register(RagemodModBlocks.TELEPORTER, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item TOXIC_CRYSTAL_ORE = register(RagemodModBlocks.TOXIC_CRYSTAL_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item RAW_TOXIC_CRYSTAL = register(new RawToxicCrystalItem());
 	public static final Item TOXIC_CRYSTAL = register(new ToxicCrystalItem());
@@ -179,30 +179,29 @@ public class RagemodModItems {
 	public static final Item BEECH_SAPLING = register(RagemodModBlocks.BEECH_SAPLING, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item RAGE_WOOD_SAPLING = register(RagemodModBlocks.RAGE_WOOD_SAPLING, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item ROBTAI_SAPLING = register(RagemodModBlocks.ROBTAI_SAPLING, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_STONE = register(RagemodModBlocks.TOXIC_TOPPED_STONE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_NETHERRACK = register(RagemodModBlocks.TOXIC_TOPPED_NETHERRACK, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_ENDSTONE = register(RagemodModBlocks.TOXIC_TOPPED_ENDSTONE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_DIRT = register(RagemodModBlocks.TOXIC_TOPPED_DIRT, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_OAK_LOG = register(RagemodModBlocks.TOXIC_TOPPED_OAK_LOG, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_OAK_PLANKS = register(RagemodModBlocks.TOXIC_TOPPED_OAK_PLANKS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_ANDESITE = register(RagemodModBlocks.TOXIC_TOPPED_ANDESITE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_DIORITE = register(RagemodModBlocks.TOXIC_TOPPED_DIORITE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_GRANITE = register(RagemodModBlocks.TOXIC_TOPPED_GRANITE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_BONE_BLOCK = register(RagemodModBlocks.TOXIC_TOPPED_BONE_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_BRICKS = register(RagemodModBlocks.TOXIC_TOPPED_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_STONE_BRICKS = register(RagemodModBlocks.TOXIC_TOPPED_STONE_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_ANCIENT_DEBRIS = register(RagemodModBlocks.TOXIC_TOPPED_ANCIENT_DEBRIS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_BASALT = register(RagemodModBlocks.TOXIC_TOPPED_BASALT, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_COBBLESTONE = register(RagemodModBlocks.TOXIC_TOPPED_COBBLESTONE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_GRAVEL = register(RagemodModBlocks.TOXIC_TOPPED_GRAVEL, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_BLACKSTONE = register(RagemodModBlocks.TOXIC_TOPPED_BLACKSTONE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_SAND = register(RagemodModBlocks.TOXIC_TOPPED_SAND, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_RED_SAND = register(RagemodModBlocks.TOXIC_TOPPED_RED_SAND, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_OBSIDIAN = register(RagemodModBlocks.TOXIC_TOPPED_OBSIDIAN, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_RAGEIUM_ORE = register(RagemodModBlocks.TOXIC_TOPPED_RAGEIUM_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_RAGEIUM_BLOCK = register(RagemodModBlocks.TOXIC_TOPPED_RAGEIUM_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item TOXIC_TOPPED_RAGEIUM_ALLOY_BLOCK = register(RagemodModBlocks.TOXIC_TOPPED_RAGEIUM_ALLOY_BLOCK,
-			RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item TOXIC_TOPPED_STONE = register(RagemodModBlocks.TOXIC_TOPPED_STONE, null);
+	public static final Item TOXIC_TOPPED_NETHERRACK = register(RagemodModBlocks.TOXIC_TOPPED_NETHERRACK, null);
+	public static final Item TOXIC_TOPPED_ENDSTONE = register(RagemodModBlocks.TOXIC_TOPPED_ENDSTONE, null);
+	public static final Item TOXIC_TOPPED_DIRT = register(RagemodModBlocks.TOXIC_TOPPED_DIRT, null);
+	public static final Item TOXIC_TOPPED_OAK_LOG = register(RagemodModBlocks.TOXIC_TOPPED_OAK_LOG, null);
+	public static final Item TOXIC_TOPPED_OAK_PLANKS = register(RagemodModBlocks.TOXIC_TOPPED_OAK_PLANKS, null);
+	public static final Item TOXIC_TOPPED_ANDESITE = register(RagemodModBlocks.TOXIC_TOPPED_ANDESITE, null);
+	public static final Item TOXIC_TOPPED_DIORITE = register(RagemodModBlocks.TOXIC_TOPPED_DIORITE, null);
+	public static final Item TOXIC_TOPPED_GRANITE = register(RagemodModBlocks.TOXIC_TOPPED_GRANITE, null);
+	public static final Item TOXIC_TOPPED_BONE_BLOCK = register(RagemodModBlocks.TOXIC_TOPPED_BONE_BLOCK, null);
+	public static final Item TOXIC_TOPPED_BRICKS = register(RagemodModBlocks.TOXIC_TOPPED_BRICKS, null);
+	public static final Item TOXIC_TOPPED_STONE_BRICKS = register(RagemodModBlocks.TOXIC_TOPPED_STONE_BRICKS, null);
+	public static final Item TOXIC_TOPPED_ANCIENT_DEBRIS = register(RagemodModBlocks.TOXIC_TOPPED_ANCIENT_DEBRIS, null);
+	public static final Item TOXIC_TOPPED_BASALT = register(RagemodModBlocks.TOXIC_TOPPED_BASALT, null);
+	public static final Item TOXIC_TOPPED_COBBLESTONE = register(RagemodModBlocks.TOXIC_TOPPED_COBBLESTONE, null);
+	public static final Item TOXIC_TOPPED_GRAVEL = register(RagemodModBlocks.TOXIC_TOPPED_GRAVEL, null);
+	public static final Item TOXIC_TOPPED_BLACKSTONE = register(RagemodModBlocks.TOXIC_TOPPED_BLACKSTONE, null);
+	public static final Item TOXIC_TOPPED_SAND = register(RagemodModBlocks.TOXIC_TOPPED_SAND, null);
+	public static final Item TOXIC_TOPPED_RED_SAND = register(RagemodModBlocks.TOXIC_TOPPED_RED_SAND, null);
+	public static final Item TOXIC_TOPPED_OBSIDIAN = register(RagemodModBlocks.TOXIC_TOPPED_OBSIDIAN, null);
+	public static final Item TOXIC_TOPPED_RAGEIUM_ORE = register(RagemodModBlocks.TOXIC_TOPPED_RAGEIUM_ORE, null);
+	public static final Item TOXIC_TOPPED_RAGEIUM_BLOCK = register(RagemodModBlocks.TOXIC_TOPPED_RAGEIUM_BLOCK, null);
+	public static final Item TOXIC_TOPPED_RAGEIUM_ALLOY_BLOCK = register(RagemodModBlocks.TOXIC_TOPPED_RAGEIUM_ALLOY_BLOCK, null);
 	public static final Item FLOOR_BLOCK = register(RagemodModBlocks.FLOOR_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item RAGE_FLOWER = register(RagemodModBlocks.RAGE_FLOWER, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item FIRE_RELIC = register(new FireRelicItem());
@@ -227,6 +226,7 @@ public class RagemodModItems {
 	public static final Item BROWN_GLOWING_VINE = register(RagemodModBlocks.BROWN_GLOWING_VINE, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item RED_GLOWING_VINE = register(RagemodModBlocks.RED_GLOWING_VINE, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final Item GREEN_GLOWING_VINE = register(RagemodModBlocks.GREEN_GLOWING_VINE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final Item TOXIC_TOPPED_BLOCKS_ITEM = register(new ToxicToppedBlocksItemItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
