@@ -12,7 +12,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.ragemod.world.biome.ToxicWasteBiome;
 import net.mcreator.ragemod.world.biome.SpareGlowingOakForestBiome;
 import net.mcreator.ragemod.world.biome.GlowingOakForestMountainBiome;
 import net.mcreator.ragemod.world.biome.GlowingOakForestBiome;
@@ -25,7 +24,6 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RagemodModBiomes {
 	private static final List<Biome> REGISTRY = new ArrayList<>();
-	public static Biome TOXIC_WASTE = register("toxic_waste", ToxicWasteBiome.createBiome());
 	public static Biome GLOWING_OAK_FOREST = register("glowing_oak_forest", GlowingOakForestBiome.createBiome());
 	public static Biome SPARE_GLOWING_OAK_FOREST = register("spare_glowing_oak_forest", SpareGlowingOakForestBiome.createBiome());
 	public static Biome GLOWING_OAK_FIELD = register("glowing_oak_field", GlowingOakFieldBiome.createBiome());
@@ -44,7 +42,6 @@ public class RagemodModBiomes {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			ToxicWasteBiome.init();
 			GlowingOakForestBiome.init();
 			SpareGlowingOakForestBiome.init();
 			GlowingOakFieldBiome.init();

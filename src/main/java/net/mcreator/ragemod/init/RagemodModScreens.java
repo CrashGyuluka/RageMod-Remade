@@ -11,7 +11,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
-import net.mcreator.ragemod.client.gui.ToxicToppedBlocksItemGuiScreen;
 import net.mcreator.ragemod.client.gui.AdvBookEasterEggScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -20,7 +19,6 @@ public class RagemodModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(RagemodModMenus.ADV_BOOK_EASTER_EGG, AdvBookEasterEggScreen::new);
-			MenuScreens.register(RagemodModMenus.TOXIC_TOPPED_BLOCKS_ITEM_GUI, ToxicToppedBlocksItemGuiScreen::new);
 		});
 	}
 }

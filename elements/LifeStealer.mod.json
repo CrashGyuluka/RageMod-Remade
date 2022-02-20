@@ -9,11 +9,7 @@
     "maxLevel": 3,
     "damageModifier": 0,
     "compatibleEnchantments": [],
-    "compatibleItems": [
-      {
-        "value": "CUSTOM:ToxicSword"
-      }
-    ],
+    "compatibleItems": [],
     "isTreasureEnchantment": false,
     "isCurse": false,
     "isAllowedOnBooks": true,

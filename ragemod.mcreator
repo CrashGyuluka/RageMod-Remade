@@ -434,432 +434,6 @@
       "path": "~/rageium things/craft"
     },
     {
-      "name": "RawToxicCrystal",
-      "type": "item",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "raw_toxic_crystal",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicCrystal",
-      "type": "item",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_crystal",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "RawToxicCrystalBlock",
-      "type": "block",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "raw_toxic_crystal_block",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicParticle",
-      "type": "particle",
-      "sortid": 173,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_particle",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicCrystalBlock",
-      "type": "block",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_crystal_block",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicCrystalOre",
-      "type": "block",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_crystal_ore",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicPlant",
-      "type": "plant",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_plant",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicWaste",
-      "type": "biome",
-      "sortid": 174,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_waste",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToolBlockDestroyedWithTool",
-      "type": "procedure",
-      "sortid": 175,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_tool_block_destroyed_with_tool",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/toxic things/procedures"
-    },
-    {
-      "name": "ToxicAxe",
-      "type": "tool",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_axe",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicSwordLivingEntityIsHitWithTool",
-      "type": "procedure",
-      "sortid": 176,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_living_entity_is_hit_with_tool",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/toxic things/procedures"
-    },
-    {
-      "name": "ToxicSword",
-      "type": "tool",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicPickaxe",
-      "type": "tool",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_pickaxe",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicShovel",
-      "type": "tool",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_shovel",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicHoe",
-      "type": "tool",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_hoe",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicArmor",
-      "type": "armor",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      },
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedStoneEntityWalksOnTheBlock",
-      "type": "procedure",
-      "sortid": 177,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_stone_entity_walks_on_the_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/toxic things/procedures"
-    },
-    {
-      "name": "ToxicToppedStone",
-      "type": "block",
-      "sortid": 115,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_stone",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedNetherrack",
-      "type": "block",
-      "sortid": 116,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_netherrack",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedEndstone",
-      "type": "block",
-      "sortid": 117,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_endstone",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedDirt",
-      "type": "block",
-      "sortid": 118,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_dirt",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedOakLog",
-      "type": "block",
-      "sortid": 119,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_oak_log",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedOakPlanks",
-      "type": "block",
-      "sortid": 120,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_oak_planks",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedAndesite",
-      "type": "block",
-      "sortid": 121,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_andesite",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedDiorite",
-      "type": "block",
-      "sortid": 122,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_diorite",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedGranite",
-      "type": "block",
-      "sortid": 123,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_granite",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedBoneBlock",
-      "type": "block",
-      "sortid": 124,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_bone_block",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedBricks",
-      "type": "block",
-      "sortid": 125,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_bricks",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedStoneBricks",
-      "type": "block",
-      "sortid": 126,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_stone_bricks",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedAncientDebris",
-      "type": "block",
-      "sortid": 127,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_ancient_debris",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedBasalt",
-      "type": "block",
-      "sortid": 128,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_basalt",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedCobblestone",
-      "type": "block",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_cobblestone",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedGravel",
-      "type": "block",
-      "sortid": 130,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_gravel",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedBlackstone",
-      "type": "block",
-      "sortid": 131,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_blackstone",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedSand",
-      "type": "block",
-      "sortid": 132,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_sand",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedRedSand",
-      "type": "block",
-      "sortid": 133,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_red_sand",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedObsidian",
-      "type": "block",
-      "sortid": 134,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_obsidian",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedRageiumOre",
-      "type": "block",
-      "sortid": 135,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_rageium_ore",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedRageiumBlock",
-      "type": "block",
-      "sortid": 136,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_rageium_block",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedRageiumAlloyBlock",
-      "type": "block",
-      "sortid": 137,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_rageium_alloy_block",
-      "path": "~/toxic things"
-    },
-    {
       "name": "ToxicToppedRageiumBlocks",
       "type": "tag",
       "sortid": 178,
@@ -867,213 +441,6 @@
       "locked_code": false,
       "registry_name": "toxic_topped_rageium_blocks",
       "path": "~/tags"
-    },
-    {
-      "name": "ToxicToppedStoneCraft",
-      "type": "recipe",
-      "sortid": 179,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_stone_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedNetherrackCraft",
-      "type": "recipe",
-      "sortid": 180,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_netherrack_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedEndstoneCraft",
-      "type": "recipe",
-      "sortid": 181,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_endstone_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedDirtCraft",
-      "type": "recipe",
-      "sortid": 182,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_dirt_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedOakLogCraft",
-      "type": "recipe",
-      "sortid": 183,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_oak_log_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedOakPlanksCraft",
-      "type": "recipe",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_oak_planks_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedAndesiteCraft",
-      "type": "recipe",
-      "sortid": 185,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_andesite_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedDioriteCraft",
-      "type": "recipe",
-      "sortid": 186,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_diorite_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedGraniteCraft",
-      "type": "recipe",
-      "sortid": 187,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_granite_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedBoneBlockCraft",
-      "type": "recipe",
-      "sortid": 188,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_bone_block_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedBricksCraft",
-      "type": "recipe",
-      "sortid": 189,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_bricks_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedStoneBricksCraft",
-      "type": "recipe",
-      "sortid": 190,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_stone_bricks_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedAncientDebrisCraft",
-      "type": "recipe",
-      "sortid": 191,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_ancient_debris_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedBasaltCraft",
-      "type": "recipe",
-      "sortid": 192,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_basalt_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedCobblestoneCraft",
-      "type": "recipe",
-      "sortid": 193,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_cobblestone_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedGravelCraft",
-      "type": "recipe",
-      "sortid": 194,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_gravel_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedBlackstoneCraft",
-      "type": "recipe",
-      "sortid": 195,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_blackstone_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedSandCraft",
-      "type": "recipe",
-      "sortid": 196,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_sand_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedRedSandCraft",
-      "type": "recipe",
-      "sortid": 197,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_red_sand_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedObsidianCraft",
-      "type": "recipe",
-      "sortid": 198,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_obsidian_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedRageiumOreCraft",
-      "type": "recipe",
-      "sortid": 199,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_rageium_ore_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedRageiumBlockCraft",
-      "type": "recipe",
-      "sortid": 200,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_rageium_block_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicToppedRageiumAlloyBlockCraft",
-      "type": "recipe",
-      "sortid": 201,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_rageium_alloy_block_craft",
-      "path": "~/toxic things/craft"
     },
     {
       "name": "RageFlower",
@@ -1749,39 +1116,6 @@
         "type": "logic"
       },
       "path": "~/other"
-    },
-    {
-      "name": "ToxicPlantProc",
-      "type": "procedure",
-      "sortid": 232,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_plant_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/toxic things/procedures"
     },
     {
       "name": "Fult",
@@ -3103,86 +2437,6 @@
       "path": "~/advancements"
     },
     {
-      "name": "ToxicCrystalSmelt",
-      "type": "recipe",
-      "sortid": 317,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_crystal_smelt",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicCrystalBlast",
-      "type": "recipe",
-      "sortid": 318,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_crystal_blast",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "RagemodAdv4",
-      "type": "achievement",
-      "sortid": 319,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ragemod_adv_4",
-      "path": "~/advancements"
-    },
-    {
-      "name": "RagemodAdv5",
-      "type": "achievement",
-      "sortid": 320,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ragemod_adv_5",
-      "path": "~/advancements"
-    },
-    {
-      "name": "ProtectionAgainstToxic",
-      "type": "potioneffect",
-      "sortid": 321,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "protection_against_toxic",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "PatPotionFoodEaten",
-      "type": "procedure",
-      "sortid": 322,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pat_potion_food_eaten",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/toxic things/procedures"
-    },
-    {
-      "name": "PatPotion",
-      "type": "food",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pat_potion",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicPlantCraft",
-      "type": "recipe",
-      "sortid": 323,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_plant_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
       "name": "RageFlowerCraft",
       "type": "recipe",
       "sortid": 324,
@@ -3453,150 +2707,6 @@
       "path": "~/rageium things/craft"
     },
     {
-      "name": "PatPotionCraft",
-      "type": "recipe",
-      "sortid": 354,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pat_potion_craft",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordCraft1",
-      "type": "recipe",
-      "sortid": 355,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_craft_1",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordCraft2",
-      "type": "recipe",
-      "sortid": 356,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_craft_2",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordCraft3",
-      "type": "recipe",
-      "sortid": 357,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_craft_3",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordPickaxe1",
-      "type": "recipe",
-      "sortid": 358,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_pickaxe_1",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordAxe1",
-      "type": "recipe",
-      "sortid": 359,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_axe_1",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordAxe2",
-      "type": "recipe",
-      "sortid": 360,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_axe_2",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordAxe3",
-      "type": "recipe",
-      "sortid": 361,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_axe_3",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordAxe4",
-      "type": "recipe",
-      "sortid": 362,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_axe_4",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordShovel1",
-      "type": "recipe",
-      "sortid": 363,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_shovel_1",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordShovel2",
-      "type": "recipe",
-      "sortid": 364,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_shovel_2",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordShovel3",
-      "type": "recipe",
-      "sortid": 365,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_shovel_3",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordHoe1",
-      "type": "recipe",
-      "sortid": 366,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_hoe_1",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordHoe2",
-      "type": "recipe",
-      "sortid": 367,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_hoe_2",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordHoe3",
-      "type": "recipe",
-      "sortid": 368,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_hoe_3",
-      "path": "~/toxic things/craft"
-    },
-    {
-      "name": "ToxicSwordHoe4",
-      "type": "recipe",
-      "sortid": 369,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_sword_hoe_4",
-      "path": "~/toxic things/craft"
-    },
-    {
       "name": "RagemodAdv6",
       "type": "achievement",
       "sortid": 370,
@@ -3711,15 +2821,6 @@
       "path": "~/advancements"
     },
     {
-      "name": "RagemodAdv13",
-      "type": "achievement",
-      "sortid": 380,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ragemod_adv_13",
-      "path": "~/advancements"
-    },
-    {
       "name": "ToxicToppedBlocks",
       "type": "tag",
       "sortid": 381,
@@ -3727,39 +2828,6 @@
       "locked_code": false,
       "registry_name": "toxic_topped_blocks",
       "path": "~/tags"
-    },
-    {
-      "name": "RagemodAdv13Proc",
-      "type": "procedure",
-      "sortid": 382,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ragemod_adv_13_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/advancements/proc"
     },
     {
       "name": "AdvBookEasterEgg",
@@ -4844,74 +3912,6 @@
       "path": "~/wood/glowing/structure"
     },
     {
-      "name": "ToxicToppedBlocksItem",
-      "type": "item",
-      "sortid": 450,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_blocks_item",
-      "path": "~/toxic things"
-    },
-    {
-      "name": "ToxicToppedBlocksItemGui",
-      "type": "gui",
-      "sortid": 451,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_blocks_item_gui",
-      "path": "~/toxic things/gui"
-    },
-    {
-      "name": "ToxicToppedBlockItemGuiButtonClicked",
-      "type": "procedure",
-      "sortid": 452,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_block_item_gui_button_clicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/toxic things/procedures"
-    },
-    {
-      "name": "ToxicToppedBlocksItemRightClickedInAir",
-      "type": "procedure",
-      "sortid": 453,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_topped_blocks_item_right_clicked_in_air",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/toxic things/procedures"
-    },
-    {
       "name": "YellowGlowingTreeParticle",
       "type": "particle",
       "sortid": 454,
@@ -5102,43 +4102,32 @@
       "block.ragemod.rage_wood_trapdoor": "RageWood Trapdoor",
       "itemGroup.tabragemod_tab": "RageMod",
       "item.ragemod.advancement_one_icon": "Advancement One Icon",
-      "block.ragemod.toxic_topped_blackstone": "Toxic Topped Blackstone",
       "block.ragemod.green_glowing_vine": "Green Glowing Vine",
       "block.ragemod.robtai_block": "Robtai Block",
       "block.ragemod.brown_glowing_oak_leaves": "Brown Glowing Oak Leaves",
       "block.ragemod.smooth_calten_slab": "Smooth Calten Slab",
       "block.ragemod.rage_flower": "Rage Flower",
-      "block.ragemod.toxic_topped_bone_block": "Toxic Topped Bone Block",
-      "block.ragemod.toxic_plant": "Toxic Plant",
       "enchantment.ragemod.block_lock": "Block Lock",
       "advancements.ragemod_adv_8.descr": "Place down something made out of Fult Ingot",
-      "effect.ragemod.protection_against_toxic": "PAT",
-      "item.ragemod.toxic_hoe": "Toxic Hoe",
       "block.ragemod.stripped_robtai_block": "Stripped Robtai Block",
       "advancements.ragemod_adv_9.title": "The way to go",
       "advancements.ragemod_adv_3.title": "Made to be stronger",
       "block.ragemod.rage_wood_fence": "RageWood Fence",
       "block.ragemod.glowing_vines_air": "Glowing Vines Air",
       "item.ragemod.opal": "Opal",
-      "item.ragemod.toxic_armor_leggings": "Toxic Leggings",
       "item.ragemod.rageium_bow": "Rageium Bow",
       "block.ragemod.rageium_brick_pressure_plate": "Rageium Brick Pressure Plate",
-      "block.ragemod.toxic_topped_ancient_debris": "Toxic Topped Ancient Debris",
       "item.ragemod.rage_mite_spawn_egg": "RageMite Spawn Egg",
       "block.ragemod.cerussite_ore": "Cerussite Ore",
       "advancements.ragemod_adv_11.title": "Damaged Property",
       "item.ragemod.fult_ingot": "Fult Ingot",
       "block.ragemod.robtai_planks": "Robtai Planks",
-      "item.ragemod.toxic_shovel": "Toxic Shovel",
       "item.ragemod.rageium_armor_chestplate": "Rageium Body",
       "item.ragemod.fult_scrap": "Fult Scrap",
-      "block.ragemod.raw_toxic_crystal_block": "Raw Toxic Crystal Block",
       "block.ragemod.better_stripped_rage_wood_log": "Better Stripped RageWood Log",
       "gamerule.toxicGivesBadEffects": "ToxicGivesBadEffects",
-      "item.ragemod.toxic_crystal": "Toxic Crystal",
       "block.ragemod.brown_glowing_oak_tree_sapling": "Brown Glowing Oak Tree Sapling",
       "block.ragemod.boom_stone": "Boom Stone",
-      "block.ragemod.toxic_topped_netherrack": "Toxic Topped Netherrack",
       "block.ragemod.fult_trapdoor": "Fult Trapdoor",
       "block.ragemod.beech_stairs": "Beech Stairs",
       "advancements.ragemod_adv_3.descr": "Have a Rageium Alloy in your inventory",
@@ -5146,15 +4135,10 @@
       "advancements.ragemod_adv_10.title": "Dopping?",
       "block.ragemod.opal_ore": "Opal Ore",
       "item.ragemod.adularia": "Adularia",
-      "item.ragemod.raw_toxic_crystal": "Raw Toxic Crystal",
-      "block.ragemod.toxic_topped_dirt": "Toxic Topped Dirt",
-      "item.ragemod.pat_potion": "PAT Potion",
       "block.ragemod.apophyllite_ore": "Apophyllite Ore",
       "block.ragemod.rage_wood_sapling": "RageWood Sapling",
-      "block.ragemod.toxic_topped_stone_bricks": "Toxic Topped Stone Bricks",
       "block.ragemod.calten": "Calten",
       "block.ragemod.rage_wood_block": "RageWood Block",
-      "advancements.ragemod_adv_13.descr": "Place down all of the Toxic Topped blocks",
       "block.ragemod.robtai_fence": "Robtai Fence",
       "advancements.ragemod_adv_9.descr": "Consume a Protection Against Toxic Potion",
       "block.ragemod.calten_wall": "Calten Wall",
@@ -5169,26 +4153,20 @@
       "block.ragemod.smooth_calten_wall": "Smooth Calten Wall",
       "block.ragemod.brown_glowing_vine": "Brown Glowing Vine",
       "item.ragemod.rageium": "Rageium",
-      "item.ragemod.toxic_sword": "Toxic Sword",
       "biome.ragemod.glowing_oak_forest": "Glowing Oak Forest",
       "block.ragemod.robtai_fence_gate": "Robtai Fence Gate",
       "biome.ragemod.spare_glowing_oak_forest": "Spare Glowing Oak Forest",
       "biome.ragemod.glowing_oak_field": "Glowing Oak Field",
       "block.ragemod.beech_fence": "Beech Fence",
-      "advancements.ragemod_adv_4.descr": "Have a Raw Toxic Crystal in your inventory",
       "block.ragemod.calten_bricks_stairs": "Calten Bricks Stairs",
-      "block.ragemod.toxic_topped_endstone": "Toxic Topped Endstone",
       "item.ragemod.amazonite": "Amazonite",
       "gamerule.toxicGivesBadEffects.description": "Toxic Blocks will give you bad effects if this is true(default)",
-      "item.ragemod.toxic_topped_blocks_item": "Toxic Topped Blocks",
       "block.ragemod.red_glowing_vine": "Red Glowing Vine",
       "block.ragemod.azurite_ore": "Azurite Ore",
       "block.ragemod.achat_ore": "Achat Ore",
       "advancements.ragemod_adv_7.descr": "Smelt a Fult Scrap and collect the result",
-      "block.ragemod.toxic_topped_rageium_alloy_block": "Toxic Topped Rageium Alloy Block",
       "entity.ragemod.rage_mite": "RageMite",
       "gamerule.doRagemodAirBlocksWork": "DoRageModAirBlockWork? (DEV)",
-      "item.ragemod.toxic_pickaxe": "Toxic Pickaxe",
       "item.ragemod.apophyllite": "Apophyllite",
       "item.ragemod.cerussite": "Cerussite",
       "block.ragemod.calten_bricks_slab": "Calten Bricks Slab",
@@ -5200,7 +4178,6 @@
       "item.ragemod.advancement_easter_egg_icon": "Advancement Easter Egg Icon",
       "entity.ragemod.atom_rager": "AtomRageR",
       "block.ragemod.yellow_glowing_vine": "Yellow Glowing Vine",
-      "block.ragemod.toxic_topped_red_sand": "Toxic Topped Red Sand",
       "item.ragemod.rageium_armor_helmet": "Rageium Helmet",
       "item.ragemod.atom_rager_spawn_egg": "AtomRageR Spawn Egg",
       "block.ragemod.bismuth_ore": "Bismuth Ore",
@@ -5214,15 +4191,11 @@
       "block.ragemod.robtai_stairs": "Robtai Stairs",
       "block.ragemod.beech_sapling": "Beech Sapling",
       "item.ragemod.rageium_armor_boots": "Rageium Boots",
-      "item.ragemod.toxic_axe": "Toxic Axe",
       "block.ragemod.green_glowing_oak_leaves": "Green Glowing Oak Leaves",
       "block.ragemod.green_glowing_oak_tree_sapling": "Green Glowing Oak Tree Sapling",
       "block.ragemod.beech_block": "Beech Block",
-      "block.ragemod.toxic_topped_oak_log": "Toxic Topped Log",
       "block.ragemod.rage_wood_planks": "RageWood Planks",
       "block.ragemod.adularia_ore": "Adularia Ore",
-      "block.ragemod.toxic_topped_bricks": "Toxic Topped Bricks",
-      "advancements.ragemod_adv_5.descr": "Have a Toxic Crystal in your inventory",
       "block.ragemod.yellow_glowing_oak_tree_sapling": "Yellow Glowing Oak Tree Sapling",
       "block.ragemod.yellow_glowing_oak_leaves": "Yellow Glowing Oak Leaves",
       "advancements.ragemod_adv_6.title": "Fantastic Fult!",
@@ -5234,14 +4207,11 @@
       "item.ragemod.rage_potion": "Rage Potion",
       "block.ragemod.robtai_log": "Robtai Log",
       "block.ragemod.mossy_calten_wall": "Mossy Calten Wall",
-      "block.ragemod.toxic_topped_andesite": "Toxic Topped Andesite",
       "block.ragemod.robtai_trapdoor": "Robtai Trapdoor",
       "item.ragemod.air_relic": "Air Relic",
       "block.ragemod.rageium_brick_button": "Rageium Brick Button",
-      "block.ragemod.toxic_topped_basalt": "Toxic Topped Basalt",
       "block.ragemod.robtai_leaves": "Robtai Leaves",
       "biome.ragemod.glowing_oak_forest_mountain": "Glowing Oak Forest Mountain",
-      "block.ragemod.toxic_topped_rageium_block": "Toxic Topped Rageium Block",
       "advancements.ragemod_adv_7.title": "Scrap to Ingot",
       "block.ragemod.beech_log": "Beech Log",
       "block.ragemod.mossy_calten_stairs": "Mossy Calten Stairs",
@@ -5253,10 +4223,6 @@
       "block.ragemod.mossy_calten": "Mossy Calten",
       "block.ragemod.calten_bricks_wall": "Calten Bricks Wall",
       "enchantment.ragemod.collider": "Collider",
-      "item.ragemod.toxic_armor_boots": "Toxic Boots",
-      "block.ragemod.toxic_crystal_ore": "Toxic Crystal Ore",
-      "item.ragemod.toxic_armor_chestplate": "Toxic Body",
-      "biome.ragemod.toxic_waste": "Toxic Waste",
       "item.ragemod.earth_relic": "Earth Relic",
       "advancements.ragemod_adv_11.descr": "Use your Rageium Bow until it has only 1 durability left",
       "block.ragemod.calten_slab": "Calten Slab",
@@ -5264,18 +4230,12 @@
       "block.ragemod.rage_wood_slab": "RageWood Slab",
       "block.ragemod.rage_wood_log": "RageWood Log",
       "block.ragemod.rageium_brick_wall": "Rageium Brick Wall",
-      "block.ragemod.toxic_topped_sand": "Toxic Topped Sand",
       "block.ragemod.red_glowing_oak_tree_sapling": "Red Glowing Oak Tree Sapling",
-      "block.ragemod.toxic_topped_obsidian": "Toxic Topped Obsidian",
-      "advancements.ragemod_adv_5.title": "Better when cooked",
-      "block.ragemod.toxic_topped_oak_planks": "Toxic Topped Planks",
       "block.ragemod.red_glowing_oak_leaves": "Red Glowing Oak Leaves",
-      "item.ragemod.toxic_armor_helmet": "Toxic Helmet",
       "block.ragemod.rage_wood_stairs": "RageWood Stairs",
       "block.ragemod.rageium_brick_stairs": "Rageium Brick Stairs",
       "advancements.ragemod_adv_10.descr": "Consume a Rage Potion",
       "block.ragemod.better_stripped_rage_wood_block": "Better Stripped RageWood Block",
-      "block.ragemod.toxic_crystal_block": "Toxic Crystal Block",
       "advancements.ragemod_adv_2.title": "Don\u0027t Rage!",
       "advancements.ragemod_adv_12.title": "Bob The Builder",
       "item.ragemod.actinolite": "Actinolite",
@@ -5289,26 +4249,18 @@
       "block.ragemod.calten_stairs": "Calten Stairs",
       "block.ragemod.rageium_alloy_block": "Rageium Alloy Block",
       "gamerule.sendTeleporterFeedback": "SendTeleporterFeedback",
-      "block.ragemod.toxic_topped_gravel": "Toxic Topped Gravel",
       "block.ragemod.beech_fence_gate": "Beech Fence Gate",
       "block.ragemod.beech_planks": "Beech Planks",
       "block.ragemod.stripped_robtai_log": "Stripped Robtai Log",
       "block.ragemod.amazonite_ore": "Amazonite Ore",
-      "block.ragemod.toxic_topped_cobblestone": "Toxic Topped Cobblestone",
-      "block.ragemod.toxic_topped_rageium_ore": "Toxic Topped Rageium Ore",
       "advancements.ragemod_adv_14.title": "All of the questionmarks.",
       "block.ragemod.stipped_beech_log": "Stripped Beech Block",
       "enchantment.ragemod.life_stealer": "Life Stealer",
       "block.ragemod.smooth_calten_stairs": "Smooth Calten Stairs",
-      "block.ragemod.toxic_topped_granite": "Toxic Topped Granite",
       "block.ragemod.robtai_sapling": "Robtai Sapling",
-      "block.ragemod.toxic_topped_stone": "Toxic Topped Stone",
-      "advancements.ragemod_adv_4.title": "The Toxic Times",
       "block.ragemod.stripped_beech_log": "Stripped Beech Log",
       "item.ragemod.water_relic": "Water Relic",
       "gamerule.sendTeleporterFeedback.description": "Teleporter blocks will send you feedback about the actions you made",
-      "advancements.ragemod_adv_13.title": "All together, in one place.",
-      "block.ragemod.toxic_topped_diorite": "Toxic Topped Diorite",
       "item.ragemod.fire_relic": "Fire Relic"
     }
   },
@@ -5328,23 +4280,6 @@
           },
           {
             "name": "loottable",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "toxic things",
-        "children": [
-          {
-            "name": "craft",
-            "children": []
-          },
-          {
-            "name": "procedures",
-            "children": []
-          },
-          {
-            "name": "gui",
             "children": []
           }
         ]

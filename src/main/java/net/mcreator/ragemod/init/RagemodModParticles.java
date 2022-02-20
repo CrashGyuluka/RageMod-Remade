@@ -17,7 +17,6 @@ import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.ragemod.client.particle.YellowGlowingTreeParticleParticle;
-import net.mcreator.ragemod.client.particle.ToxicParticleParticle;
 import net.mcreator.ragemod.client.particle.RedGlowingTreeParticleParticle;
 import net.mcreator.ragemod.client.particle.RageParticleParticle;
 import net.mcreator.ragemod.client.particle.GreenGlowingTreeParticleParticle;
@@ -33,8 +32,6 @@ public class RagemodModParticles {
 	private static final Map<ParticleType<?>, Function<SpriteSet, ParticleProvider<SimpleParticleType>>> REGISTRY = new HashMap<>();
 	public static final SimpleParticleType RAGE_PARTICLE = register(new SimpleParticleType(false).setRegistryName("rage_particle"),
 			RageParticleParticle::provider);
-	public static final SimpleParticleType TOXIC_PARTICLE = register(new SimpleParticleType(false).setRegistryName("toxic_particle"),
-			ToxicParticleParticle::provider);
 	public static final SimpleParticleType BLUE_CAVE_PARTICLE = register(new SimpleParticleType(false).setRegistryName("blue_cave_particle"),
 			BlueCaveParticleParticle::provider);
 	public static final SimpleParticleType YELLOW_GLOWING_TREE_PARTICLE = register(

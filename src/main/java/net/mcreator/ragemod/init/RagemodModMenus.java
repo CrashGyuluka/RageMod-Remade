@@ -12,7 +12,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
-import net.mcreator.ragemod.world.inventory.ToxicToppedBlocksItemGuiMenu;
 import net.mcreator.ragemod.world.inventory.AdvBookEasterEggMenu;
 
 import java.util.List;
@@ -23,8 +22,6 @@ public class RagemodModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
 	public static final MenuType<AdvBookEasterEggMenu> ADV_BOOK_EASTER_EGG = register("adv_book_easter_egg",
 			(id, inv, extraData) -> new AdvBookEasterEggMenu(id, inv, extraData));
-	public static final MenuType<ToxicToppedBlocksItemGuiMenu> TOXIC_TOPPED_BLOCKS_ITEM_GUI = register("toxic_topped_blocks_item_gui",
-			(id, inv, extraData) -> new ToxicToppedBlocksItemGuiMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

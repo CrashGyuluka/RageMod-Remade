@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "ragemod:blocks/toxicplanttop",
-    "particle": "ragemod:blocks/toxicplanttop"
-  }
-}

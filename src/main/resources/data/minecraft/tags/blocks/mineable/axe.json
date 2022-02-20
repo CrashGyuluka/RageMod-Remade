@@ -29,8 +29,6 @@
     "ragemod:robtai_stairs",
     "ragemod:robtai_slab",
     "ragemod:robtai_fence",
-    "ragemod:robtai_fence_gate",
-    "ragemod:toxic_topped_oak_log",
-    "ragemod:toxic_topped_oak_planks"
+    "ragemod:robtai_fence_gate"
   ]
 }
