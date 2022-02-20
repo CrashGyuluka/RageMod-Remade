@@ -98,7 +98,7 @@
     "luminance": 9,
     "unbreakable": false,
     "breakHarvestLevel": -1,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
       "value": "CUSTOM:GreenGlowingTreeParticle"
     },
