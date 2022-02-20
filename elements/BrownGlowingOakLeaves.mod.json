@@ -102,9 +102,9 @@
     "particleToSpawn": {
       "value": "CUSTOM:BrownGlowingTreeParticle"
     },
-    "particleSpawningShape": "Top",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.1,
+    "particleAmount": 1,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

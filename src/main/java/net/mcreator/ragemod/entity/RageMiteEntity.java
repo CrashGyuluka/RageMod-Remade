@@ -44,14 +44,14 @@ import net.minecraft.network.protocol.Packet;
 import net.mcreator.ragemod.init.RagemodModParticles;
 import net.mcreator.ragemod.init.RagemodModItems;
 import net.mcreator.ragemod.init.RagemodModEntities;
+import net.mcreator.ragemod.init.RagemodModBlocks;
 
 import java.util.Set;
 import java.util.List;
 
 @Mod.EventBusSubscriber
 public class RageMiteEntity extends TamableAnimal {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("ragemod:toxic_waste"), new ResourceLocation("beach"),
-			new ResourceLocation("desert"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("beach"), new ResourceLocation("desert"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
@@ -167,7 +167,7 @@ public class RageMiteEntity extends TamableAnimal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of(RagemodModItems.OPAL).contains(stack);
+		return List.of(RagemodModBlocks.RED_GLOWING_VINE.asItem()).contains(stack);
 	}
 
 	public void aiStep() {

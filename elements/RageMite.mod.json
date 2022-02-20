@@ -105,7 +105,7 @@
     "tameable": true,
     "breedTriggerItems": [
       {
-        "value": "CUSTOM:Opal"
+        "value": "CUSTOM:RedGlowingVine"
       }
     ],
     "ranged": false,
@@ -120,9 +120,6 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:ToxicWaste"
-      },
       {
         "value": "beaches"
       },

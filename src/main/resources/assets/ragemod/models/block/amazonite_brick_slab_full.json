@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "ragemod:blocks/amazonitebricks",
+    "top": "ragemod:blocks/amazonitebricks",
+    "side": "ragemod:blocks/amazonitebricks"
+  }
+}

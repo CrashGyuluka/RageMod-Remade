@@ -22,19 +22,14 @@ import net.mcreator.ragemod.world.features.plants.RageFlowerFeature;
 import net.mcreator.ragemod.world.features.plants.GreenGlowingOakTreeSaplingFeature;
 import net.mcreator.ragemod.world.features.plants.BrownGlowingOakTreeSaplingFeature;
 import net.mcreator.ragemod.world.features.ores.RageiumOreFeature;
-import net.mcreator.ragemod.world.features.ores.OpalOreFeature;
 import net.mcreator.ragemod.world.features.ores.MossyCaltenFeature;
 import net.mcreator.ragemod.world.features.ores.FultFeature;
 import net.mcreator.ragemod.world.features.ores.CerussiteOreFeature;
 import net.mcreator.ragemod.world.features.ores.CaltenFeature;
 import net.mcreator.ragemod.world.features.ores.BoomStoneFeature;
-import net.mcreator.ragemod.world.features.ores.BismuthOreFeature;
 import net.mcreator.ragemod.world.features.ores.AzuriteOreFeature;
 import net.mcreator.ragemod.world.features.ores.ApophylliteOreFeature;
-import net.mcreator.ragemod.world.features.ores.AnapaitOreFeature;
 import net.mcreator.ragemod.world.features.ores.AmazoniteOreFeature;
-import net.mcreator.ragemod.world.features.ores.AdulariaOreFeature;
-import net.mcreator.ragemod.world.features.ores.ActinoliteOreFeature;
 import net.mcreator.ragemod.world.features.ores.AchatOreFeature;
 import net.mcreator.ragemod.world.features.SpareGlowingOakTree5Feature;
 import net.mcreator.ragemod.world.features.SpareGlowingOakTree4Feature;
@@ -77,26 +72,16 @@ public class RagemodModFeatures {
 				RageiumOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(BoomStoneFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BoomStoneFeature.GENERATE_BIOMES,
 				BoomStoneFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(ActinoliteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				ActinoliteOreFeature.GENERATE_BIOMES, ActinoliteOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(AchatOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AchatOreFeature.GENERATE_BIOMES,
 				AchatOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(AzuriteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AzuriteOreFeature.GENERATE_BIOMES,
 				AzuriteOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(AnapaitOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AnapaitOreFeature.GENERATE_BIOMES,
-				AnapaitOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(AdulariaOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
-				AdulariaOreFeature.GENERATE_BIOMES, AdulariaOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(AmazoniteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
 				AmazoniteOreFeature.GENERATE_BIOMES, AmazoniteOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(CerussiteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
 				CerussiteOreFeature.GENERATE_BIOMES, CerussiteOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(BismuthOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BismuthOreFeature.GENERATE_BIOMES,
-				BismuthOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(ApophylliteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
 				ApophylliteOreFeature.GENERATE_BIOMES, ApophylliteOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(OpalOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, OpalOreFeature.GENERATE_BIOMES,
-				OpalOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(FultFeature.FEATURE,
 				new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, FultFeature.GENERATE_BIOMES, FultFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(CaltenFeature.FEATURE,

@@ -4,11 +4,7 @@
   "definition": {
     "type": "Blocks",
     "items": [],
-    "blocks": [
-      {
-        "value": "CUSTOM:ToxicToppedOakLog"
-      }
-    ],
+    "blocks": [],
     "functions": [],
     "entities": [],
     "name": "logs",

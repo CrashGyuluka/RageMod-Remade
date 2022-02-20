@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "ragemod:blocks/robtaiplanks",
-    "top": "ragemod:blocks/robtaiplanks",
-    "side": "ragemod:blocks/robtaiplanks"
-  }
-}

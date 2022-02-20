@@ -41,7 +41,7 @@ public class RedGlowingTreeParticleParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 
-		this.lifetime = (int) Math.max(1, 25 + (this.random.nextInt(30) - 15));
+		this.lifetime = (int) Math.max(1, 7 + (this.random.nextInt(8) - 4));
 		this.gravity = 0f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
@@ -53,13 +53,8 @@ public class RedGlowingTreeParticleParticle extends TextureSheetParticle {
 	}
 
 	@Override
-	public int getLightColor(float partialTick) {
-		return 15728880;
-	}
-
-	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_LIT;
+		return ParticleRenderType.PARTICLE_SHEET_OPAQUE;
 	}
 
 	@Override

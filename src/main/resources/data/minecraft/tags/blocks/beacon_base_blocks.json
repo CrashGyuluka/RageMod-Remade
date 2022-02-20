@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "ragemod:toxic_crystal_block",
     "ragemod:rageium_alloy_block"
   ]
 }

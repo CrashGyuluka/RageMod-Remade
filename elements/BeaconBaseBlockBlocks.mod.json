@@ -7,9 +7,6 @@
     "blocks": [
       {
         "value": "CUSTOM:RageiumAlloyBlock"
-      },
-      {
-        "value": "CUSTOM:ToxicCrystalBlock"
       }
     ],
     "functions": [],

@@ -11,16 +11,11 @@
     "ragemod:rageium_brick_pressure_plate",
     "ragemod:rageium_brick_button",
     "ragemod:boom_stone",
-    "ragemod:actinolite_ore",
     "ragemod:achat_ore",
     "ragemod:azurite_ore",
-    "ragemod:anapait_ore",
-    "ragemod:adularia_ore",
     "ragemod:amazonite_ore",
     "ragemod:cerussite_ore",
-    "ragemod:bismuth_ore",
     "ragemod:apophyllite_ore",
-    "ragemod:opal_ore",
     "ragemod:fult",
     "ragemod:fult_bars",
     "ragemod:fult_trapdoor",
@@ -40,6 +35,10 @@
     "ragemod:calten_bricks_stairs",
     "ragemod:calten_bricks_slab",
     "ragemod:calten_bricks_wall",
-    "ragemod:floor_block"
+    "ragemod:floor_block",
+    "ragemod:amazonite_bricks",
+    "ragemod:amazonite_brick_stairs",
+    "ragemod:amazonite_brick_slab",
+    "ragemod:amazonite_brick_wall"
   ]
 }

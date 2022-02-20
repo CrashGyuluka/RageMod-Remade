@@ -19,6 +19,9 @@
       },
       {
         "value": "CUSTOM:CaltenBricksWall"
+      },
+      {
+        "value": "CUSTOM:AmazoniteBrickWall"
       }
     ],
     "functions": [],

@@ -49,10 +49,10 @@ public class GreenGlowingOakLeavesBlock extends LeavesBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		for (int l = 0; l < 4; ++l) {
-			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.5D * 20;
-			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.5D;
-			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.5D * 20;
+		for (int l = 0; l < 1; ++l) {
+			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.1D * 20;
+			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.1D;
+			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.1D * 20;
 			world.addParticle(RagemodModParticles.GREEN_GLOWING_TREE_PARTICLE, x0, y0, z0, 0, 0, 0);
 		}
 	}
