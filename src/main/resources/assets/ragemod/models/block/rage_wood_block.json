@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "ragemod:blocks/ragewood_log_side",
-    "particle": "ragemod:blocks/ragewood_log_side"
-  }
-}

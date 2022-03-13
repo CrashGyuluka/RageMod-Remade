@@ -26,7 +26,6 @@ import net.mcreator.ragemod.world.features.ores.MossyCaltenFeature;
 import net.mcreator.ragemod.world.features.ores.FultFeature;
 import net.mcreator.ragemod.world.features.ores.CerussiteOreFeature;
 import net.mcreator.ragemod.world.features.ores.CaltenFeature;
-import net.mcreator.ragemod.world.features.ores.BoomStoneFeature;
 import net.mcreator.ragemod.world.features.ores.AzuriteOreFeature;
 import net.mcreator.ragemod.world.features.ores.ApophylliteOreFeature;
 import net.mcreator.ragemod.world.features.ores.AmazoniteOreFeature;
@@ -59,6 +58,9 @@ import net.mcreator.ragemod.world.features.GlowingBiomesBush4Feature;
 import net.mcreator.ragemod.world.features.GlowingBiomesBush3Feature;
 import net.mcreator.ragemod.world.features.GlowingBiomesBush2Feature;
 import net.mcreator.ragemod.world.features.GlowingBiomesBush1Feature;
+import net.mcreator.ragemod.world.features.CaltenStructure01Feature;
+import net.mcreator.ragemod.world.features.BeeStructure02Feature;
+import net.mcreator.ragemod.world.features.BeeStructure01Feature;
 
 import java.util.Set;
 import java.util.Map;
@@ -70,8 +72,6 @@ public class RagemodModFeatures {
 	static {
 		REGISTRY.put(RageiumOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, RageiumOreFeature.GENERATE_BIOMES,
 				RageiumOreFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(BoomStoneFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BoomStoneFeature.GENERATE_BIOMES,
-				BoomStoneFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(AchatOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AchatOreFeature.GENERATE_BIOMES,
 				AchatOreFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(AzuriteOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, AzuriteOreFeature.GENERATE_BIOMES,
@@ -90,6 +90,14 @@ public class RagemodModFeatures {
 				MossyCaltenFeature.GENERATE_BIOMES, MossyCaltenFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(RageFlowerFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
 				RageFlowerFeature.GENERATE_BIOMES, RageFlowerFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(YellowGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				YellowGlowingOakTreeSaplingFeature.GENERATE_BIOMES, YellowGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(BrownGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				BrownGlowingOakTreeSaplingFeature.GENERATE_BIOMES, BrownGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(RedGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				RedGlowingOakTreeSaplingFeature.GENERATE_BIOMES, RedGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(GreenGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				GreenGlowingOakTreeSaplingFeature.GENERATE_BIOMES, GreenGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(GlowingOakTree1Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				GlowingOakTree1Feature.GENERATE_BIOMES, GlowingOakTree1Feature.CONFIGURED_FEATURE));
 		REGISTRY.put(GlowingOakTree2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
@@ -144,16 +152,14 @@ public class RagemodModFeatures {
 				GlowingBiomesBush3Feature.GENERATE_BIOMES, GlowingBiomesBush3Feature.CONFIGURED_FEATURE));
 		REGISTRY.put(GlowingBiomesBush4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				GlowingBiomesBush4Feature.GENERATE_BIOMES, GlowingBiomesBush4Feature.CONFIGURED_FEATURE));
-		REGISTRY.put(YellowGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
-				YellowGlowingOakTreeSaplingFeature.GENERATE_BIOMES, YellowGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(BrownGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
-				BrownGlowingOakTreeSaplingFeature.GENERATE_BIOMES, BrownGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(RedGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
-				RedGlowingOakTreeSaplingFeature.GENERATE_BIOMES, RedGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(GreenGlowingOakTreeSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
-				GreenGlowingOakTreeSaplingFeature.GENERATE_BIOMES, GreenGlowingOakTreeSaplingFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(GlowingVineAirStrFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				GlowingVineAirStrFeature.GENERATE_BIOMES, GlowingVineAirStrFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(CaltenStructure01Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				CaltenStructure01Feature.GENERATE_BIOMES, CaltenStructure01Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(BeeStructure01Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				BeeStructure01Feature.GENERATE_BIOMES, BeeStructure01Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(BeeStructure02Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				BeeStructure02Feature.GENERATE_BIOMES, BeeStructure02Feature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

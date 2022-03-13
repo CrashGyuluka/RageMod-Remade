@@ -41,8 +41,7 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class AtomRagerEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("ragemod:toxic_waste"), new ResourceLocation("beach"),
-			new ResourceLocation("desert"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("beach"), new ResourceLocation("desert"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {

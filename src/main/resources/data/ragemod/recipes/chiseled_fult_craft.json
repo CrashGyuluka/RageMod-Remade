@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "ragemod:fult"
+    },
+    "1": {
+      "item": "ragemod:fult"
+    },
+    "2": {
+      "item": "ragemod:fult"
+    },
+    "3": {
+      "item": "ragemod:fult"
+    }
+  },
+  "result": {
+    "item": "ragemod:chiseled_fult",
+    "count": 3
+  }
+}

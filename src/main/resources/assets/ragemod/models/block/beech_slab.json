@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "ragemod:blocks/beechplanks",
-    "top": "ragemod:blocks/beechplanks",
-    "side": "ragemod:blocks/beechplanks"
-  }
-}

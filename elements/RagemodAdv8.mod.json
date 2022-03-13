@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Recoloured Iron?",
-    "achievementDescription": "Place down something made out of Fult Ingot",
+    "achievementDescription": "Place down something made out of Fult",
     "achievementIcon": {
       "value": "CUSTOM:FultTrapdoor"
     },

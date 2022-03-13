@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
+    "ragemod:fult",
     "ragemod:fult_bars",
-    "ragemod:fult_trapdoor"
+    "ragemod:fult_trapdoor",
+    "ragemod:chiseled_fult"
   ]
 }

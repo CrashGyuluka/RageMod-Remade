@@ -6,7 +6,7 @@
     "mobLabel": "",
     "mobModelName": "Silverfish",
     "mobModelTexture": "ragemite.png",
-    "mobModelGlowTexture": "ragemite.png",
+    "mobModelGlowTexture": "",
     "modelWidth": 0.4,
     "modelHeight": 0.3,
     "modelShadowSize": 0.5,

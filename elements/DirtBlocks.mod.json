@@ -4,11 +4,7 @@
   "definition": {
     "type": "Blocks",
     "items": [],
-    "blocks": [
-      {
-        "value": "CUSTOM:ToxicToppedDirt"
-      }
-    ],
+    "blocks": [],
     "functions": [],
     "entities": [],
     "name": "dirt",

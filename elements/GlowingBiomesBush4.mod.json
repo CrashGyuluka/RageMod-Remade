@@ -22,9 +22,6 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:GlowingOakField"
-      },
-      {
         "value": "CUSTOM:GlowingOakForest"
       },
       {

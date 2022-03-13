@@ -29,7 +29,7 @@
   "rewards": {
     "experience": 4,
     "recipes": [
-      "ragemod:pat_potion_craft"
+      "ragemod:deleted_mod_element"
     ]
   },
   "parent": "ragemod:ragemod_adv_3"

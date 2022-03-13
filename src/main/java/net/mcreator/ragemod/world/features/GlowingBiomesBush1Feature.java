@@ -26,9 +26,8 @@ public class GlowingBiomesBush1Feature extends Feature<NoneFeatureConfiguration>
 	public static final GlowingBiomesBush1Feature FEATURE = (GlowingBiomesBush1Feature) new GlowingBiomesBush1Feature()
 			.setRegistryName("ragemod:glowing_biomes_bush_1");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE.configured(FeatureConfiguration.NONE);
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("ragemod:glowing_oak_field"),
-			new ResourceLocation("ragemod:glowing_oak_forest"), new ResourceLocation("ragemod:glowing_oak_forest_mountain"),
-			new ResourceLocation("ragemod:spare_glowing_oak_forest"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("ragemod:glowing_oak_forest"),
+			new ResourceLocation("ragemod:glowing_oak_forest_mountain"), new ResourceLocation("ragemod:spare_glowing_oak_forest"));
 	private final List<Block> base_blocks = List.of(Blocks.GRASS_BLOCK);
 	private StructureTemplate template = null;
 

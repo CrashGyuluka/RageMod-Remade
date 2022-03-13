@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "ragemod:blocks/beechplanks",
-    "top": "ragemod:blocks/beechplanks",
-    "side": "ragemod:blocks/beechplanks"
-  }
-}

@@ -18,7 +18,7 @@ public class AdvBookEaProcProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		for (int index0 = 0; index0 < (int) (5); index0++) {
+		for (int index0 = 0; index0 < (int) (7); index0++) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),

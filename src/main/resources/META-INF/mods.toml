@@ -4,12 +4,15 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="ragemod"
-version="2.0: Snapshot 22w"
+version="2.0: Snapshot 22w08a"
 displayName="RageMod"
-credits="https://www.curseforge.com/minecraft/mc-mods/ragemod-by-rageteam"
+credits="CrashGyuluka, Lyof"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ragemod-by-rageteam"
 logoFile="logo.png"
-authors="CrashGyuluka, Lyof"
+authors="CrashGyuluka"
+description='''
+RageMod - Forge 
+'''
 
 [[dependencies.ragemod]]
     modId="minecraft"

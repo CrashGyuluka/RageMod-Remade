@@ -99,11 +99,14 @@
     "breakHarvestLevel": -1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:RageParticle"
+      "value": "CUSTOM:GreenGlowingTreeParticle"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleSpawningRadious": 0.1,
+    "particleAmount": 1,
+    "particleCondition": {
+      "name": "YellowGlowingOakLeavesParticleSpawningCondition"
+    },
     "placingCondition": {
       "name": "YellowGlowingVineBlockValidPlacementCondition"
     },

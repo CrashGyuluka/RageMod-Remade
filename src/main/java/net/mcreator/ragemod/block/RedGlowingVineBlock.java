@@ -16,15 +16,20 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.ragemod.procedures.YellowGlowingVineNeighbourBlockChangesProcedure;
 import net.mcreator.ragemod.procedures.YellowGlowingVineBlockValidPlacementConditionProcedure;
+import net.mcreator.ragemod.procedures.YellowGlowingOakLeavesParticleSpawningConditionProcedure;
+import net.mcreator.ragemod.init.RagemodModParticles;
 import net.mcreator.ragemod.init.RagemodModBlocks;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -76,6 +81,23 @@ public class RedGlowingVineBlock extends Block {
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		YellowGlowingVineNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	@Override
+	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
+		super.animateTick(blockstate, world, pos, random);
+		Player entity = Minecraft.getInstance().player;
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		if (YellowGlowingOakLeavesParticleSpawningConditionProcedure.execute())
+			for (int l = 0; l < 1; ++l) {
+				double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.1D;
+				double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.1D * 100;
+				double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.1D;
+				world.addParticle(RagemodModParticles.BROWN_GLOWING_TREE_PARTICLE, x0, y0, z0, 0, 0, 0);
+			}
 	}
 
 	@OnlyIn(Dist.CLIENT)

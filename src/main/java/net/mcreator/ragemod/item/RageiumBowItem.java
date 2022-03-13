@@ -25,7 +25,7 @@ import java.util.List;
 
 public class RageiumBowItem extends Item {
 	public RageiumBowItem() {
-		super(new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB).durability(6969));
+		super(new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB).durability(50));
 		setRegistryName("rageium_bow");
 	}
 

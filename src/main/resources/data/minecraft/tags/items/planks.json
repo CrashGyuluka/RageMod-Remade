@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "ragemod:robtai_planks",
     "ragemod:beech_planks",
     "ragemod:rage_wood_planks"
   ]

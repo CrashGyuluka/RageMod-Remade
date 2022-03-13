@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "ragemod:blocks/ragewoodsapling",
-    "particle": "ragemod:blocks/ragewoodsapling"
-  }
-}

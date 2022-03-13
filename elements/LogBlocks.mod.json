@@ -4,7 +4,32 @@
   "definition": {
     "type": "Blocks",
     "items": [],
-    "blocks": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BeechLog"
+      },
+      {
+        "value": "CUSTOM:BeechBlock"
+      },
+      {
+        "value": "CUSTOM:StrippedBeechLog"
+      },
+      {
+        "value": "CUSTOM:StippedBeechLog"
+      },
+      {
+        "value": "CUSTOM:StrippedRageWoodLog"
+      },
+      {
+        "value": "CUSTOM:BetterStrippedRageWoodLog"
+      },
+      {
+        "value": "CUSTOM:StrippedRageWoodBlock"
+      },
+      {
+        "value": "CUSTOM:BetterStrippedRageWoodBlock"
+      }
+    ],
     "functions": [],
     "entities": [],
     "name": "logs",

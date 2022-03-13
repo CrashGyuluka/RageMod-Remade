@@ -98,13 +98,16 @@
     "luminance": 10,
     "unbreakable": false,
     "breakHarvestLevel": -1,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "CUSTOM:YellowGlowingTreeParticle"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.1,
     "particleAmount": 1,
+    "particleCondition": {
+      "name": "YellowGlowingOakLeavesParticleSpawningCondition"
+    },
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

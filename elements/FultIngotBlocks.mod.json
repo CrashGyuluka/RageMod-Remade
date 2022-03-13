@@ -10,6 +10,12 @@
       },
       {
         "value": "CUSTOM:FultTrapdoor"
+      },
+      {
+        "value": "CUSTOM:ChiseledFult"
+      },
+      {
+        "value": "CUSTOM:Fult"
       }
     ],
     "functions": [],

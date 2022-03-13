@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:writable_book"
+    },
+    "1": {
+      "item": "ragemod:rageium"
+    },
+    "2": {
+      "item": "minecraft:writable_book"
+    },
+    "3": {
+      "item": "ragemod:rageium"
+    },
+    "4": {
+      "item": "minecraft:book"
+    },
+    "5": {
+      "item": "ragemod:rageium"
+    },
+    "6": {
+      "item": "minecraft:writable_book"
+    },
+    "7": {
+      "item": "ragemod:rageium"
+    },
+    "8": {
+      "item": "minecraft:writable_book"
+    }
+  },
+  "result": {
+    "item": "ragemod:advancement_one_icon",
+    "count": 1
+  }
+}
