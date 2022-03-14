@@ -27,7 +27,6 @@ import java.util.Collections;
 public class RageiumOreBlock extends Block {
 	public RageiumOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("rageium_ore");
 	}
 
 	@Override

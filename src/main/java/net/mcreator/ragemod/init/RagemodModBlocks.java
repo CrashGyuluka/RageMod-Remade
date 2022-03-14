@@ -4,22 +4,22 @@
  */
 package net.mcreator.ragemod.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.ragemod.block.YellowGlowingVineBlock;
 import net.mcreator.ragemod.block.YellowGlowingOakTreeSaplingBlock;
 import net.mcreator.ragemod.block.YellowGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.SmoothCaltenWallBlock;
 import net.mcreator.ragemod.block.SmoothCaltenStairsBlock;
 import net.mcreator.ragemod.block.SmoothCaltenSlabBlock;
 import net.mcreator.ragemod.block.SmoothCaltenBlock;
-import net.mcreator.ragemod.block.RedGlowingVineBlock;
 import net.mcreator.ragemod.block.RedGlowingOakTreeSaplingBlock;
 import net.mcreator.ragemod.block.RedGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.RageiumOreBlock;
@@ -36,10 +36,8 @@ import net.mcreator.ragemod.block.MossyCaltenWallBlock;
 import net.mcreator.ragemod.block.MossyCaltenStairsBlock;
 import net.mcreator.ragemod.block.MossyCaltenSlabBlock;
 import net.mcreator.ragemod.block.MossyCaltenBlock;
-import net.mcreator.ragemod.block.GreenGlowingVineBlock;
 import net.mcreator.ragemod.block.GreenGlowingOakTreeSaplingBlock;
 import net.mcreator.ragemod.block.GreenGlowingOakLeavesBlock;
-import net.mcreator.ragemod.block.GlowingVinesAirBlock;
 import net.mcreator.ragemod.block.FultTrapdoorBlock;
 import net.mcreator.ragemod.block.FultBlock;
 import net.mcreator.ragemod.block.FultBarsBlock;
@@ -54,7 +52,6 @@ import net.mcreator.ragemod.block.CaltenBricksStairsBlock;
 import net.mcreator.ragemod.block.CaltenBricksSlabBlock;
 import net.mcreator.ragemod.block.CaltenBricksBlock;
 import net.mcreator.ragemod.block.CaltenBlock;
-import net.mcreator.ragemod.block.BrownGlowingVineBlock;
 import net.mcreator.ragemod.block.BrownGlowingOakTreeSaplingBlock;
 import net.mcreator.ragemod.block.BrownGlowingOakLeavesBlock;
 import net.mcreator.ragemod.block.AzuriteOreBlock;
@@ -65,76 +62,68 @@ import net.mcreator.ragemod.block.AmazoniteBrickWallBlock;
 import net.mcreator.ragemod.block.AmazoniteBrickStairsBlock;
 import net.mcreator.ragemod.block.AmazoniteBrickSlabBlock;
 import net.mcreator.ragemod.block.AchatOreBlock;
+import net.mcreator.ragemod.RagemodMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RagemodModBlocks {
-	private static final List<Block> REGISTRY = new ArrayList<>();
-	public static final Block RAGEIUM_ORE = register(new RageiumOreBlock());
-	public static final Block RAGEIUM_BLOCK = register(new RageiumBlockBlock());
-	public static final Block RAGEIUM_ALLOY_BLOCK = register(new RageiumAlloyBlockBlock());
-	public static final Block RAGEIUM_BRICKS = register(new RageiumBricksBlock());
-	public static final Block RAGEIUM_BRICK_STAIRS = register(new RageiumBrickStairsBlock());
-	public static final Block RAGEIUM_BRICK_SLAB = register(new RageiumBrickSlabBlock());
-	public static final Block RAGEIUM_BRICK_WALL = register(new RageiumBrickWallBlock());
-	public static final Block RAGEIUM_BRICK_PRESSURE_PLATE = register(new RageiumBrickPressurePlateBlock());
-	public static final Block RAGEIUM_BRICK_BUTTON = register(new RageiumBrickButtonBlock());
-	public static final Block ACHAT_ORE = register(new AchatOreBlock());
-	public static final Block AZURITE_ORE = register(new AzuriteOreBlock());
-	public static final Block AMAZONITE_ORE = register(new AmazoniteOreBlock());
-	public static final Block CERUSSITE_ORE = register(new CerussiteOreBlock());
-	public static final Block APOPHYLLITE_ORE = register(new ApophylliteOreBlock());
-	public static final Block FULT = register(new FultBlock());
-	public static final Block FULT_BARS = register(new FultBarsBlock());
-	public static final Block FULT_TRAPDOOR = register(new FultTrapdoorBlock());
-	public static final Block CHISELED_FULT = register(new ChiseledFultBlock());
-	public static final Block CALTEN = register(new CaltenBlock());
-	public static final Block MOSSY_CALTEN = register(new MossyCaltenBlock());
-	public static final Block SMOOTH_CALTEN = register(new SmoothCaltenBlock());
-	public static final Block CALTEN_BRICKS = register(new CaltenBricksBlock());
-	public static final Block CALTEN_STAIRS = register(new CaltenStairsBlock());
-	public static final Block CALTEN_SLAB = register(new CaltenSlabBlock());
-	public static final Block CALTEN_WALL = register(new CaltenWallBlock());
-	public static final Block MOSSY_CALTEN_STAIRS = register(new MossyCaltenStairsBlock());
-	public static final Block MOSSY_CALTEN_SLAB = register(new MossyCaltenSlabBlock());
-	public static final Block MOSSY_CALTEN_WALL = register(new MossyCaltenWallBlock());
-	public static final Block SMOOTH_CALTEN_STAIRS = register(new SmoothCaltenStairsBlock());
-	public static final Block SMOOTH_CALTEN_SLAB = register(new SmoothCaltenSlabBlock());
-	public static final Block SMOOTH_CALTEN_WALL = register(new SmoothCaltenWallBlock());
-	public static final Block CALTEN_BRICKS_STAIRS = register(new CaltenBricksStairsBlock());
-	public static final Block CALTEN_BRICKS_SLAB = register(new CaltenBricksSlabBlock());
-	public static final Block CALTEN_BRICKS_WALL = register(new CaltenBricksWallBlock());
-	public static final Block FLOOR_BLOCK = register(new FloorBlockBlock());
-	public static final Block RAGE_FLOWER = register(new RageFlowerBlock());
-	public static final Block YELLOW_GLOWING_OAK_LEAVES = register(new YellowGlowingOakLeavesBlock());
-	public static final Block BROWN_GLOWING_OAK_LEAVES = register(new BrownGlowingOakLeavesBlock());
-	public static final Block RED_GLOWING_OAK_LEAVES = register(new RedGlowingOakLeavesBlock());
-	public static final Block GREEN_GLOWING_OAK_LEAVES = register(new GreenGlowingOakLeavesBlock());
-	public static final Block YELLOW_GLOWING_OAK_TREE_SAPLING = register(new YellowGlowingOakTreeSaplingBlock());
-	public static final Block BROWN_GLOWING_OAK_TREE_SAPLING = register(new BrownGlowingOakTreeSaplingBlock());
-	public static final Block RED_GLOWING_OAK_TREE_SAPLING = register(new RedGlowingOakTreeSaplingBlock());
-	public static final Block GREEN_GLOWING_OAK_TREE_SAPLING = register(new GreenGlowingOakTreeSaplingBlock());
-	public static final Block YELLOW_GLOWING_VINE = register(new YellowGlowingVineBlock());
-	public static final Block BROWN_GLOWING_VINE = register(new BrownGlowingVineBlock());
-	public static final Block RED_GLOWING_VINE = register(new RedGlowingVineBlock());
-	public static final Block GREEN_GLOWING_VINE = register(new GreenGlowingVineBlock());
-	public static final Block AMAZONITE_BRICKS = register(new AmazoniteBricksBlock());
-	public static final Block AMAZONITE_BRICK_STAIRS = register(new AmazoniteBrickStairsBlock());
-	public static final Block AMAZONITE_BRICK_SLAB = register(new AmazoniteBrickSlabBlock());
-	public static final Block AMAZONITE_BRICK_WALL = register(new AmazoniteBrickWallBlock());
-	public static final Block GLOWING_VINES_AIR = register(new GlowingVinesAirBlock());
-
-	private static Block register(Block block) {
-		REGISTRY.add(block);
-		return block;
-	}
-
-	@SubscribeEvent
-	public static void registerBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
-	}
+	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, RagemodMod.MODID);
+	public static final RegistryObject<Block> RAGEIUM_ORE = REGISTRY.register("rageium_ore", () -> new RageiumOreBlock());
+	public static final RegistryObject<Block> RAGEIUM_BLOCK = REGISTRY.register("rageium_block", () -> new RageiumBlockBlock());
+	public static final RegistryObject<Block> RAGEIUM_ALLOY_BLOCK = REGISTRY.register("rageium_alloy_block", () -> new RageiumAlloyBlockBlock());
+	public static final RegistryObject<Block> RAGEIUM_BRICKS = REGISTRY.register("rageium_bricks", () -> new RageiumBricksBlock());
+	public static final RegistryObject<Block> RAGEIUM_BRICK_STAIRS = REGISTRY.register("rageium_brick_stairs", () -> new RageiumBrickStairsBlock());
+	public static final RegistryObject<Block> RAGEIUM_BRICK_SLAB = REGISTRY.register("rageium_brick_slab", () -> new RageiumBrickSlabBlock());
+	public static final RegistryObject<Block> RAGEIUM_BRICK_WALL = REGISTRY.register("rageium_brick_wall", () -> new RageiumBrickWallBlock());
+	public static final RegistryObject<Block> RAGEIUM_BRICK_PRESSURE_PLATE = REGISTRY.register("rageium_brick_pressure_plate",
+			() -> new RageiumBrickPressurePlateBlock());
+	public static final RegistryObject<Block> RAGEIUM_BRICK_BUTTON = REGISTRY.register("rageium_brick_button", () -> new RageiumBrickButtonBlock());
+	public static final RegistryObject<Block> ACHAT_ORE = REGISTRY.register("achat_ore", () -> new AchatOreBlock());
+	public static final RegistryObject<Block> AZURITE_ORE = REGISTRY.register("azurite_ore", () -> new AzuriteOreBlock());
+	public static final RegistryObject<Block> AMAZONITE_ORE = REGISTRY.register("amazonite_ore", () -> new AmazoniteOreBlock());
+	public static final RegistryObject<Block> CERUSSITE_ORE = REGISTRY.register("cerussite_ore", () -> new CerussiteOreBlock());
+	public static final RegistryObject<Block> APOPHYLLITE_ORE = REGISTRY.register("apophyllite_ore", () -> new ApophylliteOreBlock());
+	public static final RegistryObject<Block> FULT = REGISTRY.register("fult", () -> new FultBlock());
+	public static final RegistryObject<Block> FULT_BARS = REGISTRY.register("fult_bars", () -> new FultBarsBlock());
+	public static final RegistryObject<Block> FULT_TRAPDOOR = REGISTRY.register("fult_trapdoor", () -> new FultTrapdoorBlock());
+	public static final RegistryObject<Block> CHISELED_FULT = REGISTRY.register("chiseled_fult", () -> new ChiseledFultBlock());
+	public static final RegistryObject<Block> CALTEN = REGISTRY.register("calten", () -> new CaltenBlock());
+	public static final RegistryObject<Block> MOSSY_CALTEN = REGISTRY.register("mossy_calten", () -> new MossyCaltenBlock());
+	public static final RegistryObject<Block> SMOOTH_CALTEN = REGISTRY.register("smooth_calten", () -> new SmoothCaltenBlock());
+	public static final RegistryObject<Block> CALTEN_BRICKS = REGISTRY.register("calten_bricks", () -> new CaltenBricksBlock());
+	public static final RegistryObject<Block> CALTEN_STAIRS = REGISTRY.register("calten_stairs", () -> new CaltenStairsBlock());
+	public static final RegistryObject<Block> CALTEN_SLAB = REGISTRY.register("calten_slab", () -> new CaltenSlabBlock());
+	public static final RegistryObject<Block> CALTEN_WALL = REGISTRY.register("calten_wall", () -> new CaltenWallBlock());
+	public static final RegistryObject<Block> MOSSY_CALTEN_STAIRS = REGISTRY.register("mossy_calten_stairs", () -> new MossyCaltenStairsBlock());
+	public static final RegistryObject<Block> MOSSY_CALTEN_SLAB = REGISTRY.register("mossy_calten_slab", () -> new MossyCaltenSlabBlock());
+	public static final RegistryObject<Block> MOSSY_CALTEN_WALL = REGISTRY.register("mossy_calten_wall", () -> new MossyCaltenWallBlock());
+	public static final RegistryObject<Block> SMOOTH_CALTEN_STAIRS = REGISTRY.register("smooth_calten_stairs", () -> new SmoothCaltenStairsBlock());
+	public static final RegistryObject<Block> SMOOTH_CALTEN_SLAB = REGISTRY.register("smooth_calten_slab", () -> new SmoothCaltenSlabBlock());
+	public static final RegistryObject<Block> SMOOTH_CALTEN_WALL = REGISTRY.register("smooth_calten_wall", () -> new SmoothCaltenWallBlock());
+	public static final RegistryObject<Block> CALTEN_BRICKS_STAIRS = REGISTRY.register("calten_bricks_stairs", () -> new CaltenBricksStairsBlock());
+	public static final RegistryObject<Block> CALTEN_BRICKS_SLAB = REGISTRY.register("calten_bricks_slab", () -> new CaltenBricksSlabBlock());
+	public static final RegistryObject<Block> CALTEN_BRICKS_WALL = REGISTRY.register("calten_bricks_wall", () -> new CaltenBricksWallBlock());
+	public static final RegistryObject<Block> FLOOR_BLOCK = REGISTRY.register("floor_block", () -> new FloorBlockBlock());
+	public static final RegistryObject<Block> RAGE_FLOWER = REGISTRY.register("rage_flower", () -> new RageFlowerBlock());
+	public static final RegistryObject<Block> YELLOW_GLOWING_OAK_LEAVES = REGISTRY.register("yellow_glowing_oak_leaves",
+			() -> new YellowGlowingOakLeavesBlock());
+	public static final RegistryObject<Block> BROWN_GLOWING_OAK_LEAVES = REGISTRY.register("brown_glowing_oak_leaves",
+			() -> new BrownGlowingOakLeavesBlock());
+	public static final RegistryObject<Block> RED_GLOWING_OAK_LEAVES = REGISTRY.register("red_glowing_oak_leaves",
+			() -> new RedGlowingOakLeavesBlock());
+	public static final RegistryObject<Block> GREEN_GLOWING_OAK_LEAVES = REGISTRY.register("green_glowing_oak_leaves",
+			() -> new GreenGlowingOakLeavesBlock());
+	public static final RegistryObject<Block> YELLOW_GLOWING_OAK_TREE_SAPLING = REGISTRY.register("yellow_glowing_oak_tree_sapling",
+			() -> new YellowGlowingOakTreeSaplingBlock());
+	public static final RegistryObject<Block> BROWN_GLOWING_OAK_TREE_SAPLING = REGISTRY.register("brown_glowing_oak_tree_sapling",
+			() -> new BrownGlowingOakTreeSaplingBlock());
+	public static final RegistryObject<Block> RED_GLOWING_OAK_TREE_SAPLING = REGISTRY.register("red_glowing_oak_tree_sapling",
+			() -> new RedGlowingOakTreeSaplingBlock());
+	public static final RegistryObject<Block> GREEN_GLOWING_OAK_TREE_SAPLING = REGISTRY.register("green_glowing_oak_tree_sapling",
+			() -> new GreenGlowingOakTreeSaplingBlock());
+	public static final RegistryObject<Block> AMAZONITE_BRICKS = REGISTRY.register("amazonite_bricks", () -> new AmazoniteBricksBlock());
+	public static final RegistryObject<Block> AMAZONITE_BRICK_STAIRS = REGISTRY.register("amazonite_brick_stairs",
+			() -> new AmazoniteBrickStairsBlock());
+	public static final RegistryObject<Block> AMAZONITE_BRICK_SLAB = REGISTRY.register("amazonite_brick_slab", () -> new AmazoniteBrickSlabBlock());
+	public static final RegistryObject<Block> AMAZONITE_BRICK_WALL = REGISTRY.register("amazonite_brick_wall", () -> new AmazoniteBrickWallBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -164,10 +153,6 @@ public class RagemodModBlocks {
 			BrownGlowingOakTreeSaplingBlock.registerRenderLayer();
 			RedGlowingOakTreeSaplingBlock.registerRenderLayer();
 			GreenGlowingOakTreeSaplingBlock.registerRenderLayer();
-			YellowGlowingVineBlock.registerRenderLayer();
-			BrownGlowingVineBlock.registerRenderLayer();
-			RedGlowingVineBlock.registerRenderLayer();
-			GreenGlowingVineBlock.registerRenderLayer();
 		}
 	}
 }

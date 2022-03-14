@@ -30,7 +30,6 @@ import java.util.Collections;
 public class RageiumBrickPressurePlateBlock extends PressurePlateBlock {
 	public RageiumBrickPressurePlateBlock() {
 		super(Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 15f).requiresCorrectToolForDrops());
-		setRegistryName("rageium_brick_pressure_plate");
 	}
 
 	@Override
@@ -74,7 +73,7 @@ public class RageiumBrickPressurePlateBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGEIUM_BRICK_PRESSURE_PLATE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGEIUM_BRICK_PRESSURE_PLATE.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

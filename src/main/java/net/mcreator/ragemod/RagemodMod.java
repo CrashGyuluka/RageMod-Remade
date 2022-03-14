@@ -16,15 +16,23 @@ package net.mcreator.ragemod;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.ragemod.init.RagemodModTabs;
+import net.mcreator.ragemod.init.RagemodModItems;
+import net.mcreator.ragemod.init.RagemodModFeatures;
+import net.mcreator.ragemod.init.RagemodModEntities;
+import net.mcreator.ragemod.init.RagemodModEnchantments;
+import net.mcreator.ragemod.init.RagemodModBlocks;
+import net.mcreator.ragemod.init.RagemodModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,6 +49,16 @@ public class RagemodMod {
 
 	public RagemodMod() {
 		RagemodModTabs.load();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		RagemodModBlocks.REGISTRY.register(bus);
+		RagemodModItems.REGISTRY.register(bus);
+		RagemodModEntities.REGISTRY.register(bus);
+
+		RagemodModFeatures.REGISTRY.register(bus);
+
+		RagemodModEnchantments.REGISTRY.register(bus);
+
+		RagemodModBiomes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

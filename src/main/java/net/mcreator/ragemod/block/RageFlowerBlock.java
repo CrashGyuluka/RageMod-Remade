@@ -26,7 +26,6 @@ import java.util.Collections;
 public class RageFlowerBlock extends FlowerBlock {
 	public RageFlowerBlock() {
 		super(MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("rage_flower");
 	}
 
 	@Override
@@ -54,6 +53,6 @@ public class RageFlowerBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGE_FLOWER, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGE_FLOWER.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

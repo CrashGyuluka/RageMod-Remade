@@ -1,33 +1,58 @@
 
 package net.mcreator.ragemod.world.features.ores;
 
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
-import net.minecraft.world.level.levelgen.heightproviders.UniformHeight;
-import net.minecraft.world.level.levelgen.feature.configurations.RangeDecoratorConfiguration;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
+import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.OreFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
+import net.minecraft.core.Holder;
 
 import net.mcreator.ragemod.init.RagemodModBlocks;
 
 import java.util.Set;
 import java.util.Random;
+import java.util.List;
 
 public class MossyCaltenFeature extends OreFeature {
-	public static final MossyCaltenFeature FEATURE = (MossyCaltenFeature) new MossyCaltenFeature().setRegistryName("ragemod:mossy_calten");
-	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
-			.configured(new OreConfiguration(MossyCaltenFeatureRuleTest.INSTANCE, RagemodModBlocks.MOSSY_CALTEN.defaultBlockState(), 3))
-			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256)))).squared().count(3);
+	public static MossyCaltenFeature FEATURE = null;
+	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
+	public static Holder<PlacedFeature> PLACED_FEATURE = null;
+
+	public static Feature<?> feature() {
+		FEATURE = new MossyCaltenFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("ragemod:mossy_calten", FEATURE,
+				new OreConfiguration(MossyCaltenFeatureRuleTest.INSTANCE, RagemodModBlocks.MOSSY_CALTEN.get().defaultBlockState(), 3));
+		PLACED_FEATURE = PlacementUtils.register("ragemod:mossy_calten", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(3), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256))));
+		return FEATURE;
+	}
+
+	public static Holder<PlacedFeature> placedFeature() {
+		return PLACED_FEATURE;
+	}
+
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public MossyCaltenFeature() {
 		super(OreConfiguration.CODEC);
@@ -35,26 +60,29 @@ public class MossyCaltenFeature extends OreFeature {
 
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
-		ResourceKey<Level> dimensionType = world.getLevel().dimension();
-		boolean dimensionCriteria = false;
-		if (dimensionType == Level.OVERWORLD)
-			dimensionCriteria = true;
-		if (!dimensionCriteria)
+		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
 		return super.place(context);
 	}
 
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class MossyCaltenFeatureRuleTest extends RuleTest {
 		static final MossyCaltenFeatureRuleTest INSTANCE = new MossyCaltenFeatureRuleTest();
-		static final com.mojang.serialization.Codec<MossyCaltenFeatureRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		static final RuleTestType<MossyCaltenFeatureRuleTest> CUSTOM_MATCH = Registry.register(Registry.RULE_TEST,
-				new ResourceLocation("ragemod:mossy_calten_match"), () -> codec);
+		private static final com.mojang.serialization.Codec<MossyCaltenFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
+		private static final RuleTestType<MossyCaltenFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
+
+		@SubscribeEvent
+		public static void init(FMLCommonSetupEvent event) {
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("ragemod:mossy_calten_match"), CUSTOM_MATCH);
+		}
+
+		private List<Block> base_blocks = null;
 
 		public boolean test(BlockState blockAt, Random random) {
-			boolean blockCriteria = false;
-			if (blockAt.getBlock() == RagemodModBlocks.CALTEN)
-				blockCriteria = true;
-			return blockCriteria;
+			if (base_blocks == null) {
+				base_blocks = List.of(RagemodModBlocks.CALTEN.get());
+			}
+			return base_blocks.contains(blockAt.getBlock());
 		}
 
 		protected RuleTestType<?> getType() {

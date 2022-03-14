@@ -19,7 +19,6 @@ import java.util.Collections;
 public class ApophylliteOreBlock extends Block {
 	public ApophylliteOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(4f, 10f).requiresCorrectToolForDrops().friction(0.7f));
-		setRegistryName("apophyllite_ore");
 	}
 
 	@Override

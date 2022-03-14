@@ -4,12 +4,12 @@
  */
 package net.mcreator.ragemod.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -29,105 +29,94 @@ import net.mcreator.ragemod.item.AmazoniteItem;
 import net.mcreator.ragemod.item.AdvancementOneIconItem;
 import net.mcreator.ragemod.item.AdvancementEasterEggIconItem;
 import net.mcreator.ragemod.item.AchatItem;
+import net.mcreator.ragemod.RagemodMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RagemodModItems {
-	private static final List<Item> REGISTRY = new ArrayList<>();
-	public static final Item RAGEIUM = register(new RageiumItem());
-	public static final Item RAGEIUM_ALLOY = register(new RageiumAlloyItem());
-	public static final Item RAGEIUM_ORE = register(RagemodModBlocks.RAGEIUM_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_BLOCK = register(RagemodModBlocks.RAGEIUM_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_ALLOY_BLOCK = register(RagemodModBlocks.RAGEIUM_ALLOY_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_ARMOR_HELMET = register(new RageiumArmorItem.Helmet());
-	public static final Item RAGEIUM_ARMOR_CHESTPLATE = register(new RageiumArmorItem.Chestplate());
-	public static final Item RAGEIUM_ARMOR_LEGGINGS = register(new RageiumArmorItem.Leggings());
-	public static final Item RAGEIUM_ARMOR_BOOTS = register(new RageiumArmorItem.Boots());
-	public static final Item RAGEIUM_BRICKS = register(RagemodModBlocks.RAGEIUM_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_BRICK_STAIRS = register(RagemodModBlocks.RAGEIUM_BRICK_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_BRICK_SLAB = register(RagemodModBlocks.RAGEIUM_BRICK_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_BRICK_WALL = register(RagemodModBlocks.RAGEIUM_BRICK_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_BRICK_PRESSURE_PLATE = register(RagemodModBlocks.RAGEIUM_BRICK_PRESSURE_PLATE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_BRICK_BUTTON = register(RagemodModBlocks.RAGEIUM_BRICK_BUTTON, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGEIUM_BOW = register(new RageiumBowItem());
-	public static final Item RAGEIUM_ARROW = register(new RageiumArrowItem());
-	public static final Item RAGE_POTION = register(new RagePotionItem());
-	public static final Item ACHAT = register(new AchatItem());
-	public static final Item AZURITE = register(new AzuriteItem());
-	public static final Item AMAZONITE = register(new AmazoniteItem());
-	public static final Item CERUSSITE = register(new CerussiteItem());
-	public static final Item APOPHYLLITE = register(new ApophylliteItem());
-	public static final Item ACHAT_ORE = register(RagemodModBlocks.ACHAT_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item AZURITE_ORE = register(RagemodModBlocks.AZURITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item AMAZONITE_ORE = register(RagemodModBlocks.AMAZONITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CERUSSITE_ORE = register(RagemodModBlocks.CERUSSITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item APOPHYLLITE_ORE = register(RagemodModBlocks.APOPHYLLITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item FULT = register(RagemodModBlocks.FULT, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item FULT_SCRAP = register(new FultScrapItem());
-	public static final Item FULT_INGOT = register(new FultIngotItem());
-	public static final Item FULT_BARS = register(RagemodModBlocks.FULT_BARS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item FULT_TRAPDOOR = register(RagemodModBlocks.FULT_TRAPDOOR, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CHISELED_FULT = register(RagemodModBlocks.CHISELED_FULT, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CALTEN = register(RagemodModBlocks.CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item MOSSY_CALTEN = register(RagemodModBlocks.MOSSY_CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item SMOOTH_CALTEN = register(RagemodModBlocks.SMOOTH_CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CALTEN_BRICKS = register(RagemodModBlocks.CALTEN_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CALTEN_STAIRS = register(RagemodModBlocks.CALTEN_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CALTEN_SLAB = register(RagemodModBlocks.CALTEN_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CALTEN_WALL = register(RagemodModBlocks.CALTEN_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item MOSSY_CALTEN_STAIRS = register(RagemodModBlocks.MOSSY_CALTEN_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item MOSSY_CALTEN_SLAB = register(RagemodModBlocks.MOSSY_CALTEN_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item MOSSY_CALTEN_WALL = register(RagemodModBlocks.MOSSY_CALTEN_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item SMOOTH_CALTEN_STAIRS = register(RagemodModBlocks.SMOOTH_CALTEN_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item SMOOTH_CALTEN_SLAB = register(RagemodModBlocks.SMOOTH_CALTEN_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item SMOOTH_CALTEN_WALL = register(RagemodModBlocks.SMOOTH_CALTEN_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CALTEN_BRICKS_STAIRS = register(RagemodModBlocks.CALTEN_BRICKS_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CALTEN_BRICKS_SLAB = register(RagemodModBlocks.CALTEN_BRICKS_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item CALTEN_BRICKS_WALL = register(RagemodModBlocks.CALTEN_BRICKS_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGE_MITE = register(
-			new SpawnEggItem(RagemodModEntities.RAGE_MITE, -16764007, -65485, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB))
-					.setRegistryName("rage_mite_spawn_egg"));
-	public static final Item ATOM_RAGER = register(
-			new SpawnEggItem(RagemodModEntities.ATOM_RAGER, -3407872, -11382019, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB))
-					.setRegistryName("atom_rager_spawn_egg"));
-	public static final Item FLOOR_BLOCK = register(RagemodModBlocks.FLOOR_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RAGE_FLOWER = register(RagemodModBlocks.RAGE_FLOWER, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item YELLOW_GLOWING_OAK_LEAVES = register(RagemodModBlocks.YELLOW_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item BROWN_GLOWING_OAK_LEAVES = register(RagemodModBlocks.BROWN_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RED_GLOWING_OAK_LEAVES = register(RagemodModBlocks.RED_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item GREEN_GLOWING_OAK_LEAVES = register(RagemodModBlocks.GREEN_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item YELLOW_GLOWING_OAK_TREE_SAPLING = register(RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING,
+	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, RagemodMod.MODID);
+	public static final RegistryObject<Item> RAGEIUM = REGISTRY.register("rageium", () -> new RageiumItem());
+	public static final RegistryObject<Item> RAGEIUM_ALLOY = REGISTRY.register("rageium_alloy", () -> new RageiumAlloyItem());
+	public static final RegistryObject<Item> RAGEIUM_ORE = block(RagemodModBlocks.RAGEIUM_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGEIUM_BLOCK = block(RagemodModBlocks.RAGEIUM_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGEIUM_ALLOY_BLOCK = block(RagemodModBlocks.RAGEIUM_ALLOY_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGEIUM_ARMOR_HELMET = REGISTRY.register("rageium_armor_helmet", () -> new RageiumArmorItem.Helmet());
+	public static final RegistryObject<Item> RAGEIUM_ARMOR_CHESTPLATE = REGISTRY.register("rageium_armor_chestplate",
+			() -> new RageiumArmorItem.Chestplate());
+	public static final RegistryObject<Item> RAGEIUM_ARMOR_LEGGINGS = REGISTRY.register("rageium_armor_leggings",
+			() -> new RageiumArmorItem.Leggings());
+	public static final RegistryObject<Item> RAGEIUM_ARMOR_BOOTS = REGISTRY.register("rageium_armor_boots", () -> new RageiumArmorItem.Boots());
+	public static final RegistryObject<Item> RAGEIUM_BRICKS = block(RagemodModBlocks.RAGEIUM_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGEIUM_BRICK_STAIRS = block(RagemodModBlocks.RAGEIUM_BRICK_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGEIUM_BRICK_SLAB = block(RagemodModBlocks.RAGEIUM_BRICK_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGEIUM_BRICK_WALL = block(RagemodModBlocks.RAGEIUM_BRICK_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGEIUM_BRICK_PRESSURE_PLATE = block(RagemodModBlocks.RAGEIUM_BRICK_PRESSURE_PLATE,
 			RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item BROWN_GLOWING_OAK_TREE_SAPLING = register(RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING,
+	public static final RegistryObject<Item> RAGEIUM_BRICK_BUTTON = block(RagemodModBlocks.RAGEIUM_BRICK_BUTTON, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGEIUM_BOW = REGISTRY.register("rageium_bow", () -> new RageiumBowItem());
+	public static final RegistryObject<Item> RAGEIUM_ARROW = REGISTRY.register("rageium_arrow", () -> new RageiumArrowItem());
+	public static final RegistryObject<Item> RAGE_POTION = REGISTRY.register("rage_potion", () -> new RagePotionItem());
+	public static final RegistryObject<Item> ACHAT = REGISTRY.register("achat", () -> new AchatItem());
+	public static final RegistryObject<Item> AZURITE = REGISTRY.register("azurite", () -> new AzuriteItem());
+	public static final RegistryObject<Item> AMAZONITE = REGISTRY.register("amazonite", () -> new AmazoniteItem());
+	public static final RegistryObject<Item> CERUSSITE = REGISTRY.register("cerussite", () -> new CerussiteItem());
+	public static final RegistryObject<Item> APOPHYLLITE = REGISTRY.register("apophyllite", () -> new ApophylliteItem());
+	public static final RegistryObject<Item> ACHAT_ORE = block(RagemodModBlocks.ACHAT_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> AZURITE_ORE = block(RagemodModBlocks.AZURITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> AMAZONITE_ORE = block(RagemodModBlocks.AMAZONITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CERUSSITE_ORE = block(RagemodModBlocks.CERUSSITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> APOPHYLLITE_ORE = block(RagemodModBlocks.APOPHYLLITE_ORE, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> FULT = block(RagemodModBlocks.FULT, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> FULT_SCRAP = REGISTRY.register("fult_scrap", () -> new FultScrapItem());
+	public static final RegistryObject<Item> FULT_INGOT = REGISTRY.register("fult_ingot", () -> new FultIngotItem());
+	public static final RegistryObject<Item> FULT_BARS = block(RagemodModBlocks.FULT_BARS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> FULT_TRAPDOOR = block(RagemodModBlocks.FULT_TRAPDOOR, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CHISELED_FULT = block(RagemodModBlocks.CHISELED_FULT, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CALTEN = block(RagemodModBlocks.CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> MOSSY_CALTEN = block(RagemodModBlocks.MOSSY_CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> SMOOTH_CALTEN = block(RagemodModBlocks.SMOOTH_CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CALTEN_BRICKS = block(RagemodModBlocks.CALTEN_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CALTEN_STAIRS = block(RagemodModBlocks.CALTEN_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CALTEN_SLAB = block(RagemodModBlocks.CALTEN_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CALTEN_WALL = block(RagemodModBlocks.CALTEN_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> MOSSY_CALTEN_STAIRS = block(RagemodModBlocks.MOSSY_CALTEN_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> MOSSY_CALTEN_SLAB = block(RagemodModBlocks.MOSSY_CALTEN_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> MOSSY_CALTEN_WALL = block(RagemodModBlocks.MOSSY_CALTEN_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> SMOOTH_CALTEN_STAIRS = block(RagemodModBlocks.SMOOTH_CALTEN_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> SMOOTH_CALTEN_SLAB = block(RagemodModBlocks.SMOOTH_CALTEN_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> SMOOTH_CALTEN_WALL = block(RagemodModBlocks.SMOOTH_CALTEN_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CALTEN_BRICKS_STAIRS = block(RagemodModBlocks.CALTEN_BRICKS_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CALTEN_BRICKS_SLAB = block(RagemodModBlocks.CALTEN_BRICKS_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> CALTEN_BRICKS_WALL = block(RagemodModBlocks.CALTEN_BRICKS_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGE_MITE = REGISTRY.register("rage_mite_spawn_egg",
+			() -> new ForgeSpawnEggItem(RagemodModEntities.RAGE_MITE, -16764007, -65485, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB)));
+	public static final RegistryObject<Item> ATOM_RAGER = REGISTRY.register("atom_rager_spawn_egg",
+			() -> new ForgeSpawnEggItem(RagemodModEntities.ATOM_RAGER, -3407872, -11382019,
+					new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB)));
+	public static final RegistryObject<Item> FLOOR_BLOCK = block(RagemodModBlocks.FLOOR_BLOCK, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RAGE_FLOWER = block(RagemodModBlocks.RAGE_FLOWER, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> YELLOW_GLOWING_OAK_LEAVES = block(RagemodModBlocks.YELLOW_GLOWING_OAK_LEAVES,
 			RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RED_GLOWING_OAK_TREE_SAPLING = register(RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item GREEN_GLOWING_OAK_TREE_SAPLING = register(RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING,
+	public static final RegistryObject<Item> BROWN_GLOWING_OAK_LEAVES = block(RagemodModBlocks.BROWN_GLOWING_OAK_LEAVES,
 			RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item YELLOW_GLOWING_VINE = register(RagemodModBlocks.YELLOW_GLOWING_VINE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item BROWN_GLOWING_VINE = register(RagemodModBlocks.BROWN_GLOWING_VINE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item RED_GLOWING_VINE = register(RagemodModBlocks.RED_GLOWING_VINE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item GREEN_GLOWING_VINE = register(RagemodModBlocks.GREEN_GLOWING_VINE, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item AMAZONITE_BRICKS = register(RagemodModBlocks.AMAZONITE_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item AMAZONITE_BRICK_STAIRS = register(RagemodModBlocks.AMAZONITE_BRICK_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item AMAZONITE_BRICK_SLAB = register(RagemodModBlocks.AMAZONITE_BRICK_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item AMAZONITE_BRICK_WALL = register(RagemodModBlocks.AMAZONITE_BRICK_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final Item ADVANCEMENT_ONE_ICON = register(new AdvancementOneIconItem());
-	public static final Item ADVANCEMENT_EASTER_EGG_ICON = register(new AdvancementEasterEggIconItem());
-	public static final Item GLOWING_VINES_AIR = register(RagemodModBlocks.GLOWING_VINES_AIR, null);
+	public static final RegistryObject<Item> RED_GLOWING_OAK_LEAVES = block(RagemodModBlocks.RED_GLOWING_OAK_LEAVES, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> GREEN_GLOWING_OAK_LEAVES = block(RagemodModBlocks.GREEN_GLOWING_OAK_LEAVES,
+			RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> YELLOW_GLOWING_OAK_TREE_SAPLING = block(RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING,
+			RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> BROWN_GLOWING_OAK_TREE_SAPLING = block(RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING,
+			RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> RED_GLOWING_OAK_TREE_SAPLING = block(RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING,
+			RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> GREEN_GLOWING_OAK_TREE_SAPLING = block(RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING,
+			RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> AMAZONITE_BRICKS = block(RagemodModBlocks.AMAZONITE_BRICKS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> AMAZONITE_BRICK_STAIRS = block(RagemodModBlocks.AMAZONITE_BRICK_STAIRS, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> AMAZONITE_BRICK_SLAB = block(RagemodModBlocks.AMAZONITE_BRICK_SLAB, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> AMAZONITE_BRICK_WALL = block(RagemodModBlocks.AMAZONITE_BRICK_WALL, RagemodModTabs.TAB_RAGEMOD_TAB);
+	public static final RegistryObject<Item> ADVANCEMENT_ONE_ICON = REGISTRY.register("advancement_one_icon", () -> new AdvancementOneIconItem());
+	public static final RegistryObject<Item> ADVANCEMENT_EASTER_EGG_ICON = REGISTRY.register("advancement_easter_egg_icon",
+			() -> new AdvancementEasterEggIconItem());
 
-	private static Item register(Item item) {
-		REGISTRY.add(item);
-		return item;
-	}
-
-	private static Item register(Block block, CreativeModeTab tab) {
-		return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
-	}
-
-	@SubscribeEvent
-	public static void registerItems(RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Item[0]));
+	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
 	}
 }

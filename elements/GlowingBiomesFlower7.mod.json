@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "structure",
   "definition": {
     "structure": "gof_red_tulip",
@@ -28,6 +28,9 @@
       },
       {
         "value": "CUSTOM:SpareGlowingOakForest"
+      },
+      {
+        "value": "CUSTOM:SnowyGlowingOakField"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

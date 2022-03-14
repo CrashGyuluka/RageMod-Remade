@@ -27,7 +27,6 @@ public class FultBarsBlock extends IronBarsBlock {
 	public FultBarsBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(4f, 25f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("fult_bars");
 	}
 
 	@Override
@@ -52,7 +51,7 @@ public class FultBarsBlock extends IronBarsBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.FULT_BARS, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.FULT_BARS.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

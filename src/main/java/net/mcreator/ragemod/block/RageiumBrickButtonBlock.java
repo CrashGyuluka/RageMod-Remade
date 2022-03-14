@@ -30,7 +30,6 @@ import java.util.Collections;
 public class RageiumBrickButtonBlock extends StoneButtonBlock {
 	public RageiumBrickButtonBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 15f).requiresCorrectToolForDrops());
-		setRegistryName("rageium_brick_button");
 	}
 
 	@Override
@@ -74,7 +73,7 @@ public class RageiumBrickButtonBlock extends StoneButtonBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGEIUM_BRICK_BUTTON, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGEIUM_BRICK_BUTTON.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

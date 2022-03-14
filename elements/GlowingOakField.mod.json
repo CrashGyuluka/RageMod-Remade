@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
     "name": "Glowing Oak Field",
@@ -36,27 +36,23 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "PLAINS",
-    "parent": {
-      "value": "CUSTOM:SpareGlowingOakForest"
-    },
-    "rainingPossibility": 0.4,
+    "rainingPossibility": 0.30000000000000004,
     "temperature": 0.5,
-    "baseHeight": 0.0,
-    "heightVariation": 0.0,
+    "baseHeight": 0.5,
+    "heightVariation": 0.1,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 2,
+    "biomeWeight": 9,
     "biomeDictionaryTypes": [
-      "PLAINS",
+      "FOREST",
       "OVERWORLD",
-      "SPARSE",
-      "DENSE"
+      "PLAINS"
     ],
     "grassPerChunk": 8,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 13,
     "mushroomsPerChunk": 2,
-    "bigMushroomsChunk": 2,
+    "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 2,
     "reedsPerChunk": 0,

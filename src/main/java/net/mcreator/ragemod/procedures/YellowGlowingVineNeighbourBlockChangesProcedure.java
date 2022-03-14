@@ -11,8 +11,8 @@ public class YellowGlowingVineNeighbourBlockChangesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)))
 				.getMaterial() == net.minecraft.world.level.material.Material.LEAVES) == false
-				&& BlockTags.getAllTags().getTagOrEmpty(new ResourceLocation("minecraft:leaves"))
-						.contains((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock()) == false) {
+				&& (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)))
+						.is(BlockTags.create(new ResourceLocation("minecraft:leaves"))) == false) {
 			if (world instanceof Level) {
 				Block.dropResources(world.getBlockState(new BlockPos((int) x, (int) y, (int) z)), (Level) world,
 						new BlockPos((int) x, (int) y, (int) z));

@@ -9,7 +9,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
@@ -23,10 +22,9 @@ import javax.annotation.Nullable;
 public class BlocklockEnchProc2Procedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-		Player entity = event.getPlayer();
-		if (event.getHand() != entity.getUsedItemHand())
+		if (event.getHand() != event.getPlayer().getUsedItemHand())
 			return;
-		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), entity);
+		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -36,9 +34,9 @@ public class BlocklockEnchProc2Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (EnchantmentHelper.getItemEnchantmentLevel(RagemodModEnchantments.BLOCK_LOCK,
+		if (EnchantmentHelper.getItemEnchantmentLevel(RagemodModEnchantments.BLOCK_LOCK.get(),
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
-				|| EnchantmentHelper.getItemEnchantmentLevel(RagemodModEnchantments.BLOCK_LOCK,
+				|| EnchantmentHelper.getItemEnchantmentLevel(RagemodModEnchantments.BLOCK_LOCK.get(),
 						(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)) != 0) {
 			{
 				BlockState _setval = (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)));

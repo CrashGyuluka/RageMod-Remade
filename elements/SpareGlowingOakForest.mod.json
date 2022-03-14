@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
     "name": "Spare Glowing Oak Forest",
@@ -36,21 +36,16 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "FOREST",
-    "parent": {
-      "value": "CUSTOM:GlowingOakForest"
-    },
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "rainingPossibility": 0.30000000000000004,
+    "temperature": 0.4,
     "baseHeight": 0.4,
-    "heightVariation": 0.19999999999999998,
+    "heightVariation": 0.1,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 5,
+    "biomeWeight": 8,
     "biomeDictionaryTypes": [
-      "FOREST",
-      "PLAINS",
       "OVERWORLD",
-      "SPARSE"
+      "PLAINS"
     ],
     "grassPerChunk": 7,
     "seagrassPerChunk": 0,

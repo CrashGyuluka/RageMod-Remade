@@ -34,7 +34,7 @@ public class GlowingLeavesBreakProcProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.YELLOW_GLOWING_OAK_LEAVES) {
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.YELLOW_GLOWING_OAK_LEAVES.get()) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 					|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
@@ -42,19 +42,19 @@ public class GlowingLeavesBreakProcProcedure {
 					|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
 							(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)) != 0) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.YELLOW_GLOWING_OAK_LEAVES));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.YELLOW_GLOWING_OAK_LEAVES.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else if (Math.random() < 0.02) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
 		} else {
-			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.BROWN_GLOWING_OAK_LEAVES) {
+			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.BROWN_GLOWING_OAK_LEAVES.get()) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 						|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
@@ -62,19 +62,20 @@ public class GlowingLeavesBreakProcProcedure {
 						|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
 								(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)) != 0) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.BROWN_GLOWING_OAK_LEAVES));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.BROWN_GLOWING_OAK_LEAVES.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				} else if (Math.random() < 0.02) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+								new ItemStack(RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				}
 			} else {
-				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.RED_GLOWING_OAK_LEAVES) {
+				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.RED_GLOWING_OAK_LEAVES.get()) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 							|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 							|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
@@ -82,19 +83,21 @@ public class GlowingLeavesBreakProcProcedure {
 							|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
 									(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)) != 0) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.RED_GLOWING_OAK_LEAVES));
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.RED_GLOWING_OAK_LEAVES.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					} else if (Math.random() < 0.02) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING));
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+									new ItemStack(RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
 				} else {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.GREEN_GLOWING_OAK_LEAVES) {
+					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.GREEN_GLOWING_OAK_LEAVES
+							.get()) {
 						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 								|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 								|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
@@ -102,14 +105,15 @@ public class GlowingLeavesBreakProcProcedure {
 								|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
 										(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)) != 0) {
 							if (world instanceof Level _level && !_level.isClientSide()) {
-								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RagemodModBlocks.GREEN_GLOWING_OAK_LEAVES));
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+										new ItemStack(RagemodModBlocks.GREEN_GLOWING_OAK_LEAVES.get()));
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else if (Math.random() < 0.02) {
 							if (world instanceof Level _level && !_level.isClientSide()) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-										new ItemStack(RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING));
+										new ItemStack(RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING.get()));
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}

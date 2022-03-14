@@ -20,7 +20,6 @@ public class CerussiteOreBlock extends Block {
 	public CerussiteOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHER_ORE).strength(3f, 10f).requiresCorrectToolForDrops()
 				.friction(0.7f));
-		setRegistryName("cerussite_ore");
 	}
 
 	@Override

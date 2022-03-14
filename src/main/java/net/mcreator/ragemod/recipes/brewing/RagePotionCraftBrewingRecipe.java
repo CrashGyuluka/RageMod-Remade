@@ -26,13 +26,13 @@ public class RagePotionCraftBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == RagemodModItems.RAGEIUM_ALLOY;
+		return ingredient.getItem() == RagemodModItems.RAGEIUM_ALLOY.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(RagemodModItems.RAGE_POTION);
+			return new ItemStack(RagemodModItems.RAGE_POTION.get());
 		}
 		return ItemStack.EMPTY;
 	}

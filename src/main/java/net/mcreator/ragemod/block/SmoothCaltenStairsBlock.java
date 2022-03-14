@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
@@ -26,11 +26,18 @@ import java.util.Collections;
 
 public class SmoothCaltenStairsBlock extends StairBlock {
 	public SmoothCaltenStairsBlock() {
-		super(() -> new Block(
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops().dynamicShape())
-						.defaultBlockState(),
+		super(() -> Blocks.AIR.defaultBlockState(),
 				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops().dynamicShape());
-		setRegistryName("smooth_calten_stairs");
+	}
+
+	@Override
+	public float getExplosionResistance() {
+		return 10f;
+	}
+
+	@Override
+	public boolean isRandomlyTicking(BlockState p_56947_) {
+		return false;
 	}
 
 	@Override
@@ -50,7 +57,7 @@ public class SmoothCaltenStairsBlock extends StairBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.SMOOTH_CALTEN_STAIRS, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.SMOOTH_CALTEN_STAIRS.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

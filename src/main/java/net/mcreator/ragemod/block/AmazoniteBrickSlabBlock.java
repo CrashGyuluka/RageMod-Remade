@@ -20,7 +20,6 @@ import java.util.Collections;
 public class AmazoniteBrickSlabBlock extends SlabBlock {
 	public AmazoniteBrickSlabBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("amazonite_brick_slab");
 	}
 
 	@Override

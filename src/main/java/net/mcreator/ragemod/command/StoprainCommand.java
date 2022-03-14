@@ -1,6 +1,8 @@
 
 package net.mcreator.ragemod.command;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
@@ -22,7 +24,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @Mod.EventBusSubscriber
 public class StoprainCommand {
 	@SubscribeEvent
-	public static void registerCommands(RegisterCommandsEvent event) {
+	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher()
 				.register(Commands.literal("stoprain").requires(s -> s.hasPermission(3))
 						.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(StoprainCommand::execute))

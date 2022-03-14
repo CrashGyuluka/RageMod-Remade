@@ -26,7 +26,6 @@ import java.util.Collections;
 public class MossyCaltenWallBlock extends WallBlock {
 	public MossyCaltenWallBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("mossy_calten_wall");
 	}
 
 	@Override
@@ -46,7 +45,7 @@ public class MossyCaltenWallBlock extends WallBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.MOSSY_CALTEN_WALL, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.MOSSY_CALTEN_WALL.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

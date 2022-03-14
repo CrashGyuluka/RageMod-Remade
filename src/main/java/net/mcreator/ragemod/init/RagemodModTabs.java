@@ -17,7 +17,7 @@ public class RagemodModTabs {
 		TAB_RAGEMOD_TAB = new CreativeModeTab("tabragemod_tab") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(RagemodModItems.RAGEIUM_ALLOY);
+				return new ItemStack(RagemodModItems.RAGEIUM_ALLOY.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

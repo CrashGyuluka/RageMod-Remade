@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class FultBlock extends Block {
 	public FultBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(5f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("fult");
 	}
 
 	@Override

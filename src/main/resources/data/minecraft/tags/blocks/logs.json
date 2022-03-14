@@ -1,13 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "ragemod:stripped_rage_wood_log",
-    "ragemod:stripped_beech_log",
-    "ragemod:stipped_beech_log",
-    "ragemod:beech_log",
-    "ragemod:beech_block",
-    "ragemod:better_stripped_rage_wood_log",
-    "ragemod:stripped_rage_wood_block",
-    "ragemod:better_stripped_rage_wood_block"
-  ]
+  "values": []
 }

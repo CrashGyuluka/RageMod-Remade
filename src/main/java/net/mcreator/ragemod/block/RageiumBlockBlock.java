@@ -27,7 +27,6 @@ import java.util.Collections;
 public class RageiumBlockBlock extends Block {
 	public RageiumBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 20f).requiresCorrectToolForDrops());
-		setRegistryName("rageium_block");
 	}
 
 	@Override

@@ -4,6 +4,7 @@ package net.mcreator.ragemod.world.features;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
@@ -16,19 +17,36 @@ import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ragemod.procedures.GlowingVineAirStrOnStructureInstanceGeneratedProcedure;
 
 import java.util.Set;
+import java.util.List;
 
 public class GlowingVineAirStrFeature extends Feature<NoneFeatureConfiguration> {
-	public static final GlowingVineAirStrFeature FEATURE = (GlowingVineAirStrFeature) new GlowingVineAirStrFeature()
-			.setRegistryName("ragemod:glowing_vine_air_str");
-	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE.configured(FeatureConfiguration.NONE);
+	public static GlowingVineAirStrFeature FEATURE = null;
+	public static Holder<ConfiguredFeature<NoneFeatureConfiguration, ?>> CONFIGURED_FEATURE = null;
+	public static Holder<PlacedFeature> PLACED_FEATURE = null;
+
+	public static Feature<?> feature() {
+		FEATURE = new GlowingVineAirStrFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("ragemod:glowing_vine_air_str", FEATURE, FeatureConfiguration.NONE);
+		PLACED_FEATURE = PlacementUtils.register("ragemod:glowing_vine_air_str", CONFIGURED_FEATURE, List.of());
+		return FEATURE;
+	}
+
+	public static Holder<PlacedFeature> placedFeature() {
+		return PLACED_FEATURE;
+	}
+
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("ragemod:glowing_oak_field"),
 			new ResourceLocation("ragemod:glowing_oak_forest"), new ResourceLocation("ragemod:glowing_oak_forest_mountain"),
 			new ResourceLocation("ragemod:spare_glowing_oak_forest"));
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private StructureTemplate template = null;
 
 	public GlowingVineAirStrFeature() {
@@ -37,24 +55,19 @@ public class GlowingVineAirStrFeature extends Feature<NoneFeatureConfiguration> 
 
 	@Override
 	public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
-		boolean dimensionCriteria = false;
-		ResourceKey<Level> dimensionType = context.level().getLevel().dimension();
-		if (dimensionType == Level.OVERWORLD)
-			dimensionCriteria = true;
-		if (!dimensionCriteria)
+		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
 			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("ragemod", "glowing_oak_vines_air_str"));
 		if (template == null)
 			return false;
+		boolean anyPlaced = false;
 		if ((context.random().nextInt(1000000) + 1) <= 10000) {
-			boolean anyPlaced = false;
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
-				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k);
-				j -= 1;
+				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
 				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 				WorldGenLevel world = context.level();
 				int x = spawnTo.getX();
@@ -69,8 +82,7 @@ public class GlowingVineAirStrFeature extends Feature<NoneFeatureConfiguration> 
 					anyPlaced = true;
 				}
 			}
-			return anyPlaced;
 		}
-		return false;
+		return anyPlaced;
 	}
 }

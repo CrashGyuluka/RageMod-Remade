@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
     "name": "Glowing Oak Forest",
@@ -36,27 +36,23 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "FOREST",
-    "parent": {
-      "value": "No parent"
-    },
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
-    "baseHeight": 0.4,
-    "heightVariation": 0.19999999999999998,
+    "rainingPossibility": 0.30000000000000004,
+    "temperature": 0.30000000000000004,
+    "baseHeight": 0.7,
+    "heightVariation": 0.30000000000000004,
     "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [
       "FOREST",
       "PLAINS",
-      "DENSE",
       "OVERWORLD"
     ],
     "grassPerChunk": 11,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 15,
     "mushroomsPerChunk": 1,
-    "bigMushroomsChunk": 1,
+    "bigMushroomsChunk": 2,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 1,
     "reedsPerChunk": 0,

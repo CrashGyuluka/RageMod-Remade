@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
-    "name": "Glowing Oak Forest Mountain",
+    "name": "Snowy Glowing Oak Field",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -10,7 +10,7 @@
       "value": "Blocks.DIRT#0"
     },
     "grassColor": {
-      "value": -4491214,
+      "value": -1788337,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -36,20 +36,18 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "FOREST",
-    "parent": {
-      "value": "CUSTOM:GlowingOakForest"
-    },
-    "rainingPossibility": 0.5,
-    "temperature": 0.4,
-    "baseHeight": 2.5,
-    "heightVariation": 0.6,
-    "biomeType": "WARM",
+    "rainingPossibility": 0.30000000000000004,
+    "temperature": -0.2,
+    "baseHeight": 1.5999999999999999,
+    "heightVariation": 1.2999999999999998,
+    "biomeType": "COOL",
     "spawnBiome": true,
-    "biomeWeight": 5,
+    "biomeWeight": 6,
     "biomeDictionaryTypes": [
       "OVERWORLD",
-      "SPARSE",
-      "DENSE"
+      "COLD",
+      "SNOWY",
+      "PLAINS"
     ],
     "grassPerChunk": 11,
     "seagrassPerChunk": 0,
@@ -80,7 +78,7 @@
     "spawnMineshaft": true,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": true,
-    "villageType": "plains",
+    "villageType": "snowy",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,

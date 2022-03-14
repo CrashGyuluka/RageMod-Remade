@@ -10,7 +10,6 @@ import net.mcreator.ragemod.init.RagemodModTabs;
 public class CerussiteItem extends Item {
 	public CerussiteItem() {
 		super(new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("cerussite");
 	}
 
 	@Override

@@ -19,7 +19,6 @@ import java.util.Collections;
 public class AchatOreBlock extends Block {
 	public AchatOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("achat_ore");
 	}
 
 	@Override

@@ -19,8 +19,7 @@ import java.util.Iterator;
 public class Adv1ProcProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		Entity entity = event.getPlayer();
-		execute(event, entity);
+		execute(event, event.getPlayer());
 	}
 
 	public static void execute(Entity entity) {

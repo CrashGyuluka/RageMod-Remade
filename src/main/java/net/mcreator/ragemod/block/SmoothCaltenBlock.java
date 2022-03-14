@@ -19,7 +19,6 @@ import java.util.Collections;
 public class SmoothCaltenBlock extends Block {
 	public SmoothCaltenBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("smooth_calten");
 	}
 
 	@Override

@@ -19,7 +19,6 @@ import java.util.Collections;
 public class AmazoniteBricksBlock extends Block {
 	public AmazoniteBricksBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("amazonite_bricks");
 	}
 
 	@Override

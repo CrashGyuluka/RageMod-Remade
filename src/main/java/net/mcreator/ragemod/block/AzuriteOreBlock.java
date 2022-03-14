@@ -19,7 +19,6 @@ import java.util.Collections;
 public class AzuriteOreBlock extends Block {
 	public AzuriteOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(41f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("azurite_ore");
 	}
 
 	@Override

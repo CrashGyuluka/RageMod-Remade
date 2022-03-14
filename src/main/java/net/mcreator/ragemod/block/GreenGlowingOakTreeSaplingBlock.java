@@ -32,7 +32,6 @@ import java.util.Collections;
 public class GreenGlowingOakTreeSaplingBlock extends FlowerBlock {
 	public GreenGlowingOakTreeSaplingBlock() {
 		super(MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("green_glowing_oak_tree_sapling");
 	}
 
 	@Override
@@ -67,6 +66,6 @@ public class GreenGlowingOakTreeSaplingBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

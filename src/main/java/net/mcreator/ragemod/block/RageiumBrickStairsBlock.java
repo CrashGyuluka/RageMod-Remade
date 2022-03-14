@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
@@ -30,11 +30,18 @@ import java.util.Collections;
 
 public class RageiumBrickStairsBlock extends StairBlock {
 	public RageiumBrickStairsBlock() {
-		super(() -> new Block(
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 15f).requiresCorrectToolForDrops().dynamicShape())
-						.defaultBlockState(),
+		super(() -> Blocks.AIR.defaultBlockState(),
 				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 15f).requiresCorrectToolForDrops().dynamicShape());
-		setRegistryName("rageium_brick_stairs");
+	}
+
+	@Override
+	public float getExplosionResistance() {
+		return 15f;
+	}
+
+	@Override
+	public boolean isRandomlyTicking(BlockState p_56947_) {
+		return false;
 	}
 
 	@Override
@@ -78,7 +85,7 @@ public class RageiumBrickStairsBlock extends StairBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGEIUM_BRICK_STAIRS, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGEIUM_BRICK_STAIRS.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

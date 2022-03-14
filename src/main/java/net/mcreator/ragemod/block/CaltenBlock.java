@@ -19,7 +19,6 @@ import java.util.Collections;
 public class CaltenBlock extends Block {
 	public CaltenBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("calten");
 	}
 
 	@Override

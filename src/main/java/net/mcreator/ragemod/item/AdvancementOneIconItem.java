@@ -15,7 +15,6 @@ import net.mcreator.ragemod.procedures.AdvBookEaProcProcedure;
 public class AdvancementOneIconItem extends Item {
 	public AdvancementOneIconItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.EPIC));
-		setRegistryName("advancement_one_icon");
 	}
 
 	@Override

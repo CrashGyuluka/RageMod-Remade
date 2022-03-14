@@ -10,7 +10,6 @@ import net.mcreator.ragemod.init.RagemodModTabs;
 public class ApophylliteItem extends Item {
 	public ApophylliteItem() {
 		super(new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("apophyllite");
 	}
 
 	@Override

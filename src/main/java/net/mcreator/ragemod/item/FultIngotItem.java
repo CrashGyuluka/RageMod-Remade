@@ -10,7 +10,6 @@ import net.mcreator.ragemod.init.RagemodModTabs;
 public class FultIngotItem extends Item {
 	public FultIngotItem() {
 		super(new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("fult_ingot");
 	}
 
 	@Override

@@ -27,7 +27,6 @@ public class FultTrapdoorBlock extends TrapDoorBlock {
 	public FultTrapdoorBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 20f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("fult_trapdoor");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class FultTrapdoorBlock extends TrapDoorBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.FULT_TRAPDOOR, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.FULT_TRAPDOOR.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

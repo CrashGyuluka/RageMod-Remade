@@ -1,6 +1,8 @@
 
 package net.mcreator.ragemod.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
@@ -19,7 +21,6 @@ public class YellowGlowingOakLeavesBlock extends LeavesBlock {
 	public YellowGlowingOakLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.25f, 10f).lightLevel(s -> 10)
 				.requiresCorrectToolForDrops().noOcclusion().noDrops());
-		setRegistryName("yellow_glowing_oak_leaves");
 	}
 
 	@Override
@@ -35,8 +36,8 @@ public class YellowGlowingOakLeavesBlock extends LeavesBlock {
 	}
 
 	@Override
-	public boolean removedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
-		boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 		YellowGlowingOakLeavesBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
 	}

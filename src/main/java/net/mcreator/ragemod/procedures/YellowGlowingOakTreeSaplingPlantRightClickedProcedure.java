@@ -23,7 +23,7 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL) {
-			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING) {
+			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING.get()) {
 				if (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canOcclude() == false) {
 					if (Math.random() < 0.4) {
 						if (world instanceof ServerLevel _serverworld) {
@@ -39,14 +39,16 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 					}
 				}
 				if (world instanceof Level _level) {
-					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, new BlockPos((int) x, (int) y, (int) z))
-							|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, new BlockPos((int) x, (int) y, (int) z), null)) {
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
+							|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 						if (!_level.isClientSide())
-							_level.levelEvent(2005, new BlockPos((int) x, (int) y, (int) z), 0);
+							_level.levelEvent(2005, _bp, 0);
 					}
 				}
 			} else {
-				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING) {
+				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING
+						.get()) {
 					if (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canOcclude() == false) {
 						if (Math.random() < 0.4) {
 							if (world instanceof ServerLevel _serverworld) {
@@ -62,14 +64,16 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 						}
 					}
 					if (world instanceof Level _level) {
-						if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, new BlockPos((int) x, (int) y, (int) z)) || BoneMealItem
-								.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, new BlockPos((int) x, (int) y, (int) z), null)) {
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
+								|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 							if (!_level.isClientSide())
-								_level.levelEvent(2005, new BlockPos((int) x, (int) y, (int) z), 0);
+								_level.levelEvent(2005, _bp, 0);
 						}
 					}
 				} else {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING) {
+					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING
+							.get()) {
 						if (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canOcclude() == false) {
 							if (Math.random() < 0.4) {
 								if (world instanceof ServerLevel _serverworld) {
@@ -85,15 +89,16 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 							}
 						}
 						if (world instanceof Level _level) {
-							if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, new BlockPos((int) x, (int) y, (int) z)) || BoneMealItem
-									.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, new BlockPos((int) x, (int) y, (int) z), null)) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
+									|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 								if (!_level.isClientSide())
-									_level.levelEvent(2005, new BlockPos((int) x, (int) y, (int) z), 0);
+									_level.levelEvent(2005, _bp, 0);
 							}
 						}
 					} else {
 						if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)))
-								.getBlock() == RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING) {
+								.getBlock() == RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING.get()) {
 							if (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canOcclude() == false) {
 								if (Math.random() < 0.4) {
 									if (world instanceof ServerLevel _serverworld) {
@@ -109,11 +114,11 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 								}
 							}
 							if (world instanceof Level _level) {
-								if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, new BlockPos((int) x, (int) y, (int) z))
-										|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level,
-												new BlockPos((int) x, (int) y, (int) z), null)) {
+								BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+								if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
+										|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 									if (!_level.isClientSide())
-										_level.levelEvent(2005, new BlockPos((int) x, (int) y, (int) z), 0);
+										_level.levelEvent(2005, _bp, 0);
 								}
 							}
 						}

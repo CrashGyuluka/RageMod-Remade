@@ -19,7 +19,6 @@ import java.util.Collections;
 public class AmazoniteOreBlock extends Block {
 	public AmazoniteOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHER_ORE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("amazonite_ore");
 	}
 
 	@Override

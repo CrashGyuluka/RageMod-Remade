@@ -2,8 +2,8 @@
 package net.mcreator.ragemod.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -29,6 +29,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AgeableMob;
@@ -44,7 +45,6 @@ import net.minecraft.network.protocol.Packet;
 import net.mcreator.ragemod.init.RagemodModParticles;
 import net.mcreator.ragemod.init.RagemodModItems;
 import net.mcreator.ragemod.init.RagemodModEntities;
-import net.mcreator.ragemod.init.RagemodModBlocks;
 
 import java.util.Set;
 import java.util.List;
@@ -56,11 +56,11 @@ public class RageMiteEntity extends TamableAnimal {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.RAGE_MITE, 12, 1, 2));
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.RAGE_MITE.get(), 12, 1, 2));
 	}
 
-	public RageMiteEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(RagemodModEntities.RAGE_MITE, world);
+	public RageMiteEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(RagemodModEntities.RAGE_MITE.get(), world);
 	}
 
 	public RageMiteEntity(EntityType<RageMiteEntity> type, Level world) {
@@ -77,8 +77,13 @@ public class RageMiteEntity extends TamableAnimal {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers(this.getClass()));
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, AtomRagerEntity.class, false, false));
@@ -91,7 +96,7 @@ public class RageMiteEntity extends TamableAnimal {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(RagemodModItems.RAGEIUM));
+		this.spawnAtLocation(new ItemStack(RagemodModItems.RAGEIUM.get()));
 	}
 
 	@Override
@@ -160,14 +165,14 @@ public class RageMiteEntity extends TamableAnimal {
 
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		RageMiteEntity retval = RagemodModEntities.RAGE_MITE.create(serverWorld);
+		RageMiteEntity retval = RagemodModEntities.RAGE_MITE.get().create(serverWorld);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
 		return retval;
 	}
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of(RagemodModBlocks.RED_GLOWING_VINE.asItem()).contains(stack);
+		return List.of(RagemodModItems.FULT_SCRAP.get()).contains(stack.getItem());
 	}
 
 	public void aiStep() {
@@ -189,7 +194,7 @@ public class RageMiteEntity extends TamableAnimal {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(RagemodModEntities.RAGE_MITE, SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(RagemodModEntities.RAGE_MITE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}

@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
@@ -25,10 +24,9 @@ import java.util.Map;
 public class MossyCaltenRemoveProcProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-		Player entity = event.getPlayer();
-		if (event.getHand() != entity.getUsedItemHand())
+		if (event.getHand() != event.getPlayer().getUsedItemHand())
 			return;
-		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), entity);
+		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -40,10 +38,10 @@ public class MossyCaltenRemoveProcProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS) {
-			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.MOSSY_CALTEN) {
+			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.MOSSY_CALTEN.get()) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-					BlockState _bs = RagemodModBlocks.CALTEN.defaultBlockState();
+					BlockState _bs = RagemodModBlocks.CALTEN.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -56,10 +54,10 @@ public class MossyCaltenRemoveProcProcedure {
 					world.setBlock(_bp, _bs, 3);
 				}
 			} else {
-				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.MOSSY_CALTEN_STAIRS) {
+				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.MOSSY_CALTEN_STAIRS.get()) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = RagemodModBlocks.CALTEN_STAIRS.defaultBlockState();
+						BlockState _bs = RagemodModBlocks.CALTEN_STAIRS.get().defaultBlockState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -72,10 +70,10 @@ public class MossyCaltenRemoveProcProcedure {
 						world.setBlock(_bp, _bs, 3);
 					}
 				} else {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.MOSSY_CALTEN_SLAB) {
+					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.MOSSY_CALTEN_SLAB.get()) {
 						{
 							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-							BlockState _bs = RagemodModBlocks.CALTEN_SLAB.defaultBlockState();
+							BlockState _bs = RagemodModBlocks.CALTEN_SLAB.get().defaultBlockState();
 							BlockState _bso = world.getBlockState(_bp);
 							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -88,10 +86,10 @@ public class MossyCaltenRemoveProcProcedure {
 							world.setBlock(_bp, _bs, 3);
 						}
 					} else {
-						if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.MOSSY_CALTEN_WALL) {
+						if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.MOSSY_CALTEN_WALL.get()) {
 							{
 								BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-								BlockState _bs = RagemodModBlocks.CALTEN_WALL.defaultBlockState();
+								BlockState _bs = RagemodModBlocks.CALTEN_WALL.get().defaultBlockState();
 								BlockState _bso = world.getBlockState(_bp);
 								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 									Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

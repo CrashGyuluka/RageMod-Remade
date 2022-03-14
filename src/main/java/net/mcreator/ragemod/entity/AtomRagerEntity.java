@@ -2,8 +2,8 @@
 package net.mcreator.ragemod.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -25,6 +25,7 @@ import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
@@ -46,11 +47,11 @@ public class AtomRagerEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.ATOM_RAGER, 8, 1, 1));
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.ATOM_RAGER.get(), 8, 1, 1));
 	}
 
-	public AtomRagerEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(RagemodModEntities.ATOM_RAGER, world);
+	public AtomRagerEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(RagemodModEntities.ATOM_RAGER.get(), world);
 	}
 
 	public AtomRagerEntity(EntityType<AtomRagerEntity> type, Level world) {
@@ -67,7 +68,12 @@ public class AtomRagerEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
@@ -81,7 +87,7 @@ public class AtomRagerEntity extends Monster {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(RagemodModItems.RAGEIUM_ALLOY));
+		this.spawnAtLocation(new ItemStack(RagemodModItems.RAGEIUM_ALLOY.get()));
 	}
 
 	@Override
@@ -122,10 +128,10 @@ public class AtomRagerEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(RagemodModEntities.ATOM_RAGER, SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(RagemodModEntities.ATOM_RAGER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
-		DungeonHooks.addDungeonMob(RagemodModEntities.ATOM_RAGER, 180);
+		DungeonHooks.addDungeonMob(RagemodModEntities.ATOM_RAGER.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

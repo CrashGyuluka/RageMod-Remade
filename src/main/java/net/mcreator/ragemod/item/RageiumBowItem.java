@@ -26,7 +26,6 @@ import java.util.List;
 public class RageiumBowItem extends Item {
 	public RageiumBowItem() {
 		super(new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB).durability(50));
-		setRegistryName("rageium_bow");
 	}
 
 	@Override
@@ -58,11 +57,11 @@ public class RageiumBowItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == RagemodModItems.RAGEIUM_ARROW);
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == RagemodModItems.RAGEIUM_ARROW.get());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == RagemodModItems.RAGEIUM_ARROW) {
+						if (teststack != null && teststack.getItem() == RagemodModItems.RAGEIUM_ARROW.get()) {
 							stack = teststack;
 							break;
 						}
@@ -74,7 +73,7 @@ public class RageiumBowItem extends Item {
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 					} else {
-						if (new ItemStack(RagemodModItems.RAGEIUM_ARROW).isDamageableItem()) {
+						if (new ItemStack(RagemodModItems.RAGEIUM_ARROW.get()).isDamageableItem()) {
 							if (stack.hurt(1, world.getRandom(), entity)) {
 								stack.shrink(1);
 								stack.setDamageValue(0);

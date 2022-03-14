@@ -20,7 +20,7 @@ public class TosserEnchantmentEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		if (stack.getItem() == RagemodModItems.RAGEIUM_ARMOR_LEGGINGS)
+		if (stack.getItem() == RagemodModItems.RAGEIUM_ARMOR_LEGGINGS.get())
 			return true;
 		return false;
 	}

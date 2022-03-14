@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -84,10 +84,13 @@
     ],
     "restrictionBiomes": [
       {
+        "value": "CUSTOM:GlowingOakField"
+      },
+      {
         "value": "CUSTOM:GlowingOakForest"
       },
       {
-        "value": "CUSTOM:GlowingOakForestMountain"
+        "value": "CUSTOM:SnowyGlowingOakField"
       },
       {
         "value": "CUSTOM:SpareGlowingOakForest"

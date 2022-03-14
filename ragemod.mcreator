@@ -2068,15 +2068,6 @@
       "path": "~/wood/glowing/structure/field"
     },
     {
-      "name": "GlowingOakForestMountain",
-      "type": "biome",
-      "sortid": 296,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glowing_oak_forest_mountain",
-      "path": "~/wood/glowing"
-    },
-    {
       "name": "GlowingBiomesFlower1",
       "type": "structure",
       "sortid": 297,
@@ -2355,15 +2346,6 @@
       "path": "~/wood/glowing/proc"
     },
     {
-      "name": "YellowGlowingVine",
-      "type": "block",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yellow_glowing_vine",
-      "path": "~/wood/glowing"
-    },
-    {
       "name": "GlowingOakLeaves",
       "type": "tag",
       "sortid": 314,
@@ -2401,100 +2383,6 @@
         ]
       },
       "path": "~/wood/glowing/proc"
-    },
-    {
-      "name": "GlowingVinesAirBlockAdded",
-      "type": "procedure",
-      "sortid": 316,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glowing_vines_air_block_added",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/wood/glowing/proc"
-    },
-    {
-      "name": "GlowingVinesAir",
-      "type": "block",
-      "sortid": 317,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glowing_vines_air",
-      "path": "~/wood/glowing"
-    },
-    {
-      "name": "GlowingVinesAirUpdateTickProc",
-      "type": "procedure",
-      "sortid": 318,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glowing_vines_air_update_tick_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/wood/glowing/proc"
-    },
-    {
-      "name": "BrownGlowingVine",
-      "type": "block",
-      "sortid": 89,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "brown_glowing_vine",
-      "path": "~/wood/glowing"
-    },
-    {
-      "name": "RedGlowingVine",
-      "type": "block",
-      "sortid": 90,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_glowing_vine",
-      "path": "~/wood/glowing"
-    },
-    {
-      "name": "GreenGlowingVine",
-      "type": "block",
-      "sortid": 91,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_glowing_vine",
-      "path": "~/wood/glowing"
     },
     {
       "name": "RagemodAirBlocks",
@@ -2648,42 +2536,6 @@
         ]
       },
       "path": "~/wood/glowing/proc"
-    },
-    {
-      "name": "YellowGlowingOakLeavesCraft",
-      "type": "recipe",
-      "sortid": 325,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yellow_glowing_oak_leaves_craft",
-      "path": "~/wood/glowing/craft"
-    },
-    {
-      "name": "BrownGlowingOakLeavesCraft",
-      "type": "recipe",
-      "sortid": 326,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "brown_glowing_oak_leaves_craft",
-      "path": "~/wood/glowing/craft"
-    },
-    {
-      "name": "RedGlowingOakLeavesCraft",
-      "type": "recipe",
-      "sortid": 327,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_glowing_oak_leaves_craft",
-      "path": "~/wood/glowing/craft"
-    },
-    {
-      "name": "GreenGlowingOakLeavesCraft",
-      "type": "recipe",
-      "sortid": 328,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_glowing_oak_leaves_craft",
-      "path": "~/wood/glowing/craft"
     },
     {
       "name": "GlowingVineAirStrOnStructureInstanceGenerated",
@@ -2915,6 +2767,15 @@
       "locked_code": false,
       "registry_name": "bee_structure_02",
       "path": "~/structures"
+    },
+    {
+      "name": "SnowyGlowingOakField",
+      "type": "biome",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowy_glowing_oak_field",
+      "path": "~/wood/glowing"
     }
   ],
   "variable_elements": [
@@ -3072,7 +2933,6 @@
       "advancements.ragemod_adv_2.descr": "Have a Rageium in your inventory",
       "itemGroup.tabragemod_tab": "RageMod",
       "item.ragemod.advancement_one_icon": "Advancement One Icon",
-      "block.ragemod.green_glowing_vine": "Green Glowing Vine",
       "block.ragemod.yellow_glowing_oak_tree_sapling": "Yellow Glowing Oak Tree Sapling",
       "block.ragemod.brown_glowing_oak_leaves": "Brown Glowing Oak Leaves",
       "block.ragemod.smooth_calten_slab": "Smooth Calten Slab",
@@ -3087,7 +2947,6 @@
       "item.ragemod.rage_potion": "Rage Potion",
       "block.ragemod.mossy_calten_wall": "Mossy Calten Wall",
       "advancements.ragemod_adv_3.title": "Made to be stronger",
-      "block.ragemod.glowing_vines_air": "Glowing Vines Air",
       "item.ragemod.rageium_bow": "Rageium Bow",
       "block.ragemod.rageium_brick_pressure_plate": "Rageium Brick Pressure Plate",
       "block.ragemod.chiseled_fult": "Chiseled Fult",
@@ -3096,7 +2955,6 @@
       "advancements.ragemod_adv_11.title": "Damaged Property",
       "item.ragemod.fult_ingot": "Fult Ingot",
       "block.ragemod.rageium_brick_button": "Rageium Brick Button",
-      "biome.ragemod.glowing_oak_forest_mountain": "Glowing Oak Forest Mountain",
       "block.ragemod.amazonite_brick_stairs": "Amazonite Brick Stairs",
       "advancements.ragemod_adv_7.title": "Scrap to Ingot",
       "item.ragemod.rageium_armor_chestplate": "Rageium Body",
@@ -3134,9 +2992,9 @@
       "advancements.ragemod_adv_2.title": "Don\u0027t Rage!",
       "advancements.ragemod_adv_12.title": "Bob The Builder",
       "item.ragemod.azurite": "Azurite",
+      "biome.ragemod.snowy_glowing_oak_field": "Snowy Glowing Oak Field",
       "block.ragemod.rageium_block": "Rageium Block",
       "block.ragemod.smooth_calten_wall": "Smooth Calten Wall",
-      "block.ragemod.brown_glowing_vine": "Brown Glowing Vine",
       "item.ragemod.rageium_alloy": "Rageium Alloy",
       "item.ragemod.rageium": "Rageium",
       "advancements.ragemod_adv_15.title": "The power of Bone Meal",
@@ -3152,7 +3010,6 @@
       "gamerule.sendTeleporterFeedback": "SendTeleporterFeedback",
       "gamerule.toxicGivesBadEffects.description": "Toxic Blocks will give you bad effects if this is true(default)",
       "advancements.ragemod_adv_16.descr": "Have an Amazonite Brick in your inventory",
-      "block.ragemod.red_glowing_vine": "Red Glowing Vine",
       "block.ragemod.azurite_ore": "Azurite Ore",
       "block.ragemod.achat_ore": "Achat Ore",
       "advancements.ragemod_adv_7.descr": "Smelt a Fult Scrap and collect the result",
@@ -3171,7 +3028,6 @@
       "block.ragemod.smooth_calten_stairs": "Smooth Calten Stairs",
       "item.ragemod.advancement_easter_egg_icon": "Advancement Easter Egg Icon",
       "entity.ragemod.atom_rager": "AtomRageR",
-      "block.ragemod.yellow_glowing_vine": "Yellow Glowing Vine",
       "item.ragemod.rageium_armor_helmet": "Rageium Helmet",
       "item.ragemod.atom_rager_spawn_egg": "AtomRageR Spawn Egg",
       "item.ragemod.rageium_arrow": "Rageium Arrow",
@@ -3374,10 +3230,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.17.1",
+    "currentGenerator": "forge-1.18.2",
     "credits": "CrashGyuluka, Lyof",
     "modElementsPackage": "net.mcreator.ragemod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100354000
+  "mcreatorVersion": 202200112711
 }

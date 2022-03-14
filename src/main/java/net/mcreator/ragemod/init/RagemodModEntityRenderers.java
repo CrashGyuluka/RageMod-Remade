@@ -18,8 +18,8 @@ import net.mcreator.ragemod.client.renderer.AtomRagerRenderer;
 public class RagemodModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(RagemodModEntities.RAGEIUM_BOW, ThrownItemRenderer::new);
-		event.registerEntityRenderer(RagemodModEntities.RAGE_MITE, RageMiteRenderer::new);
-		event.registerEntityRenderer(RagemodModEntities.ATOM_RAGER, AtomRagerRenderer::new);
+		event.registerEntityRenderer(RagemodModEntities.RAGEIUM_BOW.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(RagemodModEntities.RAGE_MITE.get(), RageMiteRenderer::new);
+		event.registerEntityRenderer(RagemodModEntities.ATOM_RAGER.get(), AtomRagerRenderer::new);
 	}
 }

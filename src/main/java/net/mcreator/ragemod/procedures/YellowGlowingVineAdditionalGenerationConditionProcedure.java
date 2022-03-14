@@ -7,8 +7,8 @@ import net.minecraft.core.BlockPos;
 
 public class YellowGlowingVineAdditionalGenerationConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if (BlockTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:glowing_oak_leaves"))
-				.contains((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock()) == true) {
+		if ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)))
+				.is(BlockTags.create(new ResourceLocation("forge:glowing_oak_leaves"))) == true) {
 			return true;
 		}
 		return false;

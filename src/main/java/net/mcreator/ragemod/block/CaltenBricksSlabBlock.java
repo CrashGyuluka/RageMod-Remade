@@ -27,7 +27,6 @@ import java.util.Collections;
 public class CaltenBricksSlabBlock extends SlabBlock {
 	public CaltenBricksSlabBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("calten_bricks_slab");
 	}
 
 	@Override
@@ -47,7 +46,7 @@ public class CaltenBricksSlabBlock extends SlabBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.CALTEN_BRICKS_SLAB, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.CALTEN_BRICKS_SLAB.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

@@ -19,7 +19,6 @@ import java.util.Collections;
 public class FloorBlockBlock extends Block {
 	public FloorBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("floor_block");
 	}
 
 	@Override

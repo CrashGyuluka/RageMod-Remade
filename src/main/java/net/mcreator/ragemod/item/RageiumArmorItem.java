@@ -41,7 +41,7 @@ public abstract class RageiumArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(RagemodModItems.RAGEIUM), new ItemStack(RagemodModItems.RAGEIUM_ALLOY));
+				return Ingredient.of(new ItemStack(RagemodModItems.RAGEIUM.get()), new ItemStack(RagemodModItems.RAGEIUM_ALLOY.get()));
 			}
 
 			@Override
@@ -64,7 +64,6 @@ public abstract class RageiumArmorItem extends ArmorItem {
 	public static class Helmet extends RageiumArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB));
-			setRegistryName("rageium_armor_helmet");
 		}
 
 		@Override
@@ -76,7 +75,6 @@ public abstract class RageiumArmorItem extends ArmorItem {
 	public static class Chestplate extends RageiumArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB));
-			setRegistryName("rageium_armor_chestplate");
 		}
 
 		@Override
@@ -88,7 +86,6 @@ public abstract class RageiumArmorItem extends ArmorItem {
 	public static class Leggings extends RageiumArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB));
-			setRegistryName("rageium_armor_leggings");
 		}
 
 		@Override
@@ -100,7 +97,6 @@ public abstract class RageiumArmorItem extends ArmorItem {
 	public static class Boots extends RageiumArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB));
-			setRegistryName("rageium_armor_boots");
 		}
 
 		@Override

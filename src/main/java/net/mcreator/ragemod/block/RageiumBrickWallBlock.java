@@ -30,7 +30,6 @@ import java.util.Collections;
 public class RageiumBrickWallBlock extends WallBlock {
 	public RageiumBrickWallBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 15f).requiresCorrectToolForDrops());
-		setRegistryName("rageium_brick_wall");
 	}
 
 	@Override
@@ -74,7 +73,7 @@ public class RageiumBrickWallBlock extends WallBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGEIUM_BRICK_WALL, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.RAGEIUM_BRICK_WALL.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 }

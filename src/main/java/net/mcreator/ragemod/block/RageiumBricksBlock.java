@@ -27,7 +27,6 @@ import java.util.Collections;
 public class RageiumBricksBlock extends Block {
 	public RageiumBricksBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 15f).requiresCorrectToolForDrops());
-		setRegistryName("rageium_bricks");
 	}
 
 	@Override
