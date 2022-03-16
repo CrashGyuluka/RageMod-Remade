@@ -34,9 +34,8 @@ import java.util.List;
 
 public class GlowingOakForestMountainBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0, 0.55f),
-			Climate.Parameter.span(-0.5f, 1), Climate.Parameter.span(-0.095f, 0.455f),
-			Climate.Parameter.span(-0.6750000000000001f, -0.1250000000000001f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.478663279981f, 0.071336720019f), 0);
+			Climate.Parameter.span(-0.5f, 1), Climate.Parameter.span(0.04f, 0.34f), Climate.Parameter.span(-0.35f, -0.05f),
+			Climate.Parameter.point(0), Climate.Parameter.span(-0.353663279981f, -0.053663279981f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
@@ -84,6 +83,6 @@ public class GlowingOakForestMountainBiome {
 	public static void init() {
 		BiomeDictionary.addTypes(
 				ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(RagemodModBiomes.GLOWING_OAK_FOREST_MOUNTAIN.get())),
-				BiomeDictionary.Type.FOREST, BiomeDictionary.Type.PLAINS, BiomeDictionary.Type.OVERWORLD);
+				BiomeDictionary.Type.FOREST, BiomeDictionary.Type.OVERWORLD, BiomeDictionary.Type.MOUNTAIN);
 	}
 }

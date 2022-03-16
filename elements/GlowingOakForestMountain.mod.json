@@ -38,15 +38,15 @@
     "biomeCategory": "FOREST",
     "rainingPossibility": 0.30000000000000004,
     "temperature": 0.30000000000000004,
-    "baseHeight": 1.7999999999999998,
-    "heightVariation": 1.4000000000000001,
+    "baseHeight": 1.9000000000000001,
+    "heightVariation": 1.2,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 11,
+    "biomeWeight": 6,
     "biomeDictionaryTypes": [
       "FOREST",
-      "PLAINS",
-      "OVERWORLD"
+      "OVERWORLD",
+      "MOUNTAIN"
     ],
     "grassPerChunk": 11,
     "seagrassPerChunk": 0,
