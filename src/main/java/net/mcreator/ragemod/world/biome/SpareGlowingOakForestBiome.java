@@ -34,12 +34,12 @@ import java.util.List;
 
 public class SpareGlowingOakForestBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0, 0.55f),
-			Climate.Parameter.span(-0.5f, 1), Climate.Parameter.span(-0.16f, 0.24f), Climate.Parameter.span(0.7f, 1.1f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.5f, 1), Climate.Parameter.span(-0.13f, 0.27f), Climate.Parameter.span(0.5f, 0.9f), Climate.Parameter.point(0),
 			Climate.Parameter.span(-1.092547909078f, -0.692547909078f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
-				.foliageColorOverride(-12030430).grassColorOverride(-4491214).build();
+				.foliageColorOverride(-12030430).grassColorOverride(-3764444).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("ragemod:grass_spare_glowing_oak_forest", VegetationFeatures.PATCH_GRASS,

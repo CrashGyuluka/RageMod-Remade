@@ -2776,6 +2776,15 @@
       "locked_code": false,
       "registry_name": "snowy_glowing_oak_field",
       "path": "~/wood/glowing"
+    },
+    {
+      "name": "GlowingOakForestMountain",
+      "type": "biome",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_oak_forest_mountain",
+      "path": "~/wood/glowing"
     }
   ],
   "variable_elements": [
@@ -2956,6 +2965,7 @@
       "item.ragemod.fult_ingot": "Fult Ingot",
       "block.ragemod.rageium_brick_button": "Rageium Brick Button",
       "block.ragemod.amazonite_brick_stairs": "Amazonite Brick Stairs",
+      "biome.ragemod.glowing_oak_forest_mountain": "Glowing Oak Forest Mountain",
       "advancements.ragemod_adv_7.title": "Scrap to Ingot",
       "item.ragemod.rageium_armor_chestplate": "Rageium Body",
       "item.ragemod.fult_scrap": "Fult Scrap",

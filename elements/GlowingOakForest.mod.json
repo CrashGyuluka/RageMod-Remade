@@ -10,7 +10,7 @@
       "value": "Blocks.DIRT#0"
     },
     "grassColor": {
-      "value": -4491214,
+      "value": -7971537,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -38,11 +38,11 @@
     "biomeCategory": "FOREST",
     "rainingPossibility": 0.30000000000000004,
     "temperature": 0.30000000000000004,
-    "baseHeight": 0.7,
-    "heightVariation": 0.30000000000000004,
+    "baseHeight": 1.1,
+    "heightVariation": 0.5,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 10,
+    "biomeWeight": 11,
     "biomeDictionaryTypes": [
       "FOREST",
       "PLAINS",

@@ -34,12 +34,12 @@ import java.util.List;
 
 public class GlowingOakForestBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0, 0.55f),
-			Climate.Parameter.span(-0.5f, 1), Climate.Parameter.span(-0.18f, 0.32f), Climate.Parameter.span(0.45f, 0.95f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.743284644865f, -0.243284644865f), 0);
+			Climate.Parameter.span(-0.5f, 1), Climate.Parameter.span(-0.165f, 0.385f), Climate.Parameter.span(0.225f, 0.775f),
+			Climate.Parameter.point(0), Climate.Parameter.span(-0.768284644865f, -0.218284644865f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
-				.foliageColorOverride(-12030430).grassColorOverride(-4491214).build();
+				.foliageColorOverride(-12030430).grassColorOverride(-7971537).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("ragemod:grass_glowing_oak_forest", VegetationFeatures.PATCH_GRASS,

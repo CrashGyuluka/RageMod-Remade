@@ -2,7 +2,7 @@
   "_fv": 25,
   "_type": "biome",
   "definition": {
-    "name": "Spare Glowing Oak Forest",
+    "name": "Glowing Oak Forest Mountain",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -10,7 +10,7 @@
       "value": "Blocks.DIRT#0"
     },
     "grassColor": {
-      "value": -3764444,
+      "value": -4558035,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -37,21 +37,22 @@
     "particlesProbability": 0.5,
     "biomeCategory": "FOREST",
     "rainingPossibility": 0.30000000000000004,
-    "temperature": 0.4,
-    "baseHeight": 0.7000000000000001,
-    "heightVariation": 0.30000000000000004,
+    "temperature": 0.30000000000000004,
+    "baseHeight": 1.7999999999999998,
+    "heightVariation": 1.4000000000000001,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 8,
+    "biomeWeight": 11,
     "biomeDictionaryTypes": [
-      "OVERWORLD",
-      "PLAINS"
+      "FOREST",
+      "PLAINS",
+      "OVERWORLD"
     ],
-    "grassPerChunk": 7,
+    "grassPerChunk": 11,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 9,
+    "flowersPerChunk": 15,
     "mushroomsPerChunk": 1,
-    "bigMushroomsChunk": 1,
+    "bigMushroomsChunk": 2,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 1,
     "reedsPerChunk": 0,
@@ -108,7 +109,7 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 15,
+        "weight": 20,
         "spawnType": "creature"
       },
       {
