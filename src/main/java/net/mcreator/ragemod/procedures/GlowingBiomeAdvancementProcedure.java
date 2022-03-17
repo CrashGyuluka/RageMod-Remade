@@ -32,13 +32,15 @@ public class GlowingBiomeAdvancementProcedure {
 		if (entity == null)
 			return;
 		if (new ResourceLocation("ragemod:glowing_oak_field")
-				.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName()) == true
+				.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName())
 				|| new ResourceLocation("ragemod:glowing_oak_forest")
-						.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName()) == true
+						.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName())
 				|| new ResourceLocation("ragemod:glowing_oak_forest_mountain")
-						.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName()) == true
+						.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName())
+				|| new ResourceLocation("ragemod:snowy_glowing_oak_field")
+						.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName())
 				|| new ResourceLocation("ragemod:spare_glowing_oak_forest")
-						.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName()) == true) {
+						.equals(world.getBiome(new BlockPos((int) x, (int) y, (int) z)).value().getRegistryName())) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("ragemod:ragemod_adv_15"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

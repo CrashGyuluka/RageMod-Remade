@@ -2385,15 +2385,6 @@
       "path": "~/wood/glowing/proc"
     },
     {
-      "name": "RagemodAirBlocks",
-      "type": "tag",
-      "sortid": 319,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ragemod_air_blocks",
-      "path": "~/tags"
-    },
-    {
       "name": "DoRagemodAirBlocksWork",
       "type": "gamerule",
       "sortid": 320,

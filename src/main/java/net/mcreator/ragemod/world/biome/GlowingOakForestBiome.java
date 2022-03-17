@@ -39,7 +39,7 @@ public class GlowingOakForestBiome {
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
-				.foliageColorOverride(-12030430).grassColorOverride(-7971537).build();
+				.foliageColorOverride(-12030430).grassColorOverride(-4558035).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("ragemod:grass_glowing_oak_forest", VegetationFeatures.PATCH_GRASS,
