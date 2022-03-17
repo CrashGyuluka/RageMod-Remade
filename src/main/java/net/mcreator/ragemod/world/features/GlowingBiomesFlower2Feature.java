@@ -42,7 +42,7 @@ public class GlowingBiomesFlower2Feature extends Feature<NoneFeatureConfiguratio
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("ragemod:glowing_oak_field"),
 			new ResourceLocation("ragemod:glowing_oak_forest"), new ResourceLocation("ragemod:snowy_glowing_oak_field"),
-			new ResourceLocation("ragemod:glowing_oak_forest_mountain"), new ResourceLocation("ragemod:spare_glowing_oak_forest"));
+			new ResourceLocation("ragemod:spare_glowing_oak_forest"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private StructureTemplate template = null;
 

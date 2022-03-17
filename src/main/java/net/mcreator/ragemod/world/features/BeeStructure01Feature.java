@@ -44,7 +44,7 @@ public class BeeStructure01Feature extends Feature<NoneFeatureConfiguration> {
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("old_growth_birch_forest"),
 			new ResourceLocation("bamboo_jungle"), new ResourceLocation("forest"), new ResourceLocation("ragemod:glowing_oak_forest"),
-			new ResourceLocation("birch_forest"), new ResourceLocation("ragemod:glowing_oak_forest_mountain"));
+			new ResourceLocation("birch_forest"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;

@@ -67,9 +67,9 @@ public class RagemodModItems {
 	public static final RegistryObject<Item> FULT = block(RagemodModBlocks.FULT, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final RegistryObject<Item> FULT_SCRAP = REGISTRY.register("fult_scrap", () -> new FultScrapItem());
 	public static final RegistryObject<Item> FULT_INGOT = REGISTRY.register("fult_ingot", () -> new FultIngotItem());
+	public static final RegistryObject<Item> BLOCK_OF_FULT = block(RagemodModBlocks.BLOCK_OF_FULT, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final RegistryObject<Item> FULT_BARS = block(RagemodModBlocks.FULT_BARS, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final RegistryObject<Item> FULT_TRAPDOOR = block(RagemodModBlocks.FULT_TRAPDOOR, RagemodModTabs.TAB_RAGEMOD_TAB);
-	public static final RegistryObject<Item> CHISELED_FULT = block(RagemodModBlocks.CHISELED_FULT, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final RegistryObject<Item> CALTEN = block(RagemodModBlocks.CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final RegistryObject<Item> MOSSY_CALTEN = block(RagemodModBlocks.MOSSY_CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);
 	public static final RegistryObject<Item> SMOOTH_CALTEN = block(RagemodModBlocks.SMOOTH_CALTEN, RagemodModTabs.TAB_RAGEMOD_TAB);

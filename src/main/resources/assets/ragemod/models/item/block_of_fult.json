@@ -1,5 +1,5 @@
 {
-  "parent": "ragemod:block/chiseled_fult",
+  "parent": "ragemod:block/block_of_fult",
   "display": {
     "thirdperson": {
       "rotation": [

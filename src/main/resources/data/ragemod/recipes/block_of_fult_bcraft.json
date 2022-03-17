@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:block_of_fult"
+    }
+  ],
+  "result": {
+    "item": "ragemod:fult_ingot",
+    "count": 3
+  }
+}

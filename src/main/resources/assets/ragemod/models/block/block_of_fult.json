@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ragemod:blocks/chiseledfult",
+    "up": "ragemod:blocks/chiseledfult",
+    "north": "ragemod:blocks/chiseledfult",
+    "east": "ragemod:blocks/chiseledfult",
+    "south": "ragemod:blocks/chiseledfult",
+    "west": "ragemod:blocks/chiseledfult",
+    "particle": "ragemod:blocks/chiseledfult"
+  }
+}

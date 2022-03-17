@@ -48,9 +48,9 @@
       "PLAINS",
       "OVERWORLD"
     ],
-    "grassPerChunk": 11,
+    "grassPerChunk": 13,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 15,
+    "flowersPerChunk": 16,
     "mushroomsPerChunk": 1,
     "bigMushroomsChunk": 2,
     "sandPatchesPerChunk": 0,

@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:FultIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:FultIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:FultIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:FultIngot"
       },
       {
-        "value": "CUSTOM:Fult"
+        "value": "CUSTOM:FultIngot"
       },
       {
-        "value": "CUSTOM:Fult"
+        "value": "CUSTOM:FultIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:FultIngot"
       },
       {
-        "value": "CUSTOM:Fult"
+        "value": "CUSTOM:FultIngot"
       },
       {
-        "value": "CUSTOM:Fult"
+        "value": "CUSTOM:FultIngot"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ChiseledFult"
+      "value": "CUSTOM:BlockOfFult"
     },
-    "name": "chiseled_fult_craft",
+    "name": "block_of_fult_craft",
     "namespace": "mod"
   }
 }

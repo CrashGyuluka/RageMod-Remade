@@ -32,7 +32,6 @@ import net.minecraft.core.Holder;
 
 import net.mcreator.ragemod.world.biome.SpareGlowingOakForestBiome;
 import net.mcreator.ragemod.world.biome.SnowyGlowingOakFieldBiome;
-import net.mcreator.ragemod.world.biome.GlowingOakForestMountainBiome;
 import net.mcreator.ragemod.world.biome.GlowingOakForestBiome;
 import net.mcreator.ragemod.world.biome.GlowingOakFieldBiome;
 import net.mcreator.ragemod.RagemodMod;
@@ -52,8 +51,6 @@ public class RagemodModBiomes {
 	public static final RegistryObject<Biome> GLOWING_OAK_FIELD = REGISTRY.register("glowing_oak_field", () -> GlowingOakFieldBiome.createBiome());
 	public static final RegistryObject<Biome> SNOWY_GLOWING_OAK_FIELD = REGISTRY.register("snowy_glowing_oak_field",
 			() -> SnowyGlowingOakFieldBiome.createBiome());
-	public static final RegistryObject<Biome> GLOWING_OAK_FOREST_MOUNTAIN = REGISTRY.register("glowing_oak_forest_mountain",
-			() -> GlowingOakForestMountainBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -62,7 +59,6 @@ public class RagemodModBiomes {
 			SpareGlowingOakForestBiome.init();
 			GlowingOakFieldBiome.init();
 			SnowyGlowingOakFieldBiome.init();
-			GlowingOakForestMountainBiome.init();
 		});
 	}
 
@@ -89,8 +85,6 @@ public class RagemodModBiomes {
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, GLOWING_OAK_FIELD.getId()))));
 						parameters.add(new Pair<>(SnowyGlowingOakFieldBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SNOWY_GLOWING_OAK_FIELD.getId()))));
-						parameters.add(new Pair<>(GlowingOakForestMountainBiome.PARAMETER_POINT,
-								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, GLOWING_OAK_FOREST_MOUNTAIN.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -110,8 +104,6 @@ public class RagemodModBiomes {
 							surfaceRules.add(1, overworldRule(ResourceKey.create(Registry.BIOME_REGISTRY, GLOWING_OAK_FIELD.getId()),
 									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
 							surfaceRules.add(1, overworldRule(ResourceKey.create(Registry.BIOME_REGISTRY, SNOWY_GLOWING_OAK_FIELD.getId()),
-									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
-							surfaceRules.add(1, overworldRule(ResourceKey.create(Registry.BIOME_REGISTRY, GLOWING_OAK_FOREST_MOUNTAIN.getId()),
 									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),

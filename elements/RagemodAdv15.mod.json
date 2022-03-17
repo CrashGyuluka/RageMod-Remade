@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "The power of Bone Meal",
-    "achievementDescription": "Use Bone Meal in a Glowing Oak Biome",
+    "achievementDescription": "Use Bone Meal in a Glowing Oak Biome on a Glowing Oak Sapling",
     "achievementIcon": {
       "value": "CUSTOM:RedGlowingOakTreeSapling"
     },
@@ -15,8 +15,8 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 10,
-    "achievementType": "task",
+    "rewardXP": 15,
+    "achievementType": "challenge",
     "parent": {
       "value": "CUSTOM:RageModAdvancement"
     },

@@ -6,21 +6,21 @@
     "items": [],
     "blocks": [
       {
-        "value": "CUSTOM:FultBars"
+        "value": "CUSTOM:YellowGlowingOakTreeSapling"
       },
       {
-        "value": "CUSTOM:FultTrapdoor"
+        "value": "CUSTOM:BrownGlowingOakTreeSapling"
       },
       {
-        "value": "CUSTOM:Fult"
+        "value": "CUSTOM:RedGlowingOakTreeSapling"
       },
       {
-        "value": "CUSTOM:BlockOfFult"
+        "value": "CUSTOM:GreenGlowingOakTreeSapling"
       }
     ],
     "functions": [],
     "entities": [],
-    "name": "fult_ingot_blocks",
+    "name": "glowing_saplings",
     "namespace": "forge"
   }
 }

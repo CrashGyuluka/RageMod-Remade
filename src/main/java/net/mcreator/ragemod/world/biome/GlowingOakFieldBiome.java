@@ -50,11 +50,14 @@ public class GlowingOakFieldBiome {
 						RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("ragemod:brown_mushroom_glowing_oak_field", VegetationFeatures.PATCH_BROWN_MUSHROOM,
-						List.of(CountPlacement.of(2), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
+						List.of(CountPlacement.of(1), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
 								BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("ragemod:red_mushroom_glowing_oak_field", VegetationFeatures.PATCH_RED_MUSHROOM, List.of(CountPlacement.of(2),
+				PlacementUtils.register("ragemod:red_mushroom_glowing_oak_field", VegetationFeatures.PATCH_RED_MUSHROOM, List.of(CountPlacement.of(1),
 						RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("ragemod:mushrooms_huge_glowing_oak_field", VegetationFeatures.MUSHROOM_ISLAND_VEGETATION,
+						List.of(CountPlacement.of(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("ragemod:disk_gravel_glowing_oak_field",
 						FeatureUtils.register("ragemod:disk_gravel_glowing_oak_field", Feature.DISK,

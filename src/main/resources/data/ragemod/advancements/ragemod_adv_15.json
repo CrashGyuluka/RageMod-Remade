@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.ragemod_adv_15.descr"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 10
+    "experience": 15
   },
   "parent": "ragemod:rage_mod_advancement"
 }

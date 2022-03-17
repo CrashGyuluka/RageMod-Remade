@@ -5,42 +5,42 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 3,
     "group": "",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": ""
       },
       {
-        "value": "Items.ENDER_EYE"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:RageiumAlloy"
+        "value": ""
       },
       {
-        "value": "CUSTOM:RageiumAlloy"
+        "value": "CUSTOM:BlockOfFult"
       },
       {
-        "value": "CUSTOM:RageiumAlloy"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": ""
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Teleporter"
+      "value": "CUSTOM:FultIngot"
     },
-    "name": "rageium_teleporter_craft",
+    "name": "block_of_fult_bcraft",
     "namespace": "mod"
   }
 }
