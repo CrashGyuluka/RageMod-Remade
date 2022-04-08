@@ -75,7 +75,7 @@ public class RagemodAdv8ProcProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (BlockTags.getCollection().getTagByID(new ResourceLocation("forge:fult_ingot_blocks"))
-				.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())) {
+				.contains((world.getBlockState(new BlockPos(x, y, z))).getBlock())) {
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("ragemod:ragemod_adv_8"));

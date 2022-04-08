@@ -83,7 +83,7 @@ public class BlocklockEnchProc2Procedure {
 				|| (EnchantmentHelper.getEnchantmentLevel(BlockLockEnchantment.enchantment,
 						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)) != 0)) {
 			{
-				BlockState _setval = (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)));
+				BlockState _setval = (world.getBlockState(new BlockPos(x, y, z)));
 				entity.getCapability(RagemodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.BlockLockVar = _setval;
 					capability.syncPlayerVariables(entity);

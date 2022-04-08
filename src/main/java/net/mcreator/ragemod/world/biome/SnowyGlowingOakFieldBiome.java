@@ -55,7 +55,7 @@ public class SnowyGlowingOakFieldBiome extends RagemodModElements.ModElement {
 						.withSkyColor(7972607).withFoliageColor(-12030430).withGrassColor(-801963).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
-								Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())));
+								Blocks.DIRT.getDefaultState(), Blocks.ICE.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
 				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_SNOWY);

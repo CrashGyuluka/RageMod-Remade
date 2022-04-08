@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 27,
   "_type": "biome",
   "definition": {
     "name": "Spare Glowing Oak Forest",
@@ -8,6 +8,9 @@
     },
     "undergroundBlock": {
       "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.FLOWING_WATER"
     },
     "grassColor": {
       "value": -3309269,
@@ -42,6 +45,8 @@
     "heightVariation": 0.30000000000000004,
     "biomeType": "WARM",
     "spawnBiome": true,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 8,
     "biomeDictionaryTypes": [
       "OVERWORLD",

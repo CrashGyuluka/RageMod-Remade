@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 27,
   "_type": "block",
   "definition": {
     "texture": "cerussiteore",
@@ -82,16 +82,16 @@
     "breakSound": {
       "value": ""
     },
-    "stepSound": {
-      "value": ""
-    },
-    "placeSound": {
+    "fallSound": {
       "value": ""
     },
     "hitSound": {
       "value": ""
     },
-    "fallSound": {
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
       "value": ""
     },
     "luminance": 0,
@@ -130,6 +130,7 @@
         "value": "Blocks.NETHERRACK"
       }
     ],
+    "generationShape": "UNIFORM",
     "frequencyPerChunks": 8,
     "frequencyOnChunk": 3,
     "minGenerateHeight": 50,

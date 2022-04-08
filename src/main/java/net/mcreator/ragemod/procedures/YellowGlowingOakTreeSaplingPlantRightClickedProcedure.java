@@ -66,49 +66,38 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL
 				|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL) {
 			if (world instanceof World) {
-				if (BoneMealItem.applyBonemeal(new ItemStack(Items.BONE_MEAL), (World) world, new BlockPos((int) x, (int) y, (int) z)) || BoneMealItem
-						.growSeagrass(new ItemStack(Items.BONE_MEAL), (World) world, new BlockPos((int) x, (int) y, (int) z), (Direction) null)) {
+				if (BoneMealItem.applyBonemeal(new ItemStack(Items.BONE_MEAL), (World) world, new BlockPos(x, y, z))
+						|| BoneMealItem.growSeagrass(new ItemStack(Items.BONE_MEAL), (World) world, new BlockPos(x, y, z), (Direction) null)) {
 					if (!world.isRemote())
-						((World) world).playEvent(2005, new BlockPos((int) x, (int) y, (int) z), 0);
+						((World) world).playEvent(2005, new BlockPos(x, y, z), 0);
 				}
 			}
-			if (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)).isSolid() == false) {
+			if (world.getBlockState(new BlockPos(x, y + 1, z)).isSolid() == false) {
 				if (Math.random() < 0.4) {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == YellowGlowingOakTreeSaplingBlock.block) {
+					if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == YellowGlowingOakTreeSaplingBlock.block) {
 						if (world instanceof ServerWorld) {
 							Template template = ((ServerWorld) world).getStructureTemplateManager()
 									.getTemplateDefaulted(new ResourceLocation("ragemod", "a_glow_oak3"));
 							if (template != null) {
-								template.func_237144_a_(
-										(ServerWorld) world, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)), new PlacementSettings()
-												.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
+								template.func_237144_a_((ServerWorld) world, new BlockPos(x - 3, y, z - 3), new PlacementSettings()
+										.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
 										((World) world).rand);
 							}
 						}
-						if (world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-								.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+						if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 										.equals(new ResourceLocation("ragemod:glowing_oak_field"))
-								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 												.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
-								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 												.equals(new ResourceLocation("ragemod:glowing_oak_forest_mountain"))
-								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 												.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
-								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 												.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
 							if (entity instanceof ServerPlayerEntity) {
 								Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -124,41 +113,30 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 							}
 						}
 					} else {
-						if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BrownGlowingOakTreeSaplingBlock.block) {
+						if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == BrownGlowingOakTreeSaplingBlock.block) {
 							if (world instanceof ServerWorld) {
 								Template template = ((ServerWorld) world).getStructureTemplateManager()
 										.getTemplateDefaulted(new ResourceLocation("ragemod", "a_glow_oak4"));
 								if (template != null) {
-									template.func_237144_a_(
-											(ServerWorld) world, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)), new PlacementSettings()
-													.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
+									template.func_237144_a_((ServerWorld) world, new BlockPos(x - 3, y, z - 3), new PlacementSettings()
+											.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
 											((World) world).rand);
 								}
 							}
-							if (world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-									.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-									&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+							if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+									&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 											.equals(new ResourceLocation("ragemod:glowing_oak_field"))
-									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 													.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
-									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 													.equals(new ResourceLocation("ragemod:glowing_oak_forest_mountain"))
-									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 													.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
-									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 													.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
 								if (entity instanceof ServerPlayerEntity) {
 									Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -174,41 +152,30 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 								}
 							}
 						} else {
-							if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RedGlowingOakTreeSaplingBlock.block) {
+							if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == RedGlowingOakTreeSaplingBlock.block) {
 								if (world instanceof ServerWorld) {
 									Template template = ((ServerWorld) world).getStructureTemplateManager()
 											.getTemplateDefaulted(new ResourceLocation("ragemod", "a_glow_oak5"));
 									if (template != null) {
-										template.func_237144_a_(
-												(ServerWorld) world, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)), new PlacementSettings()
-														.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
+										template.func_237144_a_((ServerWorld) world, new BlockPos(x - 3, y, z - 3), new PlacementSettings()
+												.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
 												((World) world).rand);
 									}
 								}
-								if (world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+								if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 												.equals(new ResourceLocation("ragemod:glowing_oak_field"))
-										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-														.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 														.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
-										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-														.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 														.equals(new ResourceLocation("ragemod:glowing_oak_forest_mountain"))
-										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-														.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 														.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
-										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-														.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 														.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
 									if (entity instanceof ServerPlayerEntity) {
 										Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -224,42 +191,38 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 									}
 								}
 							} else {
-								if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)))
-										.getBlock() == GreenGlowingOakTreeSaplingBlock.block) {
+								if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == GreenGlowingOakTreeSaplingBlock.block) {
 									if (world instanceof ServerWorld) {
 										Template template = ((ServerWorld) world).getStructureTemplateManager()
 												.getTemplateDefaulted(new ResourceLocation("ragemod", "a_glow_oak2"));
 										if (template != null) {
-											template.func_237144_a_((ServerWorld) world, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)),
-													new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-															.setIgnoreEntities(false),
+											template.func_237144_a_((ServerWorld) world, new BlockPos(x - 3, y, z - 3), new PlacementSettings()
+													.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
 													((World) world).rand);
 										}
 									}
-									if (world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
-											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+									if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 													.equals(new ResourceLocation("ragemod:glowing_oak_field"))
 											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+													.getKey(world.getBiome(new BlockPos(x, y, z))) != null
 													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-															.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+															.getKey(world.getBiome(new BlockPos(x, y, z)))
 															.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
 											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+													.getKey(world.getBiome(new BlockPos(x, y, z))) != null
 													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-															.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+															.getKey(world.getBiome(new BlockPos(x, y, z)))
 															.equals(new ResourceLocation("ragemod:glowing_oak_forest_mountain"))
 											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+													.getKey(world.getBiome(new BlockPos(x, y, z))) != null
 													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-															.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+															.getKey(world.getBiome(new BlockPos(x, y, z)))
 															.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
 											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+													.getKey(world.getBiome(new BlockPos(x, y, z))) != null
 													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
-															.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+															.getKey(world.getBiome(new BlockPos(x, y, z)))
 															.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
 										if (entity instanceof ServerPlayerEntity) {
 											Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()

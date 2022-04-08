@@ -87,9 +87,9 @@ public class MossyCaltenRemoveProcProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Items.SHEARS
 				|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == Items.SHEARS) {
-			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == MossyCaltenBlock.block) {
+			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == MossyCaltenBlock.block) {
 				{
-					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = CaltenBlock.block.getDefaultState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -103,9 +103,9 @@ public class MossyCaltenRemoveProcProcedure {
 					world.setBlockState(_bp, _bs, 3);
 				}
 			} else {
-				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == MossyCaltenStairsBlock.block) {
+				if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == MossyCaltenStairsBlock.block) {
 					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bp = new BlockPos(x, y, z);
 						BlockState _bs = CaltenStairsBlock.block.getDefaultState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -119,9 +119,9 @@ public class MossyCaltenRemoveProcProcedure {
 						world.setBlockState(_bp, _bs, 3);
 					}
 				} else {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == MossyCaltenSlabBlock.block) {
+					if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == MossyCaltenSlabBlock.block) {
 						{
-							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockPos _bp = new BlockPos(x, y, z);
 							BlockState _bs = CaltenSlabBlock.block.getDefaultState();
 							BlockState _bso = world.getBlockState(_bp);
 							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -135,9 +135,9 @@ public class MossyCaltenRemoveProcProcedure {
 							world.setBlockState(_bp, _bs, 3);
 						}
 					} else {
-						if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == MossyCaltenWallBlock.block) {
+						if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == MossyCaltenWallBlock.block) {
 							{
-								BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+								BlockPos _bp = new BlockPos(x, y, z);
 								BlockState _bs = CaltenWallBlock.block.getDefaultState();
 								BlockState _bso = world.getBlockState(_bp);
 								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {

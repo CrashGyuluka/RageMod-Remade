@@ -83,7 +83,7 @@ public class BlocklockEnchProc1Procedure {
 				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)) != 0)
 				|| (EnchantmentHelper.getEnchantmentLevel(BlockLockEnchantment.enchantment,
 						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)) != 0)) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)))
+			if (((world.getBlockState(new BlockPos(x, y, z)))
 					.getBlock() == ((entity.getCapability(RagemodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new RagemodModVariables.PlayerVariables())).BlockLockVar).getBlock()) == false) {
 				if (dependencies.get("event") != null) {

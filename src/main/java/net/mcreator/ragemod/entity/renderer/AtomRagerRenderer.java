@@ -1,3 +1,4 @@
+
 package net.mcreator.ragemod.entity.renderer;
 
 import net.minecraftforge.fml.client.registry.RenderingRegistry;

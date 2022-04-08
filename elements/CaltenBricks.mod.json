@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 27,
   "_type": "block",
   "definition": {
     "texture": "cloftinbricks",
@@ -82,16 +82,16 @@
     "breakSound": {
       "value": ""
     },
-    "stepSound": {
-      "value": ""
-    },
-    "placeSound": {
+    "fallSound": {
       "value": ""
     },
     "hitSound": {
       "value": ""
     },
-    "fallSound": {
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
       "value": ""
     },
     "luminance": 0,
@@ -128,6 +128,7 @@
         "value": "CUSTOM:Calten"
       }
     ],
+    "generationShape": "UNIFORM",
     "frequencyPerChunks": 3,
     "frequencyOnChunk": 3,
     "minGenerateHeight": 0,

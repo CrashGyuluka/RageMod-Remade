@@ -37,7 +37,7 @@ public class YellowGlowingVineAdditionalGenerationConditionProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		if (BlockTags.getCollection().getTagByID(new ResourceLocation("forge:glowing_oak_leaves"))
-				.contains((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock()) == true) {
+				.contains((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock()) == true) {
 			return true;
 		}
 		return false;

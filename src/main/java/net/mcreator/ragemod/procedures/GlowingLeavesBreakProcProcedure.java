@@ -82,7 +82,7 @@ public class GlowingLeavesBreakProcProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == YellowGlowingOakLeavesBlock.block) {
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == YellowGlowingOakLeavesBlock.block) {
 			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Items.SHEARS
 					|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == Items.SHEARS
 					|| (EnchantmentHelper.getEnchantmentLevel(Enchantments.SILK_TOUCH,
@@ -102,7 +102,7 @@ public class GlowingLeavesBreakProcProcedure {
 				}
 			}
 		} else {
-			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BrownGlowingOakLeavesBlock.block) {
+			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == BrownGlowingOakLeavesBlock.block) {
 				if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Items.SHEARS
 						|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
 								.getItem() == Items.SHEARS
@@ -123,7 +123,7 @@ public class GlowingLeavesBreakProcProcedure {
 					}
 				}
 			} else {
-				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RedGlowingOakLeavesBlock.block) {
+				if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == RedGlowingOakLeavesBlock.block) {
 					if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Items.SHEARS
 							|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
 									.getItem() == Items.SHEARS
@@ -144,7 +144,7 @@ public class GlowingLeavesBreakProcProcedure {
 						}
 					}
 				} else {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GreenGlowingOakLeavesBlock.block) {
+					if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == GreenGlowingOakLeavesBlock.block) {
 						if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 								.getItem() == Items.SHEARS
 								|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)

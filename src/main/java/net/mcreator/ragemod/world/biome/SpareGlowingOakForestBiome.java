@@ -56,7 +56,7 @@ public class SpareGlowingOakForestBiome extends RagemodModElements.ModElement {
 						.withSkyColor(7972607).withFoliageColor(-12030430).withGrassColor(-3309269).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
-								Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())));
+								Blocks.DIRT.getDefaultState(), Blocks.WATER.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
 				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_PLAINS);

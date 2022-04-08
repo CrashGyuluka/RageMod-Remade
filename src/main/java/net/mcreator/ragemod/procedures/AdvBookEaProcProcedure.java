@@ -53,7 +53,7 @@ public class AdvBookEaProcProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		for (int index0 = 0; index0 < (int) (7); index0++) {
 			if (world instanceof World && !world.isRemote()) {
-				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+				((World) world).playSound(null, new BlockPos(x, y, z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.tnt.primed")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			} else {

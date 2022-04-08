@@ -3396,19 +3396,19 @@
       "block.ragemod.mossy_calten_wall": "Mossy Calten Wall",
       "advancements.ragemod_adv_3.title": "Made to be stronger",
       "item.ragemod.rageium_bow": "Rageium Bow",
-      "block.ragemod.block_of_apophyllite": "Block Of Apophyllite",
       "block.ragemod.rageium_brick_pressure_plate": "Rageium Brick Pressure Plate",
+      "block.ragemod.block_of_apophyllite": "Block Of Apophyllite",
       "item.ragemod.rage_mite_spawn_egg": "RageMite Spawn Egg",
       "block.ragemod.cerussite_ore": "Cerussite Ore",
       "advancements.ragemod_adv_11.title": "Damaged Property",
       "item.ragemod.fult_ingot": "Fult Ingot",
       "block.ragemod.rageium_brick_button": "Rageium Brick Button",
-      "biome.ragemod.glowing_oak_forest_mountain": "Glowing Oak Forest Mountain",
       "block.ragemod.amazonite_brick_stairs": "Amazonite Brick Stairs",
+      "biome.ragemod.glowing_oak_forest_mountain": "Glowing Oak Forest Mountain",
       "advancements.ragemod_adv_7.title": "Scrap to Ingot",
-      "item.ragemod.rageium_armor_chestplate": "Rageium Body",
-      "item.ragemod.fult_scrap": "Fult Scrap",
       "biome.ragemod.dense_glowing_oak_forest": "Dense Glowing Oak Forest",
+      "item.ragemod.fult_scrap": "Fult Scrap",
+      "item.ragemod.rageium_armor_chestplate": "Rageium Body",
       "biome.ragemod.snowy_glowing_oak_forest": "Snowy Glowing Oak Forest",
       "block.ragemod.mossy_calten_stairs": "Mossy Calten Stairs",
       "gamerule.toxicGivesBadEffects": "ToxicGivesBadEffects",
@@ -3693,7 +3693,7 @@
   },
   "workspaceSettings": {
     "modid": "ragemod",
-    "modName": "RageMod",
+    "modName": "[ RageMod ]",
     "version": "2.0: Snapshot 22w14a",
     "description": "RageMod - Forge ",
     "author": "CrashGyuluka",
@@ -3711,5 +3711,5 @@
     "modElementsPackage": "net.mcreator.ragemod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200112711
+  "mcreatorVersion": 202200115515
 }
