@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:block_of_apophyllite"
+    }
+  ],
+  "result": {
+    "item": "ragemod:apophyllite",
+    "count": 9
+  }
+}

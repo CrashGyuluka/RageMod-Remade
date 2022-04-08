@@ -114,16 +114,16 @@
     "spawningProbability": 8,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:ToxicWaste"
-      },
       {
         "value": "beaches"
       },
       {
         "value": "desert"
+      },
+      {
+        "value": "nether"
       }
     ],
     "spawnInDungeons": true

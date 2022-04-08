@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "The power of Bone Meal",
-    "achievementDescription": "Use Bone Meal in a Glowing Oak Biome on a Glowing Oak Sapling",
+    "achievementDescription": "Make a Glowing Oak Sapling grow into a tree in a Glowing Oak biome using Bone Meal",
     "achievementIcon": {
-      "value": "CUSTOM:RedGlowingOakTreeSapling"
+      "value": "CUSTOM:BrownGlowingOakTreeSapling"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -15,7 +15,7 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 15,
+    "rewardXP": 10,
     "achievementType": "challenge",
     "parent": {
       "value": "CUSTOM:RageModAdvancement"

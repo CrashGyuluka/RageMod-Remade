@@ -35,11 +35,11 @@
       "value": "CUSTOM:RageParticle"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "FOREST",
-    "rainingPossibility": 0.30000000000000004,
+    "biomeCategory": "PLAINS",
+    "rainingPossibility": 0.4,
     "temperature": -0.2,
-    "baseHeight": 1.5999999999999999,
-    "heightVariation": 1.2999999999999998,
+    "baseHeight": 0.7000000000000001,
+    "heightVariation": 0.5,
     "biomeType": "COOL",
     "spawnBiome": true,
     "biomeWeight": 6,
@@ -101,7 +101,8 @@
       "PlainsTallGrass",
       "TaigaLargeFerns",
       "MonsterRooms",
-      "Lakes"
+      "Lakes",
+      "FrozenTopLayer"
     ],
     "spawnEntries": [
       {

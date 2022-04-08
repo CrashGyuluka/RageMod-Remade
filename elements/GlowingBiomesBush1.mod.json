@@ -25,10 +25,13 @@
         "value": "CUSTOM:GlowingOakForest"
       },
       {
+        "value": "CUSTOM:SpareGlowingOakForest"
+      },
+      {
         "value": "CUSTOM:GlowingOakForestMountain"
       },
       {
-        "value": "CUSTOM:SpareGlowingOakForest"
+        "value": "CUSTOM:SnowyGlowingOakForest"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

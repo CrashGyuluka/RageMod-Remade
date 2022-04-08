@@ -5,7 +5,7 @@
     "structure": "a_glow_oak3",
     "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 100000,
+    "spawnProbability": 70000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 2,
     "spawnLocation": "Ground",
@@ -23,6 +23,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:SpareGlowingOakForest"
+      },
+      {
+        "value": "CUSTOM:SnowyGlowingOakField"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

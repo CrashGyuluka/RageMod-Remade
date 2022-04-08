@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:cerussite"
+    },
+    {
+      "item": "ragemod:cerussite"
+    },
+    {
+      "item": "ragemod:cerussite"
+    },
+    {
+      "item": "ragemod:cerussite"
+    }
+  ],
+  "result": {
+    "item": "ragemod:cerussite_bricks",
+    "count": 2
+  }
+}

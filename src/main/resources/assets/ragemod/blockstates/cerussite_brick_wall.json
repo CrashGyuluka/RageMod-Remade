@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ragemod:block/cerussite_brick_wall"
+    },
+    "type=top": {
+      "model": "ragemod:block/cerussite_brick_wall_top"
+    },
+    "type=double": {
+      "model": "ragemod:block/cerussite_brick_wall_full"
+    }
+  }
+}

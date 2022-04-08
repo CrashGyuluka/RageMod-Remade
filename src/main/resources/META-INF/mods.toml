@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[36,)"
 license="All Rights Reserved"
 
 [[mods]]
 modId="ragemod"
-version="2.02211"
+version="2.02214"
 displayName="RageMod"
 credits="CrashGyuluka, Lyof"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ragemod-by-rageteam"
@@ -17,7 +17,7 @@ RageMod - Forge
 [[dependencies.ragemod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"
 

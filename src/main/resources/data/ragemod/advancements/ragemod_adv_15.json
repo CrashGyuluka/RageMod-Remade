@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "ragemod:red_glowing_oak_tree_sapling"
+      "item": "ragemod:brown_glowing_oak_tree_sapling"
     },
     "title": {
       "translate": "advancements.ragemod_adv_15.title"
@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 15
+    "experience": 10
   },
   "parent": "ragemod:rage_mod_advancement"
 }

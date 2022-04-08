@@ -18,15 +18,15 @@
     "ragemod_adv_11": {
       "trigger": "minecraft:item_durability_changed",
       "conditions": {
-        "item": {
-          "items": [
-            "ragemod:rageium_bow"
-          ],
-          "durability": {
-            "min": 1,
-            "max": 2
+        "items": [
+          {
+            "item": "ragemod:rageium_bow",
+            "durability": {
+              "min": 1,
+              "max": 2
+            }
           }
-        }
+        ]
       }
     }
   },

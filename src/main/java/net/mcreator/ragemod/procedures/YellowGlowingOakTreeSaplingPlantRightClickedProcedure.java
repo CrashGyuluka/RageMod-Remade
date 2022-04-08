@@ -1,124 +1,279 @@
 package net.mcreator.ragemod.procedures;
 
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.BoneMealItem;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.gen.feature.template.Template;
+import net.minecraft.world.gen.feature.template.PlacementSettings;
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Mirror;
+import net.minecraft.util.Direction;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.BoneMealItem;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
-import net.mcreator.ragemod.init.RagemodModBlocks;
+import net.mcreator.ragemod.block.YellowGlowingOakTreeSaplingBlock;
+import net.mcreator.ragemod.block.RedGlowingOakTreeSaplingBlock;
+import net.mcreator.ragemod.block.GreenGlowingOakTreeSaplingBlock;
+import net.mcreator.ragemod.block.BrownGlowingOakTreeSaplingBlock;
+import net.mcreator.ragemod.RagemodMod;
+
+import java.util.Map;
+import java.util.Iterator;
 
 public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				RagemodMod.LOGGER.warn("Failed to load dependency world for procedure YellowGlowingOakTreeSaplingPlantRightClicked!");
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL) {
-			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.YELLOW_GLOWING_OAK_TREE_SAPLING.get()) {
-				if (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canOcclude() == false) {
-					if (Math.random() < 0.4) {
-						if (world instanceof ServerLevel _serverworld) {
-							StructureTemplate template = _serverworld.getStructureManager()
-									.getOrCreate(new ResourceLocation("ragemod", "a_glow_oak3"));
+		}
+		if (dependencies.get("x") == null) {
+			if (!dependencies.containsKey("x"))
+				RagemodMod.LOGGER.warn("Failed to load dependency x for procedure YellowGlowingOakTreeSaplingPlantRightClicked!");
+			return;
+		}
+		if (dependencies.get("y") == null) {
+			if (!dependencies.containsKey("y"))
+				RagemodMod.LOGGER.warn("Failed to load dependency y for procedure YellowGlowingOakTreeSaplingPlantRightClicked!");
+			return;
+		}
+		if (dependencies.get("z") == null) {
+			if (!dependencies.containsKey("z"))
+				RagemodMod.LOGGER.warn("Failed to load dependency z for procedure YellowGlowingOakTreeSaplingPlantRightClicked!");
+			return;
+		}
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				RagemodMod.LOGGER.warn("Failed to load dependency entity for procedure YellowGlowingOakTreeSaplingPlantRightClicked!");
+			return;
+		}
+		IWorld world = (IWorld) dependencies.get("world");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		Entity entity = (Entity) dependencies.get("entity");
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL
+				|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL) {
+			if (world instanceof World) {
+				if (BoneMealItem.applyBonemeal(new ItemStack(Items.BONE_MEAL), (World) world, new BlockPos((int) x, (int) y, (int) z)) || BoneMealItem
+						.growSeagrass(new ItemStack(Items.BONE_MEAL), (World) world, new BlockPos((int) x, (int) y, (int) z), (Direction) null)) {
+					if (!world.isRemote())
+						((World) world).playEvent(2005, new BlockPos((int) x, (int) y, (int) z), 0);
+				}
+			}
+			if (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)).isSolid() == false) {
+				if (Math.random() < 0.4) {
+					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == YellowGlowingOakTreeSaplingBlock.block) {
+						if (world instanceof ServerWorld) {
+							Template template = ((ServerWorld) world).getStructureTemplateManager()
+									.getTemplateDefaulted(new ResourceLocation("ragemod", "a_glow_oak3"));
 							if (template != null) {
-								template.placeInWorld(_serverworld, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)),
-										new BlockPos((int) (x - 3), (int) y, (int) (z - 3)),
-										new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-										_serverworld.random, 3);
+								template.func_237144_a_(
+										(ServerWorld) world, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)), new PlacementSettings()
+												.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
+										((World) world).rand);
 							}
 						}
-					}
-				}
-				if (world instanceof Level _level) {
-					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-							|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
-						if (!_level.isClientSide())
-							_level.levelEvent(2005, _bp, 0);
-					}
-				}
-			} else {
-				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.BROWN_GLOWING_OAK_TREE_SAPLING
-						.get()) {
-					if (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canOcclude() == false) {
-						if (Math.random() < 0.4) {
-							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager()
-										.getOrCreate(new ResourceLocation("ragemod", "a_glow_oak4"));
-								if (template != null) {
-									template.placeInWorld(_serverworld, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)),
-											new BlockPos((int) (x - 3), (int) y, (int) (z - 3)),
-											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-											_serverworld.random, 3);
-								}
-							}
-						}
-					}
-					if (world instanceof Level _level) {
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-								|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
-							if (!_level.isClientSide())
-								_level.levelEvent(2005, _bp, 0);
-						}
-					}
-				} else {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RagemodModBlocks.RED_GLOWING_OAK_TREE_SAPLING
-							.get()) {
-						if (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canOcclude() == false) {
-							if (Math.random() < 0.4) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager()
-											.getOrCreate(new ResourceLocation("ragemod", "a_glow_oak5"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)),
-												new BlockPos((int) (x - 3), (int) y, (int) (z - 3)), new StructurePlaceSettings()
-														.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-												_serverworld.random, 3);
+						if (world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+								.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+										.equals(new ResourceLocation("ragemod:glowing_oak_field"))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+												.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+												.equals(new ResourceLocation("ragemod:glowing_oak_forest_mountain"))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+												.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+												.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
+							if (entity instanceof ServerPlayerEntity) {
+								Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+										.getAdvancement(new ResourceLocation("ragemod:rage_mod_advancement"));
+								AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+								if (!_ap.isDone()) {
+									Iterator _iterator = _ap.getRemaningCriteria().iterator();
+									while (_iterator.hasNext()) {
+										String _criterion = (String) _iterator.next();
+										((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
 									}
 								}
 							}
 						}
-						if (world instanceof Level _level) {
-							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-							if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-									|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
-								if (!_level.isClientSide())
-									_level.levelEvent(2005, _bp, 0);
-							}
-						}
 					} else {
-						if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)))
-								.getBlock() == RagemodModBlocks.GREEN_GLOWING_OAK_TREE_SAPLING.get()) {
-							if (world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).canOcclude() == false) {
-								if (Math.random() < 0.4) {
-									if (world instanceof ServerLevel _serverworld) {
-										StructureTemplate template = _serverworld.getStructureManager()
-												.getOrCreate(new ResourceLocation("ragemod", "a_glow_oak2"));
-										if (template != null) {
-											template.placeInWorld(_serverworld, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)),
-													new BlockPos((int) (x - 3), (int) y, (int) (z - 3)), new StructurePlaceSettings()
-															.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-													_serverworld.random, 3);
+						if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BrownGlowingOakTreeSaplingBlock.block) {
+							if (world instanceof ServerWorld) {
+								Template template = ((ServerWorld) world).getStructureTemplateManager()
+										.getTemplateDefaulted(new ResourceLocation("ragemod", "a_glow_oak4"));
+								if (template != null) {
+									template.func_237144_a_(
+											(ServerWorld) world, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)), new PlacementSettings()
+													.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
+											((World) world).rand);
+								}
+							}
+							if (world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+									.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+									&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+											.equals(new ResourceLocation("ragemod:glowing_oak_field"))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+													.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+													.equals(new ResourceLocation("ragemod:glowing_oak_forest_mountain"))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+													.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+													.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
+								if (entity instanceof ServerPlayerEntity) {
+									Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+											.getAdvancement(new ResourceLocation("ragemod:rage_mod_advancement"));
+									AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+									if (!_ap.isDone()) {
+										Iterator _iterator = _ap.getRemaningCriteria().iterator();
+										while (_iterator.hasNext()) {
+											String _criterion = (String) _iterator.next();
+											((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
 										}
 									}
 								}
 							}
-							if (world instanceof Level _level) {
-								BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-								if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-										|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
-									if (!_level.isClientSide())
-										_level.levelEvent(2005, _bp, 0);
+						} else {
+							if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RedGlowingOakTreeSaplingBlock.block) {
+								if (world instanceof ServerWorld) {
+									Template template = ((ServerWorld) world).getStructureTemplateManager()
+											.getTemplateDefaulted(new ResourceLocation("ragemod", "a_glow_oak5"));
+									if (template != null) {
+										template.func_237144_a_(
+												(ServerWorld) world, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)), new PlacementSettings()
+														.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),
+												((World) world).rand);
+									}
+								}
+								if (world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+										.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+												.equals(new ResourceLocation("ragemod:glowing_oak_field"))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+														.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+														.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+														.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+														.equals(new ResourceLocation("ragemod:glowing_oak_forest_mountain"))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+														.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+														.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+												.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+														.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+														.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
+									if (entity instanceof ServerPlayerEntity) {
+										Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+												.getAdvancement(new ResourceLocation("ragemod:rage_mod_advancement"));
+										AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+										if (!_ap.isDone()) {
+											Iterator _iterator = _ap.getRemaningCriteria().iterator();
+											while (_iterator.hasNext()) {
+												String _criterion = (String) _iterator.next();
+												((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
+											}
+										}
+									}
+								}
+							} else {
+								if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)))
+										.getBlock() == GreenGlowingOakTreeSaplingBlock.block) {
+									if (world instanceof ServerWorld) {
+										Template template = ((ServerWorld) world).getStructureTemplateManager()
+												.getTemplateDefaulted(new ResourceLocation("ragemod", "a_glow_oak2"));
+										if (template != null) {
+											template.func_237144_a_((ServerWorld) world, new BlockPos((int) (x - 3), (int) y, (int) (z - 3)),
+													new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
+															.setIgnoreEntities(false),
+													((World) world).rand);
+										}
+									}
+									if (world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+											.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+													.equals(new ResourceLocation("ragemod:glowing_oak_field"))
+											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+															.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+															.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
+											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+															.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+															.equals(new ResourceLocation("ragemod:glowing_oak_forest_mountain"))
+											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+															.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+															.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
+											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
+													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+															.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+															.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
+										if (entity instanceof ServerPlayerEntity) {
+											Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+													.getAdvancement(new ResourceLocation("ragemod:rage_mod_advancement"));
+											AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+											if (!_ap.isDone()) {
+												Iterator _iterator = _ap.getRemaningCriteria().iterator();
+												while (_iterator.hasNext()) {
+													String _criterion = (String) _iterator.next();
+													((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
+												}
+											}
+										}
+									}
 								}
 							}
 						}
