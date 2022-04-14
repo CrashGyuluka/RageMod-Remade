@@ -10,7 +10,6 @@
     "ragemod:rageium_brick_wall",
     "ragemod:rageium_brick_pressure_plate",
     "ragemod:rageium_brick_button",
-    "ragemod:achat_ore",
     "ragemod:azurite_ore",
     "ragemod:amazonite_ore",
     "ragemod:cerussite_ore",
@@ -39,6 +38,15 @@
     "ragemod:amazonite_bricks",
     "ragemod:amazonite_brick_stairs",
     "ragemod:amazonite_brick_slab",
-    "ragemod:amazonite_brick_wall"
+    "ragemod:amazonite_brick_wall",
+    "ragemod:block_of_apophyllite",
+    "ragemod:apophyllite_tiles",
+    "ragemod:apophyllite_tile_stairs",
+    "ragemod:apophyllite_tile_slab",
+    "ragemod:apophyllite_tile_wall",
+    "ragemod:cerussite_bricks",
+    "ragemod:cerussite_brick_stairs",
+    "ragemod:cerussite_brick_slab",
+    "ragemod:cerussite_brick_wall"
   ]
 }

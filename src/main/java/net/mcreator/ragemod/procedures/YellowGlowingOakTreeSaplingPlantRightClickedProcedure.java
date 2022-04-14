@@ -86,7 +86,10 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 						}
 						if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 								&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
-										.equals(new ResourceLocation("ragemod:glowing_oak_field"))
+										.equals(new ResourceLocation("ragemod:dense_glowing_oak_forest"))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+												.equals(new ResourceLocation("ragemod:glowing_oak_field"))
 								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 												.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
@@ -96,6 +99,9 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 												.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
+								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+												.equals(new ResourceLocation("ragemod:snowy_glowing_oak_forest"))
 								|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 												.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
@@ -125,7 +131,10 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 							}
 							if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 									&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
-											.equals(new ResourceLocation("ragemod:glowing_oak_field"))
+											.equals(new ResourceLocation("ragemod:dense_glowing_oak_forest"))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+													.equals(new ResourceLocation("ragemod:glowing_oak_field"))
 									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 													.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
@@ -135,6 +144,9 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 													.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
+									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+													.equals(new ResourceLocation("ragemod:snowy_glowing_oak_forest"))
 									|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 													.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
@@ -164,7 +176,10 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 								}
 								if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 										&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
-												.equals(new ResourceLocation("ragemod:glowing_oak_field"))
+												.equals(new ResourceLocation("ragemod:dense_glowing_oak_forest"))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+														.equals(new ResourceLocation("ragemod:glowing_oak_field"))
 										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 														.equals(new ResourceLocation("ragemod:glowing_oak_forest"))
@@ -174,6 +189,9 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 														.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
+										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
+												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
+														.equals(new ResourceLocation("ragemod:snowy_glowing_oak_forest"))
 										|| world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 												&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
 														.equals(new ResourceLocation("ragemod:spare_glowing_oak_forest"))) {
@@ -203,7 +221,12 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 									}
 									if (world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z))) != null
 											&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos(x, y, z)))
-													.equals(new ResourceLocation("ragemod:glowing_oak_field"))
+													.equals(new ResourceLocation("ragemod:dense_glowing_oak_forest"))
+											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos(x, y, z))) != null
+													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+															.getKey(world.getBiome(new BlockPos(x, y, z)))
+															.equals(new ResourceLocation("ragemod:glowing_oak_field"))
 											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
 													.getKey(world.getBiome(new BlockPos(x, y, z))) != null
 													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
@@ -219,6 +242,11 @@ public class YellowGlowingOakTreeSaplingPlantRightClickedProcedure {
 													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
 															.getKey(world.getBiome(new BlockPos(x, y, z)))
 															.equals(new ResourceLocation("ragemod:snowy_spare_glowing_oak_forest"))
+											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+													.getKey(world.getBiome(new BlockPos(x, y, z))) != null
+													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)
+															.getKey(world.getBiome(new BlockPos(x, y, z)))
+															.equals(new ResourceLocation("ragemod:snowy_glowing_oak_forest"))
 											|| world.func_241828_r().getRegistry(Registry.BIOME_KEY)
 													.getKey(world.getBiome(new BlockPos(x, y, z))) != null
 													&& world.func_241828_r().getRegistry(Registry.BIOME_KEY)

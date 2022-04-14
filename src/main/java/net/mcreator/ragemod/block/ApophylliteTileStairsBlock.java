@@ -48,9 +48,9 @@ public class ApophylliteTileStairsBlock extends RagemodModElements.ModElement {
 
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(() -> new Block(Block.Properties.create(Material.ROCK).sound(SoundType.NETHERITE).hardnessAndResistance(4f, 10f)
+			super(() -> new Block(Block.Properties.create(Material.ROCK).sound(SoundType.NETHERITE).hardnessAndResistance(2f, 10f)
 					.setLightLevel(s -> 0).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool()).getDefaultState(),
-					Block.Properties.create(Material.ROCK).sound(SoundType.NETHERITE).hardnessAndResistance(4f, 10f).setLightLevel(s -> 0)
+					Block.Properties.create(Material.ROCK).sound(SoundType.NETHERITE).hardnessAndResistance(2f, 10f).setLightLevel(s -> 0)
 							.harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("apophyllite_tile_stairs");
 		}

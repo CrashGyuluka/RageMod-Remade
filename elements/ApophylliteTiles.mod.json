@@ -34,7 +34,7 @@
     ],
     "name": "Apophyllite Tiles",
     "specialInfo": [],
-    "hardness": 4.0,
+    "hardness": 2.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,

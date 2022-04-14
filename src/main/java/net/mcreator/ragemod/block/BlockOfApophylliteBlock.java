@@ -38,7 +38,7 @@ public class BlockOfApophylliteBlock extends RagemodModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHERITE).hardnessAndResistance(4f, 10f).setLightLevel(s -> 0)
+			super(Block.Properties.create(Material.IRON).sound(SoundType.NETHERITE).hardnessAndResistance(3f, 10f).setLightLevel(s -> 0)
 					.harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("block_of_apophyllite");
 		}

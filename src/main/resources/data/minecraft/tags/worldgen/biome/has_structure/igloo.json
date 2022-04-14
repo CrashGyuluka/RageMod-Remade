@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ragemod:snowy_glowing_oak_field"
+    "ragemod:snowy_spare_glowing_oak_forest",
+    "ragemod:snowy_glowing_oak_forest"
   ]
 }
