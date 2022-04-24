@@ -12,7 +12,7 @@
     {
       "name": "RagemodTab",
       "type": "tab",
-      "sortid": 73,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_tab",
@@ -30,7 +30,7 @@
     {
       "name": "RageParticle",
       "type": "particle",
-      "sortid": 74,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rage_particle",
@@ -135,7 +135,7 @@
     {
       "name": "RageiumBow",
       "type": "rangeditem",
-      "sortid": 13,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bow",
@@ -144,25 +144,16 @@
     {
       "name": "RageiumArrow",
       "type": "item",
-      "sortid": 14,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_arrow",
       "path": "~/rageium things"
     },
     {
-      "name": "RagePotion",
-      "type": "food",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rage_potion",
-      "path": "~/rageium things"
-    },
-    {
       "name": "BoomStoneBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boom_stone_block_destroyed_by_player",
@@ -191,7 +182,7 @@
     {
       "name": "RagePotionFoodEaten",
       "type": "procedure",
-      "sortid": 76,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rage_potion_food_eaten",
@@ -208,7 +199,7 @@
     {
       "name": "SendTeleporterFeedback",
       "type": "gamerule",
-      "sortid": 77,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sendTeleporterFeedback",
@@ -220,7 +211,7 @@
     {
       "name": "DirtBlocks",
       "type": "tag",
-      "sortid": 78,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_blocks",
@@ -229,7 +220,7 @@
     {
       "name": "LogBlocks",
       "type": "tag",
-      "sortid": 79,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "log_blocks",
@@ -238,7 +229,7 @@
     {
       "name": "FenceBlocks",
       "type": "tag",
-      "sortid": 80,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fence_blocks",
@@ -247,7 +238,7 @@
     {
       "name": "WoodenFenceBlocks",
       "type": "tag",
-      "sortid": 81,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_fence_blocks",
@@ -256,7 +247,7 @@
     {
       "name": "WallBlocks",
       "type": "tag",
-      "sortid": 82,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wall_blocks",
@@ -265,7 +256,7 @@
     {
       "name": "SmallFlowerBlocks",
       "type": "tag",
-      "sortid": 83,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "small_flower_blocks",
@@ -274,7 +265,7 @@
     {
       "name": "BeaconBaseBlockBlocks",
       "type": "tag",
-      "sortid": 84,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beacon_base_block_blocks",
@@ -283,7 +274,7 @@
     {
       "name": "LeaveBlocks",
       "type": "tag",
-      "sortid": 85,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "leave_blocks",
@@ -292,7 +283,7 @@
     {
       "name": "ClimbableBlocks",
       "type": "tag",
-      "sortid": 86,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "climbable_blocks",
@@ -301,7 +292,7 @@
     {
       "name": "DragonImmuneBlocks",
       "type": "tag",
-      "sortid": 87,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dragon_immune_blocks",
@@ -310,7 +301,7 @@
     {
       "name": "WitherImmuneBlocks",
       "type": "tag",
-      "sortid": 88,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wither_immune_blocks",
@@ -319,7 +310,7 @@
     {
       "name": "ArrowItems",
       "type": "tag",
-      "sortid": 89,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arrow_items",
@@ -328,7 +319,7 @@
     {
       "name": "PlankItems",
       "type": "tag",
-      "sortid": 90,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plank_items",
@@ -337,7 +328,7 @@
     {
       "name": "FlowerItems",
       "type": "tag",
-      "sortid": 91,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flower_items",
@@ -346,7 +337,7 @@
     {
       "name": "SmallFlowerItems",
       "type": "tag",
-      "sortid": 92,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "small_flower_items",
@@ -355,7 +346,7 @@
     {
       "name": "ArrowEntities",
       "type": "tag",
-      "sortid": 93,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arrow_entities",
@@ -364,7 +355,7 @@
     {
       "name": "Rageiumoreloottable",
       "type": "loottable",
-      "sortid": 94,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageiumoreloottable",
@@ -373,7 +364,7 @@
     {
       "name": "RageiumOreSmelt",
       "type": "recipe",
-      "sortid": 95,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_ore_smelt",
@@ -382,7 +373,7 @@
     {
       "name": "RageiumOreBlast",
       "type": "recipe",
-      "sortid": 96,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_ore_blast",
@@ -391,7 +382,7 @@
     {
       "name": "RageiumBlockCraft",
       "type": "recipe",
-      "sortid": 97,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_block_craft",
@@ -400,7 +391,7 @@
     {
       "name": "RageiumBlockBackcraft",
       "type": "recipe",
-      "sortid": 98,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_block_backcraft",
@@ -409,7 +400,7 @@
     {
       "name": "RageiumAlloyBlockCraft",
       "type": "recipe",
-      "sortid": 99,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_alloy_block_craft",
@@ -418,7 +409,7 @@
     {
       "name": "RageiumAlloyBlockBackcraft",
       "type": "recipe",
-      "sortid": 100,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_alloy_block_backcraft",
@@ -427,7 +418,7 @@
     {
       "name": "RageFlower",
       "type": "plant",
-      "sortid": 51,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rage_flower",
@@ -436,7 +427,7 @@
     {
       "name": "TosserEnchantment",
       "type": "enchantment",
-      "sortid": 101,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tosser_enchantment",
@@ -445,7 +436,7 @@
     {
       "name": "LifeStealer",
       "type": "enchantment",
-      "sortid": 102,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "life_stealer",
@@ -454,7 +445,7 @@
     {
       "name": "Collider",
       "type": "enchantment",
-      "sortid": 103,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "collider",
@@ -463,7 +454,7 @@
     {
       "name": "BlockLock",
       "type": "enchantment",
-      "sortid": 104,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_lock",
@@ -472,7 +463,7 @@
     {
       "name": "TosserEnchantProc",
       "type": "procedure",
-      "sortid": 105,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tosser_enchant_proc",
@@ -489,7 +480,7 @@
     {
       "name": "LifeStealerEnchantProc",
       "type": "procedure",
-      "sortid": 106,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "life_stealer_enchant_proc",
@@ -506,7 +497,7 @@
     {
       "name": "ColliderEnchProc",
       "type": "procedure",
-      "sortid": 107,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "collider_ench_proc",
@@ -539,7 +530,7 @@
     {
       "name": "AllMobsRt",
       "type": "tag",
-      "sortid": 108,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "all_mobs_rt",
@@ -548,7 +539,7 @@
     {
       "name": "BlocklockEnchProc1",
       "type": "procedure",
-      "sortid": 109,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blocklock_ench_proc_1",
@@ -581,7 +572,7 @@
     {
       "name": "BlocklockEnchProc2",
       "type": "procedure",
-      "sortid": 110,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blocklock_ench_proc_2",
@@ -614,7 +605,7 @@
     {
       "name": "DayCommand",
       "type": "command",
-      "sortid": 111,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "day_command",
@@ -623,7 +614,7 @@
     {
       "name": "DayCommandCommandExecuted",
       "type": "procedure",
-      "sortid": 112,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "day_command_command_executed",
@@ -652,7 +643,7 @@
     {
       "name": "MidnightCommandCommandExecuted",
       "type": "procedure",
-      "sortid": 113,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "midnight_command_command_executed",
@@ -681,7 +672,7 @@
     {
       "name": "MidnightCommand",
       "type": "command",
-      "sortid": 114,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "midnight_command",
@@ -690,7 +681,7 @@
     {
       "name": "StoprainCommandExecuted",
       "type": "procedure",
-      "sortid": 115,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stoprain_command_executed",
@@ -719,7 +710,7 @@
     {
       "name": "Stoprain",
       "type": "command",
-      "sortid": 116,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stoprain",
@@ -728,7 +719,7 @@
     {
       "name": "RainCommandCommandExecuted",
       "type": "procedure",
-      "sortid": 117,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rain_command_command_executed",
@@ -757,7 +748,7 @@
     {
       "name": "RainCommand",
       "type": "command",
-      "sortid": 118,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rain_command",
@@ -766,7 +757,7 @@
     {
       "name": "DragonPainting",
       "type": "painting",
-      "sortid": 119,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dragon_painting",
@@ -775,7 +766,7 @@
     {
       "name": "FloorBlock",
       "type": "block",
-      "sortid": 50,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "floor_block",
@@ -784,7 +775,7 @@
     {
       "name": "Amazonite",
       "type": "item",
-      "sortid": 18,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite",
@@ -793,7 +784,7 @@
     {
       "name": "Apophyllite",
       "type": "item",
-      "sortid": 20,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite",
@@ -802,7 +793,7 @@
     {
       "name": "Azurite",
       "type": "item",
-      "sortid": 17,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "azurite",
@@ -811,7 +802,7 @@
     {
       "name": "Cerussite",
       "type": "item",
-      "sortid": 19,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite",
@@ -820,7 +811,7 @@
     {
       "name": "AzuriteOre",
       "type": "block",
-      "sortid": 22,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "azurite_ore",
@@ -829,7 +820,7 @@
     {
       "name": "AmazoniteOre",
       "type": "block",
-      "sortid": 23,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_ore",
@@ -838,7 +829,7 @@
     {
       "name": "CerussiteOre",
       "type": "block",
-      "sortid": 24,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_ore",
@@ -847,7 +838,7 @@
     {
       "name": "ApophylliteOre",
       "type": "block",
-      "sortid": 25,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_ore",
@@ -856,7 +847,7 @@
     {
       "name": "AchatOreLoot",
       "type": "loottable",
-      "sortid": 120,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "achat_ore_loot",
@@ -865,7 +856,7 @@
     {
       "name": "AzuriteOreLoot",
       "type": "loottable",
-      "sortid": 121,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "azurite_ore_loot",
@@ -874,7 +865,7 @@
     {
       "name": "AmazoniteOreLoot",
       "type": "loottable",
-      "sortid": 122,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_ore_loot",
@@ -883,7 +874,7 @@
     {
       "name": "CerussiteOreLoot",
       "type": "loottable",
-      "sortid": 123,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_ore_loot",
@@ -892,7 +883,7 @@
     {
       "name": "ApophylliteOreLoot",
       "type": "loottable",
-      "sortid": 124,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_ore_loot",
@@ -901,7 +892,7 @@
     {
       "name": "ToxicGivesBadEffects",
       "type": "gamerule",
-      "sortid": 125,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "toxicGivesBadEffects",
@@ -913,7 +904,7 @@
     {
       "name": "Fult",
       "type": "block",
-      "sortid": 26,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult",
@@ -922,7 +913,7 @@
     {
       "name": "Calten",
       "type": "block",
-      "sortid": 32,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten",
@@ -931,7 +922,7 @@
     {
       "name": "MossyCalten",
       "type": "block",
-      "sortid": 33,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossy_calten",
@@ -940,7 +931,7 @@
     {
       "name": "SmoothCalten",
       "type": "block",
-      "sortid": 34,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_calten",
@@ -949,7 +940,7 @@
     {
       "name": "CaltenBricks",
       "type": "block",
-      "sortid": 35,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_bricks",
@@ -958,7 +949,7 @@
     {
       "name": "CaltenStairs",
       "type": "block",
-      "sortid": 36,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_stairs",
@@ -967,7 +958,7 @@
     {
       "name": "CaltenSlab",
       "type": "block",
-      "sortid": 37,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_slab",
@@ -976,7 +967,7 @@
     {
       "name": "CaltenWall",
       "type": "block",
-      "sortid": 38,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_wall",
@@ -985,7 +976,7 @@
     {
       "name": "MossyCaltenStairs",
       "type": "block",
-      "sortid": 39,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossy_calten_stairs",
@@ -994,7 +985,7 @@
     {
       "name": "MossyCaltenSlab",
       "type": "block",
-      "sortid": 40,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossy_calten_slab",
@@ -1003,7 +994,7 @@
     {
       "name": "MossyCaltenWall",
       "type": "block",
-      "sortid": 41,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossy_calten_wall",
@@ -1012,7 +1003,7 @@
     {
       "name": "SmoothCaltenStairs",
       "type": "block",
-      "sortid": 42,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_calten_stairs",
@@ -1021,7 +1012,7 @@
     {
       "name": "SmoothCaltenSlab",
       "type": "block",
-      "sortid": 43,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_calten_slab",
@@ -1030,7 +1021,7 @@
     {
       "name": "SmoothCaltenWall",
       "type": "block",
-      "sortid": 44,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_calten_wall",
@@ -1039,7 +1030,7 @@
     {
       "name": "CaltenBricksStairs",
       "type": "block",
-      "sortid": 45,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_bricks_stairs",
@@ -1048,7 +1039,7 @@
     {
       "name": "CaltenBricksSlab",
       "type": "block",
-      "sortid": 46,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_bricks_slab",
@@ -1057,7 +1048,7 @@
     {
       "name": "CaltenBricksWall",
       "type": "block",
-      "sortid": 47,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_bricks_wall",
@@ -1066,7 +1057,7 @@
     {
       "name": "FultScrap",
       "type": "item",
-      "sortid": 27,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_scrap",
@@ -1075,7 +1066,7 @@
     {
       "name": "FultLoottbale",
       "type": "loottable",
-      "sortid": 126,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_loottbale",
@@ -1084,7 +1075,7 @@
     {
       "name": "FultBars",
       "type": "block",
-      "sortid": 30,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_bars",
@@ -1093,7 +1084,7 @@
     {
       "name": "FultIngot",
       "type": "item",
-      "sortid": 28,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_ingot",
@@ -1102,7 +1093,7 @@
     {
       "name": "FultBarsCraft",
       "type": "recipe",
-      "sortid": 127,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_bars_craft",
@@ -1111,7 +1102,7 @@
     {
       "name": "FultBarsCraft2",
       "type": "recipe",
-      "sortid": 128,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_bars_craft_2",
@@ -1120,7 +1111,7 @@
     {
       "name": "FultIngotSmelt",
       "type": "recipe",
-      "sortid": 129,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_ingot_smelt",
@@ -1129,7 +1120,7 @@
     {
       "name": "FultIngotBlast",
       "type": "recipe",
-      "sortid": 130,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_ingot_blast",
@@ -1138,7 +1129,7 @@
     {
       "name": "RageMite",
       "type": "livingentity",
-      "sortid": 48,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rage_mite",
@@ -1147,7 +1138,7 @@
     {
       "name": "AtomRager",
       "type": "livingentity",
-      "sortid": 49,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "atom_rager",
@@ -1156,7 +1147,7 @@
     {
       "name": "SmoothCaltenCraft",
       "type": "recipe",
-      "sortid": 131,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_calten_craft",
@@ -1165,7 +1156,7 @@
     {
       "name": "SmoothCaltenStairsCraft",
       "type": "recipe",
-      "sortid": 132,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_calten_stairs_craft",
@@ -1174,7 +1165,7 @@
     {
       "name": "SmoothCaltenSlabCraft",
       "type": "recipe",
-      "sortid": 133,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_calten_slab_craft",
@@ -1183,7 +1174,7 @@
     {
       "name": "SmoothCaltenWallCraft",
       "type": "recipe",
-      "sortid": 134,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smooth_calten_wall_craft",
@@ -1192,7 +1183,7 @@
     {
       "name": "CaltenBricksCraft",
       "type": "recipe",
-      "sortid": 135,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_bricks_craft",
@@ -1201,7 +1192,7 @@
     {
       "name": "CaltenBrickStairsCraft",
       "type": "recipe",
-      "sortid": 136,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_brick_stairs_craft",
@@ -1210,7 +1201,7 @@
     {
       "name": "CaltenBrickSlabCraft",
       "type": "recipe",
-      "sortid": 137,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_brick_slab_craft",
@@ -1219,7 +1210,7 @@
     {
       "name": "CaltenBrickWallCraft",
       "type": "recipe",
-      "sortid": 138,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_brick_wall_craft",
@@ -1228,7 +1219,7 @@
     {
       "name": "CaltenStairsCraft",
       "type": "recipe",
-      "sortid": 139,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_stairs_craft",
@@ -1237,7 +1228,7 @@
     {
       "name": "CaltenSlabCraft",
       "type": "recipe",
-      "sortid": 140,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_slab_craft",
@@ -1246,7 +1237,7 @@
     {
       "name": "CaltenWallCraft",
       "type": "recipe",
-      "sortid": 141,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_wall_craft",
@@ -1255,7 +1246,7 @@
     {
       "name": "MossyCaltenStairsCraft",
       "type": "recipe",
-      "sortid": 142,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossy_calten_stairs_craft",
@@ -1264,7 +1255,7 @@
     {
       "name": "MossyCaltenSlabCraft",
       "type": "recipe",
-      "sortid": 143,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossy_calten_slab_craft",
@@ -1273,7 +1264,7 @@
     {
       "name": "MossyCaltenWallCraft",
       "type": "recipe",
-      "sortid": 144,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossy_calten_wall_craft",
@@ -1282,7 +1273,7 @@
     {
       "name": "MossyCaltenRemoveProc",
       "type": "procedure",
-      "sortid": 145,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossy_calten_remove_proc",
@@ -1315,7 +1306,7 @@
     {
       "name": "FultTrapdoor",
       "type": "block",
-      "sortid": 31,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_trapdoor",
@@ -1324,7 +1315,7 @@
     {
       "name": "AdvancementOneIcon",
       "type": "item",
-      "sortid": 146,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advancement_one_icon",
@@ -1333,7 +1324,7 @@
     {
       "name": "RageModAdvancement",
       "type": "achievement",
-      "sortid": 147,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rage_mod_advancement",
@@ -1342,7 +1333,7 @@
     {
       "name": "Adv1Proc",
       "type": "procedure",
-      "sortid": 148,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_1_proc",
@@ -1359,7 +1350,7 @@
     {
       "name": "RagemodAdv2",
       "type": "achievement",
-      "sortid": 149,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_2",
@@ -1368,7 +1359,7 @@
     {
       "name": "RagemodAdv3",
       "type": "achievement",
-      "sortid": 150,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_3",
@@ -1377,7 +1368,7 @@
     {
       "name": "RageFlowerCraft",
       "type": "recipe",
-      "sortid": 151,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rage_flower_craft",
@@ -1386,7 +1377,7 @@
     {
       "name": "RageiumBricksCraft",
       "type": "recipe",
-      "sortid": 152,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_craft",
@@ -1395,7 +1386,7 @@
     {
       "name": "RageiumBricksCut1",
       "type": "recipe",
-      "sortid": 153,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_cut_1",
@@ -1404,7 +1395,7 @@
     {
       "name": "RageiumBricksCut2",
       "type": "recipe",
-      "sortid": 154,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_cut_2",
@@ -1413,7 +1404,7 @@
     {
       "name": "RageiumBricksCut3",
       "type": "recipe",
-      "sortid": 155,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_cut_3",
@@ -1422,7 +1413,7 @@
     {
       "name": "RageiumBricksCut4",
       "type": "recipe",
-      "sortid": 156,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_cut_4",
@@ -1431,7 +1422,7 @@
     {
       "name": "RageiumBricksCut5",
       "type": "recipe",
-      "sortid": 157,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_cut_5",
@@ -1440,7 +1431,7 @@
     {
       "name": "RageiumBricksCraft1",
       "type": "recipe",
-      "sortid": 158,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_craft_1",
@@ -1449,7 +1440,7 @@
     {
       "name": "RageiumBricksStairsCraft2",
       "type": "recipe",
-      "sortid": 159,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_stairs_craft_2",
@@ -1458,7 +1449,7 @@
     {
       "name": "RageiumBricksSlabCraft1",
       "type": "recipe",
-      "sortid": 160,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_slab_craft_1",
@@ -1467,7 +1458,7 @@
     {
       "name": "RageiumBricksSlabCraft2",
       "type": "recipe",
-      "sortid": 161,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_slab_craft_2",
@@ -1476,7 +1467,7 @@
     {
       "name": "RageiumBricksSlabCraft3",
       "type": "recipe",
-      "sortid": 162,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_slab_craft_3",
@@ -1485,7 +1476,7 @@
     {
       "name": "RageiumBricksWallCraft1",
       "type": "recipe",
-      "sortid": 163,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_wall_craft_1",
@@ -1494,7 +1485,7 @@
     {
       "name": "RageiumBricksWallCraft2",
       "type": "recipe",
-      "sortid": 164,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_wall_craft_2",
@@ -1503,7 +1494,7 @@
     {
       "name": "RageiumBricksPressureplateCraft1",
       "type": "recipe",
-      "sortid": 165,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_pressureplate_craft_1",
@@ -1512,7 +1503,7 @@
     {
       "name": "RageiumBricksPressureplateCraft2",
       "type": "recipe",
-      "sortid": 166,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_pressureplate_craft_2",
@@ -1521,7 +1512,7 @@
     {
       "name": "RageiumBricksPressureplateCraft3",
       "type": "recipe",
-      "sortid": 167,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_pressureplate_craft_3",
@@ -1530,7 +1521,7 @@
     {
       "name": "RageiumBricksPressureplateCraft4",
       "type": "recipe",
-      "sortid": 168,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_pressureplate_craft_4",
@@ -1539,7 +1530,7 @@
     {
       "name": "RageiumBricksPressureplateCraft5",
       "type": "recipe",
-      "sortid": 169,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_pressureplate_craft_5",
@@ -1548,7 +1539,7 @@
     {
       "name": "RageiumBricksPressureplateCraft6",
       "type": "recipe",
-      "sortid": 170,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_pressureplate_craft_6",
@@ -1557,7 +1548,7 @@
     {
       "name": "RageiumBricksButtonCraft1",
       "type": "recipe",
-      "sortid": 171,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bricks_button_craft_1",
@@ -1566,7 +1557,7 @@
     {
       "name": "RagePotionCraft",
       "type": "recipe",
-      "sortid": 172,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rage_potion_craft",
@@ -1575,7 +1566,7 @@
     {
       "name": "RageiumHelmetCraft1",
       "type": "recipe",
-      "sortid": 173,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_helmet_craft_1",
@@ -1584,7 +1575,7 @@
     {
       "name": "RageiumHelmetCraft2",
       "type": "recipe",
-      "sortid": 174,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_helmet_craft_2",
@@ -1593,7 +1584,7 @@
     {
       "name": "RageiumChestplateCraft1",
       "type": "recipe",
-      "sortid": 175,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_chestplate_craft_1",
@@ -1602,7 +1593,7 @@
     {
       "name": "RageiumLeggingsCraft1",
       "type": "recipe",
-      "sortid": 176,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_leggings_craft_1",
@@ -1611,7 +1602,7 @@
     {
       "name": "RageiumbootsCraft1",
       "type": "recipe",
-      "sortid": 177,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageiumboots_craft_1",
@@ -1620,7 +1611,7 @@
     {
       "name": "RageiumbootsCraft2",
       "type": "recipe",
-      "sortid": 178,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageiumboots_craft_2",
@@ -1629,7 +1620,7 @@
     {
       "name": "RageiumBowCraft",
       "type": "recipe",
-      "sortid": 179,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rageium_bow_craft",
@@ -1638,7 +1629,7 @@
     {
       "name": "RagemodAdv6",
       "type": "achievement",
-      "sortid": 180,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_6",
@@ -1647,7 +1638,7 @@
     {
       "name": "FultTrapdoorCraft1",
       "type": "recipe",
-      "sortid": 181,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_trapdoor_craft_1",
@@ -1656,7 +1647,7 @@
     {
       "name": "RagemodAdv7",
       "type": "achievement",
-      "sortid": 182,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_7",
@@ -1665,7 +1656,7 @@
     {
       "name": "RagemodAdv8",
       "type": "achievement",
-      "sortid": 183,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_8",
@@ -1674,7 +1665,7 @@
     {
       "name": "FultIngotBlocks",
       "type": "tag",
-      "sortid": 184,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fult_ingot_blocks",
@@ -1683,7 +1674,7 @@
     {
       "name": "RagemodAdv8Proc",
       "type": "procedure",
-      "sortid": 185,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_8_proc",
@@ -1716,7 +1707,7 @@
     {
       "name": "RagemodAdv10",
       "type": "achievement",
-      "sortid": 186,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_10",
@@ -1725,7 +1716,7 @@
     {
       "name": "RagemodAdv11",
       "type": "achievement",
-      "sortid": 187,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_11",
@@ -1734,7 +1725,7 @@
     {
       "name": "RagemodAdv12",
       "type": "achievement",
-      "sortid": 188,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_12",
@@ -1743,7 +1734,7 @@
     {
       "name": "AdvBookEasterEgg",
       "type": "gui",
-      "sortid": 189,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_book_easter_egg",
@@ -1752,7 +1743,7 @@
     {
       "name": "AdvBookEaProc",
       "type": "procedure",
-      "sortid": 190,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_book_ea_proc",
@@ -1785,7 +1776,7 @@
     {
       "name": "AdvancementEasterEggIcon",
       "type": "item",
-      "sortid": 191,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "advancement_easter_egg_icon",
@@ -1794,7 +1785,7 @@
     {
       "name": "RagemodAdv14",
       "type": "achievement",
-      "sortid": 192,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_14",
@@ -1803,7 +1794,7 @@
     {
       "name": "BlueCaveParticle",
       "type": "particle",
-      "sortid": 193,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_cave_particle",
@@ -1812,7 +1803,7 @@
     {
       "name": "YellowGlowingOakLeaves",
       "type": "block",
-      "sortid": 52,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_oak_leaves",
@@ -1821,7 +1812,7 @@
     {
       "name": "BrownGlowingOakLeaves",
       "type": "block",
-      "sortid": 53,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brown_glowing_oak_leaves",
@@ -1830,7 +1821,7 @@
     {
       "name": "RedGlowingOakLeaves",
       "type": "block",
-      "sortid": 54,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_glowing_oak_leaves",
@@ -1839,7 +1830,7 @@
     {
       "name": "GreenGlowingOakLeaves",
       "type": "block",
-      "sortid": 55,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_glowing_oak_leaves",
@@ -1848,7 +1839,7 @@
     {
       "name": "GlowingLeavesBreakProc",
       "type": "procedure",
-      "sortid": 194,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_leaves_break_proc",
@@ -1881,7 +1872,7 @@
     {
       "name": "GlowingOakForest",
       "type": "biome",
-      "sortid": 195,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_forest",
@@ -1890,7 +1881,7 @@
     {
       "name": "GlowingOakTree1",
       "type": "structure",
-      "sortid": 196,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_1",
@@ -1899,7 +1890,7 @@
     {
       "name": "GlowingOakTree2",
       "type": "structure",
-      "sortid": 197,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_2",
@@ -1908,7 +1899,7 @@
     {
       "name": "GlowingOakTree3",
       "type": "structure",
-      "sortid": 198,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_3",
@@ -1917,7 +1908,7 @@
     {
       "name": "GlowingOakTree4",
       "type": "structure",
-      "sortid": 199,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_4",
@@ -1926,7 +1917,7 @@
     {
       "name": "GlowingOakTree5",
       "type": "structure",
-      "sortid": 200,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_5",
@@ -1935,7 +1926,7 @@
     {
       "name": "SpareGlowingOakForest",
       "type": "biome",
-      "sortid": 201,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spare_glowing_oak_forest",
@@ -1944,7 +1935,7 @@
     {
       "name": "SpareGlowingOakTree1",
       "type": "structure",
-      "sortid": 202,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spare_glowing_oak_tree_1",
@@ -1953,7 +1944,7 @@
     {
       "name": "SpareGlowingOakTree2",
       "type": "structure",
-      "sortid": 203,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spare_glowing_oak_tree_2",
@@ -1962,7 +1953,7 @@
     {
       "name": "SpareGlowingOakTree3",
       "type": "structure",
-      "sortid": 204,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spare_glowing_oak_tree_3",
@@ -1971,7 +1962,7 @@
     {
       "name": "SpareGlowingOakTree4",
       "type": "structure",
-      "sortid": 205,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spare_glowing_oak_tree_4",
@@ -1980,7 +1971,7 @@
     {
       "name": "SpareGlowingOakTree5",
       "type": "structure",
-      "sortid": 206,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spare_glowing_oak_tree_5",
@@ -1989,7 +1980,7 @@
     {
       "name": "GlowingOakField",
       "type": "biome",
-      "sortid": 207,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_field",
@@ -1998,7 +1989,7 @@
     {
       "name": "GlowingOakFieldTree1",
       "type": "structure",
-      "sortid": 208,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_field_tree_1",
@@ -2007,7 +1998,7 @@
     {
       "name": "GlowingOakFieldTree2",
       "type": "structure",
-      "sortid": 209,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_field_tree_2",
@@ -2016,7 +2007,7 @@
     {
       "name": "GlowingOakFieldTree3",
       "type": "structure",
-      "sortid": 210,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_field_tree_3",
@@ -2025,7 +2016,7 @@
     {
       "name": "GlowingOakFieldTree4",
       "type": "structure",
-      "sortid": 211,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_field_tree_4",
@@ -2034,7 +2025,7 @@
     {
       "name": "GlowingOakFieldTree5",
       "type": "structure",
-      "sortid": 212,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_field_tree_5",
@@ -2043,7 +2034,7 @@
     {
       "name": "GlowingBiomesFlower1",
       "type": "structure",
-      "sortid": 213,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_flower_1",
@@ -2052,7 +2043,7 @@
     {
       "name": "GlowingBiomesFlower2",
       "type": "structure",
-      "sortid": 214,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_flower_2",
@@ -2061,7 +2052,7 @@
     {
       "name": "GlowingBiomesFlower3",
       "type": "structure",
-      "sortid": 215,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_flower_3",
@@ -2070,7 +2061,7 @@
     {
       "name": "GlowingBiomesFlower4",
       "type": "structure",
-      "sortid": 216,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_flower_4",
@@ -2079,7 +2070,7 @@
     {
       "name": "GlowingBiomesFlower5",
       "type": "structure",
-      "sortid": 217,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_flower_5",
@@ -2088,7 +2079,7 @@
     {
       "name": "GlowingBiomesFlower6",
       "type": "structure",
-      "sortid": 218,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_flower_6",
@@ -2097,7 +2088,7 @@
     {
       "name": "GlowingBiomesFlower7",
       "type": "structure",
-      "sortid": 219,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_flower_7",
@@ -2106,7 +2097,7 @@
     {
       "name": "GlowingBiomesFlower8",
       "type": "structure",
-      "sortid": 220,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_flower_8",
@@ -2115,7 +2106,7 @@
     {
       "name": "GlowingBiomesBush1",
       "type": "structure",
-      "sortid": 221,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_bush_1",
@@ -2124,7 +2115,7 @@
     {
       "name": "GlowingBiomesBush2",
       "type": "structure",
-      "sortid": 222,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_bush_2",
@@ -2133,7 +2124,7 @@
     {
       "name": "GlowingBiomesBush3",
       "type": "structure",
-      "sortid": 223,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_bush_3",
@@ -2142,7 +2133,7 @@
     {
       "name": "GlowingBiomesBush4",
       "type": "structure",
-      "sortid": 224,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biomes_bush_4",
@@ -2151,7 +2142,7 @@
     {
       "name": "YellowGlowingOakTreeSapling",
       "type": "plant",
-      "sortid": 56,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_oak_tree_sapling",
@@ -2160,7 +2151,7 @@
     {
       "name": "BrownGlowingOakTreeSapling",
       "type": "plant",
-      "sortid": 57,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brown_glowing_oak_tree_sapling",
@@ -2169,7 +2160,7 @@
     {
       "name": "RedGlowingOakTreeSapling",
       "type": "plant",
-      "sortid": 58,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_glowing_oak_tree_sapling",
@@ -2178,7 +2169,7 @@
     {
       "name": "GreenGlowingOakTreeSapling",
       "type": "plant",
-      "sortid": 59,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_glowing_oak_tree_sapling",
@@ -2187,7 +2178,7 @@
     {
       "name": "YellowGlowingOakTreeSaplingPlantRightClicked",
       "type": "procedure",
-      "sortid": 225,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_oak_tree_sapling_plant_right_clicked",
@@ -2220,7 +2211,7 @@
     {
       "name": "RagemodAdv15",
       "type": "achievement",
-      "sortid": 226,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_15",
@@ -2229,7 +2220,7 @@
     {
       "name": "GlowingBiomeAdvancement",
       "type": "procedure",
-      "sortid": 227,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_advancement",
@@ -2241,7 +2232,7 @@
     {
       "name": "YellowGlowingVineBlockValidPlacementCondition",
       "type": "procedure",
-      "sortid": 228,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_vine_block_valid_placement_condition",
@@ -2271,7 +2262,7 @@
     {
       "name": "YellowGlowingVineNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 229,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_vine_neighbour_block_changes",
@@ -2300,7 +2291,7 @@
     {
       "name": "GlowingOakLeaves",
       "type": "tag",
-      "sortid": 230,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_leaves",
@@ -2309,7 +2300,7 @@
     {
       "name": "YellowGlowingVineAdditionalGenerationCondition",
       "type": "procedure",
-      "sortid": 231,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_vine_additional_generation_condition",
@@ -2339,7 +2330,7 @@
     {
       "name": "DoRagemodAirBlocksWork",
       "type": "gamerule",
-      "sortid": 232,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "registry_name": "doRagemodAirBlocksWork",
@@ -2351,7 +2342,7 @@
     {
       "name": "YellowGlowingOakLeavesBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 233,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_oak_leaves_block_destroyed_by_player",
@@ -2384,7 +2375,7 @@
     {
       "name": "BrownGlowingOakLeavesBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 234,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brown_glowing_oak_leaves_block_destroyed_by_player",
@@ -2417,7 +2408,7 @@
     {
       "name": "RedGlowingOakLeavesBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 235,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_glowing_oak_leaves_block_destroyed_by_player",
@@ -2450,7 +2441,7 @@
     {
       "name": "GreenGlowingOakLeavesBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 236,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_glowing_oak_leaves_block_destroyed_by_player",
@@ -2483,7 +2474,7 @@
     {
       "name": "GlowingVineAirStrOnStructureInstanceGenerated",
       "type": "procedure",
-      "sortid": 237,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_vine_air_str_on_structure_instance_generated",
@@ -2512,7 +2503,7 @@
     {
       "name": "YellowGlowingTreeParticle",
       "type": "particle",
-      "sortid": 238,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_tree_particle",
@@ -2521,7 +2512,7 @@
     {
       "name": "BrownGlowingTreeParticle",
       "type": "particle",
-      "sortid": 239,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brown_glowing_tree_particle",
@@ -2530,7 +2521,7 @@
     {
       "name": "RedGlowingTreeParticle",
       "type": "particle",
-      "sortid": 240,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_glowing_tree_particle",
@@ -2539,7 +2530,7 @@
     {
       "name": "GreenGlowingTreeParticle",
       "type": "particle",
-      "sortid": 241,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_glowing_tree_particle",
@@ -2548,7 +2539,7 @@
     {
       "name": "AmazoniteBricks",
       "type": "block",
-      "sortid": 60,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_bricks",
@@ -2557,7 +2548,7 @@
     {
       "name": "AmazoniteBrickStairs",
       "type": "block",
-      "sortid": 61,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_brick_stairs",
@@ -2566,7 +2557,7 @@
     {
       "name": "AmazoniteBrickSlab",
       "type": "block",
-      "sortid": 62,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_brick_slab",
@@ -2575,7 +2566,7 @@
     {
       "name": "AmazoniteBrickWall",
       "type": "block",
-      "sortid": 63,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_brick_wall",
@@ -2584,7 +2575,7 @@
     {
       "name": "RagemodAdv16",
       "type": "achievement",
-      "sortid": 242,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_adv_16",
@@ -2593,7 +2584,7 @@
     {
       "name": "AmazoniteBricksCraft",
       "type": "recipe",
-      "sortid": 243,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_bricks_craft",
@@ -2602,7 +2593,7 @@
     {
       "name": "AmazoniteBricksStairsCraft",
       "type": "recipe",
-      "sortid": 244,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_bricks_stairs_craft",
@@ -2611,7 +2602,7 @@
     {
       "name": "AmazoniteBricksSlabCraft",
       "type": "recipe",
-      "sortid": 245,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_bricks_slab_craft",
@@ -2620,7 +2611,7 @@
     {
       "name": "AmazoniteBricksWallCraft",
       "type": "recipe",
-      "sortid": 246,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_bricks_wall_craft",
@@ -2629,7 +2620,7 @@
     {
       "name": "YellowGlowingOakLeavesParticleSpawningCondition",
       "type": "procedure",
-      "sortid": 247,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_glowing_oak_leaves_particle_spawning_condition",
@@ -2642,7 +2633,7 @@
     {
       "name": "RagemodAdvancementIconPlaceholderCraft",
       "type": "recipe",
-      "sortid": 248,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ragemod_advancement_icon_placeholder_craft",
@@ -2651,7 +2642,7 @@
     {
       "name": "CaltenStructure01",
       "type": "structure",
-      "sortid": 249,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calten_structure_01",
@@ -2660,7 +2651,7 @@
     {
       "name": "BeeStructure01",
       "type": "structure",
-      "sortid": 250,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bee_structure_01",
@@ -2669,7 +2660,7 @@
     {
       "name": "BeeStructure02",
       "type": "structure",
-      "sortid": 251,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bee_structure_02",
@@ -2678,7 +2669,7 @@
     {
       "name": "SnowyGlowingOakField",
       "type": "biome",
-      "sortid": 252,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "snowy_spare_glowing_oak_forest",
@@ -2687,7 +2678,7 @@
     {
       "name": "BlockOfFult",
       "type": "block",
-      "sortid": 29,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_of_fult",
@@ -2696,7 +2687,7 @@
     {
       "name": "BlockOfFultCraft",
       "type": "recipe",
-      "sortid": 253,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_of_fult_craft",
@@ -2705,7 +2696,7 @@
     {
       "name": "BlockOfFultBcraft",
       "type": "recipe",
-      "sortid": 254,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_of_fult_bcraft",
@@ -2714,7 +2705,7 @@
     {
       "name": "GlowingSaplings",
       "type": "tag",
-      "sortid": 255,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_saplings",
@@ -2723,7 +2714,7 @@
     {
       "name": "GlowingOakForestMountain",
       "type": "biome",
-      "sortid": 256,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_forest_mountain",
@@ -2732,7 +2723,7 @@
     {
       "name": "SnowyGlowingOakForest",
       "type": "biome",
-      "sortid": 257,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "snowy_glowing_oak_forest",
@@ -2741,7 +2732,7 @@
     {
       "name": "DenseGlowingOakForest",
       "type": "biome",
-      "sortid": 258,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dense_glowing_oak_forest",
@@ -2750,7 +2741,7 @@
     {
       "name": "GlowingOakTreeDense1",
       "type": "structure",
-      "sortid": 259,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_dense_1",
@@ -2759,7 +2750,7 @@
     {
       "name": "GlowingOakTreeDense2",
       "type": "structure",
-      "sortid": 260,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_dense_2",
@@ -2768,7 +2759,7 @@
     {
       "name": "GlowingOakTreeDense3",
       "type": "structure",
-      "sortid": 261,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_dense_3",
@@ -2777,7 +2768,7 @@
     {
       "name": "GlowingOakTreeDense4",
       "type": "structure",
-      "sortid": 262,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_dense_4",
@@ -2786,7 +2777,7 @@
     {
       "name": "GlowingOakTreeDense5",
       "type": "structure",
-      "sortid": 263,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_tree_dense_5",
@@ -2795,7 +2786,7 @@
     {
       "name": "GlowingOakFoliageDense1",
       "type": "structure",
-      "sortid": 264,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_foliage_dense_1",
@@ -2804,7 +2795,7 @@
     {
       "name": "GlowingOakFoliageDense2",
       "type": "structure",
-      "sortid": 265,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_foliage_dense_2",
@@ -2813,7 +2804,7 @@
     {
       "name": "GlowingOakFoliageDense3",
       "type": "structure",
-      "sortid": 266,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_foliage_dense_3",
@@ -2822,7 +2813,7 @@
     {
       "name": "GlowingOakFoliageDense4",
       "type": "structure",
-      "sortid": 267,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_foliage_dense_4",
@@ -2831,7 +2822,7 @@
     {
       "name": "GlowingOakFoliageDense5",
       "type": "structure",
-      "sortid": 268,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_foliage_dense_5",
@@ -2840,7 +2831,7 @@
     {
       "name": "GlowingOakFoliageDense6",
       "type": "structure",
-      "sortid": 269,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_foliage_dense_6",
@@ -2849,7 +2840,7 @@
     {
       "name": "GlowingOakFoliageDense7",
       "type": "structure",
-      "sortid": 270,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_foliage_dense_7",
@@ -2858,7 +2849,7 @@
     {
       "name": "GlowingOakFoliageDense8",
       "type": "structure",
-      "sortid": 271,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_oak_foliage_dense_8",
@@ -2867,7 +2858,7 @@
     {
       "name": "GlowingBiomeBushDense1",
       "type": "structure",
-      "sortid": 272,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_bush_dense_1",
@@ -2876,7 +2867,7 @@
     {
       "name": "GlowingBiomeBushDense2",
       "type": "structure",
-      "sortid": 273,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_bush_dense_2",
@@ -2885,7 +2876,7 @@
     {
       "name": "GlowingBiomeBushDense3",
       "type": "structure",
-      "sortid": 274,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_bush_dense_3",
@@ -2894,7 +2885,7 @@
     {
       "name": "GlowingBiomeBushDense4",
       "type": "structure",
-      "sortid": 275,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_bush_dense_4",
@@ -2903,7 +2894,7 @@
     {
       "name": "GlowingBiomeFerne1",
       "type": "structure",
-      "sortid": 276,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_ferne_1",
@@ -2912,7 +2903,7 @@
     {
       "name": "GlowingBiomeLargefrene1",
       "type": "structure",
-      "sortid": 277,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_largefrene_1",
@@ -2921,7 +2912,7 @@
     {
       "name": "GlowingBiomeFerneDense",
       "type": "structure",
-      "sortid": 278,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_ferne_dense",
@@ -2930,7 +2921,7 @@
     {
       "name": "GlowingBiomeLargeferneDense",
       "type": "structure",
-      "sortid": 279,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing_biome_largeferne_dense",
@@ -2939,7 +2930,7 @@
     {
       "name": "RedTallGlowingOakTree",
       "type": "structure",
-      "sortid": 280,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_tall_glowing_oak_tree",
@@ -2948,7 +2939,7 @@
     {
       "name": "YellowTallGlowingOakTree",
       "type": "structure",
-      "sortid": 281,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_tall_glowing_oak_tree",
@@ -2957,7 +2948,7 @@
     {
       "name": "GreenTallGlowingOakTree",
       "type": "structure",
-      "sortid": 282,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_tall_glowing_oak_tree",
@@ -2966,7 +2957,7 @@
     {
       "name": "Green2TallGlowingOakTree",
       "type": "structure",
-      "sortid": 283,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_2_tall_glowing_oak_tree",
@@ -2975,7 +2966,7 @@
     {
       "name": "BrownTallGlowingOakTree",
       "type": "structure",
-      "sortid": 284,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brown_tall_glowing_oak_tree",
@@ -2984,7 +2975,7 @@
     {
       "name": "BlockOfApophyllite",
       "type": "block",
-      "sortid": 64,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_of_apophyllite",
@@ -2993,7 +2984,7 @@
     {
       "name": "ApophylliteTiles",
       "type": "block",
-      "sortid": 65,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_tiles",
@@ -3002,7 +2993,7 @@
     {
       "name": "ApophylliteBlockCraft",
       "type": "recipe",
-      "sortid": 285,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_block_craft",
@@ -3011,7 +3002,7 @@
     {
       "name": "ApophylliteBlockBcraft",
       "type": "recipe",
-      "sortid": 286,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_block_bcraft",
@@ -3020,7 +3011,7 @@
     {
       "name": "ApophylliteTilesCraft",
       "type": "recipe",
-      "sortid": 287,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_tiles_craft",
@@ -3029,7 +3020,7 @@
     {
       "name": "CerussiteBricks",
       "type": "block",
-      "sortid": 69,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_bricks",
@@ -3038,7 +3029,7 @@
     {
       "name": "CerussiteBrickStairs",
       "type": "block",
-      "sortid": 70,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_brick_stairs",
@@ -3047,7 +3038,7 @@
     {
       "name": "CerussiteBrickSlab",
       "type": "block",
-      "sortid": 71,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_brick_slab",
@@ -3056,7 +3047,7 @@
     {
       "name": "CerussiteBrickWall",
       "type": "block",
-      "sortid": 72,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_brick_wall",
@@ -3065,7 +3056,7 @@
     {
       "name": "ApophylliteTileStairs",
       "type": "block",
-      "sortid": 66,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_tile_stairs",
@@ -3074,7 +3065,7 @@
     {
       "name": "ApophylliteTileSlab",
       "type": "block",
-      "sortid": 67,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_tile_slab",
@@ -3083,7 +3074,7 @@
     {
       "name": "ApophylliteTileWall",
       "type": "block",
-      "sortid": 68,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_tile_wall",
@@ -3092,7 +3083,7 @@
     {
       "name": "AzuritBlock",
       "type": "block",
-      "sortid": 289,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "azurit_block",
@@ -3101,7 +3092,7 @@
     {
       "name": "CerussiteBricksCraft",
       "type": "recipe",
-      "sortid": 290,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_bricks_craft",
@@ -3110,7 +3101,7 @@
     {
       "name": "CerussiteBrickStairsCraft",
       "type": "recipe",
-      "sortid": 291,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_brick_stairs_craft",
@@ -3119,7 +3110,7 @@
     {
       "name": "CerussiteBrickSlabCraft",
       "type": "recipe",
-      "sortid": 292,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_brick_slab_craft",
@@ -3128,7 +3119,7 @@
     {
       "name": "CerussiteBrickWallCraft",
       "type": "recipe",
-      "sortid": 293,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_brick_wall_craft",
@@ -3137,7 +3128,7 @@
     {
       "name": "ApophylliteTileStairCraft",
       "type": "recipe",
-      "sortid": 294,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_tile_stair_craft",
@@ -3146,7 +3137,7 @@
     {
       "name": "ApophylliteTileSlabCraft",
       "type": "recipe",
-      "sortid": 295,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_tile_slab_craft",
@@ -3155,7 +3146,7 @@
     {
       "name": "ApophylliteTilewallCraft",
       "type": "recipe",
-      "sortid": 296,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_tilewall_craft",
@@ -3164,7 +3155,7 @@
     {
       "name": "AzuritBlockCraft",
       "type": "recipe",
-      "sortid": 297,
+      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "registry_name": "azurit_block_craft",
@@ -3173,7 +3164,7 @@
     {
       "name": "AzuritBlockBcraft",
       "type": "recipe",
-      "sortid": 298,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "registry_name": "azurit_block_bcraft",
@@ -3182,7 +3173,7 @@
     {
       "name": "AzuritBlockCut",
       "type": "recipe",
-      "sortid": 299,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "registry_name": "azurit_block_cut",
@@ -3191,7 +3182,7 @@
     {
       "name": "AmazoniteBlockCut",
       "type": "recipe",
-      "sortid": 300,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amazonite_block_cut",
@@ -3200,7 +3191,7 @@
     {
       "name": "ApophylliteBlockCut",
       "type": "recipe",
-      "sortid": 301,
+      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_block_cut",
@@ -3209,7 +3200,7 @@
     {
       "name": "ApophylliteBlockCut2",
       "type": "recipe",
-      "sortid": 302,
+      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apophyllite_block_cut_2",
@@ -3218,11 +3209,38 @@
     {
       "name": "CerussiteBlockCut",
       "type": "recipe",
-      "sortid": 303,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cerussite_block_cut",
       "path": "~/ores/craft"
+    },
+    {
+      "name": "RagePotion",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rage_potion",
+      "path": "~/rageium things"
+    },
+    {
+      "name": "VillagerTrade1",
+      "type": "villagertrade",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "villager_trade_1",
+      "path": "~/villager trades"
+    },
+    {
+      "name": "FultBricks",
+      "type": "block",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fult_bricks",
+      "path": "~/nature/fult"
     }
   ],
   "variable_elements": [
@@ -3396,19 +3414,19 @@
       "block.ragemod.mossy_calten_wall": "Mossy Calten Wall",
       "advancements.ragemod_adv_3.title": "Made to be stronger",
       "item.ragemod.rageium_bow": "Rageium Bow",
-      "block.ragemod.rageium_brick_pressure_plate": "Rageium Brick Pressure Plate",
       "block.ragemod.block_of_apophyllite": "Block Of Apophyllite",
+      "block.ragemod.rageium_brick_pressure_plate": "Rageium Brick Pressure Plate",
       "item.ragemod.rage_mite_spawn_egg": "RageMite Spawn Egg",
       "block.ragemod.cerussite_ore": "Cerussite Ore",
       "advancements.ragemod_adv_11.title": "Damaged Property",
       "item.ragemod.fult_ingot": "Fult Ingot",
       "block.ragemod.rageium_brick_button": "Rageium Brick Button",
-      "block.ragemod.amazonite_brick_stairs": "Amazonite Brick Stairs",
       "biome.ragemod.glowing_oak_forest_mountain": "Glowing Oak Forest Mountain",
+      "block.ragemod.amazonite_brick_stairs": "Amazonite Brick Stairs",
       "advancements.ragemod_adv_7.title": "Scrap to Ingot",
-      "biome.ragemod.dense_glowing_oak_forest": "Dense Glowing Oak Forest",
-      "item.ragemod.fult_scrap": "Fult Scrap",
       "item.ragemod.rageium_armor_chestplate": "Rageium Body",
+      "item.ragemod.fult_scrap": "Fult Scrap",
+      "biome.ragemod.dense_glowing_oak_forest": "Dense Glowing Oak Forest",
       "biome.ragemod.snowy_glowing_oak_forest": "Snowy Glowing Oak Forest",
       "block.ragemod.mossy_calten_stairs": "Mossy Calten Stairs",
       "gamerule.toxicGivesBadEffects": "ToxicGivesBadEffects",
@@ -3441,6 +3459,7 @@
       "block.ragemod.rageium_brick_slab": "Rageium Brick Slab",
       "block.ragemod.rageium_brick_stairs": "Rageium Brick Stairs",
       "advancements.ragemod_adv_10.descr": "Consume a Rage Potion",
+      "block.ragemod.fult_bricks": "Fult Bricks",
       "block.ragemod.smooth_calten": "Smooth Calten",
       "block.ragemod.calten_bricks": "Calten Bricks",
       "block.ragemod.cerussite_brick_slab": "Cerussite Brick Slab",
@@ -3688,6 +3707,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "villager trades",
+        "children": []
       }
     ]
   },
@@ -3701,7 +3724,7 @@
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "ragemod_logo3.2_500",
+    "modPicture": "ragemod_logo_new",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
@@ -3711,5 +3734,5 @@
     "modElementsPackage": "net.mcreator.ragemod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200115515
+  "mcreatorVersion": 202200118711
 }

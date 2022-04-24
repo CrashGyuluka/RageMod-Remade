@@ -65,7 +65,7 @@ public class YellowGlowingOakTreeSaplingBlock extends RagemodModElements.ModElem
 	public static final Block block = null;
 
 	public YellowGlowingOakTreeSaplingBlock(RagemodModElements instance) {
-		super(instance, 56);
+		super(instance, 54);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

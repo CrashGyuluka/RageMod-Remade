@@ -27,7 +27,7 @@ public class AzuritBlockBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public AzuritBlockBlock(RagemodModElements instance) {
-		super(instance, 289);
+		super(instance, 71);
 	}
 
 	@Override

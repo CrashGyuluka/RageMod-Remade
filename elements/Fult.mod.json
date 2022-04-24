@@ -1,5 +1,5 @@
 {
-  "_fv": 27,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "fultov",
@@ -35,7 +35,7 @@
     "name": "Fult",
     "specialInfo": [],
     "hardness": 5.0,
-    "resistance": 30.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -141,7 +141,7 @@
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 5,
+    "frequencyPerChunks": 9,
     "frequencyOnChunk": 30,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 80

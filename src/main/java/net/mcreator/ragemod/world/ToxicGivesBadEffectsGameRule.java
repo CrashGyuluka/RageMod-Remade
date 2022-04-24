@@ -14,7 +14,7 @@ public class ToxicGivesBadEffectsGameRule extends RagemodModElements.ModElement 
 			create(true));
 
 	public ToxicGivesBadEffectsGameRule(RagemodModElements instance) {
-		super(instance, 125);
+		super(instance, 124);
 	}
 
 	public static GameRules.RuleType<GameRules.BooleanValue> create(boolean defaultValue) {

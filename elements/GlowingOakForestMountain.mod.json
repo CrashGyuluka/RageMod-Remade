@@ -1,5 +1,5 @@
 {
-  "_fv": 27,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Glowing Oak Forest Mountain",
@@ -43,7 +43,6 @@
     "temperature": 0.30000000000000004,
     "baseHeight": 1.7000000000000002,
     "heightVariation": 0.7999999999999999,
-    "biomeType": "WARM",
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,

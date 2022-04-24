@@ -14,7 +14,7 @@ import net.mcreator.ragemod.item.RagePotionItem;
 @RagemodModElements.ModElement.Tag
 public class RagePotionCraftBrewingRecipe extends RagemodModElements.ModElement {
 	public RagePotionCraftBrewingRecipe(RagemodModElements instance) {
-		super(instance, 172);
+		super(instance, 171);
 	}
 
 	@Override

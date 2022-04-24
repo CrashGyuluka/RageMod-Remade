@@ -17,7 +17,7 @@ public class ColliderEnchantment extends RagemodModElements.ModElement {
 	public static final Enchantment enchantment = null;
 
 	public ColliderEnchantment(RagemodModElements instance) {
-		super(instance, 103);
+		super(instance, 102);
 	}
 
 	@Override

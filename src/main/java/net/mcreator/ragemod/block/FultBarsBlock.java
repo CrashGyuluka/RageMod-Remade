@@ -31,7 +31,7 @@ public class FultBarsBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public FultBarsBlock(RagemodModElements instance) {
-		super(instance, 30);
+		super(instance, 28);
 	}
 
 	@Override

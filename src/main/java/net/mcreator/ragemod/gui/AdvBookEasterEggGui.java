@@ -37,7 +37,7 @@ public class AdvBookEasterEggGui extends RagemodModElements.ModElement {
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public AdvBookEasterEggGui(RagemodModElements instance) {
-		super(instance, 189);
+		super(instance, 188);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

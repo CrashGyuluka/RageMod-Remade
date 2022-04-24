@@ -26,7 +26,7 @@ public class AmazoniteBrickStairsBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public AmazoniteBrickStairsBlock(RagemodModElements instance) {
-		super(instance, 61);
+		super(instance, 59);
 	}
 
 	@Override

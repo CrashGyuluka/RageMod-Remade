@@ -48,7 +48,7 @@ public class CaltenBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public CaltenBlock(RagemodModElements instance) {
-		super(instance, 32);
+		super(instance, 30);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -34,7 +34,7 @@ public class MossyCaltenSlabBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public MossyCaltenSlabBlock(RagemodModElements instance) {
-		super(instance, 40);
+		super(instance, 38);
 	}
 
 	@Override

@@ -6,6 +6,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ActionResult;
+import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -26,7 +27,7 @@ public class AdvancementOneIconItem extends RagemodModElements.ModElement {
 	public static final Item block = null;
 
 	public AdvancementOneIconItem(RagemodModElements instance) {
-		super(instance, 146);
+		super(instance, 145);
 	}
 
 	@Override
@@ -38,6 +39,11 @@ public class AdvancementOneIconItem extends RagemodModElements.ModElement {
 		public ItemCustom() {
 			super(new Item.Properties().group(null).maxStackSize(1).rarity(Rarity.EPIC));
 			setRegistryName("advancement_one_icon");
+		}
+
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.EAT;
 		}
 
 		@Override

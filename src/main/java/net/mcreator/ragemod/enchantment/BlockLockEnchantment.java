@@ -15,7 +15,7 @@ public class BlockLockEnchantment extends RagemodModElements.ModElement {
 	public static final Enchantment enchantment = null;
 
 	public BlockLockEnchantment(RagemodModElements instance) {
-		super(instance, 104);
+		super(instance, 103);
 	}
 
 	@Override

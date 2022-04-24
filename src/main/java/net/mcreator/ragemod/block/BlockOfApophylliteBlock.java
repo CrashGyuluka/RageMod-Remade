@@ -27,7 +27,7 @@ public class BlockOfApophylliteBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public BlockOfApophylliteBlock(RagemodModElements instance) {
-		super(instance, 64);
+		super(instance, 62);
 	}
 
 	@Override

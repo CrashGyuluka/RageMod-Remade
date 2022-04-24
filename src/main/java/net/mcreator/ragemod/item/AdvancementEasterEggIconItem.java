@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -24,7 +25,7 @@ public class AdvancementEasterEggIconItem extends RagemodModElements.ModElement 
 	public static final Item block = null;
 
 	public AdvancementEasterEggIconItem(RagemodModElements instance) {
-		super(instance, 191);
+		super(instance, 190);
 	}
 
 	@Override
@@ -36,6 +37,11 @@ public class AdvancementEasterEggIconItem extends RagemodModElements.ModElement 
 		public ItemCustom() {
 			super(new Item.Properties().group(null).maxStackSize(1).rarity(Rarity.EPIC));
 			setRegistryName("advancement_easter_egg_icon");
+		}
+
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.EAT;
 		}
 
 		@Override

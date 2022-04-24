@@ -14,7 +14,7 @@ public class SendTeleporterFeedbackGameRule extends RagemodModElements.ModElemen
 			create(true));
 
 	public SendTeleporterFeedbackGameRule(RagemodModElements instance) {
-		super(instance, 77);
+		super(instance, 76);
 	}
 
 	public static GameRules.RuleType<GameRules.BooleanValue> create(boolean defaultValue) {

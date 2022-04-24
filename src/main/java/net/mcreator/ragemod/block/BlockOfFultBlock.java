@@ -27,7 +27,7 @@ public class BlockOfFultBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public BlockOfFultBlock(RagemodModElements instance) {
-		super(instance, 29);
+		super(instance, 27);
 	}
 
 	@Override

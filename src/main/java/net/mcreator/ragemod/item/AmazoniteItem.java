@@ -3,6 +3,7 @@ package net.mcreator.ragemod.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -17,7 +18,7 @@ public class AmazoniteItem extends RagemodModElements.ModElement {
 	public static final Item block = null;
 
 	public AmazoniteItem(RagemodModElements instance) {
-		super(instance, 18);
+		super(instance, 17);
 	}
 
 	@Override
@@ -29,6 +30,11 @@ public class AmazoniteItem extends RagemodModElements.ModElement {
 		public ItemCustom() {
 			super(new Item.Properties().group(RagemodTabItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("amazonite");
+		}
+
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.EAT;
 		}
 
 		@Override

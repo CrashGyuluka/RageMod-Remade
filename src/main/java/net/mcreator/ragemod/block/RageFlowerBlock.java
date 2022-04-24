@@ -56,7 +56,7 @@ public class RageFlowerBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public RageFlowerBlock(RagemodModElements instance) {
-		super(instance, 51);
+		super(instance, 49);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

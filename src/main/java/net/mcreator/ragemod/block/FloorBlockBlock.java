@@ -27,7 +27,7 @@ public class FloorBlockBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public FloorBlockBlock(RagemodModElements instance) {
-		super(instance, 50);
+		super(instance, 48);
 	}
 
 	@Override

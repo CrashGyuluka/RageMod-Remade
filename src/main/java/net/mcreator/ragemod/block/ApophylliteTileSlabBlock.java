@@ -32,7 +32,7 @@ public class ApophylliteTileSlabBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public ApophylliteTileSlabBlock(RagemodModElements instance) {
-		super(instance, 67);
+		super(instance, 65);
 	}
 
 	@Override

@@ -14,7 +14,7 @@ public class DoRagemodAirBlocksWorkGameRule extends RagemodModElements.ModElemen
 			create(true));
 
 	public DoRagemodAirBlocksWorkGameRule(RagemodModElements instance) {
-		super(instance, 232);
+		super(instance, 231);
 	}
 
 	public static GameRules.RuleType<GameRules.BooleanValue> create(boolean defaultValue) {

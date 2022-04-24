@@ -49,7 +49,7 @@ public class RageiumBowItem extends RagemodModElements.ModElement {
 			.size(0.5f, 0.5f)).build("projectile_rageium_bow").setRegistryName("projectile_rageium_bow");
 
 	public RageiumBowItem(RagemodModElements instance) {
-		super(instance, 13);
+		super(instance, 14);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RageiumBowRenderer.ModelRegisterHandler());
 	}
 

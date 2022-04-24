@@ -31,7 +31,7 @@ public class FultTrapdoorBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public FultTrapdoorBlock(RagemodModElements instance) {
-		super(instance, 31);
+		super(instance, 29);
 	}
 
 	@Override

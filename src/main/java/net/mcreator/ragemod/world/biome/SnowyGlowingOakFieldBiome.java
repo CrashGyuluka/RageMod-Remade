@@ -43,7 +43,7 @@ public class SnowyGlowingOakFieldBiome extends RagemodModElements.ModElement {
 	public static Biome biome;
 
 	public SnowyGlowingOakFieldBiome(RagemodModElements instance) {
-		super(instance, 252);
+		super(instance, 251);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 

@@ -48,7 +48,7 @@ public class ApophylliteOreBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public ApophylliteOreBlock(RagemodModElements instance) {
-		super(instance, 25);
+		super(instance, 23);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

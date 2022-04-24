@@ -46,7 +46,7 @@ public class CaltenBricksWallBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public CaltenBricksWallBlock(RagemodModElements instance) {
-		super(instance, 47);
+		super(instance, 45);
 	}
 
 	@Override

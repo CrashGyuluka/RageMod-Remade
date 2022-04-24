@@ -1,5 +1,5 @@
 {
-  "_fv": 27,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Glowing Oak Field",
@@ -43,7 +43,6 @@
     "temperature": 0.5,
     "baseHeight": 0.4,
     "heightVariation": 0.19999999999999998,
-    "biomeType": "WARM",
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,

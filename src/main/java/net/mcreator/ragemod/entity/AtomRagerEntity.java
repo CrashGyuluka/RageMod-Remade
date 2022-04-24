@@ -52,7 +52,7 @@ public class AtomRagerEntity extends RagemodModElements.ModElement {
 			.size(0.6f, 1.7f)).build("atom_rager").setRegistryName("atom_rager");
 
 	public AtomRagerEntity(RagemodModElements instance) {
-		super(instance, 49);
+		super(instance, 47);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new AtomRagerRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

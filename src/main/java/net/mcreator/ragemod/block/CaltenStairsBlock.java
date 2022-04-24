@@ -33,7 +33,7 @@ public class CaltenStairsBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public CaltenStairsBlock(RagemodModElements instance) {
-		super(instance, 36);
+		super(instance, 34);
 	}
 
 	@Override

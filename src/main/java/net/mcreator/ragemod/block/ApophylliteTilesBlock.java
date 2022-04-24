@@ -27,7 +27,7 @@ public class ApophylliteTilesBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public ApophylliteTilesBlock(RagemodModElements instance) {
-		super(instance, 65);
+		super(instance, 63);
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class CerussiteBricksBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public CerussiteBricksBlock(RagemodModElements instance) {
-		super(instance, 69);
+		super(instance, 67);
 	}
 
 	@Override

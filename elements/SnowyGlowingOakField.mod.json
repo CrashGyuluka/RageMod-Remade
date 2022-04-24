@@ -1,5 +1,5 @@
 {
-  "_fv": 27,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Snowy Glowing Oak Field",
@@ -43,7 +43,6 @@
     "temperature": -0.2,
     "baseHeight": 0.7000000000000001,
     "heightVariation": 0.5,
-    "biomeType": "COOL",
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,

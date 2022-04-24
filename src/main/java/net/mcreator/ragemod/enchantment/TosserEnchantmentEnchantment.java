@@ -17,7 +17,7 @@ public class TosserEnchantmentEnchantment extends RagemodModElements.ModElement 
 	public static final Enchantment enchantment = null;
 
 	public TosserEnchantmentEnchantment(RagemodModElements instance) {
-		super(instance, 101);
+		super(instance, 100);
 	}
 
 	@Override

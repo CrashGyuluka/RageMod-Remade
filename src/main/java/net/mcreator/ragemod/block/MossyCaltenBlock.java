@@ -47,7 +47,7 @@ public class MossyCaltenBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public MossyCaltenBlock(RagemodModElements instance) {
-		super(instance, 33);
+		super(instance, 31);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

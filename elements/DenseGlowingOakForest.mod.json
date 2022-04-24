@@ -1,5 +1,5 @@
 {
-  "_fv": 27,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Dense Glowing Oak Forest",
@@ -43,7 +43,6 @@
     "temperature": 0.5,
     "baseHeight": 0.7000000000000001,
     "heightVariation": 0.30000000000000004,
-    "biomeType": "WARM",
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,

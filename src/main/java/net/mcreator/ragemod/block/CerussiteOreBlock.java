@@ -48,7 +48,7 @@ public class CerussiteOreBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public CerussiteOreBlock(RagemodModElements instance) {
-		super(instance, 24);
+		super(instance, 22);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

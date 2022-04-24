@@ -1,0 +1,212 @@
+{
+  "_fv": 28,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "FLETCHER"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 17,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 23,
+            "offer": {
+              "value": "CUSTOM:RageiumBow"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 1,
+            "xp": 5,
+            "priceMultiplier": 0.060000000000000005
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "FLETCHER"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 3,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 2,
+            "offer": {
+              "value": "CUSTOM:RageiumArrow"
+            },
+            "countOffer": 8,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.03
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "ARMORER"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 13,
+            "price2": {
+              "value": "Items.DIAMOND"
+            },
+            "countPrice2": 3,
+            "offer": {
+              "value": "CUSTOM:RageiumArmor.body"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 7,
+            "priceMultiplier": 0.08
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 16,
+            "price2": {
+              "value": "Items.DIAMOND"
+            },
+            "countPrice2": 5,
+            "offer": {
+              "value": "CUSTOM:RageiumArmor.legs"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 2,
+            "xp": 10,
+            "priceMultiplier": 0.11
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "WEAPONSMITH"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:Rageium"
+            },
+            "countPrice1": 13,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:RageiumAlloy"
+            },
+            "countOffer": 2,
+            "level": 1,
+            "maxTrades": 4,
+            "xp": 3,
+            "priceMultiplier": 0.03
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "MASON"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 3,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 5,
+            "offer": {
+              "value": "CUSTOM:FultScrap"
+            },
+            "countOffer": 4,
+            "level": 1,
+            "maxTrades": 15,
+            "xp": 2,
+            "priceMultiplier": 0.049999999999999996
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 3,
+            "offer": {
+              "value": "CUSTOM:FloorBlock"
+            },
+            "countOffer": 8,
+            "level": 4,
+            "maxTrades": 20,
+            "xp": 4,
+            "priceMultiplier": 0.03
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "CUSTOM:FultScrap"
+            },
+            "countPrice2": 2,
+            "offer": {
+              "value": "CUSTOM:FultBricks"
+            },
+            "countOffer": 8,
+            "level": 3,
+            "maxTrades": 20,
+            "xp": 5,
+            "priceMultiplier": 0.04
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "CLERIC"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 3,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 2,
+            "offer": {
+              "value": "CUSTOM:RagePotion"
+            },
+            "countOffer": 2,
+            "level": 3,
+            "maxTrades": 4,
+            "xp": 3,
+            "priceMultiplier": 0.04
+          }
+        ]
+      }
+    ]
+  }
+}

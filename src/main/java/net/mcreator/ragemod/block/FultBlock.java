@@ -44,7 +44,7 @@ public class FultBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public FultBlock(RagemodModElements instance) {
-		super(instance, 26);
+		super(instance, 24);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -57,7 +57,7 @@ public class FultBlock extends RagemodModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.BASALT).hardnessAndResistance(5f, 30f).setLightLevel(s -> 0).harvestLevel(1)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.BASALT).hardnessAndResistance(5f, 10f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("fult");
 		}
@@ -113,7 +113,7 @@ public class FultBlock extends RagemodModElements.ModElement {
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 30)).range(80)
-					.square().func_242731_b(5);
+					.square().func_242731_b(9);
 			event.getRegistry().register(feature.setRegistryName("fult"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("ragemod:fult"), configuredFeature);
 		}

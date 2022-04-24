@@ -27,7 +27,7 @@ public class SmoothCaltenBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public SmoothCaltenBlock(RagemodModElements instance) {
-		super(instance, 34);
+		super(instance, 32);
 	}
 
 	@Override

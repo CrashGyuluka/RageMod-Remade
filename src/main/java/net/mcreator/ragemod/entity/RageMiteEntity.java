@@ -63,7 +63,7 @@ public class RageMiteEntity extends RagemodModElements.ModElement {
 			.size(0.4f, 0.3f)).build("rage_mite").setRegistryName("rage_mite");
 
 	public RageMiteEntity(RagemodModElements instance) {
-		super(instance, 48);
+		super(instance, 46);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RageMiteRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

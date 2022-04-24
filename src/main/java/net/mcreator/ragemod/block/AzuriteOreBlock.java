@@ -48,7 +48,7 @@ public class AzuriteOreBlock extends RagemodModElements.ModElement {
 	public static final Block block = null;
 
 	public AzuriteOreBlock(RagemodModElements instance) {
-		super(instance, 22);
+		super(instance, 20);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

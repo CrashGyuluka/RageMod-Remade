@@ -1,5 +1,5 @@
 {
-  "_fv": 27,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Snowy Glowing Oak Forest",
@@ -43,7 +43,6 @@
     "temperature": -0.1,
     "baseHeight": 0.7,
     "heightVariation": 0.4,
-    "biomeType": "COOL",
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
