@@ -5,5 +5,7 @@
   "ingredient": {
     "item": "ragemod:fult_scrap"
   },
-  "result": "ragemod:fult_ingot"
+  "result": {
+    "item": "ragemod:fult_ingot"
+  }
 }

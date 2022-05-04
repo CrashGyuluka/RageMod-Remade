@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "structure",
   "definition": {
     "structure": "gof_red_tulip",
@@ -15,7 +15,11 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.GRASS"
+      }
+    ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:GlowingOakField"
@@ -24,13 +28,16 @@
         "value": "CUSTOM:GlowingOakForest"
       },
       {
-        "value": "CUSTOM:GlowingOakForestMountain"
-      },
-      {
         "value": "CUSTOM:SpareGlowingOakForest"
       },
       {
         "value": "CUSTOM:SnowyGlowingOakField"
+      },
+      {
+        "value": "CUSTOM:GlowingOakForestMountain"
+      },
+      {
+        "value": "CUSTOM:SnowyGlowingOakForest"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

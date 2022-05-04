@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:azurite"
+    },
+    {
+      "item": "ragemod:azurite"
+    },
+    {
+      "item": "ragemod:azurite"
+    },
+    {
+      "item": "ragemod:azurite"
+    }
+  ],
+  "result": {
+    "item": "ragemod:azurit_block",
+    "count": 1
+  }
+}

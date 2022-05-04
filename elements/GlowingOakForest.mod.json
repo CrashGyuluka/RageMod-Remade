@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Glowing Oak Forest",
@@ -8,6 +8,9 @@
     },
     "undergroundBlock": {
       "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.FLOWING_WATER"
     },
     "grassColor": {
       "value": -4558035,
@@ -38,10 +41,11 @@
     "biomeCategory": "FOREST",
     "rainingPossibility": 0.30000000000000004,
     "temperature": 0.30000000000000004,
-    "baseHeight": 1.1,
-    "heightVariation": 0.5,
-    "biomeType": "WARM",
+    "baseHeight": 0.7000000000000001,
+    "heightVariation": 0.30000000000000004,
     "spawnBiome": true,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 11,
     "biomeDictionaryTypes": [
       "FOREST",

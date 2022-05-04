@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ragemod:apophyllite"
+    },
+    {
+      "item": "ragemod:apophyllite"
+    },
+    {
+      "item": "ragemod:apophyllite"
+    },
+    {
+      "item": "ragemod:apophyllite"
+    },
+    {
+      "item": "ragemod:apophyllite"
+    },
+    {
+      "item": "ragemod:apophyllite"
+    },
+    {
+      "item": "ragemod:apophyllite"
+    },
+    {
+      "item": "ragemod:apophyllite"
+    },
+    {
+      "item": "ragemod:apophyllite"
+    }
+  ],
+  "result": {
+    "item": "ragemod:block_of_apophyllite",
+    "count": 1
+  }
+}

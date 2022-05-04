@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ragemod:block/apophyllite_tile_slab"
+    },
+    "type=top": {
+      "model": "ragemod:block/apophyllite_tile_slab_top"
+    },
+    "type=double": {
+      "model": "ragemod:block/apophyllite_tile_slab_full"
+    }
+  }
+}

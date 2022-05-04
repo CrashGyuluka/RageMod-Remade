@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Glowing Oak Field",
@@ -8,6 +8,9 @@
     },
     "undergroundBlock": {
       "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.FLOWING_WATER"
     },
     "grassColor": {
       "value": -3767248,
@@ -40,8 +43,9 @@
     "temperature": 0.5,
     "baseHeight": 0.4,
     "heightVariation": 0.19999999999999998,
-    "biomeType": "WARM",
     "spawnBiome": true,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 9,
     "biomeDictionaryTypes": [
       "FOREST",

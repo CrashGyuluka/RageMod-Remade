@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ragemod:achat_ore",
+          "name": "ragemod:deleted_mod_element",
           "weight": 1,
           "conditions": [
             {
@@ -40,7 +40,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ragemod:achat",
+          "name": "ragemod:deleted_mod_element",
           "weight": 1,
           "conditions": [
             {

@@ -20,9 +20,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "ragemod:amazonite_bricks"
-            ],
+            "item": "ragemod:amazonite_bricks",
             "count": {
               "min": 1,
               "max": 999

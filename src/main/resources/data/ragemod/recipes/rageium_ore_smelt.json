@@ -5,5 +5,7 @@
   "ingredient": {
     "item": "ragemod:rageium_ore"
   },
-  "result": "ragemod:rageium"
+  "result": {
+    "item": "ragemod:rageium"
+  }
 }

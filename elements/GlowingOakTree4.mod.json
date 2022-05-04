@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "structure",
   "definition": {
     "structure": "a_glow_oak4",
@@ -26,6 +26,9 @@
       },
       {
         "value": "CUSTOM:GlowingOakForestMountain"
+      },
+      {
+        "value": "CUSTOM:SnowyGlowingOakForest"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "livingentity",
   "definition": {
     "mobName": "RageMite",
@@ -115,7 +115,7 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 12,
+    "spawningProbability": 11,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
@@ -125,8 +125,11 @@
       },
       {
         "value": "desert"
+      },
+      {
+        "value": "nether"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": true
   }
 }

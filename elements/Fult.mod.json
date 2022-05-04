@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "fultov",
@@ -35,7 +35,7 @@
     "name": "Fult",
     "specialInfo": [],
     "hardness": 5.0,
-    "resistance": 30.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -82,16 +82,16 @@
     "breakSound": {
       "value": ""
     },
-    "stepSound": {
-      "value": ""
-    },
-    "placeSound": {
+    "fallSound": {
       "value": ""
     },
     "hitSound": {
       "value": ""
     },
-    "fallSound": {
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
       "value": ""
     },
     "luminance": 0,
@@ -140,7 +140,8 @@
         "value": "Blocks.BASALT"
       }
     ],
-    "frequencyPerChunks": 5,
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 9,
     "frequencyOnChunk": 30,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 80

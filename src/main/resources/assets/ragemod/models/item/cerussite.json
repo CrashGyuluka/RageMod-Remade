@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ragemod:items/cerussite"
+    "layer0": "ragemod:items/cerussiteore"
   }
 }

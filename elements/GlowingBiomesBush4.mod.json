@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "structure",
   "definition": {
     "structure": "glowing_bush4",
@@ -7,7 +7,7 @@
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 300000,
     "minCountPerChunk": 1,
-    "maxCountPerChunk": 1,
+    "maxCountPerChunk": 2,
     "spawnLocation": "Ground",
     "spawnHeightOffset": 1,
     "spawnXOffset": -2,
@@ -25,10 +25,13 @@
         "value": "CUSTOM:GlowingOakForest"
       },
       {
+        "value": "CUSTOM:SpareGlowingOakForest"
+      },
+      {
         "value": "CUSTOM:GlowingOakForestMountain"
       },
       {
-        "value": "CUSTOM:SpareGlowingOakForest"
+        "value": "CUSTOM:SnowyGlowingOakForest"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

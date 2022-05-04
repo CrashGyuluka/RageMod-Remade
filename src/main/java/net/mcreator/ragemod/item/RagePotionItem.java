@@ -1,49 +1,94 @@
 
 package net.mcreator.ragemod.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.item.UseAction;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.Food;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.block.BlockState;
 
 import net.mcreator.ragemod.procedures.RagePotionFoodEatenProcedure;
-import net.mcreator.ragemod.init.RagemodModTabs;
+import net.mcreator.ragemod.itemgroup.RagemodTabItemGroup;
+import net.mcreator.ragemod.RagemodModElements;
 
-public class RagePotionItem extends Item {
-	public RagePotionItem() {
-		super(new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB).stacksTo(16).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f).alwaysEat()
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
-						.build()));
+@RagemodModElements.ModElement.Tag
+public class RagePotionItem extends RagemodModElements.ModElement {
+	@ObjectHolder("ragemod:rage_potion")
+	public static final Item block = null;
+
+	public RagePotionItem(RagemodModElements instance) {
+		super(instance, 13);
 	}
 
 	@Override
-	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.DRINK;
+	public void initElements() {
+		elements.items.add(() -> new ItemCustom());
 	}
 
-	@Override
-	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(Items.GLASS_BOTTLE);
-		super.finishUsingItem(itemstack, world, entity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
+	public static class ItemCustom extends Item {
+		public ItemCustom() {
+			super(new Item.Properties().group(RagemodTabItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(4).saturation(0.3f).setAlwaysEdible().build()));
+			setRegistryName("rage_potion");
+		}
 
-		RagePotionFoodEatenProcedure.execute(entity);
-		if (itemstack.isEmpty()) {
-			return retval;
-		} else {
-			if (entity instanceof Player player && !player.getAbilities().instabuild) {
-				if (!player.getInventory().add(retval))
-					player.drop(retval, false);
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.DRINK;
+		}
+
+		@Override
+		public net.minecraft.util.SoundEvent getEatSound() {
+			return net.minecraft.util.SoundEvents.ENTITY_GENERIC_DRINK;
+		}
+
+		@Override
+		public int getItemEnchantability() {
+			return 0;
+		}
+
+		@Override
+		public int getUseDuration(ItemStack itemstack) {
+			return 32;
+		}
+
+		@Override
+		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+			return 0F;
+		}
+
+		@Override
+		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
+			ItemStack retval = new ItemStack(Items.GLASS_BOTTLE);
+			super.onItemUseFinish(itemstack, world, entity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+
+			RagePotionFoodEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			if (itemstack.isEmpty()) {
+				return retval;
+			} else {
+				if (entity instanceof PlayerEntity) {
+					PlayerEntity player = (PlayerEntity) entity;
+					if (!player.isCreative() && !player.inventory.addItemStackToInventory(retval))
+						player.dropItem(retval, false);
+				}
+				return itemstack;
 			}
-			return itemstack;
 		}
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "structure",
   "definition": {
     "structure": "glowing_bush1",
@@ -25,10 +25,13 @@
         "value": "CUSTOM:GlowingOakForest"
       },
       {
+        "value": "CUSTOM:SpareGlowingOakForest"
+      },
+      {
         "value": "CUSTOM:GlowingOakForestMountain"
       },
       {
-        "value": "CUSTOM:SpareGlowingOakForest"
+        "value": "CUSTOM:SnowyGlowingOakForest"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
