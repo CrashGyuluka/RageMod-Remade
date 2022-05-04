@@ -12,11 +12,11 @@
             "price1": {
               "value": "Items.EMERALD"
             },
-            "countPrice1": 17,
+            "countPrice1": 15,
             "price2": {
-              "value": "Items.EMERALD"
+              "value": ""
             },
-            "countPrice2": 23,
+            "countPrice2": 1,
             "offer": {
               "value": "CUSTOM:RageiumBow"
             },
@@ -39,9 +39,9 @@
             },
             "countPrice1": 3,
             "price2": {
-              "value": "Items.EMERALD"
+              "value": ""
             },
-            "countPrice2": 2,
+            "countPrice2": 1,
             "offer": {
               "value": "CUSTOM:RageiumArrow"
             },
@@ -64,9 +64,9 @@
             },
             "countPrice1": 13,
             "price2": {
-              "value": "Items.DIAMOND"
+              "value": ""
             },
-            "countPrice2": 3,
+            "countPrice2": 1,
             "offer": {
               "value": "CUSTOM:RageiumArmor.body"
             },
@@ -80,11 +80,11 @@
             "price1": {
               "value": "Items.EMERALD"
             },
-            "countPrice1": 16,
+            "countPrice1": 15,
             "price2": {
               "value": "Items.DIAMOND"
             },
-            "countPrice2": 5,
+            "countPrice2": 2,
             "offer": {
               "value": "CUSTOM:RageiumArmor.legs"
             },
@@ -134,7 +134,7 @@
             "price2": {
               "value": ""
             },
-            "countPrice2": 5,
+            "countPrice2": 1,
             "offer": {
               "value": "CUSTOM:FultScrap"
             },
@@ -152,7 +152,7 @@
             "price2": {
               "value": ""
             },
-            "countPrice2": 3,
+            "countPrice2": 1,
             "offer": {
               "value": "CUSTOM:FloorBlock"
             },

@@ -1,256 +1,176 @@
 
 package net.mcreator.ragemod.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.DungeonHooks;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.sounds.SoundEvent;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.network.IPacket;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.TameableEntity;
-import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.attributes.AttributeModifierMap;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.entity.AgeableEntity;
+import net.mcreator.ragemod.init.RagemodModParticleTypes;
+import net.mcreator.ragemod.init.RagemodModItems;
+import net.mcreator.ragemod.init.RagemodModEntities;
 
-import net.mcreator.ragemod.particle.RageParticleParticle;
-import net.mcreator.ragemod.itemgroup.RagemodTabItemGroup;
-import net.mcreator.ragemod.item.RageiumItem;
-import net.mcreator.ragemod.item.FultScrapItem;
-import net.mcreator.ragemod.entity.renderer.RageMiteRenderer;
-import net.mcreator.ragemod.RagemodModElements;
+import java.util.Set;
+import java.util.List;
 
-import java.util.Random;
-
-@RagemodModElements.ModElement.Tag
-public class RageMiteEntity extends RagemodModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
-			.size(0.4f, 0.3f)).build("rage_mite").setRegistryName("rage_mite");
-
-	public RageMiteEntity(RagemodModElements instance) {
-		super(instance, 46);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new RageMiteRenderer.ModelRegisterHandler());
-		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
-	}
-
-	@Override
-	public void initElements() {
-		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16764007, -65485, new Item.Properties().group(RagemodTabItemGroup.tab))
-				.setRegistryName("rage_mite_spawn_egg"));
-	}
+@Mod.EventBusSubscriber
+public class RageMiteEntity extends TamableAnimal {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("beach"), new ResourceLocation("desert"),
+			new ResourceLocation("nether_wastes"));
 
 	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		boolean biomeCriteria = false;
-		if (new ResourceLocation("beach").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("desert").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("nether_wastes").equals(event.getName()))
-			biomeCriteria = true;
-		if (!biomeCriteria)
-			return;
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 11, 1, 2));
+	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(RagemodModEntities.RAGE_MITE.get(), 11, 1, 2));
+	}
+
+	public RageMiteEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(RagemodModEntities.RAGE_MITE.get(), world);
+	}
+
+	public RageMiteEntity(EntityType<RageMiteEntity> type, Level world) {
+		super(type, world);
+		xpReward = 6;
+		setNoAi(false);
 	}
 
 	@Override
-	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
-		DungeonHooks.addDungeonMob(entity, 180);
+	public Packet<?> getAddEntityPacket() {
+		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
-	private static class EntityAttributesRegisterHandler {
-		@SubscribeEvent
-		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
-			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.33);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 15);
-			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0.1);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
-			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.1);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 0.1);
-			event.put(entity, ammma.create());
-		}
-	}
-
-	public static class CustomEntity extends TameableEntity {
-		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
-			this(entity, world);
-		}
-
-		public CustomEntity(EntityType<CustomEntity> type, World world) {
-			super(type, world);
-			experienceValue = 6;
-			setNoAI(false);
-		}
-
-		@Override
-		public IPacket<?> createSpawnPacket() {
-			return NetworkHooks.getEntitySpawningPacket(this);
-		}
-
-		@Override
-		protected void registerGoals() {
-			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-				@Override
-				protected double getAttackReachSqr(LivingEntity entity) {
-					return (double) (4.0 + entity.getWidth() * entity.getWidth());
-				}
-			});
-			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp());
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, AtomRagerEntity.CustomEntity.class, false, false));
-		}
-
-		@Override
-		public CreatureAttribute getCreatureAttribute() {
-			return CreatureAttribute.UNDEAD;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(RageiumItem.block));
-		}
-
-		@Override
-		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
-		}
-
-		@Override
-		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-		}
-
-		@Override
-		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source == DamageSource.FALL)
-				return false;
-			if (source == DamageSource.DROWN)
-				return false;
-			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
-			ItemStack itemstack = sourceentity.getHeldItem(hand);
-			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
-			Item item = itemstack.getItem();
-			if (itemstack.getItem() instanceof SpawnEggItem) {
-				retval = super.func_230254_b_(sourceentity, hand);
-			} else if (this.world.isRemote()) {
-				retval = (this.isTamed() && this.isOwner(sourceentity) || this.isBreedingItem(itemstack))
-						? ActionResultType.func_233537_a_(this.world.isRemote())
-						: ActionResultType.PASS;
-			} else {
-				if (this.isTamed()) {
-					if (this.isOwner(sourceentity)) {
-						if (item.isFood() && this.isBreedingItem(itemstack) && this.getHealth() < this.getMaxHealth()) {
-							this.consumeItemFromStack(sourceentity, itemstack);
-							this.heal((float) item.getFood().getHealing());
-							retval = ActionResultType.func_233537_a_(this.world.isRemote());
-						} else if (this.isBreedingItem(itemstack) && this.getHealth() < this.getMaxHealth()) {
-							this.consumeItemFromStack(sourceentity, itemstack);
-							this.heal(4);
-							retval = ActionResultType.func_233537_a_(this.world.isRemote());
-						} else {
-							retval = super.func_230254_b_(sourceentity, hand);
-						}
-					}
-				} else if (this.isBreedingItem(itemstack)) {
-					this.consumeItemFromStack(sourceentity, itemstack);
-					if (this.rand.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
-						this.setTamedBy(sourceentity);
-						this.world.setEntityState(this, (byte) 7);
-					} else {
-						this.world.setEntityState(this, (byte) 6);
-					}
-					this.enablePersistence();
-					retval = ActionResultType.func_233537_a_(this.world.isRemote());
-				} else {
-					retval = super.func_230254_b_(sourceentity, hand);
-					if (retval == ActionResultType.SUCCESS || retval == ActionResultType.CONSUME)
-						this.enablePersistence();
-				}
+	@Override
+	protected void registerGoals() {
+		super.registerGoals();
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
-			return retval;
-		}
+		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, AtomRagerEntity.class, false, false));
+	}
 
-		@Override
-		public AgeableEntity func_241840_a(ServerWorld serverWorld, AgeableEntity ageable) {
-			CustomEntity retval = (CustomEntity) entity.create(serverWorld);
-			retval.onInitialSpawn(serverWorld, serverWorld.getDifficultyForLocation(new BlockPos(retval.getPosition())), SpawnReason.BREEDING,
-					(ILivingEntityData) null, (CompoundNBT) null);
-			return retval;
-		}
+	@Override
+	public MobType getMobType() {
+		return MobType.UNDEAD;
+	}
 
-		@Override
-		public boolean isBreedingItem(ItemStack stack) {
-			if (stack == null)
-				return false;
-			if (FultScrapItem.block == stack.getItem())
-				return true;
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(RagemodModItems.RAGEIUM.get()));
+	}
+
+	@Override
+	public SoundEvent getHurtSound(DamageSource ds) {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+	}
+
+	@Override
+	public SoundEvent getDeathSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source == DamageSource.FALL)
 			return false;
-		}
+		if (source == DamageSource.DROWN)
+			return false;
+		return super.hurt(source, amount);
+	}
 
-		public void livingTick() {
-			super.livingTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Random random = this.rand;
-			Entity entity = this;
-			if (true)
-				for (int l = 0; l < 4; ++l) {
-					double d0 = (x + random.nextFloat());
-					double d1 = (y + random.nextFloat());
-					double d2 = (z + random.nextFloat());
-					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 0.3999999985098839D;
-					double d4 = (random.nextFloat() - 0.5D) * 0.3999999985098839D;
-					double d5 = (random.nextFloat() - 0.5D) * 0.3999999985098839D;
-					world.addParticle(RageParticleParticle.particle, d0, d1, d2, d3, d4, d5);
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+		Item item = itemstack.getItem();
+		if (itemstack.getItem() instanceof SpawnEggItem) {
+			retval = super.mobInteract(sourceentity, hand);
+		} else if (this.level.isClientSide()) {
+			retval = (this.isTame() && this.isOwnedBy(sourceentity) || this.isFood(itemstack))
+					? InteractionResult.sidedSuccess(this.level.isClientSide())
+					: InteractionResult.PASS;
+		} else {
+			if (this.isTame()) {
+				if (this.isOwnedBy(sourceentity)) {
+					if (item.isEdible() && this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
+						this.usePlayerItem(sourceentity, hand, itemstack);
+						this.heal((float) item.getFoodProperties().getNutrition());
+						retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+					} else if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
+						this.usePlayerItem(sourceentity, hand, itemstack);
+						this.heal(4);
+						retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+					} else {
+						retval = super.mobInteract(sourceentity, hand);
+					}
 				}
+			} else if (this.isFood(itemstack)) {
+				this.usePlayerItem(sourceentity, hand, itemstack);
+				if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
+					this.tame(sourceentity);
+					this.level.broadcastEntityEvent(this, (byte) 7);
+				} else {
+					this.level.broadcastEntityEvent(this, (byte) 6);
+				}
+				this.setPersistenceRequired();
+				retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+			} else {
+				retval = super.mobInteract(sourceentity, hand);
+				if (retval == InteractionResult.SUCCESS || retval == InteractionResult.CONSUME)
+					this.setPersistenceRequired();
+			}
 		}
+		return retval;
+	}
+
+	@Override
+	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
+		RageMiteEntity retval = RagemodModEntities.RAGE_MITE.get().create(serverWorld);
+		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
+		return retval;
+	}
+
+	@Override
+	public boolean isFood(ItemStack stack) {
+		return List.of(RagemodModItems.FULT_SCRAP.get()).contains(stack.getItem());
+	}
+
+	public void aiStep() {
+		super.aiStep();
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level;
+		for (int l = 0; l < 4; ++l) {
+			double x0 = x + random.nextFloat();
+			double y0 = y + random.nextFloat();
+			double z0 = z + random.nextFloat();
+			double dx = (random.nextFloat() - 0.5D) * 0.3999999985098839D;
+			double dy = (random.nextFloat() - 0.5D) * 0.3999999985098839D;
+			double dz = (random.nextFloat() - 0.5D) * 0.3999999985098839D;
+			world.addParticle((SimpleParticleType) (RagemodModParticleTypes.RAGE_PARTICLE.get()), x0, y0, z0, dx, dy, dz);
+		}
+	}
+
+	public static void init() {
+		SpawnPlacements.register(RagemodModEntities.RAGE_MITE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
+						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		DungeonHooks.addDungeonMob(RagemodModEntities.RAGE_MITE.get(), 180);
+	}
+
+	public static AttributeSupplier.Builder createAttributes() {
+		AttributeSupplier.Builder builder = Mob.createMobAttributes();
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.33);
+		builder = builder.add(Attributes.MAX_HEALTH, 15);
+		builder = builder.add(Attributes.ARMOR, 0.1);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.1);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0.1);
+		return builder;
 	}
 }

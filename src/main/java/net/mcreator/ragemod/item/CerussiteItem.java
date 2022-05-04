@@ -1,55 +1,20 @@
 
 package net.mcreator.ragemod.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.mcreator.ragemod.init.RagemodModTabs;
 
-import net.minecraft.item.UseAction;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.ragemod.itemgroup.RagemodTabItemGroup;
-import net.mcreator.ragemod.RagemodModElements;
-
-@RagemodModElements.ModElement.Tag
-public class CerussiteItem extends RagemodModElements.ModElement {
-	@ObjectHolder("ragemod:cerussite")
-	public static final Item block = null;
-
-	public CerussiteItem(RagemodModElements instance) {
-		super(instance, 18);
+public class CerussiteItem extends Item {
+	public CerussiteItem() {
+		super(new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new ItemCustom());
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 
-	public static class ItemCustom extends Item {
-		public ItemCustom() {
-			super(new Item.Properties().group(RagemodTabItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("cerussite");
-		}
-
-		@Override
-		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.EAT;
-		}
-
-		@Override
-		public int getItemEnchantability() {
-			return 0;
-		}
-
-		@Override
-		public int getUseDuration(ItemStack itemstack) {
-			return 0;
-		}
-
-		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 1F;
-		}
+	@Override
+	public int getUseDuration(ItemStack itemstack) {
+		return 0;
 	}
 }

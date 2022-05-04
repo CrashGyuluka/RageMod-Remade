@@ -1,73 +1,47 @@
 
 package net.mcreator.ragemod.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.common.ToolType;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraft.world.level.material.Material;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.ragemod.itemgroup.RagemodTabItemGroup;
-import net.mcreator.ragemod.RagemodModElements;
+import net.mcreator.ragemod.init.RagemodModBlocks;
 
 import java.util.List;
 import java.util.Collections;
 
-@RagemodModElements.ModElement.Tag
-public class MossyCaltenStairsBlock extends RagemodModElements.ModElement {
-	@ObjectHolder("ragemod:mossy_calten_stairs")
-	public static final Block block = null;
-
-	public MossyCaltenStairsBlock(RagemodModElements instance) {
-		super(instance, 37);
+public class MossyCaltenStairsBlock extends StairBlock {
+	public MossyCaltenStairsBlock() {
+		super(() -> Blocks.AIR.defaultBlockState(),
+				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override
-	public void initElements() {
-		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(RagemodTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
+	public float getExplosionResistance() {
+		return 10f;
 	}
 
 	@Override
+	public boolean isRandomlyTicking(BlockState p_56947_) {
+		return false;
+	}
+
+	@Override
+	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+			return tieredItem.getTier().getLevel() >= 0;
+		return false;
+	}
+
+	@Override
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
 	@OnlyIn(Dist.CLIENT)
-	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	public static void registerRenderLayer() {
+		ItemBlockRenderTypes.setRenderLayer(RagemodModBlocks.MOSSY_CALTEN_STAIRS.get(), renderType -> renderType == RenderType.cutout());
 	}
 
-	public static class CustomBlock extends StairsBlock {
-		public CustomBlock() {
-			super(() -> new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 10f).setLightLevel(s -> 0)
-					.harvestLevel(0).harvestTool(ToolType.PICKAXE).setRequiresTool()).getDefaultState(),
-					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 10f).setLightLevel(s -> 0).harvestLevel(0)
-							.harvestTool(ToolType.PICKAXE).setRequiresTool());
-			setRegistryName("mossy_calten_stairs");
-		}
-
-		@Override
-		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
-		}
-
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
-		}
-	}
 }
