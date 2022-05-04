@@ -19,7 +19,9 @@
       "trigger": "minecraft:placed_block",
       "conditions": {
         "item": {
-          "item": "ragemod:floor_block"
+          "items": [
+            "ragemod:floor_block"
+          ]
         }
       }
     }

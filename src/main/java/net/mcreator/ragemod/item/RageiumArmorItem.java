@@ -1,67 +1,39 @@
 
 package net.mcreator.ragemod.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraft.sounds.SoundEvent;
 
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.Entity;
+import net.mcreator.ragemod.init.RagemodModTabs;
+import net.mcreator.ragemod.init.RagemodModItems;
 
-import net.mcreator.ragemod.itemgroup.RagemodTabItemGroup;
-import net.mcreator.ragemod.RagemodModElements;
-
-@RagemodModElements.ModElement.Tag
-public class RageiumArmorItem extends RagemodModElements.ModElement {
-	@ObjectHolder("ragemod:rageium_armor_helmet")
-	public static final Item helmet = null;
-	@ObjectHolder("ragemod:rageium_armor_chestplate")
-	public static final Item body = null;
-	@ObjectHolder("ragemod:rageium_armor_leggings")
-	public static final Item legs = null;
-	@ObjectHolder("ragemod:rageium_armor_boots")
-	public static final Item boots = null;
-
-	public RageiumArmorItem(RagemodModElements instance) {
-		super(instance, 6);
-	}
-
-	@Override
-	public void initElements() {
-		IArmorMaterial armormaterial = new IArmorMaterial() {
+public abstract class RageiumArmorItem extends ArmorItem {
+	public RageiumArmorItem(EquipmentSlot slot, Item.Properties properties) {
+		super(new ArmorMaterial() {
 			@Override
-			public int getDurability(EquipmentSlotType slot) {
+			public int getDurabilityForSlot(EquipmentSlot slot) {
 				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 35;
 			}
 
 			@Override
-			public int getDamageReductionAmount(EquipmentSlotType slot) {
+			public int getDefenseForSlot(EquipmentSlot slot) {
 				return new int[]{3, 6, 7, 4}[slot.getIndex()];
 			}
 
 			@Override
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 15;
 			}
 
 			@Override
-			public net.minecraft.util.SoundEvent getSoundEvent() {
-				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_netherite"));
+			public SoundEvent getEquipSound() {
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_netherite"));
 			}
 
 			@Override
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(RageiumItem.block), new ItemStack(RageiumAlloyItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(RagemodModItems.RAGEIUM.get()), new ItemStack(RagemodModItems.RAGEIUM_ALLOY.get()));
 			}
 
-			@OnlyIn(Dist.CLIENT)
 			@Override
 			public String getName() {
 				return "rageium_armor";
@@ -76,31 +48,50 @@ public class RageiumArmorItem extends RagemodModElements.ModElement {
 			public float getKnockbackResistance() {
 				return 0.1f;
 			}
-		};
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(RagemodTabItemGroup.tab)) {
-			@Override
-			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "ragemod:textures/models/armor/rageiumarmorn__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-			}
-		}.setRegistryName("rageium_armor_helmet"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(RagemodTabItemGroup.tab)) {
-			@Override
-			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "ragemod:textures/models/armor/rageiumarmorn__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-			}
-		}.setRegistryName("rageium_armor_chestplate"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(RagemodTabItemGroup.tab)) {
-			@Override
-			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "ragemod:textures/models/armor/rageiumarmorn__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-			}
-		}.setRegistryName("rageium_armor_leggings"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(RagemodTabItemGroup.tab)) {
-			@Override
-			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "ragemod:textures/models/armor/rageiumarmorn__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-			}
-		}.setRegistryName("rageium_armor_boots"));
+		}, slot, properties);
 	}
 
+	public static class Helmet extends RageiumArmorItem {
+		public Helmet() {
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB));
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "ragemod:textures/models/armor/rageiumarmorn__layer_1.png";
+		}
+	}
+
+	public static class Chestplate extends RageiumArmorItem {
+		public Chestplate() {
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB));
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "ragemod:textures/models/armor/rageiumarmorn__layer_1.png";
+		}
+	}
+
+	public static class Leggings extends RageiumArmorItem {
+		public Leggings() {
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB));
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "ragemod:textures/models/armor/rageiumarmorn__layer_2.png";
+		}
+	}
+
+	public static class Boots extends RageiumArmorItem {
+		public Boots() {
+			super(EquipmentSlot.FEET, new Item.Properties().tab(RagemodModTabs.TAB_RAGEMOD_TAB));
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "ragemod:textures/models/armor/rageiumarmorn__layer_1.png";
+		}
+	}
 }

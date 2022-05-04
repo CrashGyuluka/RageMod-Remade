@@ -20,7 +20,9 @@
       "conditions": {
         "items": [
           {
-            "item": "ragemod:rageium_alloy",
+            "items": [
+              "ragemod:rageium_alloy"
+            ],
             "count": {
               "min": 1,
               "max": 9999
